@@ -6,11 +6,18 @@
 class AirUnitIterator : public ArmyIterator
 {
 public:
-    AirUnitIterator();
+    AirUnitIterator(std::list<Person*>);
     ~AirUnitIterator();
 
+    Person* first();
+    Person* next();
+    bool hasNext();
+    Person* current();
+    void increment();
+
 private:
-    /* data */
+    Person* curr;
+    std::list<Person*> unit;
 };
 
 #endif
