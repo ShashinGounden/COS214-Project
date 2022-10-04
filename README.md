@@ -2,12 +2,11 @@
 
 TO DO:
 
-- Decide on design patterns
-- Set up git, each need at least 10 commits
+- Each need at least 10 commits
 - Due dates and responsibilities, 4 October and 1 Nov
 - Need to add functions into '.h' files
 - Need to make '.cpp' files
-- Add separate Concrete Alliance's
+- Add separate Concrete Alliance's or just 1 Concrete alliance with a private variable 'Name'
 - Need to add into IF statement in each iterator -> CompareTO 'ID' of Person
 
 DESIGN PATTERNS USED:
@@ -23,9 +22,6 @@ DESIGN PATTERNS USED:
 9. Abstract Factory Method
 10. Iterator
 
-OTHER:
-//builder maybe?
-
 MAIN REQUIREMENTS:
 
 1. Components of war:
@@ -37,7 +33,6 @@ MAIN REQUIREMENTS:
 - More
 
 2. Should have design mode (interactive) and real mode (simulation).
-
 
 ## DOXYGEN
 
