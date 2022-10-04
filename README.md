@@ -8,6 +8,7 @@ TO DO:
 - Need to add functions into '.h' files
 - Need to make '.cpp' files
 - Add separate Concrete Alliance's
+- Need to add into IF statement in each iterator -> CompareTO 'ID' of Person
 
 DESIGN PATTERNS USED:
 
@@ -36,3 +37,11 @@ MAIN REQUIREMENTS:
 - More
 
 2. Should have design mode (interactive) and real mode (simulation).
+
+
+## DOXYGEN
+
+What to document?
+
+- Each function
+- Each class

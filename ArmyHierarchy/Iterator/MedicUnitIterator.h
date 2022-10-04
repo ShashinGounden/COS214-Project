@@ -6,11 +6,17 @@
 class MedicUnitIterator : public ArmyIterator
 {
 public:
-    MedicUnitIterator();
+    MedicUnitIterator(std::list<Person*>);
     ~MedicUnitIterator();
 
+    Person* first();
+    Person* next();
+    bool hasNext();
+    Person* current();
+    void increment();
 private:
-    /* data */
+    Person* curr;
+    std::list<Person*> unit;
 };
 
 #endif

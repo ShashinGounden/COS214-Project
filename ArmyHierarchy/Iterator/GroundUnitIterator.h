@@ -6,11 +6,17 @@
 class GroundUnitIterator : public ArmyIterator
 {
 public:
-    GroundUnitIterator();
+    GroundUnitIterator(std::list<Person*>);
     ~GroundUnitIterator();
 
+    Person* first();
+    Person* next();
+    bool hasNext();
+    Person* current();
+    void increment();
 private:
-    /* data */
+    Person* curr;
+    std::list<Person*> unit;
 };
 
 #endif
