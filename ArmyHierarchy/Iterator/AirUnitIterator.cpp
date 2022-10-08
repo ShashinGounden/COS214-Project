@@ -11,6 +11,13 @@ AirUnitIterator::AirUnitIterator(std::list<Person*> list) : ArmyIterator(list){
 }
 
 /**
+* @brief destructer - Deletes the Unit allocated to the variable 'unit'
+*/
+AirUnitIterator::~AirUnitIterator(){
+    delete unit;
+}
+
+/**
  * @brief 
  * 
  * @return Person* 

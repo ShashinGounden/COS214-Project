@@ -8,6 +8,7 @@ TO DO:
 - Need to make '.cpp' files
 - Add separate Concrete Alliance's or just 1 Concrete alliance with a private variable 'Name'
 - Need to add into IF statement in each iterator -> CompareTO 'ID' of Person
+- Add Doxygen comments to code
 
 DESIGN PATTERNS USED:
 

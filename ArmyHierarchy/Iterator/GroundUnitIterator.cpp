@@ -5,6 +5,10 @@ GroundUnitIterator::GroundUnitIterator(std::list<Person*> list) : ArmyIterator(l
     curr = unit.front();
 }
 
+GroundUnitIterator::~GroundUnitIterator(){
+    delete unit;
+}
+
 Person* GroundUnitIterator::first(){
     return unit.front();
 }
