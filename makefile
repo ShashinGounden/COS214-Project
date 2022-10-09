@@ -11,7 +11,6 @@ all: $(OBJS)
 
 run:
 	./main
-#marks
 
 clean:
 	rm -f $(TARGET) $(OBJS)

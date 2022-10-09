@@ -5,6 +5,10 @@ MedicUnitIterator::MedicUnitIterator(std::list<Person*> list) : ArmyIterator(lis
     curr = unit.front();
 }
 
+MedicUnitIterator::~MedicUnitIterator(){
+    delete unit;
+}
+
 Person* MedicUnitIterator::first(){
     return unit.front();
 }
