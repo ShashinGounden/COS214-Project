@@ -1,43 +1,58 @@
 #include "MedicUnitIterator.h"
 
-MedicUnitIterator::MedicUnitIterator(std::list<Person*> list) : ArmyIterator(list){
+MedicUnitIterator::MedicUnitIterator(std::list<Medic *> list) : ArmyIterator()
+{
     unit = list;
     curr = unit.front();
 }
 
-MedicUnitIterator::~MedicUnitIterator(){
-    delete unit;
+MedicUnitIterator::~MedicUnitIterator()
+{
+    // delete unit; loop through unit deleteing each object
 }
 
-Person* MedicUnitIterator::first(){
+Medic *MedicUnitIterator::first()
+{
     return unit.front();
 }
 
-Person* MedicUnitIterator::next(){
-    for(auto it = unit.begin(); it != unit.end(); it++){
-        if((*it) == curr){ // NEED TO ADD What to compare to here!
+Medic *MedicUnitIterator::next()
+{
+    for (auto it = unit.begin(); it != unit.end(); it++)
+    {
+        if ((*it) == curr)
+        { // NEED TO ADD What to compare to here!
             it++;
             return (*it);
         }
     }
-    std::cout<<"Reached end of Unit!\n";
+    std::cout << "Reached end of Unit!\n";
     return nullptr;
 }
 
-bool MedicUnitIterator::hasNext(){
-    if(curr == *unit.end()){
+bool MedicUnitIterator::hasNext()
+{
+    if (curr == *unit.end())
+    {
         return false;
-    }else return true;
+    }
+    else
+        return true;
 }
 
-Person* MedicUnitIterator::current(){
+Medic *MedicUnitIterator::current()
+{
     return curr;
 }
 
-void MedicUnitIterator::increment(){
-    if(hasNext()){
+void MedicUnitIterator::increment()
+{
+    if (hasNext())
+    {
         curr = next(); // current will be pointed to next person in unit
-    }else{
+    }
+    else
+    {
         curr = first(); // current can point back to the front of the list
     }
 }

@@ -1,16 +1,19 @@
 #ifndef AIRUNIT_H
 #define AIRUNIT_H
 
-#include "Army.h"
+#include "Unit.h"
+#include "../PersonHierarchy/Soldier.h"
 
-class AirUnit : public Army
+class AirUnit : public Unit
 {
 public:
     AirUnit();
     ~AirUnit();
 
+    ArmyIterator *createIterator();
+
 private:
-    /* data */
+    std::list<Person *> unit;
 };
 
 #endif
