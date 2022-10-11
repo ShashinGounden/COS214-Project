@@ -9,8 +9,7 @@ public:
     CivilianFactory();
     ~CivilianFactory();
 
-private:
-    /* data */
+    Person* createPerson();
 };
 
 #endif

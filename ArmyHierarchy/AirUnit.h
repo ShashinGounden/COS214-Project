@@ -3,6 +3,8 @@
 
 #include "Unit.h"
 #include "../PersonHierarchy/Soldier.h"
+#include "../PersonHierarchy/PersonFactory/SoldierFactory.h"
+#include "Iterator/AirUnitIterator.h"
 
 class AirUnit : public Unit
 {

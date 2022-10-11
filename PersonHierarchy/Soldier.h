@@ -7,10 +7,13 @@ class Soldier : public Person
 {
 public:
     Soldier();
-    ~Soldier();
+
+    void attack();
+    void applyMedication();
+    void retreat();
 
 private:
-    /* data */
+    int id;
 };
 
 #endif

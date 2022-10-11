@@ -7,10 +7,13 @@ class Civilian : public Person
 {
 public:
     Civilian();
-    ~Civilian();
+
+    void attack();
+    void applyMedication();
+    void retreat();
 
 private:
-    /* data */
+    int id;
 };
 
 #endif

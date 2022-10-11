@@ -7,10 +7,13 @@ class Medic : public Person
 {
 public:
     Medic();
-    ~Medic();
+
+    void attack();
+    void applyMedication();
+    void retreat();
 
 private:
-    /* data */
+    int id;
 };
 
 #endif

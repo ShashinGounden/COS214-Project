@@ -20,24 +20,26 @@ Person *GroundUnitIterator::next()
 {
     for (auto it = unit.begin(); it != unit.end(); it++)
     {
-        if ((*it) == curr)
-        { // NEED TO ADD What to compare to here!
+        if ((*it)->getID() == curr->getID())
+        {
             it++;
             return (*it);
         }
     }
     std::cout << "Reached end of Unit!\n";
-    return nullptr;
+    std::cout<< "Setting current to the front of the list\n";
+    curr = unit.front();
+    return curr;
 }
 
 bool GroundUnitIterator::hasNext()
 {
     if (curr == *unit.end())
     {
-        return false;
+        return true;
     }
     else
-        return true;
+        return false;
 }
 
 Person *GroundUnitIterator::current()
@@ -47,12 +49,9 @@ Person *GroundUnitIterator::current()
 
 void GroundUnitIterator::increment()
 {
-    if (hasNext())
-    {
+    if (hasNext()){
         curr = next(); // current will be pointed to next person in unit
-    }
-    else
-    {
-        curr = first(); // current can point back to the front of the list
+    }else{
+        curr = first();
     }
 }

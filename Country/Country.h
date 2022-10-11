@@ -1,14 +1,20 @@
 #ifndef COUNTRY_H
 #define COUNTRY_H
 
+#include <iostream>
+#include "../ArmyHierarchy/Army.h"
 class Country
 {
 public:
-    Country();
+    Country(std::string);
     ~Country();
 
+    std::string getName();
+
+    void Attack(Country*);
 private:
-    /* data */
+    std::string name;
+    Army* ARMY;
 };
 
 #endif

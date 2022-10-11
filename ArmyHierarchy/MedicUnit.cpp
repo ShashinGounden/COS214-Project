@@ -1,15 +1,17 @@
 #include "MedicUnit.h"
-#include "../PersonHierarchy/PersonFactory/MedicFactory.h"
 
 /**
  * @brief Construct a new Medic Unit:: Medic Unit object
- * Create a medic factory to then create Medic objects to pushback to
+ * Create a medic factory to then create medic objects to pushback to
  * the unit object
  */
 MedicUnit::MedicUnit()
 {
-    MedicFactory *factory = new MedicFactory();
+    PersonFactory *factory = new MedicFactory();
     // make a loop to push back to unit with about 20 Person objects
+    for(int i = 0; i<20; i++){
+        unit.push_back(factory->createPerson());
+    }
     delete factory;
 }
 

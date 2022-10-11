@@ -35,14 +35,16 @@ Person *AirUnitIterator::next()
 {
     for (auto it = unit.begin(); it != unit.end(); it++)
     {
-        if ((*it) == curr)
-        { // NEED TO ADD What to compare to here!
+        if ((*it)->getID() == curr->getID())
+        {
             it++;
             return (*it);
         }
     }
     std::cout << "Reached end of Unit!\n";
-    return nullptr;
+    std::cout << "Setting current to the front of the list\n";
+    curr = unit.front();
+    return curr;
 }
 
 /**
@@ -55,10 +57,10 @@ bool AirUnitIterator::hasNext()
 {
     if (curr == *unit.end())
     {
-        return false;
+        return true;
     }
     else
-        return true;
+        return false;
 }
 
 /**
@@ -77,12 +79,10 @@ Person *AirUnitIterator::current()
  */
 void AirUnitIterator::increment()
 {
-    if (hasNext())
-    {
+    if (hasNext()){
         curr = next();
     }
-    else
-    {
+    else{
         curr = first();
     }
 }

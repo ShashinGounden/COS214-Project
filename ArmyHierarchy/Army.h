@@ -1,20 +1,23 @@
 #ifndef ARMY_H
 #define ARMY_H
 
+#include "../Country/Country.h"
 #include "MedicUnit.h"
 #include "GroundUnit.h"
 #include "AirUnit.h"
 
-class Army
-{
+class Army : public Country{
 public:
-    Army();
+    Army(std::string);
     ~Army();
 
     // For iterator
     void createMedicUnit();
     void createGroundUnit();
     void createAirUnit();
+
+    void attack();
+    void retreat();
 
     // For Observer
     void update();

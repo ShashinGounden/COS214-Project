@@ -8,9 +8,8 @@ class MedicFactory : public PersonFactory
 public:
     MedicFactory();
     ~MedicFactory();
-
-private:
-    /* data */
+    
+    Person* createPerson();
 };
 
 #endif
