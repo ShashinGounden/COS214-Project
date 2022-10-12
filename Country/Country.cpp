@@ -1,16 +1,23 @@
 #include "Country.h"
 
-Country::Country(std::string n){
-    name = n;
-    ARMY = new Army(n);
+Country::Country(){
+    ARMY = new Army();
 }
 
 Country::~Country(){}
+
+void Country::setName(std::string n){
+    name = n;
+}
 
 std::string Country::getName(){
     return name;
 }
 
 void Country::Attack(Country* country){
-    ARMY->attack();
+    ARMY->Attack(country);
+}
+
+void Country::Retreat(){
+    ARMY->Retreat();
 }

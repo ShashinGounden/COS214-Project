@@ -3,15 +3,18 @@
 
 #include <iostream>
 #include "../ArmyHierarchy/Army.h"
+
 class Country
 {
 public:
-    Country(std::string);
+    Country();
     ~Country();
 
+    void setName(std::string);
     std::string getName();
 
-    void Attack(Country*);
+    virtual void Attack(Country*) = 0;
+    virtual void Retreat() = 0;
 private:
     std::string name;
     Army* ARMY;

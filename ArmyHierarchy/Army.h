@@ -8,7 +8,7 @@
 
 class Army : public Country{
 public:
-    Army(std::string);
+    Army();
     ~Army();
 
     // For iterator
@@ -16,8 +16,8 @@ public:
     void createGroundUnit();
     void createAirUnit();
 
-    void attack();
-    void retreat();
+    void Attack(Country*);
+    void Retreat();
 
     // For Observer
     void update();

@@ -4,7 +4,7 @@ Soldier::Soldier() : Person(){
     id = this->getID();
 }
 
-void Soldier::attack(){
+void Soldier::Attack(Country* c){
     if(id%5 == 0){
         std::cout<<"ATTACK!\n";
     }
@@ -12,7 +12,7 @@ void Soldier::attack(){
 
 void Soldier::applyMedication(){}
 
-void Soldier::retreat(){
+void Soldier::Retreat(){
     if(id%3 == 0){
         std::cout<<"RETREAT!\n";
     }

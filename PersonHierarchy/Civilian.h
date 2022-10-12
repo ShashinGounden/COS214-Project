@@ -8,9 +8,9 @@ class Civilian : public Person
 public:
     Civilian();
 
-    void attack();
+    void Attack(Country*);
     void applyMedication();
-    void retreat();
+    void Retreat();
 
 private:
     int id;

@@ -4,7 +4,7 @@ Medic::Medic() : Person(){
     id = this->getID();
 }
 
-void Medic::attack(){
+void Medic::Attack(Country* c){
     if(id%2 == 0){
         std::cout<<"Prepares to aid injured soldiers\n";
     }
@@ -20,7 +20,7 @@ void Medic::applyMedication(){
     }
 }
 
-void Medic::retreat(){
+void Medic::Retreat(){
     if(id%6 == 0){
         std::cout<<"RETREAT!\n";
     }

@@ -2,18 +2,21 @@
 #define PERSON_H
 
 #include <iostream>
+#include "../Country/Country.h"
 
-class Person
+class Person : public Country
 {
 public:
     Person();
     ~Person();
 
-    virtual void attack() = 0;
+    //virtual void Attack() = 0;
     virtual void applyMedication() = 0;
-    virtual void retreat() = 0;
+    //virtual void Retreat() = 0;
 
     int getID();
+
+    // Person* clone();
 
 private:
     int CurrentID = 0;

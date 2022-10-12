@@ -4,8 +4,8 @@ Civilian::Civilian() : Person(){
     id = this->getID();
 }
 
-void Civilian::attack(){}
+void Civilian::Attack(Country* c){}
 
 void Civilian::applyMedication(){}
 
-void Civilian::retreat(){}
+void Civilian::Retreat(){}

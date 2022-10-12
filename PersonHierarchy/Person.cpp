@@ -2,7 +2,7 @@
 
 //int Person::CurrentID = 0;
 
-Person::Person(){
+Person::Person() : Country(){
     CurrentID++;
 }
 

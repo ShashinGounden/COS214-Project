@@ -4,7 +4,7 @@
  * @brief Construct a new Army:: Army object
  * 
  */
-Army::Army(std::string cName) : Country(cName){
+Army::Army() : Country(){
     std::cout<<"Creating Army\n";
     createAirUnit();
     createGroundUnit();
@@ -45,7 +45,7 @@ void Army::createAirUnit(){
  * 
  * @return cout statement from units attack method
  */
-void Army::attack(){
+void Army::Attack(Country* country){
     std::cout<<"All soldiers ATTACK!\n";
     ArmyIterator* itGround = groundUnit->createIterator();
     ArmyIterator* itAir = airUnit->createIterator();
@@ -53,27 +53,31 @@ void Army::attack(){
 
     while(itGround->hasNext()){
         
-        itGround->current()->attack();
-        itGround->current()->getID();
+        itGround->current()->Attack(country);
         itGround->increment();
     }
 
     while(itAir->hasNext()){
-        itAir->current()->attack();
+        itAir->current()->Attack(country);
         itAir->increment();
     }
     std::cout<<"MEDICS prepare the morphine!\n";
     while(itMedic->hasNext()){
-        itMedic->current()->attack();
+        itMedic->current()->Attack(country);
         itMedic->increment();
     }
+
+    /**
+     * @brief Add Functionality to decrease country's funds
+     * 
+     */
 }
 
 /**
  * @brief All units retreat
  * 
  */
-void Army::retreat(){
+void Army::Retreat(){
     std::cout<<"Retreating all troops\n";
     // Code here
 }
