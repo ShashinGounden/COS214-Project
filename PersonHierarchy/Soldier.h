@@ -6,11 +6,16 @@
 class Soldier : public Person
 {
 public:
-    Soldier();
+    Soldier(int);
     ~Soldier();
 
+    void Attack();
+    void applyMedication();
+    void Retreat();
+
+    int getID();
 private:
-    /* data */
+    int id;
 };
 
 #endif

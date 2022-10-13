@@ -1,14 +1,30 @@
 #ifndef ARMY_H
 #define ARMY_H
 
-class Army
-{
+#include "MedicUnit.h"
+#include "GroundUnit.h"
+#include "AirUnit.h"
+
+class Army{
 public:
     Army();
     ~Army();
 
+    // For iterator
+    void createMedicUnit();
+    void createGroundUnit();
+    void createAirUnit();
+
+    void Attack();
+    void Retreat();
+
+    // For Observer
+    void update();
+
 private:
-    /* data */
+    MedicUnit *medicUnit;
+    GroundUnit *groundUnit;
+    AirUnit *airUnit;
 };
 
 #endif

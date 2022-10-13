@@ -1,16 +1,20 @@
 #ifndef GROUNDUNIT_H
 #define GROUNDUNIT_H
 
-#include "Army.h"
+#include "Unit.h"
+#include "../PersonHierarchy/Soldier.h"
+#include "../PersonHierarchy/PersonFactory/SoldierFactory.h"
+#include "Iterator/GroundUnitIterator.h"
 
-class GroundUnit : public Army
+class GroundUnit : public Unit
 {
 public:
     GroundUnit();
     ~GroundUnit();
 
-private:
-    /* data */
-};
+    ArmyIterator *createIterator();
 
+private:
+    std::list<Person *> unit;
+};
 #endif
