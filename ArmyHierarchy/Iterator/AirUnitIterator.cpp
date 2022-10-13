@@ -5,7 +5,7 @@
  *
  * @param list
  */
-AirUnitIterator::AirUnitIterator(std::list<Person *> list) : ArmyIterator(list)
+AirUnitIterator::AirUnitIterator(std::list<Person *> list) : ArmyIterator()
 {
     unit = list;
     curr = unit.front();
@@ -42,9 +42,7 @@ Person *AirUnitIterator::next()
         }
     }
     std::cout << "Reached end of Unit!\n";
-    std::cout << "Setting current to the front of the list\n";
-    curr = unit.front();
-    return curr;
+    return nullptr;
 }
 
 /**
@@ -55,12 +53,12 @@ Person *AirUnitIterator::next()
  */
 bool AirUnitIterator::hasNext()
 {
-    if (curr == *unit.end())
+    if (curr->getID() == unit.back()->getID())
     {
-        return true;
+        return false;
     }
     else
-        return false;
+        return true;
 }
 
 /**

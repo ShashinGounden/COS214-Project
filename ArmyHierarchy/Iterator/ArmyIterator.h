@@ -5,10 +5,11 @@
 #include <iostream>
 #include "../../PersonHierarchy/Person.h"
 
+class Person;
 class ArmyIterator
 {
 public:
-    ArmyIterator(std::list<Person *>);
+    ArmyIterator();
     virtual ~ArmyIterator();
 
     virtual Person *first() = 0;
@@ -16,9 +17,6 @@ public:
     virtual bool hasNext() = 0;
     virtual Person *current() = 0;
     virtual void increment() = 0;
-
-private:
-    std::list<Person *> unit;
 };
 
 #endif

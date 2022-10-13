@@ -6,12 +6,14 @@
 class Civilian : public Person
 {
 public:
-    Civilian();
+    Civilian(int);
+    ~Civilian();
 
-    void Attack(Country*);
+    void Attack();
     void applyMedication();
     void Retreat();
 
+    int getID();
 private:
     int id;
 };

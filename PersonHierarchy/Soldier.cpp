@@ -1,10 +1,14 @@
 #include "Soldier.h"
 
-Soldier::Soldier() : Person(){
-    id = this->getID();
+Soldier::Soldier(int i) : Person(i){
+    id = i;
 }
 
-void Soldier::Attack(Country* c){
+Soldier::~Soldier(){
+    std::cout<<"ID: "<<id<<" Deleted\n";
+}
+
+void Soldier::Attack(){
     if(id%5 == 0){
         std::cout<<"ATTACK!\n";
     }
@@ -16,4 +20,8 @@ void Soldier::Retreat(){
     if(id%3 == 0){
         std::cout<<"RETREAT!\n";
     }
+}
+
+int Soldier::getID(){
+    return id;
 }

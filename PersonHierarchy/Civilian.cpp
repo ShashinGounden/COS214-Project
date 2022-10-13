@@ -1,11 +1,19 @@
 #include "Civilian.h"
 
-Civilian::Civilian() : Person(){
-    id = this->getID();
+Civilian::Civilian(int i) : Person(i){
+    id = i;
 }
 
-void Civilian::Attack(Country* c){}
+Civilian::~Civilian(){
+    std::cout<<"ID: "<<id<<" Deleted\n";
+}
+
+void Civilian::Attack(){}
 
 void Civilian::applyMedication(){}
 
 void Civilian::Retreat(){}
+
+int Civilian::getID(){
+    return id;
+}

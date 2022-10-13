@@ -9,7 +9,7 @@ public:
     CivilianFactory();
     ~CivilianFactory();
 
-    Person* createPerson();
+    Person* createPerson(int);
 };
 
 #endif

@@ -1,6 +1,6 @@
 #include "GroundUnitIterator.h"
 
-GroundUnitIterator::GroundUnitIterator(std::list<Person *> list) : ArmyIterator(list)
+GroundUnitIterator::GroundUnitIterator(std::list<Person *> list) : ArmyIterator()
 {
     unit = list;
     curr = unit.front();
@@ -34,12 +34,12 @@ Person *GroundUnitIterator::next()
 
 bool GroundUnitIterator::hasNext()
 {
-    if (curr == *unit.end())
+    if (curr->getID() == unit.back()->getID())
     {
-        return true;
+        return false;
     }
     else
-        return false;
+        return true;
 }
 
 Person *GroundUnitIterator::current()

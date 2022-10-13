@@ -3,15 +3,16 @@
 
 #include "Person.h"
 
-class Medic : public Person
-{
+class Medic : public Person{
 public:
-    Medic();
+    Medic(int);
+    ~Medic();
 
-    void Attack(Country*);
+    void Attack();
     void applyMedication();
     void Retreat();
 
+    int getID();
 private:
     int id;
 };

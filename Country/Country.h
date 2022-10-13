@@ -4,6 +4,7 @@
 #include <iostream>
 #include "../ArmyHierarchy/Army.h"
 
+class Army;
 class Country
 {
 public:
@@ -12,12 +13,14 @@ public:
 
     void setName(std::string);
     std::string getName();
+    void createArmy();
 
-    virtual void Attack(Country*) = 0;
-    virtual void Retreat() = 0;
+    void Attack();
+    void Retreat();
+
 private:
     std::string name;
-    Army* ARMY;
+    Army *ARMY;
 };
 
 #endif

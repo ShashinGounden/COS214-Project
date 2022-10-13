@@ -1,12 +1,11 @@
 #ifndef ARMY_H
 #define ARMY_H
 
-#include "../Country/Country.h"
 #include "MedicUnit.h"
 #include "GroundUnit.h"
 #include "AirUnit.h"
 
-class Army : public Country{
+class Army{
 public:
     Army();
     ~Army();
@@ -16,7 +15,7 @@ public:
     void createGroundUnit();
     void createAirUnit();
 
-    void Attack(Country*);
+    void Attack();
     void Retreat();
 
     // For Observer

@@ -2,10 +2,11 @@
 
 /**
  * @brief Construct a new Army:: Army object
- * 
+ *
  */
-Army::Army() : Country(){
-    std::cout<<"Creating Army\n";
+Army::Army()
+{
+    std::cout << "Creating Army\n";
     createAirUnit();
     createGroundUnit();
     createMedicUnit();
@@ -13,9 +14,10 @@ Army::Army() : Country(){
 
 /**
  * @brief Destroy the Army:: Army object
- * 
+ *
  */
-Army::~Army(){
+Army::~Army()
+{
     delete medicUnit;
     delete groundUnit;
     delete airUnit;
@@ -23,69 +25,77 @@ Army::~Army(){
 
 /**
  * @brief Creation of All Units
- * 
+ *
  */
-void Army::createMedicUnit(){
+void Army::createMedicUnit()
+{
     MedicUnit *unit = new MedicUnit();
     medicUnit = unit;
 }
 
-void Army::createGroundUnit(){
+void Army::createGroundUnit()
+{
     GroundUnit *unit = new GroundUnit();
     groundUnit = unit;
 }
 
-void Army::createAirUnit(){
+void Army::createAirUnit()
+{
     AirUnit *unit = new AirUnit();
     airUnit = unit;
 }
 
 /**
  * @brief All units and Soldiers attack
- * 
+ *
  * @return cout statement from units attack method
  */
-void Army::Attack(Country* country){
-    std::cout<<"All soldiers ATTACK!\n";
-    ArmyIterator* itGround = groundUnit->createIterator();
-    ArmyIterator* itAir = airUnit->createIterator();
-    ArmyIterator* itMedic = medicUnit->createIterator();
+void Army::Attack()
+{
+    std::cout << "All soldiers ATTACK!\n";
+    ArmyIterator *itGround = groundUnit->createIterator();
+    ArmyIterator *itAir = airUnit->createIterator();
+    ArmyIterator *itMedic = medicUnit->createIterator();
 
-    while(itGround->hasNext()){
-        
-        itGround->current()->Attack(country);
+    while (itGround->hasNext())
+    {
+        itGround->current()->Attack();
         itGround->increment();
     }
 
-    while(itAir->hasNext()){
-        itAir->current()->Attack(country);
+    while (itAir->hasNext())
+    {
+        itAir->current()->Attack();
         itAir->increment();
     }
-    std::cout<<"MEDICS prepare the morphine!\n";
-    while(itMedic->hasNext()){
-        itMedic->current()->Attack(country);
+    std::cout << "MEDICS prepare the morphine!\n";
+    while (itMedic->hasNext())
+    {
+        itMedic->current()->Attack();
         itMedic->increment();
     }
 
     /**
      * @brief Add Functionality to decrease country's funds
-     * 
+     *
      */
 }
 
 /**
  * @brief All units retreat
- * 
+ *
  */
-void Army::Retreat(){
-    std::cout<<"Retreating all troops\n";
+void Army::Retreat()
+{
+    std::cout << "Retreating all troops\n";
     // Code here
 }
 
 /**
- * @brief 
- * 
+ * @brief
+ *
  */
-void Army::update(){
+void Army::update()
+{
     // Observer code here
 }

@@ -6,10 +6,13 @@
 
 int main()
 {
-    Country* United_States = new Army();
+    Country* United_States = new Country();
     United_States->setName("United States Of America");
-    Country* Germany = new Army();
+    Country* Germany = new Country();
     Germany->setName("NAZI Scum");
-    United_States->Attack(Germany);
+    United_States->Attack();
+
+    delete United_States;
+    delete Germany;
     return 0;
 }

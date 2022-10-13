@@ -1,10 +1,14 @@
 #include "Medic.h"
 
-Medic::Medic() : Person(){
-    id = this->getID();
+Medic::Medic(int i) : Person(i){
+    id = i;
 }
 
-void Medic::Attack(Country* c){
+Medic::~Medic(){
+    std::cout<<"ID: "<<id<<" Deleted\n";
+}
+
+void Medic::Attack(){
     if(id%2 == 0){
         std::cout<<"Prepares to aid injured soldiers\n";
     }
@@ -24,4 +28,8 @@ void Medic::Retreat(){
     if(id%6 == 0){
         std::cout<<"RETREAT!\n";
     }
+}
+
+int Medic::getID(){
+    return id;
 }

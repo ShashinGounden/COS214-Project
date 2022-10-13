@@ -5,11 +5,12 @@
  * Create a soldier factory to then create soldier objects to pushback to
  * the unit object
  */
-AirUnit::AirUnit() : Unit(){
+AirUnit::AirUnit() : Unit()
+{
     PersonFactory *factory = new SoldierFactory();
     // make a loop to push back to unit with about 20 Person objects
     for(int i = 0; i<20; i++){
-        unit.push_back(factory->createPerson());
+        unit.push_back(factory->createPerson(rand()));
     }
     delete factory;
 }

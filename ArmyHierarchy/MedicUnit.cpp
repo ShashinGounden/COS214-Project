@@ -5,12 +5,13 @@
  * Create a medic factory to then create medic objects to pushback to
  * the unit object
  */
-MedicUnit::MedicUnit()
+MedicUnit::MedicUnit() : Unit()
 {
+
     PersonFactory *factory = new MedicFactory();
     // make a loop to push back to unit with about 20 Person objects
     for(int i = 0; i<20; i++){
-        unit.push_back(factory->createPerson());
+        unit.push_back(factory->createPerson(rand()));
     }
     delete factory;
 }

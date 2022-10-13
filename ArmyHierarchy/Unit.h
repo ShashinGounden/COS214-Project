@@ -5,6 +5,7 @@
 #include "Iterator/AirUnitIterator.h"
 #include "Iterator/GroundUnitIterator.h"
 #include "Iterator/MedicUnitIterator.h"
+#include <cstdlib>
 
 class Unit
 {

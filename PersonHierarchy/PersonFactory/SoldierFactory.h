@@ -9,7 +9,7 @@ public:
     SoldierFactory();
     ~SoldierFactory();
 
-    Person* createPerson();
+    Person* createPerson(int);
 };
 
 #endif

@@ -5,6 +5,6 @@ CivilianFactory::CivilianFactory(){}
 
 CivilianFactory::~CivilianFactory(){}
 
-Person* CivilianFactory::createPerson(){
-    return new Civilian();
+Person* CivilianFactory::createPerson(int i){
+    return new Civilian(i);
 }

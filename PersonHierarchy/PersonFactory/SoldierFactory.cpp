@@ -5,6 +5,6 @@ SoldierFactory::SoldierFactory(){}
 
 SoldierFactory::~SoldierFactory(){}
 
-Person* SoldierFactory::createPerson(){
-    return new Soldier();
+Person* SoldierFactory::createPerson(int i){
+    return new Soldier(i);
 }

@@ -1,6 +1,6 @@
 #include "MedicUnitIterator.h"
 
-MedicUnitIterator::MedicUnitIterator(std::list<Person*> list) : ArmyIterator(list)
+MedicUnitIterator::MedicUnitIterator(std::list<Person*> list) : ArmyIterator()
 {
     unit = list;
     curr = unit.front();
@@ -34,12 +34,12 @@ Person *MedicUnitIterator::next()
 
 bool MedicUnitIterator::hasNext()
 {
-    if (curr == *unit.end())
+    if (curr->getID() == unit.back()->getID())
     {
-        return true;
+        return false;
     }
     else
-        return false;
+        return true;
 }
 
 Person *MedicUnitIterator::current()
