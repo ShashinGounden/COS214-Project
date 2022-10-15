@@ -3,7 +3,8 @@
 
 #include <iostream>
 
-class Person{
+class Person
+{
 public:
     Person(int);
     virtual ~Person();

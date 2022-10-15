@@ -89,6 +89,27 @@ void Army::Retreat()
 {
     std::cout << "Retreating all troops\n";
     // Code here
+    ArmyIterator *itGround = groundUnit->createIterator();
+    ArmyIterator *itAir = airUnit->createIterator();
+    ArmyIterator *itMedic = medicUnit->createIterator();
+
+    while (itGround->hasNext())
+    {
+        itGround->current()->Retreat();
+        itGround->increment();
+    }
+
+    while (itAir->hasNext())
+    {
+        itAir->current()->Retreat();
+        itAir->increment();
+    }
+    std::cout << "MEDICS prepare the morphine!\n";
+    while (itMedic->hasNext())
+    {
+        itMedic->current()->Retreat();
+        itMedic->increment();
+    }
 }
 
 /**
