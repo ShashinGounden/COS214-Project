@@ -26,10 +26,7 @@ Person *GroundUnitIterator::next()
             return (*it);
         }
     }
-    std::cout << "Reached end of Unit!\n";
-    std::cout<< "Setting current to the front of the list\n";
-    curr = unit.front();
-    return curr;
+    return nullptr;
 }
 
 bool GroundUnitIterator::hasNext()

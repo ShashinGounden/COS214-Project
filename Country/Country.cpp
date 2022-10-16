@@ -10,13 +10,11 @@ Country::Country()
 {
     funds = 100000.0;
     createArmy();
-    allianceList = new Alliance();
 }
 
 Country::~Country()
 {
     delete ARMY;
-    delete allianceList;
 }
 
 void Country::setName(std::string n)
@@ -27,21 +25,6 @@ void Country::setName(std::string n)
 std::string Country::getName()
 {
     return name;
-}
-
-/**
- * @brief Adding a country to Alliance objects list using Alliance's addAlliance function
- * Also to add this country as an alliance to the country being added to this allianceList 
- * @param c 
- */
-void Country::addAlliance(Country* c){
-    allianceList->addAlliance(c);
-    c->addAlliance(this);
-}
-
-void Country::removeAlliance(Country* c){
-    allianceList->removeAlliance(c);
-    c->removeAlliance(this);
 }
 
 /**

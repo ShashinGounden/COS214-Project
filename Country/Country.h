@@ -15,9 +15,6 @@ public:
     void setName(std::string);
     std::string getName();
 
-    void addAlliance(Country*);
-    void removeAlliance(Country*);
-
     void createArmy();
 
     void Attack();
@@ -28,7 +25,6 @@ public:
 
 private:
     Army *ARMY;
-    Alliance *allianceList;
     std::string name;
     double funds;
 };
