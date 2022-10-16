@@ -1,14 +1,19 @@
 #ifndef ALLIANCE_H
 #define ALLIANCE_H
 
-class Alliance
+#include "Country.h"
+
+class Alliance : public Country
 {
 public:
     Alliance();
     ~Alliance();
 
+    void addAlliance(Country *);
+    void removeAlliance(Country *);
+
 private:
-    /* data */
+    std::list<Country *> allianceList;
 };
 
 #endif

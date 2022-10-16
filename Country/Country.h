@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include "../ArmyHierarchy/Army.h"
+#include "Alliance.h"
 
 class Army;
 class Country
@@ -13,14 +14,19 @@ public:
 
     void setName(std::string);
     std::string getName();
+
     void createArmy();
 
     void Attack();
     void Retreat();
 
+    double getFunds();
+    void addFunds(double);
+
 private:
-    std::string name;
     Army *ARMY;
+    std::string name;
+    double funds;
 };
 
 #endif
