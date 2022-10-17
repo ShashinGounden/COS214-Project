@@ -3,7 +3,6 @@
 
 #include <iostream>
 #include "../ArmyHierarchy/Army.h"
-#include "Alliance.h"
 
 class Army;
 class Country

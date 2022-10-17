@@ -13,7 +13,15 @@ public:
     Unit();
     virtual ~Unit();
     
+    virtual void populateUnit() = 0;
     virtual ArmyIterator *createIterator() = 0;
+
+protected:
+    // Transport* transport;
+    // TransportBuilder* builder;
+
+private:
+    std::list<Person*> unit;
 };
 
 #endif

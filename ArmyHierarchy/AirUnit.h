@@ -12,7 +12,11 @@ public:
     AirUnit();
     ~AirUnit();
 
+    void populateUnit();
     ArmyIterator *createIterator();
+
+protected:
+    PersonFactory* factory;
 
 private:
     std::list<Person *> unit;
