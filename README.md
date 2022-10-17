@@ -8,7 +8,7 @@ TO DO:
 - Need to make '.cpp' files
 - Add separate Concrete Alliance's or just 1 Concrete alliance with a private variable 'Name'
 - Add Doxygen comments to code
-- Template Method???
+- Add Surrender and Advance code to persons classes
 
 DESIGN PATTERNS USED:
 

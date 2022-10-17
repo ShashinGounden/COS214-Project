@@ -39,6 +39,7 @@ void Country::createArmy()
 void Country::Attack()
 {
     ARMY->Attack();
+    // Decrease countries funds
 }
 
 void Country::Retreat()

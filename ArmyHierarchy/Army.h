@@ -11,12 +11,12 @@ public:
     ~Army();
 
     // For iterator
-    void createMedicUnit();
-    void createGroundUnit();
-    void createAirUnit();
+    void populateUnit();
 
     void Attack();
+    void Advance();
     void Retreat();
+    void Surrender();
 
     // For Observer
     void update();
