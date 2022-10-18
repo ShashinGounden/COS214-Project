@@ -8,7 +8,7 @@ class Army;
 class Country
 {
 public:
-    Country();
+    Country(double);
     ~Country();
 
     void setName(std::string);

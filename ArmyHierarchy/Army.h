@@ -7,11 +7,11 @@
 
 class Army{
 public:
-    Army();
+    Army(int,int,int);
     ~Army();
 
     // For iterator
-    void populateUnit();
+    void populateUnit(int,int,int);
 
     void Attack();
     void Advance();

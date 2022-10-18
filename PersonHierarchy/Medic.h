@@ -12,7 +12,11 @@ public:
     void applyMedication();
     void Retreat();
 
+    Person* clone();
+
+    bool heal(Person*,int);
     int getID();
+
 private:
     int id;
 };

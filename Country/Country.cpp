@@ -6,9 +6,9 @@
  * We can have a input value for the funds that a country will have
  * But for now its going to be all the same
  */
-Country::Country()
+Country::Country(double fund)
 {
-    funds = 100000.0;
+    funds = fund;
     createArmy();
 }
 
@@ -29,11 +29,20 @@ std::string Country::getName()
 
 /**
  * @brief Creating army object
- *
+ * Using the funds variable we createArmy with a specific amount of soldiers
+ * first num = soldiers
+ * second num = medics
+ * third num = pilots
  */
 void Country::createArmy()
 {
-    ARMY = new Army();
+    if(funds <= 10000){
+        ARMY = new Army(funds/10,10,5);
+    }else if(funds <= 50000 && funds > 10000){
+        ARMY = new Army(funds/10,50,25);
+    }else if(funds > 50000){
+        ARMY = new Army(funds/10,100,50);
+    }
 }
 
 void Country::Attack()

@@ -12,7 +12,7 @@ public:
     MedicUnit();
     ~MedicUnit();
 
-    void populateUnit();
+    void populateUnit(int);
     ArmyIterator *createIterator();
 
 protected:

@@ -5,7 +5,7 @@
  *  Instantiate all units
  *  Using populateUnit() to populate all Units
  */
-Army::Army()
+Army::Army(int numOfSoldiers, int numOfMedics, int numOfPilots)
 {
     std::cout << "Creating Army\n";
     MedicUnit *mUnit = new MedicUnit();
@@ -15,7 +15,7 @@ Army::Army()
     AirUnit *aUnit = new AirUnit();
     airUnit = aUnit;
 
-    populateUnit();
+    populateUnit(numOfSoldiers, numOfMedics, numOfPilots);
 }
 
 /**
@@ -30,13 +30,17 @@ Army::~Army()
 }
 
 /**
- * @brief Creation of All Units
- *
+ * @brief using each units populateUnit function to populate each unit
+ * with the input parameters amount
+ * 
+ * @param numOfSoldiers 
+ * @param numOfMedics 
+ * @param numOfPilots 
  */
-void Army::populateUnit(){
-    groundUnit->populateUnit();
-    medicUnit->populateUnit();
-    airUnit->populateUnit();
+void Army::populateUnit(int numOfSoldiers, int numOfMedics, int numOfPilots){
+    groundUnit->populateUnit(numOfSoldiers);
+    medicUnit->populateUnit(numOfMedics);
+    airUnit->populateUnit(numOfPilots);
 }
 
 /**
@@ -60,12 +64,14 @@ void Army::Attack()
     while (itAir->hasNext())
     {
         itAir->current()->Attack();
+        // itAir->current()->takeDamage(20);
         itAir->increment();
     }
     std::cout << "MEDICS prepare the morphine!\n";
     while (itMedic->hasNext())
     {
         itMedic->current()->Attack();
+        // itMedic->current()->heal(Person*, int);
         itMedic->increment();
     }
 
@@ -75,6 +81,10 @@ void Army::Attack()
      */
 }
 
+/**
+ * @brief Army advances position
+ * Function to call each person's Advance function
+ */
 void Army::Advance(){
     std::cout<<"ADVANCE Troops!/n";
     ArmyIterator *itGround = groundUnit->createIterator();
@@ -102,7 +112,7 @@ void Army::Advance(){
 
 /**
  * @brief All units retreat
- *
+ * Calling all person's retreat function
  */
 void Army::Retreat()
 {
@@ -133,7 +143,7 @@ void Army::Retreat()
 
 /**
  * @brief Country signs a treaty and Army surrenders
- * 
+ * Calls each person's Surrender function
  */
 void Army::Surrender(){
     std::cout<<"'Wave the white flag'\n";
