@@ -19,13 +19,18 @@ AirUnit::~AirUnit(){
     delete factory;
 }
 
-void AirUnit::populateUnit(){
+void AirUnit::populateUnit(int numOfPilots){
     factory = new SoldierFactory();
-    for(int i = 0; i<20; i++){
+    for(int i = 0; i<numOfPilots; i++){
         unit.push_back(factory->createPerson(rand()));
     }
 }
 
+/**
+ * @brief returns iterator object
+ * 
+ * @return ArmyIterator* 
+ */
 ArmyIterator *AirUnit::createIterator(){
     return new AirUnitIterator(unit);
 }

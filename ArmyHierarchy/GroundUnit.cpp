@@ -20,9 +20,9 @@ GroundUnit::~GroundUnit()
     delete factory;
 }
 
-void GroundUnit::populateUnit(){
+void GroundUnit::populateUnit(int numOfSoldiers){
     factory = new SoldierFactory();
-    for(int i = 0; i<20; i++){
+    for(int i = 0; i<numOfSoldiers; i++){
         unit.push_back(factory->createPerson(rand()));
     }
 }

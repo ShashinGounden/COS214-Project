@@ -20,9 +20,9 @@ MedicUnit::~MedicUnit()
     delete factory;
 }
 
-void MedicUnit::populateUnit(){
+void MedicUnit::populateUnit(int numOfMedics){
     factory = new MedicFactory();
-    for(int i = 0; i<20; i++){
+    for(int i = 0; i<numOfMedics; i++){
         unit.push_back(factory->createPerson(rand()));
     }
 }

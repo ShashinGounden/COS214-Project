@@ -12,7 +12,7 @@ public:
     AirUnit();
     ~AirUnit();
 
-    void populateUnit();
+    void populateUnit(int);
     ArmyIterator *createIterator();
 
 protected:
