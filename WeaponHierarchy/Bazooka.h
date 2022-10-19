@@ -1,16 +1,13 @@
-#ifndef GRENADE_H
-#define GRENADE_H
+#ifndef BAZOOKA_H
+#define BAZOOKA_H
 
 #include "ExplosiveProduct.h"
 
-class Grenade : public ExplosiveProduct
+class Bazooka : public ExplosiveProduct
 {
-public:
-    Grenade();
-    ~Grenade();
-private:
-    /* data */
-
+    public:
+    Bazooka(int damage);
+    ~Bazooka()
 };
 
 #endif

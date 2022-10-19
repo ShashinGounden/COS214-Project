@@ -1,16 +1,13 @@
-#ifndef ROTH_STEYR_H
-#define ROTH_STEYR_H
+#ifndef COLT12B_H
+#define COLT12B_H
 
 #include "PistolProduct.h"
 
-class Roth_Steyr : public PistolProduct
+class Colt12B : public PistolProduct
 {
 public:
-    Roth_Steyr(/* args */);
-    ~Roth_Steyr();
-
-private:
-    /* data */
+    Colt12B(int damage);
+    ~Colt12B();
 };
 
 #endif
