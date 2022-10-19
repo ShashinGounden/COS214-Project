@@ -3,12 +3,12 @@
 
 class Weapon
 {
-public:
-    Weapon();
-    ~Weapon();
+	protected:
+	int power;
 
-private:
-
+	public:
+	Weapon(int P);
+	int fire();
+	~Weapon();
 };
-
 #endif
