@@ -3,6 +3,7 @@
 
 #include "Person.h"
 #include "../WeaponHierarchy/Weapon.h"
+#include "../WeaponHierarchy/WeaponFactory/WeaponFactory.h"
 
 class Soldier : public Person
 {
@@ -22,9 +23,10 @@ public:
     int getID();
 
 protected:
-    Weapon* weapon;
+    WeaponFactory* factory;
 
 private:
+    Weapon* weapon;
     int id;
 };
 

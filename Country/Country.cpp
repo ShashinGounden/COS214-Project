@@ -36,12 +36,12 @@ std::string Country::getName()
  */
 void Country::createArmy()
 {
-    if(funds <= 10000){
-        ARMY = new Army(funds/10,10,5);
+    if(funds > 1000 && funds <= 10000){
+        ARMY = new Army(funds/10,funds/100,funds/500);
     }else if(funds <= 50000 && funds > 10000){
-        ARMY = new Army(funds/10,50,25);
+        ARMY = new Army(funds/10,funds/100,funds/500);
     }else if(funds > 50000){
-        ARMY = new Army(funds/10,100,50);
+        ARMY = new Army(funds/10,funds/100,funds/500);
     }
 }
 
