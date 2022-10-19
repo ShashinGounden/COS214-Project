@@ -3,13 +3,12 @@
 
 #include <iostream>
 #include "../ArmyHierarchy/Army.h"
-#include "Alliance.h"
 
 class Army;
 class Country
 {
 public:
-    Country();
+    Country(double);
     ~Country();
 
     void setName(std::string);

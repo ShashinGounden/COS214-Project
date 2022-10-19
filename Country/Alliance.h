@@ -3,7 +3,7 @@
 
 #include "Country.h"
 
-class Alliance : public Country
+class Alliance
 {
 public:
     Alliance();

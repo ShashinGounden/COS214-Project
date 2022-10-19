@@ -8,7 +8,7 @@ TO DO:
 - Need to make '.cpp' files
 - Add separate Concrete Alliance's or just 1 Concrete alliance with a private variable 'Name'
 - Add Doxygen comments to code
-- Template Method???
+- Add Surrender and Advance code to persons classes
 
 DESIGN PATTERNS USED:
 
@@ -41,3 +41,25 @@ What to document?
 
 - Each function
 - Each class
+
+## Implementation
+
+- for Attack() function
+
+State will have a damage multiplier
+
+Attack function can determine which unit attacks (ground or air) and returns that damage
+
+returned damage will be minused from medics heal total to get netDamage
+then delete an amount of soldiers from unit according to the netDamage
+
+Fight returns an damage from weapon - int
+Heal returns an int
+
+can get rid of getHealth and takeDamage
+
+For airUnit damage total amount - calculated from aircraft damage not attack
+- Add Aircraft list - use Builder to make each Aircraft
+
+funds can be used to add more troops after a attack has been made
+can increase funds with an alliance getFunds or rand() function
