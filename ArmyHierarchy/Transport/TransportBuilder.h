@@ -10,8 +10,8 @@ class TransportBuilder
 {
 	public:
 	TransportBuilder();
-	void addDefence(string)=0;
-    void setHealth(int)=0;
+	virtual void addDefence(string)=0;
+    virtual void setHealth(int)=0;
 	~TransportBuilder();
 };
 

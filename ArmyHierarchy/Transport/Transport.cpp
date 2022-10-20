@@ -1,5 +1,10 @@
 #include "Transport.h"
 
+/**
+ * @brief Construct a new transport object
+ *  of type tank armoured truck or aircraft
+ */
+
 Transport:: Transport(){}
 
 void Transport:: setHealth(int d)

@@ -21,32 +21,29 @@ void AircraftMaker:: setHealth(int h)
     jet->setHealth(h);
 }
 
-string AircraftMaker:: getDefence()
-{
-    return jet->getDefence();
-}
-
-int AircraftMaker:: getHealth()
-{
-    return jet->getHealth();
-}
-
 void AircraftMaker:: addDamage(int j)
 {
     jet->setPower(j);
 }
 
-void AircraftMaker:: buildProduct()
+void AircraftMaker:: buildProduct() //assemble
 {
-    this->addDefence("Armour");
+    this->addDefence("Stealth");
     this->setHealth(500);
     this->addDamage(500);
 }
 
-jet* AircraftMaker:: getProduct()
+Aircraft* AircraftMaker:: getProduct() //build and return product
 {
     this->buildProduct();
     return jet;
 }
 
-AircraftMaker:: ~AircraftMaker(){}
+AircraftMaker:: ~AircraftMaker() // deallocate vehicle meory
+{
+    if(jet != NULL)
+    {
+        delete jet;
+        jet = NULL;
+    }
+}

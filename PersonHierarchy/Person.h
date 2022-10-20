@@ -2,6 +2,7 @@
 #define PERSON_H
 
 #include <iostream>
+#include"../WeaponHierarchy/Weapon.h"
 
 class Person
 {
@@ -22,6 +23,7 @@ public:
 
 protected:
     int hp;
+    Weapon* weapon;
     // std::string skill; // dunno what to do with skill for now
 };
 
