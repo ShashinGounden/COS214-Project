@@ -2,7 +2,7 @@
 #define PERSON_H
 
 #include <iostream>
-#include"../WeaponHierarchy/Weapon.h"
+#include "../WeaponHierarchy/Weapon.h"
 
 class Person
 {

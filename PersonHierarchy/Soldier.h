@@ -3,7 +3,7 @@
 
 #include "Person.h"
 #include "../WeaponHierarchy/Weapon.h"
-#include "../WeaponHierarchy/WeaponFactory/WeaponFactory.h"
+#include "../WeaponHierarchy/WeaponFactory.h"
 
 class Soldier : public Person
 {

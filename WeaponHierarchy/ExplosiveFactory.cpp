@@ -4,18 +4,18 @@
 #include "Weapon.h"
 
 
-ExplosiveFactory:: ExplosiveFactory(){}
+ExplosiveFactory::ExplosiveFactory(){}
 
-Weapon* ExplosiveFactory:: CreateLongRange()
+Weapon* ExplosiveFactory::CreateLongRange()
 {
     Weapon* w = new Bazooka(100);
     return w;
 }
 
-Weapon* ExplosiveFactory:: CreateShortRange()
+Weapon* ExplosiveFactory::CreateShortRange()
 {
     Weapon* w = new GasBomb(100);
     return w;
 }
 
-ExplosiveFactory:: ~ExplosiveFactory(){}
+ExplosiveFactory::~ExplosiveFactory(){}
