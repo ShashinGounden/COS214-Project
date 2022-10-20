@@ -1,8 +1,8 @@
 #include "PistolFactory.h"
 #include "../Weapon.h"
+#include "../Cal45short.h"
+#include"../Colt12B.h"
 
-class PistolFactory : public WeaponFactory
-{
     PistolFactory:: PistolFactory(){}
 
     Weapon* PistolFactory:: CreateLongRange()
@@ -18,4 +18,3 @@ class PistolFactory : public WeaponFactory
     }
     
     PistolFactory:: ~PistolFactory(){}
-}
