@@ -9,7 +9,14 @@ Person::Person(int i){
     hp = 100;
 }
 
-Person::~Person(){}
+Person::~Person()
+{
+    if(weapon != NULL)
+    {
+        delete weapon;
+        weapon = NULL;
+    }
+}
 
 void Person::addHealth(int h){
     hp+=h;
@@ -24,11 +31,3 @@ int Person::takeDamage(int d){
     return hp;
 }
 
-Person:: ~Person()
-{
-    if(weapon != NULL)
-    {
-        delete weapon;
-        weapon = NULL;
-    }
-}

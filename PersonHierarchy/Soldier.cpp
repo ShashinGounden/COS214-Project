@@ -7,6 +7,11 @@ Soldier::Soldier(int i) : Person(i)
 
 Soldier::~Soldier()
 {
+    if(weapon != NULL)
+    {
+        delete weapon;
+        weapon = NULL;
+    }
     std::cout << "ID: " << id << " Deleted\n";
 }
 

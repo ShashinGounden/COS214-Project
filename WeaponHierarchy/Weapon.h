@@ -9,6 +9,6 @@ class Weapon
 	public:
 	Weapon(int P);
 	int fire();
-	~Weapon();
+	virtual ~Weapon();
 };
 #endif
