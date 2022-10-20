@@ -2,7 +2,7 @@
 #define RIFLEFACTORY_H
 
 #include "WeaponFactory.h"
-#include "../Weapon.h"
+#include "Weapon.h"
 
 class RifleFactory : public WeaponFactory
 {

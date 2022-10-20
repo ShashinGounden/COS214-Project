@@ -7,7 +7,7 @@ class Bazooka : public ExplosiveProduct
 {
     public:
     Bazooka(int damage);
-    ~Bazooka()
+    ~Bazooka();
 };
 
 #endif

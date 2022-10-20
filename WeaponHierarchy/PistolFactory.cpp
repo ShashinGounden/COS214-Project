@@ -1,7 +1,7 @@
 #include "PistolFactory.h"
-#include "../Weapon.h"
-#include "../Cal45short.h"
-#include"../Colt12B.h"
+#include "Weapon.h"
+#include "Cal45short.h"
+#include"Colt12B.h"
 
     PistolFactory:: PistolFactory(){}
 

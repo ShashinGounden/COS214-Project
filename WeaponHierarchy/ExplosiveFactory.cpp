@@ -1,7 +1,7 @@
 #include "ExplosiveFactory.h"
 #include "Bazooka.h"
 #include "GasBomb.h"
-#include "../Weapon.h"
+#include "Weapon.h"
 
 
 ExplosiveFactory:: ExplosiveFactory(){}
