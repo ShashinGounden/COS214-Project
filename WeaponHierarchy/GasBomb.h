@@ -5,12 +5,8 @@
 
 class GasBomb : public ExplosiveProduct
 {
-public:
-    GasBomb();
+    public:
+    GasBomb(int damage);
     ~GasBomb();
-
-private:
-
 };
-
 #endif

@@ -2,15 +2,17 @@
 #define EXPLOSIVEFACTORY_H
 
 #include "WeaponFactory.h"
+#include "../Weapon.h"
 
 class ExplosiveFactory : public WeaponFactory
 {
-public:
+    public:
     ExplosiveFactory();
+    Weapon* CreateShortRange();
+    Weapon* CreateLongRange();
     ~ExplosiveFactory();
-
-private:
-    /* data */
 };
 
 #endif
+
+// commentssssdfefefe
