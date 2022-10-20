@@ -2,15 +2,15 @@
 #define PISTOLFACTORY_H
 
 #include "WeaponFactory.h"
+#include "../Weapon.h"
 
 class PistolFactory : public WeaponFactory
 {
-public:
+    public:
     PistolFactory();
+    Weapon* CreateShortRange();
+    Weapon* CreateLongRange();
     ~PistolFactory();
-
-private:
-    /* data */
 };
 
 #endif
