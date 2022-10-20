@@ -21,26 +21,23 @@ void ArmouredTruckMaker:: setHealth(int h)
     truck->setHealth(h);
 }
 
-string ArmouredTruckMaker:: getDefence()
-{
-    return truck->getDefence();
-}
-
-int ArmouredTruckMaker:: getHealth()
-{
-    return truck->getHealth();
-}
-
-void ArmouredTruckMaker:: buildProduct()
+void ArmouredTruckMaker:: buildProduct() // assemble transport
 {
     this->addDefence("Armoured Plates");
     this->setHealth(500);
 }
 
-Armouredtruck* ArmouredTruckMaker:: getProduct()
+ArmouredTruck* ArmouredTruckMaker:: getProduct() // build and return new transport
 {
     this->buildProduct();
     return truck;
 }
 
-ArmouredTruckMaker:: ~ArmouredTruckMaker(){}
+ArmouredTruckMaker:: ~ArmouredTruckMaker() //Deallocate vehicle memory
+{
+    if(truck != NULL)
+    {
+        delete truck;
+        truck = NULL;
+    } 
+}

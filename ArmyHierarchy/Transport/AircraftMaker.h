@@ -16,7 +16,7 @@ class AircraftMaker: public TransportBuilder
 	AircraftMaker();
 	void addDefence(string);
     void setHealth(int);
-    void addSecondary(string);
+    void addDamage(int);
     void buildProduct();
     Aircraft* getProduct();
 	~AircraftMaker();

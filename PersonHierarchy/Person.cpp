@@ -23,3 +23,12 @@ int Person::takeDamage(int d){
     hp-=d;
     return hp;
 }
+
+Person:: ~Person()
+{
+    if(weapon != NULL)
+    {
+        delete weapon;
+        weapon = NULL;
+    }
+}
