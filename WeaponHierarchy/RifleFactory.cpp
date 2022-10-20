@@ -1,7 +1,7 @@
 #include "RifleFactory.h"
-#include "../Weapon.h"
-#include "../M1917Enfield.h"
-#include "../M1Garand.h"
+#include "Weapon.h"
+#include "M1917Enfield.h"
+#include "M1Garand.h"
 
 
 RifleFactory:: RifleFactory(){}

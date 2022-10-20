@@ -1,5 +1,5 @@
 #include "WeaponFactory.h"
-#include "../Weapon.h"
+#include "Weapon.h"
 
 WeaponFactory:: WeaponFactory(){}
 

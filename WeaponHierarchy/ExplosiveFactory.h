@@ -2,7 +2,7 @@
 #define EXPLOSIVEFACTORY_H
 
 #include "WeaponFactory.h"
-#include "../Weapon.h"
+#include "Weapon.h"
 
 class ExplosiveFactory : public WeaponFactory
 {
@@ -15,4 +15,3 @@ class ExplosiveFactory : public WeaponFactory
 
 #endif
 
-// commentssssdfefefe
