@@ -2,7 +2,7 @@
 
 class Weapon
 {
-    Weapon:: Weapon(int damage)
+    Weapon:: Weapon(int damage) // creates weapon with power factor
     {
         power = damage;
     }
