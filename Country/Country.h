@@ -8,19 +8,24 @@ class Army;
 class Country
 {
 public:
-    Country();
+    Country(double);
     ~Country();
 
     void setName(std::string);
     std::string getName();
+
     void createArmy();
 
     void Attack();
     void Retreat();
 
+    double getFunds();
+    void addFunds(double);
+
 private:
-    std::string name;
     Army *ARMY;
+    std::string name;
+    double funds;
 };
 
 #endif

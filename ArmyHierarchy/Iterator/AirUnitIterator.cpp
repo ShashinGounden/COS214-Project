@@ -41,7 +41,6 @@ Person *AirUnitIterator::next()
             return (*it);
         }
     }
-    std::cout << "Reached end of Unit!\n";
     return nullptr;
 }
 

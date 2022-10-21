@@ -12,7 +12,11 @@ public:
     GroundUnit();
     ~GroundUnit();
 
+    void populateUnit(int);
     ArmyIterator *createIterator();
+
+protected:
+    PersonFactory* factory;
 
 private:
     std::list<Person *> unit;

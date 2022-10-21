@@ -5,12 +5,9 @@
 
 class M1917Enfield : public RifleProduct
 {
-public:
-    M1917Enfield(/* args */);
+    public:
+    M1917Enfield(int damage);
     ~M1917Enfield();
-
-private:
-    /* data */
 };
 
 #endif

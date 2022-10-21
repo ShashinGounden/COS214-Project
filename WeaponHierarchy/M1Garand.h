@@ -5,12 +5,9 @@
 
 class M1Garand : public RifleProduct
 {
-public:
-    M1Garand(/* args */);
+    public:
+    M1Garand(int damage);
     ~M1Garand();
-
-private:
-    /* data */
 };
 
 #endif

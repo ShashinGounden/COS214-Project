@@ -2,6 +2,8 @@
 #define SOLDIER_H
 
 #include "Person.h"
+#include "../WeaponHierarchy/Weapon.h"
+#include "../WeaponHierarchy/WeaponFactory.h"
 
 class Soldier : public Person
 {
@@ -13,8 +15,18 @@ public:
     void applyMedication();
     void Retreat();
 
+    bool heal(Person*,int);
+    void changeWeapon(Weapon*);
+
+    Person* clone();
+
     int getID();
+
+protected:
+    WeaponFactory* factory;
+
 private:
+    Weapon* weapon;
     int id;
 };
 

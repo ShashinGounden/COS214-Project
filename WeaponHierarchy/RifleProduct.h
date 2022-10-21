@@ -5,12 +5,9 @@
 
 class RifleProduct : public Weapon
 {
-public:
-    RifleProduct();
+    public:
+    RifleProduct(int P);
     ~RifleProduct();
-
-private:
-
 };
 
 #endif

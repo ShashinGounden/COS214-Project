@@ -7,16 +7,16 @@
 
 class Army{
 public:
-    Army();
+    Army(int,int,int);
     ~Army();
 
     // For iterator
-    void createMedicUnit();
-    void createGroundUnit();
-    void createAirUnit();
+    void populateUnit(int,int,int);
 
     void Attack();
+    void Advance();
     void Retreat();
+    void Surrender();
 
     // For Observer
     void update();
