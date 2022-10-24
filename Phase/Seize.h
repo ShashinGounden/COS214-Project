@@ -9,7 +9,7 @@ public:
     Seize();
     ~Seize(); 
     Phase* handleChange(double); 
-    int attackMethod();
+    int attackMethod(); 
 
 
 };
