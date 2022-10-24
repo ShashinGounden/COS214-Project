@@ -7,10 +7,11 @@ class Dominate : public Phase
 {
 public:
     Dominate();
-    ~Dominate();
+    ~Dominate(); 
+    Phase* handleChange(double);
+    int attackMethod(); 
 
-private:
-    /* data */
+
 };
 
 #endif

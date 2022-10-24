@@ -3,14 +3,15 @@
 
 #include "Phase.h"
 
-class SEIZE : public Phase
+class Seize : public Phase
 {
 public:
-    SEIZE();
-    ~SEIZE();
+    Seize();
+    ~Seize(); 
+    Phase* handleChange(double); 
+    int attackMethod();
 
-private:
-    /* data */
+
 };
 
 #endif

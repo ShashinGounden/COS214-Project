@@ -8,9 +8,9 @@ class Deter : public Phase
 public:
     Deter();
     ~Deter();
+    Phase* handleChange(double);
+    int attackMethod();    
 
-private:
-    /* data */
 };
 
 #endif
