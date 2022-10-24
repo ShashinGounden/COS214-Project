@@ -10,7 +10,10 @@ public:
     ~Sea();
 
 private:
-    /* data */
+    //virtual functions to be implemented in .cpp file
+     void add(Country* force);
+     void remove(Country* force);
+     void warLoop();
 };
 
 #endif
