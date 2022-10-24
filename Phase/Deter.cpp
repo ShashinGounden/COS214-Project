@@ -1,6 +1,6 @@
 #include "Deter.h" 
 
-Deter::Deter() :Phase("deter"){} 
+Deter::Deter() :Phase("Deter"){} 
 
 /**
  * @brief A multipier for attack damage

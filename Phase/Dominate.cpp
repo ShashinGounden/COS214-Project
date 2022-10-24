@@ -1,6 +1,6 @@
 #include "Dominate.h" 
 
-Dominate::Dominate() :Phase("dominate"){}
+Dominate::Dominate() :Phase("Dominate"){}
 
 /**
  * @brief A multipier for attack damage

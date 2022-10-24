@@ -1,6 +1,6 @@
 #include "Seize.h" 
 
-Seize::Seize() : Phase("seize"){} 
+Seize::Seize() : Phase("Seize"){} 
 
 /**
  * @brief A multipier for attack damage
