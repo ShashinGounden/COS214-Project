@@ -1,6 +1,9 @@
 #ifndef WARTHEATER_H
 #define WARTHEATER_H
 #include "../Country/Country.h"
+#include <vector>
+using namespace std;
+
 class WarTheater
 {
 public:
@@ -12,9 +15,10 @@ public:
     virtual void add(Country* force)=0;
     virtual void remove(Country* force) = 0;
     virtual void warLoop() = 0;
+
 protected:
-    //should this be a list?
-    Country* countries;
+    //list of countries in the war theatre stored in vector
+    vector<Country*> countries;
 };
 
 #endif

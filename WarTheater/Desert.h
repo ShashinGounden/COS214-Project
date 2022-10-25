@@ -10,7 +10,9 @@ public:
     ~Desert();
 
 private:
-    /* data */
+     void add(Country* force)=0;
+     void remove(Country* force) = 0;
+     void warLoop() = 0;
 };
 
 #endif
