@@ -1,16 +1,19 @@
 #ifndef SEIZE_H
 #define SEIZE_H
 
-#include "Phase.h"
+#include "Phase.h" 
+#include "Deter.h" 
+#include "Dominate.h"
 
-class SEIZE : public Phase
+class Seize : public Phase
 {
 public:
-    SEIZE();
-    ~SEIZE();
+    Seize();
+    ~Seize(){}; 
+    Phase* handleChange(double); 
+    int attackMethod(); 
 
-private:
-    /* data */
+
 };
 
 #endif

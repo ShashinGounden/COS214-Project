@@ -7,14 +7,14 @@
  */
 
 
-Weapon:: Weapon(int damage) // creates weapon with power factor
+Weapon::Weapon(int damage) // creates weapon with power factor
 {
     power = damage;
 }
 
-int Weapon:: fire()
+int Weapon::fire()
 {
     return power;
 }
 
-Weapon:: ~Weapon(){}
+Weapon::~Weapon(){}
