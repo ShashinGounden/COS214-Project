@@ -7,6 +7,6 @@ class ExplosiveProduct : public Weapon
 {
     public:
     ExplosiveProduct(int P);
-    ~ExplosiveProduct();
+    virtual ~ExplosiveProduct();
 };
 #endif

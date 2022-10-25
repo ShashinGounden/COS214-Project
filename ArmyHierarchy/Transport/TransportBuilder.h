@@ -12,7 +12,7 @@ class TransportBuilder
 	TransportBuilder();
 	virtual void addDefence(string)=0;
     virtual void setHealth(int)=0;
-	~TransportBuilder();
+	virtual ~TransportBuilder();
 };
 
 #endif

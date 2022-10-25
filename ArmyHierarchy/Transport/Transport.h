@@ -17,7 +17,7 @@ class Transport
     void setDefence(string);
     int getHealth();
     string getDefence();
-	~Transport();
+	virtual ~Transport();
 };
 
 #endif
