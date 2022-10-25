@@ -9,7 +9,7 @@ class WeaponFactory
     WeaponFactory();
     virtual Weapon* CreateShortRange() = 0;
     virtual Weapon* CreateLongRange() = 0;
-    ~WeaponFactory();
+    virtual ~WeaponFactory();
 };
 
 #endif
