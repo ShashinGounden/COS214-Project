@@ -3,6 +3,9 @@
 // Includes here
 #include "Country/Country.h"
 #include "ArmyHierarchy/Army.h"
+#include "Country/WMD.h"
+#include "Country/Nuke.h"
+#include "Country/Artillery.h"
 
 int main()
 {
@@ -12,6 +15,9 @@ int main()
     Germany->setName("NAZI Scum");
     United_States->Attack();
     Germany->Retreat();
+
+    WMD* nuke = new Nuke(United_States->getFunds());
+    nuke->wmd();
 
     delete United_States;
     delete Germany;

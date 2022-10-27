@@ -3,8 +3,8 @@
 
 #include <iostream>
 #include "../ArmyHierarchy/Army.h"
+#include "../Phase/Phase.h"
 
-class Army;
 class Country
 {
 public:
@@ -22,10 +22,13 @@ public:
     double getFunds();
     void addFunds(double);
 
-private:
+    Phase* update();
+
+protected:
     Army *ARMY;
     std::string name;
     double funds;
+    Phase* observedState;
 };
 
 #endif

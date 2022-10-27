@@ -2,15 +2,18 @@
 #define WMD_H
 
 #include "Country.h"
+class Country;
 
 class WMD : public Country
 {
 public:
-    WMD();
+    WMD(double);
     ~WMD();
 
-private:
-    /* data */
+    virtual void wmd() = 0;
+
+protected:
+    Country* owner;
 };
 
 #endif

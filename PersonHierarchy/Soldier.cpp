@@ -1,7 +1,14 @@
 #include "Soldier.h"
 
+/**
+ * @brief Construct a new Soldier:: Soldier object
+ * Instantiating the weapon variable using the factory object
+ * @param i - For the ID variable which is made from a rand() function
+ */
 Soldier::Soldier(int i) : Person(i)
 {
+    factory = new RifleFactory();
+    weapon = factory->CreateLongRange();
     id = i;
 }
 

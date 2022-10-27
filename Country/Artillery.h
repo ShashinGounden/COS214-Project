@@ -6,11 +6,11 @@
 class Artillery : public WMD
 {
 public:
-    Artillery();
+    Artillery(double);
     ~Artillery();
 
-private:
-    /* data */
+    void wmd();
+    void ArtilleryStrike();
 };
 
 #endif
