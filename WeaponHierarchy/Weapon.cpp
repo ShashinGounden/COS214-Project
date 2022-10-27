@@ -5,8 +5,6 @@
  *  each type has a long and short range varient.
  *  each weapon has a power factor that determines the damage that incurs.
  */
-
-
 Weapon::Weapon(int damage) // creates weapon with power factor
 {
     power = damage;

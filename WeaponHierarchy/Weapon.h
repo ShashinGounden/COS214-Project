@@ -3,10 +3,10 @@
 
 class Weapon
 {
-	protected:
+protected:
 	int power;
 
-	public:
+public:
 	Weapon(int P);
 	int fire();
 	virtual ~Weapon();

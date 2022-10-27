@@ -4,6 +4,8 @@
 #include "Person.h"
 #include "../WeaponHierarchy/Weapon.h"
 #include "../WeaponHierarchy/WeaponFactory.h"
+#include "../WeaponHierarchy/RifleFactory.h"
+#include "../WeaponHierarchy/PistolFactory.h"
 
 class Soldier : public Person
 {
