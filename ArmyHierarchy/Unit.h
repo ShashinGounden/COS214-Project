@@ -5,20 +5,19 @@
 #include "Iterator/AirUnitIterator.h"
 #include "Iterator/GroundUnitIterator.h"
 #include "Iterator/MedicUnitIterator.h"
+#include "../PersonHierarchy/PersonFactory/PersonFactory.h"
 #include <cstdlib>
 
 class Unit
 {
-public:
+    public:
     Unit();
     virtual ~Unit();
-    
     virtual void populateUnit(int) = 0;
     virtual ArmyIterator *createIterator() = 0;
 
-protected:
-    // Transport* transport;
-    // TransportBuilder* builder;
+    protected:
+    PersonFactory* factory;
 };
 
 #endif

@@ -5,6 +5,9 @@
 #include "../PersonHierarchy/Soldier.h"
 #include "../PersonHierarchy/PersonFactory/SoldierFactory.h"
 #include "Iterator/AirUnitIterator.h"
+#include "../WeaponHierarchy/ExplosiveFactory.h"
+#include "../WeaponHierarchy/RifleFactory.h"
+#include "../WeaponHierarchy/PistolFactory.h"
 
 class AirUnit : public Unit
 {
@@ -14,12 +17,13 @@ public:
 
     void populateUnit(int);
     ArmyIterator *createIterator();
-
-protected:
-    PersonFactory* factory;
+    int getPower();
 
 private:
     std::list<Person *> unit;
+    RifleFactory* rifleFac;
+    PistolFactory* pistolFac;
+    ExplosiveFactory* boomFac;
 };
 
 #endif
