@@ -11,15 +11,12 @@ class MedicUnit : public Unit
 public:
     MedicUnit();
     ~MedicUnit();
-
     void populateUnit(int);
     ArmyIterator *createIterator();
-
-protected:
-    PersonFactory* factory;
+    int getHealPower();
 
 private:
-    std::list<Person *> unit;
+    std::list<Medic *> list;
 };
 
 #endif
