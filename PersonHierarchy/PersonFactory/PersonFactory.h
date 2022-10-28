@@ -9,7 +9,7 @@ public:
     PersonFactory();
     virtual ~PersonFactory();
 
-    virtual Person* createPerson(int) = 0;
+    virtual Person* createPerson(int, string) = 0;
 };
 
 #endif
