@@ -3,22 +3,13 @@
 
 #include "Person.h"
 
-class Medic : public Person{
-public:
-    Medic(int);
+class Medic : public Person
+{
+    public:
+    Medic(int, string);
     ~Medic();
-
-    void Attack();
-    void applyMedication();
-    void Retreat();
-
     Person* clone();
-
-    bool heal(Person*,int);
-    int getID();
-
-private:
-    int id;
+    int Heal();
 };
 
 #endif

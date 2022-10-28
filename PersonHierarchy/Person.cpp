@@ -1,33 +1,28 @@
 #include "Person.h"
+#include<string>
+#include "../WeaponHierarchy/Weapon.h"
 
 /**
  * @brief Construct a new Person:: Person object
  * 
  * @param i 
  */
-Person::Person(int i){
+
+Person::Person(int i, string s)
+{
+    skill = s;
     hp = 100;
 }
 
-Person::~Person()
+Person::~Person(){}
+
+int Person::getHealth()
 {
-    if(weapon != NULL)
-    {
-        delete weapon;
-        weapon = NULL;
-    }
-}
-
-void Person::addHealth(int h){
-    hp+=h;
-}
-
-int Person::getHealth(){
     return hp;
 }
 
-int Person::takeDamage(int d){
-    hp-=d;
-    return hp;
+string Person:: getSkill()
+{
+    return skill;
 }
 
