@@ -13,10 +13,12 @@ public:
     // For iterator
     void populateUnit(int,int,int);
 
-    void Attack();
+    int Attack();
     void Advance();
     void Retreat();
     void Surrender();
+    int Defend(); 
+    void RemoveSoldiers(int);
 
     // For Observer
     void update();

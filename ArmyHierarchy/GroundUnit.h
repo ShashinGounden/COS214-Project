@@ -17,7 +17,8 @@ public:
 
     void populateUnit(int);
     ArmyIterator *createIterator();
-    int getPower();
+    int getPower(); 
+    void remove();
 
 private:
     std::list<Person *> unit;

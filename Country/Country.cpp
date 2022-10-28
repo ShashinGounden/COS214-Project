@@ -10,7 +10,7 @@ Country::Country(double fund)
 {
     funds = fund;
     createArmy();
-    observedState = nullptr;
+    observedState = new Seize();
 }
 
 /**
@@ -64,14 +64,39 @@ void Country::createArmy()
 }
 
 /**
- * @brief Attack function to state that this country is going to attack the opposing country
+ * @brief Attack function, calculates total power then calls takeDamage on enemy Country
  * 
+ * @param c Enemy country being attacked
+ *  
  */
-void Country::Attack()
+void Country::Attack(Country* c)
 {
-    std::cout << name << ": ";
-    ARMY->Attack();
+    std::cout << name << " is attacking "<<c->getName()<<"\n";
+    int power=ARMY->Attack();
+    power*=observedState->attackMethod();
+    c->takeDamage(power);
+
     // Decrease countries funds
+    funds-= ( (std::rand() % 10000)+5000) ;
+
+    //Check for state change   
+    Phase* temp=observedState->handleChange(funds); 
+    delete observedState; 
+    observedState=temp;
+    
+}
+
+/**
+ * @brief Function called by an attacking Country.Function subtracts defense from enemy's attack to 
+ * get overall damage done to army and removes soldiers
+ * 
+ * @param attack 
+ */
+void Country::takeDamage(int attack){ 
+    int defense=ARMY->Defend(); 
+    int damage=attack-defense;  
+    ARMY->RemoveSoldiers(damage); 
+
 }
 
 /**
@@ -102,6 +127,22 @@ double Country::getFunds()
 void Country::addFunds(double fund)
 {
     funds += fund;
+}
+
+/**
+ * @brief Function that indicates country has surrendered.Country surrenders when power reaches 0
+ * 
+ * @return true 
+ * @return false 
+ */
+
+bool Country::surrender(){
+    if(ARMY->Attack()==0){
+       std::cout<<name; 
+       ARMY->Surrender();
+       return true;  
+    }
+    return false;   
 }
 
 /**

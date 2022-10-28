@@ -48,14 +48,17 @@ void Army::populateUnit(int numOfSoldiers, int numOfMedics, int numOfPilots){
  *
  * @return cout statement from units attack method
  */
-void Army::Attack()
+int Army::Attack()
 {
-    std::cout << "All soldiers ATTACK!\n";
+    //std::cout << "All soldiers ATTACK!\n";
     ArmyIterator *itGround = groundUnit->createIterator();
     ArmyIterator *itAir = airUnit->createIterator();
-    ArmyIterator *itMedic = medicUnit->createIterator();
-
-    while (itGround->hasNext())
+    //ArmyIterator *itMedic = medicUnit->createIterator();
+    
+    int power=airUnit->getPower()+groundUnit->getPower();
+    return power;
+    
+    /*while (itGround->hasNext())
     {
         itGround->current()->Attack();
         itGround->increment();
@@ -79,6 +82,11 @@ void Army::Attack()
      * @brief Add Functionality to decrease country's funds
      *
      */
+} 
+
+int Army::Defend(){ 
+    int defense=medicUnit->getHealPower();
+    return defense;
 }
 
 /**
@@ -122,7 +130,7 @@ void Army::Retreat()
     ArmyIterator *itAir = airUnit->createIterator();
     ArmyIterator *itMedic = medicUnit->createIterator();
 
-    while (itGround->hasNext())
+    /*while (itGround->hasNext())
     {
         itGround->current()->Retreat();
         itGround->increment();
@@ -138,7 +146,7 @@ void Army::Retreat()
     {
         itMedic->current()->Retreat();
         itMedic->increment();
-    }
+    }*/
 }
 
 /**
@@ -168,6 +176,23 @@ void Army::Surrender(){
         // itMedic->current()->Attack(); // Add surrender to Person Classes
         itMedic->increment();
     }
+}
+/**
+ * @brief Removes soldiers either from air unit or ground unit
+ * 
+ * @param damage Number of soldiers to be removed
+ */
+void Army::RemoveSoldiers(int damage){ 
+    int num=std::rand()%2; 
+    if(num==0){ 
+        for(int i=0;i<damage;i++) 
+           airUnit->remove();
+    }  
+    else{ 
+        for(int i=0;i<damage;i++) 
+            groundUnit->remove();
+    } 
+    std::cout<<damage<<"soldiers were killed\n";    
 }
 
 /**
