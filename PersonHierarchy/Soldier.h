@@ -9,27 +9,14 @@
 
 class Soldier : public Person
 {
-public:
-    Soldier(int);
-    ~Soldier();
-
-    void Attack();
-    void applyMedication();
-    void Retreat();
-
-    bool heal(Person*,int);
-    void changeWeapon(Weapon*);
-
-    Person* clone();
-
-    int getID();
-
-protected:
-    WeaponFactory* factory;
-
-private:
+    protected:
     Weapon* weapon;
-    int id;
+    
+    public:
+    Soldier(int, string);
+    ~Soldier();
+    Person* clone();
+    void addWeapon(Weapon*) = 0;
 };
 
 #endif

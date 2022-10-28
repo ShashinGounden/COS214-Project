@@ -1,27 +1,13 @@
 #include "Medic.h"
+#include<string>
 
-Medic::Medic(int i) : Person(i)
+Medic::Medic(int i, string s) : Person(i, s){}
+
+Medic::~Medic(){}
+
+Person* Medic::clone()
 {
-    id = i;
-}
-
-Medic::~Medic()
-{
-    std::cout << "ID: " << id << " Deleted\n";
-}
-
-void Medic::Attack(){}
-
-void Medic::Retreat()
-{
-    if (id % 13 == 0)
-    {
-        std::cout << "RETREAT!\n";
-    }
-}
-
-Person* Medic::clone(){
-    return new Medic(getID());
+    return new Medic(getHealth(), getSkill());
 }
 
 /**
@@ -37,26 +23,7 @@ Person* Medic::clone(){
  * @return true 
  * @return false 
  */
-bool Medic::heal(Person* p, int healAmount){
-    if(p->getHealth() <= 0){
-        std::cout<<p->getID()<<" has died\n";
-        return false;
-    }else{
-        if(p->getHealth() + healAmount > 100){
-            p->addHealth(100-p->getHealth());
-            return true;
-        }else p->addHealth(healAmount);
-    }
-    return false;
-}
-
-
-/**
- * @brief getter for the ID variable
- * 
- * @return int 
- */
-int Medic::getID()
+int Medic::heal()
 {
-    return id;
+   return 20;
 }

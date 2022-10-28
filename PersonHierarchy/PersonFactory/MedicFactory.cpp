@@ -5,6 +5,7 @@ MedicFactory::MedicFactory(){}
 
 MedicFactory::~MedicFactory(){}
 
-Person* MedicFactory::createPerson(int i){
-    return new Medic(i);
+Person* MedicFactory::createPerson(int i, string s)
+{
+    return new Medic(i, s);
 }
