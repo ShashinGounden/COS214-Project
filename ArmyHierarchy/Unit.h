@@ -14,8 +14,7 @@ public:
     virtual ~Unit();
     
     virtual void populateUnit(int) = 0;
-    virtual ArmyIterator *createIterator() = 0; 
-    virtual int getPower() = 0;
+    virtual ArmyIterator *createIterator() = 0;
 
 protected:
     // Transport* transport;

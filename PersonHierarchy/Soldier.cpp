@@ -18,10 +18,6 @@ Soldier::~Soldier()
     {
         delete weapon;
         weapon = NULL;
-    } 
-    if(factory != NULL){ 
-        delete factory; 
-        factory=NULL; 
     }
     std::cout << "ID: " << id << " Deleted\n";
 }
