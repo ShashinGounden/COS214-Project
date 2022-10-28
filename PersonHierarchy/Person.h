@@ -19,7 +19,8 @@ public:
     virtual bool heal(Person*, int) = 0;
     void addHealth(int);
     int getHealth();
-    int takeDamage(int);
+    int takeDamage(int); 
+    int getPower();
 
 protected:
     int hp;

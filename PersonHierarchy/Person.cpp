@@ -15,7 +15,7 @@ Person::~Person()
     {
         delete weapon;
         weapon = NULL;
-    }
+    } 
 }
 
 void Person::addHealth(int h){
@@ -29,5 +29,11 @@ int Person::getHealth(){
 int Person::takeDamage(int d){
     hp-=d;
     return hp;
+}
+
+int Person::getPower(){ 
+    if(weapon==NULL) 
+       return 5;
+    return weapon->fire(); 
 }
 
