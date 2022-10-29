@@ -68,7 +68,7 @@ void GroundUnit::populateUnit(int numOfSoldiers)
             tempW = PistolFac->CreateShortRange();
         }
             
-        Soldier* temp = factory->createPerson(100, "fight");
+        Soldier* temp = factory->createPerson(rand(), 100, "fight");
         temp->addWeapon(tempW);
 
         unit.push_back(temp);
