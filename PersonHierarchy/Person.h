@@ -2,7 +2,7 @@
 #define PERSON_H
 
 #include <iostream>
-#include<string>
+#include <string>
 #include "../WeaponHierarchy/Weapon.h"
 
 class Person
@@ -11,13 +11,17 @@ class Person
     int hp;
     std::string skill; 
     int ID;
+    Weapon *weapon;
 
     public:
-    Person(int, int, string);
+    Person(int, int, std::string);
     virtual ~Person();
     virtual Person* clone() = 0;
     int getHealth();
-    string getSkill();
+    std::string getSkill();
+    void addWeapon(Weapon*);
+    Weapon* getWeapon();
+    int heal();
     int getID();
 };
 

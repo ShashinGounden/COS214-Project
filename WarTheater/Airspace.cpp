@@ -75,6 +75,7 @@ void Airspace::loadBattleArt()
 {
     //Need to change to the correct path according to folder structure
     string fileName = "/Users/shashingounden/Desktop/External Test/WarTheater/Normandy.txt";
+    // ${Workspace}/
     string line = "";
     ifstream inFile;
     inFile.open(fileName);

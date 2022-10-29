@@ -11,7 +11,7 @@
 class MedicUnit : public Unit
 {
     private:
-    std::list<Medic *> list;
+    std::list<Person *> unit;
     ArmouredTruckMaker* trans;
     ArmouredTruck* truck;
 

@@ -1,25 +1,22 @@
 #ifndef AIRCRAFTMAKER_H
 #define AIRCRAFTMAKER_H
 
-#include<string>
-#include"Transport.h"
-#include"Aircraft.h"
+#include "TransportBuilder.h"
+#include "Aircraft.h"
 
-using namespace std;
-
-class AircraftMaker: public TransportBuilder
+class AircraftMaker : public TransportBuilder
 {
-    protected:
-    Aircraft* jet;
+protected:
+    Aircraft *jet;
 
-	public:
-	AircraftMaker();
-	void addDefence(string);
+public:
+    AircraftMaker();
+    void addDefence(std::string);
     void setHealth(int);
     void addDamage(int);
     void buildProduct();
-    Aircraft* getProduct();
-	~AircraftMaker();
+    Aircraft *getProduct();
+    ~AircraftMaker();
 };
 
 #endif

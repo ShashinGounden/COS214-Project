@@ -3,19 +3,18 @@
 #include "M1917Enfield.h"
 #include "M1Garand.h"
 
+RifleFactory::RifleFactory() : WeaponFactory() {}
 
-RifleFactory:: RifleFactory(){}
-
-Weapon* RifleFactory:: CreateLongRange()
+Weapon *RifleFactory::CreateLongRange()
 {
-    Weapon* w = new M1917Enfield(60);
+    Weapon *w = new M1917Enfield(60);
     return w;
 }
 
-Weapon* RifleFactory:: CreateShortRange()
+Weapon *RifleFactory::CreateShortRange()
 {
-    Weapon* w = new M1Garand(60);
+    Weapon *w = new M1Garand(60);
     return w;
 }
 
-RifleFactory:: ~RifleFactory(){}
+RifleFactory::~RifleFactory() {}

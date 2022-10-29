@@ -15,9 +15,10 @@ class GroundUnit : public Unit
 {
     private:
     std::list<Person*> unit;
-    RifleFactory* rifleFac;
-    PistolFactory* pistolFac;
-    ExplosiveFactory* boomFac;
+    // RifleFactory* rifleFac;
+    // PistolFactory* pistolFac;
+    // ExplosiveFactory* boomFac;
+    WeaponFactory* weaponFactory;
     TankMaker* tankBuilder;
     Tank* tank;
     

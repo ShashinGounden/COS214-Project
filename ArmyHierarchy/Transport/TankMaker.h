@@ -1,25 +1,22 @@
 #ifndef TANKMAKER_H
 #define TANKMAKER_H
 
-#include<string>
-#include"Transport.h"
-#include"Tank.h"
+#include "TransportBuilder.h"
+#include "Tank.h"
 
-using namespace std;
-
-class TankMaker: public TransportBuilder
+class TankMaker : public TransportBuilder
 {
-    protected:
-    Tank* tank;
+protected:
+    Tank *tank;
 
-	public:
-	TankMaker();
-	void addDefence(string);
+public:
+    TankMaker();
+    void addDefence(std::string);
     void setHealth(int);
-    void addSecondary(string);
+    void addSecondary(std::string);
     void buildProduct();
-    Tank* getProduct();
-	~TankMaker();
+    Tank *getProduct();
+    ~TankMaker();
 };
 
 #endif

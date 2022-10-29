@@ -5,19 +5,20 @@
 #include "GroundUnit.h"
 #include "AirUnit.h"
 
-class Army{
+class Army
+{
 public:
-    Army(int,int,int);
+    Army(int, int, int);
     ~Army();
 
     // For iterator
-    void populateUnit(int,int,int);
+    void populateUnit(int, int, int);
 
     int Attack();
     void Advance();
     void Retreat();
     void Surrender();
-    int Defend(); 
+    int Defend();
     void RemoveSoldiers(int);
 
     // For Observer
