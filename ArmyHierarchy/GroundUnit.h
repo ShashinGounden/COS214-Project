@@ -21,7 +21,7 @@ public:
     void remove();
 
 private:
-    std::list<Person *> unit;
+    std::list<Person*> unit;
     RifleFactory* rifleFac;
     PistolFactory* pistolFac;
     ExplosiveFactory* boomFac;
