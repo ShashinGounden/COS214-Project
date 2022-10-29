@@ -9,7 +9,7 @@
  */
 
 
-Soldier::Soldier(int i, string s) : Person(i, s){}
+Soldier::Soldier(int id, int i, string s) : Person(id, i, s){}
 
 Soldier::~Soldier()
 {
@@ -22,7 +22,7 @@ Soldier::~Soldier()
 
 Person *Soldier::clone()
 {
-    return new Soldier(getHealth(), getSkill());
+    return new Soldier(getID(), getHealth(), getSkill());
 }
 
 Person:: addWeapon(Weapon* W)

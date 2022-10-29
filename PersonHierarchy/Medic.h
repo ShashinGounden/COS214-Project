@@ -2,13 +2,14 @@
 #define MEDIC_H
 
 #include "Person.h"
+#include<string>
 
 class Medic : public Person
 {
     public:
-    Medic(int, string);
+    Medic(int, int, string);
     ~Medic();
-    Person* clone();
+    Person* clone(int, int, string);
     int Heal();
 };
 
