@@ -12,6 +12,10 @@ public:
 private:
      void add(Country* force)=0;
      void remove(Country* force) = 0;
+
+    //template Method functions
      void warLoop() = 0;
+     virtual void printBattleSummary();
+     virtual void loadBattleArt();
 };
 #endif

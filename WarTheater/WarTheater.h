@@ -16,6 +16,17 @@ public:
     virtual void remove(Country* force) = 0;
     virtual void warLoop() = 0;
 
+    //Template Method functions
+    virtual void printBattleSummary() = 0;
+    virtual void loadBattleArt() = 0;
+    void startGenericBattle()
+    {
+        printBattleSummary();
+        loadBattleArt();
+        warLoop();
+    }
+
+
 protected:
     //list of countries in the war theatre stored in vector
     vector<Country*> countries;
