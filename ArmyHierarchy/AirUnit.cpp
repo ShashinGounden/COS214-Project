@@ -11,6 +11,7 @@ AirUnit::AirUnit() : Unit()
     rifleFac = new RifleFactory();
     pistolFac = new PistolFactory();
     boomFac = new ExplosiveFactory();
+    jetBuilder = new AircraftMaker();
 }
 
 AirUnit::~AirUnit(){
@@ -18,14 +19,21 @@ AirUnit::~AirUnit(){
      * @brief - Delete all person objects in unit list object
      *
      */
-    for (auto it = unit.begin(); it != unit.end(); it++)
+    for(auto it = unit.begin(); it != unit.end(); it++)
     {
         delete (*it);
     }
+
     delete factory;
     delete rifleFac;
     delete pistolFac;
     delete boomFac;
+    delete jetBuilder;
+
+    if(jet != NULL)
+    {
+        delete jet;
+    }
 }
 
 void AirUnit::populateUnit(int numOfPilots)
@@ -64,6 +72,8 @@ void AirUnit::populateUnit(int numOfPilots)
 
         unit.push_back(temp);
     }
+
+    jet = jetBuilder->getProduct();
 }
 
 int AirUnit:: getPower()
@@ -90,7 +100,10 @@ ArmyIterator *AirUnit::createIterator()
  * @brief Deletes from list of soldiers
  * 
  */
-void AirUnit::remove(){ 
-    if(unit.size()>0) 
+void AirUnit::remove()
+{ 
+    if(unit.size() > 0) 
+    {
        unit.pop_front();
+    }
 }
