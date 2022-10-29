@@ -36,7 +36,8 @@ void MedicUnit::populateUnit(int numOfMedics)
 
     for(int i = 0; i < numOfMedics; i++)
     {
-        list.push_back(factory->createPerson(100, "heal people"));
+
+        list.push_back(factory->createPerson(rand(),100, "heal people"));
     }
 
     truck = trans->getProduct();

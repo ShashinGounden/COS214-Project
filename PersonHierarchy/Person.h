@@ -10,13 +10,15 @@ class Person
     protected:
     int hp;
     std::string skill; 
+    int ID;
 
     public:
-    Person(int, string);
+    Person(int, int, string);
     virtual ~Person();
     virtual Person* clone() = 0;
     int getHealth();
     string getSkill();
+    int getID();
 };
 
 #endif

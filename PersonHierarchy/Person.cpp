@@ -8,8 +8,9 @@
  * @param i 
  */
 
-Person::Person(int i, string s)
+Person::Person(int id, int i, string s)
 {
+    ID = id;
     skill = s;
     hp = 100;
 }
@@ -24,5 +25,10 @@ int Person::getHealth()
 string Person:: getSkill()
 {
     return skill;
+}
+
+int Person:: getID()
+{
+    return ID;
 }
 
