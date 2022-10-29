@@ -5,7 +5,10 @@
  * Create a medic factory to then create medic objects to pushback to
  * the unit object
  */
-MedicUnit::MedicUnit(){}
+MedicUnit::MedicUnit()
+{
+    trans = new ArmouredTruckMaker();
+}
 
 MedicUnit::~MedicUnit()
 {
@@ -17,7 +20,14 @@ MedicUnit::~MedicUnit()
     {
         delete(*it);
     }
+
     delete factory;
+    delete trans;
+
+    if(truck != NULL)
+    {
+        delete truck;
+    }
 }
 
 void MedicUnit::populateUnit(int numOfMedics)
@@ -28,6 +38,8 @@ void MedicUnit::populateUnit(int numOfMedics)
     {
         list.push_back(factory->createPerson(100, "heal people"));
     }
+
+    truck = trans->getProduct();
 }
 
 ArmyIterator *MedicUnit::createIterator()
