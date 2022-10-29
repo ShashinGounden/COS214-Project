@@ -20,7 +20,7 @@ public:
     int getPower();
 
 private:
-    std::list<Person *> unit;
+    std::list<Person*> unit;
     RifleFactory* rifleFac;
     PistolFactory* pistolFac;
     ExplosiveFactory* boomFac;
