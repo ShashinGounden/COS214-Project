@@ -6,10 +6,7 @@
 
 using namespace std;
 
-AircraftMaker:: AircraftMaker()
-{
-    jet = new Aircraft();
-}
+AircraftMaker:: AircraftMaker(){}
 
 void AircraftMaker:: addDefence(string s)
 {
@@ -35,8 +32,14 @@ void AircraftMaker:: buildProduct() //assemble
 
 Aircraft* AircraftMaker:: getProduct() //build and return product
 {
+    jet = new Aircraft();
+
     this->buildProduct();
-    return jet;
+    
+    Aircraft* temp = jet;
+    jet = NULL;
+
+    return temp;
 }
 
 AircraftMaker:: ~AircraftMaker() // deallocate vehicle meory

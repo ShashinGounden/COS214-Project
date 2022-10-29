@@ -8,22 +8,25 @@
 #include "../WeaponHierarchy/RifleFactory.h"
 #include "../WeaponHierarchy/PistolFactory.h"
 #include "Iterator/GroundUnitIterator.h"
+#include "Transport/TankMaker.h"
+#include "Transport/Tank.h"
 
 class GroundUnit : public Unit
 {
-public:
-    GroundUnit();
-    ~GroundUnit();
-
-    void populateUnit(int);
-    ArmyIterator *createIterator();
-    int getPower(); 
-    void remove();
-
-private:
+    private:
     std::list<Person*> unit;
     RifleFactory* rifleFac;
     PistolFactory* pistolFac;
     ExplosiveFactory* boomFac;
+    TankMaker* tankBuilder;
+    Tank* tank;
+    
+    public:
+    GroundUnit();
+    ~GroundUnit();
+    void populateUnit(int);
+    ArmyIterator *createIterator();
+    int getPower(); 
+    void remove();
 };
 #endif

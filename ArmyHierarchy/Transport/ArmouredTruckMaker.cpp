@@ -6,10 +6,7 @@
 
 using namespace std;
 
-ArmouredTruckMaker:: ArmouredTruckMaker()
-{
-    truck = new ArmouredTruck();
-}
+ArmouredTruckMaker:: ArmouredTruckMaker(){}
 
 void ArmouredTruckMaker:: addDefence(string s)
 {
@@ -29,8 +26,14 @@ void ArmouredTruckMaker:: buildProduct() // assemble transport
 
 ArmouredTruck* ArmouredTruckMaker:: getProduct() // build and return new transport
 {
+    truck = new ArmouredTruck();
+
     this->buildProduct();
-    return truck;
+
+    ArmouredTruck* temp = truck;
+    truck = NULL;
+    
+    return temp;
 }
 
 ArmouredTruckMaker:: ~ArmouredTruckMaker() //Deallocate vehicle memory

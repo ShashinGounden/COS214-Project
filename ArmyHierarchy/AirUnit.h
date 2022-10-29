@@ -8,23 +8,27 @@
 #include "../WeaponHierarchy/ExplosiveFactory.h"
 #include "../WeaponHierarchy/RifleFactory.h"
 #include "../WeaponHierarchy/PistolFactory.h"
+#include "Transport/AircraftMaker.h"
+#include "Transport/Aircaft.h"
+
 
 class AirUnit : public Unit
 {
-public:
-    AirUnit();
-    ~AirUnit();
-
-    void populateUnit(int);
-    ArmyIterator *createIterator();
-    int getPower(); 
-    void remove();
-
-private:
+    private:
     std::list<Person *> unit;
     RifleFactory* rifleFac;
     PistolFactory* pistolFac;
     ExplosiveFactory* boomFac;
+    AircraftMaker* jetBuilder;
+    Aircraft* jet;
+
+    public:
+    AirUnit();
+    ~AirUnit();
+    void populateUnit(int);
+    ArmyIterator *createIterator();
+    int getPower(); 
+    void remove();
 };
 
 #endif
