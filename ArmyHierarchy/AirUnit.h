@@ -8,9 +8,8 @@
 #include "../WeaponHierarchy/ExplosiveFactory.h"
 #include "../WeaponHierarchy/RifleFactory.h"
 #include "../WeaponHierarchy/PistolFactory.h"
-#include "Transport/AircraftMaker.h"
-#include "Transport/Aircaft.h"
-
+#include "../ArmyHierarchy/Transport/AircraftMaker.h"
+#include "../ArmyHierarchy/Transport/Aircraft.h"
 
 class AirUnit : public Unit
 {

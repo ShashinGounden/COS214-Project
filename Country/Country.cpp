@@ -11,6 +11,19 @@ Country::Country(double fund)
     funds = fund;
     createArmy();
     observedState = new Seize();
+} 
+
+/**
+ * @brief Construct a new Country:: Country object
+ * 
+ * @param n 
+ * @param f 
+ */
+Country::Country(std::string n,double f){ 
+    name=n; 
+    funds=f;
+    createArmy(); 
+    observedState=new Seize();
 }
 
 /**
@@ -83,6 +96,9 @@ void Country::Attack(Country* c)
     Phase* temp=observedState->handleChange(funds); 
     delete observedState; 
     observedState=temp;
+
+    //Contact allies
+    notify();
     
 }
 
@@ -146,10 +162,21 @@ bool Country::surrender(){
 }
 
 /**
- * @brief 
+ * @brief Joins an alliance
  * 
- * @return Phase* 
+ * @param all an alliance 
  */
-Phase* Country::update(){
+void Country::joinAlliance(Alliance* all){ 
+  alliance=all;
+  alliance->addAlliance(this); 
+} 
 
+/**
+ * @brief Contacts allied forces
+ * 
+ */
+void Country::notify(){ 
+   alliance->removeAlliance(this);
+   alliance->update(); 
+   alliance->addAlliance(this);
 }

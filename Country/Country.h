@@ -6,11 +6,13 @@
 #include "../Phase/Dominate.h"
 #include "../Phase/Deter.h" 
 #include "../Phase/Seize.h"
+#include "Alliance.h"
 
 class Country
 {
 public:
-    Country(double);
+    Country(double); 
+    Country(std::string,double);
     ~Country();
 
     void setName(std::string);
@@ -26,13 +28,15 @@ public:
     double getFunds();
     void addFunds(double); 
   
-    Phase* update();
+    void joinAlliance(Alliance*); 
+    void notify();
 
 protected:
     Army *ARMY;
     std::string name;
     double funds;
-    Phase* observedState;
+    Phase* observedState; 
+    Alliance* alliance;
 };
 
 #endif
