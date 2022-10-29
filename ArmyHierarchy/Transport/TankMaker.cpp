@@ -6,10 +6,7 @@
 
 using namespace std;
 
-TankMaker:: TankMaker()
-{
-    tank = new Tank();
-}
+TankMaker:: TankMaker(){}
 
 void TankMaker:: addDefence(string s)
 {
@@ -35,8 +32,14 @@ void TankMaker:: buildProduct() //Assemble product
 
 Tank* TankMaker:: getProduct() //build and return new transport
 {
+    tank = new Tank();
+
     this->buildProduct();
-    return tank;
+
+    Tank* temp = tank;
+    tank = NULL;
+
+    return temp;
 }
 
 TankMaker:: ~TankMaker() //deallocate vehicle

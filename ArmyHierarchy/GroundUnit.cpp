@@ -11,6 +11,7 @@ GroundUnit::GroundUnit() : Unit()
     pistolFac = new PistolFactory();
     boomFac = new ExplosiveFactory();
     factory = new SoldierFactory();
+    tankBuilder = new TankMaker();
 }
 
 GroundUnit::~GroundUnit()
@@ -23,10 +24,17 @@ GroundUnit::~GroundUnit()
     {
         delete (*it);
     }
+
     delete factory;
     delete rifleFac;
     delete pistolFac;
     delete boomFac;
+    delete tankBuilder;
+
+    if(tank != NULL)
+    {
+        delete tank;
+    }
 }
 
 void GroundUnit::populateUnit(int numOfSoldiers)
@@ -65,6 +73,8 @@ void GroundUnit::populateUnit(int numOfSoldiers)
 
         unit.push_back(temp);
     }
+
+    tank = tankBuilder->getProduct();
 }
 
 int GroundUnit:: getPower()
