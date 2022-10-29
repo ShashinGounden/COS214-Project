@@ -13,7 +13,8 @@ public:
     ~MedicUnit();
     void populateUnit(int);
     ArmyIterator *createIterator();
-    int getHealPower();
+    int getHealPower(); 
+    
 
 private:
     std::list<Medic *> list;

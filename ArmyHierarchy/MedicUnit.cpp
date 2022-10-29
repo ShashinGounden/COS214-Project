@@ -46,3 +46,4 @@ int MedicUnit:: getHealPower()  // Add up total healing power of medics list
 
     return total;
 }
+

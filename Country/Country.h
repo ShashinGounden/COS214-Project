@@ -3,7 +3,9 @@
 
 #include <iostream>
 #include "../ArmyHierarchy/Army.h"
-#include "../Phase/Phase.h"
+#include "../Phase/Dominate.h"
+#include "../Phase/Deter.h" 
+#include "../Phase/Seize.h"
 
 class Country
 {
@@ -16,12 +18,14 @@ public:
 
     void createArmy();
 
-    void Attack();
-    void Retreat();
+    void Attack(Country* c); 
+    void takeDamage(int);
+    void Retreat(); 
+    bool surrender();
 
     double getFunds();
-    void addFunds(double);
-
+    void addFunds(double); 
+  
     Phase* update();
 
 protected:
