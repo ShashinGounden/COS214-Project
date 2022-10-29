@@ -1,12 +1,10 @@
-#include "Transport.h"
 #include "Tank.h"
 
+Tank::Tank() {}
 
-Tank:: Tank(){}
-
-void Tank:: setSecondary(string d)
+void Tank::setSecondary(std::string d)
 {
     secondaryWeapon = d;
 }
 
-Tank:: ~Tank(){}
+Tank::~Tank() {}

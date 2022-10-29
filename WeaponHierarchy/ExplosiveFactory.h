@@ -3,15 +3,16 @@
 
 #include "WeaponFactory.h"
 #include "Weapon.h"
+#include "Bazooka.h"
+#include "GasBomb.h"
 
 class ExplosiveFactory : public WeaponFactory
 {
-    public:
+public:
     ExplosiveFactory();
-    Weapon* CreateShortRange();
-    Weapon* CreateLongRange();
+    Weapon *CreateShortRange();
+    Weapon *CreateLongRange();
     ~ExplosiveFactory();
 };
 
 #endif
-

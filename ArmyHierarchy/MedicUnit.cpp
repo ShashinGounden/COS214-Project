@@ -13,10 +13,10 @@ MedicUnit::MedicUnit()
 MedicUnit::~MedicUnit()
 {
     /**
-     * @brief - Delete all person objects in unit list object
+     * @brief - Delete all person objects in unit unit object
      *
      */
-    for(auto it = list.begin(); it != list.end(); it++)
+    for(auto it = unit.begin(); it != unit.end(); it++)
     {
         delete(*it);
     }
@@ -37,7 +37,7 @@ void MedicUnit::populateUnit(int numOfMedics)
     for(int i = 0; i < numOfMedics; i++)
     {
 
-        list.push_back(factory->createPerson(rand(),100, "heal people"));
+        unit.push_back(factory->createPerson(rand(),100, "heal people"));
     }
 
     truck = trans->getProduct();
@@ -45,16 +45,16 @@ void MedicUnit::populateUnit(int numOfMedics)
 
 ArmyIterator *MedicUnit::createIterator()
 {
-    return new MedicUnitIterator(list);
+    return new MedicUnitIterator(unit);
 }
 
-int MedicUnit:: getHealPower()  // Add up total healing power of medics list
+int MedicUnit:: getHealPower()  // Add up total healing power of medics unit
 {
     int total = 0;
 
-    for(auto it = list.begin(); it != list.end(); it++)
+    for(auto it = unit.begin(); it != unit.end(); it++)
     {
-        total += it->heal();
+        total += (*it)->heal();
     }
 
     return total;

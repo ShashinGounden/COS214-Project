@@ -1,20 +1,20 @@
 # COS214-Project
 
-TO DO:
+## INFO
+
+Please don't use namespace std. Rather just use 'std::' - Remove before submission @ShashinGounden, @JordanTimberlake
+
+## TO DO:
 
 - Each need at least 10 commits
 - Due dates and responsibilities, 4 October and 1 Nov
-- Need to add functions into '.h' files
-- Need to make '.cpp' files
-- Add separate Concrete Alliance's or just 1 Concrete alliance with a private variable 'Name'
 - Add Doxygen comments to code
-- Add Surrender and Advance code to persons classes
 
 DESIGN PATTERNS USED:
 
 1. State
 2. Observer
-3. Composite
+3. Builder
 4. Prototype
 5. Decorator
 6. Strategy
@@ -39,8 +39,7 @@ MAIN REQUIREMENTS:
 
 What to document?
 
-- Each function
-- Each class
+- Everything!
 
 ## Implementation
 

@@ -1,24 +1,22 @@
 #ifndef ARMOUREDTRUCKMAKER_H
 #define ARMOUREDTRUCKMAKER_H
 
-#include<string>
-#include"Transport.h"
-#include"ArmouredTruck.h"
+#include "TransportBuilder.h"
+#include "Transport.h"
+#include "ArmouredTruck.h"
 
-using namespace std;
-
-class ArmouredTruckMaker: public TransportBuilder
+class ArmouredTruckMaker : public TransportBuilder
 {
-    protected:
-    ArmouredTruck* truck;
+protected:
+    ArmouredTruck *truck;
 
-	public:
-	ArmouredTruckMaker();
-	void addDefence(string);
+public:
+    ArmouredTruckMaker();
+    void addDefence(std::string);
     void setHealth(int);
     void buildProduct();
-    ArmouredTruck* getProduct();
-	~ArmouredTruckMaker();
+    ArmouredTruck *getProduct();
+    ~ArmouredTruckMaker();
 };
 
 #endif

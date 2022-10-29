@@ -6,15 +6,13 @@ class Phase
 {
 public:
     Phase(std::string);
-    virtual ~Phase(){}; 
-    virtual Phase* handleChange(double)=0; 
-    virtual int attackMethod()=0;  
+    virtual ~Phase(){};
+    virtual Phase *handleChange(double) = 0;
+    virtual int attackMethod() = 0;
     std::string getPhase();
 
 protected:
     std::string phase;
-    
-
 };
 
 #endif

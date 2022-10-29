@@ -1,34 +1,61 @@
 #include "Person.h"
-#include<string>
+#include <string>
 #include "../WeaponHierarchy/Weapon.h"
 
 /**
  * @brief Construct a new Person:: Person object
- * 
- * @param i 
+ *
+ * @param i
  */
 
-Person::Person(int id, int i, string s)
+Person::Person(int id, int i, std::string s)
 {
     ID = id;
     skill = s;
     hp = 100;
 }
 
-Person::~Person(){}
+Person::~Person()
+{
+    if (weapon != NULL)
+    {
+        delete weapon;
+        weapon = NULL;
+    }
+}
 
 int Person::getHealth()
 {
     return hp;
 }
 
-string Person:: getSkill()
+std::string Person::getSkill()
 {
     return skill;
 }
 
-int Person:: getID()
+void Person::addWeapon(Weapon *W)
+{
+    weapon = W;
+}
+
+Weapon* Person::getWeapon(){
+    return weapon;
+}
+
+/**
+ * @brief
+ *
+ * Returns value of medics healing
+ *
+ * @return int
+ */
+int Person::heal()
+{
+    return 20;
+}
+
+int Person::getID()
 {
     return ID;
 }
-

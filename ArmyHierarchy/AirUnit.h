@@ -9,16 +9,17 @@
 #include "../WeaponHierarchy/RifleFactory.h"
 #include "../WeaponHierarchy/PistolFactory.h"
 #include "Transport/AircraftMaker.h"
-#include "Transport/Aircaft.h"
+#include "Transport/Aircraft.h"
 
 
 class AirUnit : public Unit
 {
     private:
     std::list<Person *> unit;
-    RifleFactory* rifleFac;
-    PistolFactory* pistolFac;
-    ExplosiveFactory* boomFac;
+    // RifleFactory* rifleFac;
+    // PistolFactory* pistolFac;
+    // ExplosiveFactory* boomFac;
+    WeaponFactory* weaponFactory;
     AircraftMaker* jetBuilder;
     Aircraft* jet;
 

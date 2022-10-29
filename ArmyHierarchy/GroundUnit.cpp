@@ -7,9 +7,10 @@
  */
 GroundUnit::GroundUnit() : Unit()
 {
-    rifleFac = new RifleFactory();
-    pistolFac = new PistolFactory();
-    boomFac = new ExplosiveFactory();
+    // rifleFac = new RifleFactory();
+    // pistolFac = new PistolFactory();
+    // boomFac = new ExplosiveFactory();
+    weaponFactory = nullptr;
     factory = new SoldierFactory();
     tankBuilder = new TankMaker();
 }
@@ -26,13 +27,14 @@ GroundUnit::~GroundUnit()
     }
 
     delete factory;
-    delete rifleFac;
-    delete pistolFac;
-    delete boomFac;
+    // delete rifleFac;
+    // delete pistolFac;
+    // delete boomFac;
     delete tankBuilder;
 
-    if(tank != NULL)
+    if (tank != NULL)
     {
+        delete weaponFactory;
         delete tank;
     }
 }
@@ -41,34 +43,42 @@ void GroundUnit::populateUnit(int numOfSoldiers)
 {
     int ran = std::rand() % 10;
 
-    for(int i = 0; i < numOfSoldiers; i++)
+    for (int i = 0; i < numOfSoldiers; i++)
     {
-        Weapon* tempW;
+        Weapon *tempW;
 
-        if(ran == 0){
-            tempW = boomFac->CreateLongRange();
-        }
-        else if(ran == 5){
-            tempW = boomFac->CreateShortRange();
-        }
-        else if(ran == 1 || ran == 2)
+        if (ran == 0)
         {
-            tempW = rifleFac->CreateLongRange();
+            weaponFactory = new ExplosiveFactory();
+            tempW = weaponFactory->CreateLongRange();
         }
-        else if(ran == 3 || ran == 4)
+        else if (ran == 5)
         {
-            tempW = rifleFac->CreateShortRange();
+            weaponFactory = new ExplosiveFactory();
+            tempW = weaponFactory->CreateShortRange();
         }
-        else if(ran == 6 || ran == 7)
+        else if (ran == 1 || ran == 2)
         {
-            tempW = PistolFac->CreateLongRange();
+            weaponFactory = new RifleFactory();
+            tempW = weaponFactory->CreateLongRange();
+        }
+        else if (ran == 3 || ran == 4)
+        {
+            weaponFactory = new RifleFactory();
+            tempW = weaponFactory->CreateShortRange();
+        }
+        else if (ran == 6 || ran == 7)
+        {
+            weaponFactory = new PistolFactory();
+            tempW = weaponFactory->CreateLongRange();
         }
         else
         {
-            tempW = PistolFac->CreateShortRange();
+            weaponFactory = new PistolFactory();
+            tempW = weaponFactory->CreateShortRange();
         }
-            
-        Soldier* temp = factory->createPerson(rand(), 100, "fight");
+
+        Person *temp = factory->createPerson(rand(), 100, "fight");
         temp->addWeapon(tempW);
 
         unit.push_back(temp);
@@ -77,12 +87,12 @@ void GroundUnit::populateUnit(int numOfSoldiers)
     tank = tankBuilder->getProduct();
 }
 
-int GroundUnit:: getPower()
-{ 
-    int total = 0; 
-    for(auto it = unit.begin(); it != unit.end(); it++)
+int GroundUnit::getPower()
+{
+    int total = 0;
+    for (auto it = unit.begin(); it != unit.end(); it++)
     {
-        total += it->weapon.fire();
+        total += (*it)->getWeapon()->fire();
     }
     return total;
 }
@@ -90,15 +100,17 @@ int GroundUnit:: getPower()
 ArmyIterator *GroundUnit::createIterator()
 {
     return new GroundUnitIterator(unit);
-} 
+}
 
 /**
  * @brief Deletes from list of soldiers
- * 
+ *
  */
-void GroundUnit::remove(){ 
-    if(unit.size()>0)
-       unit.pop_front();
+void GroundUnit::remove()
+{
+    if (unit.size() > 0)
+    {
+        delete unit.front();
+        unit.pop_front();
+    }
 }
-
-

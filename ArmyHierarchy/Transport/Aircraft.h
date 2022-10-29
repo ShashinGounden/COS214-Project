@@ -2,17 +2,16 @@
 #define AIRCRAFT_H
 
 #include "Transport.h"
+#include <string>
 
-using namespace std;
-
-class Aircraft: public Transport
+class Aircraft : public Transport
 {
-    protected:
+protected:
     int damage;
 
-	public:
-	Aircraft();
+public:
+    Aircraft();
     void setPower(int);
-	~Aircraft();
+    ~Aircraft();
 };
 #endif
