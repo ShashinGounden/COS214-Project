@@ -85,3 +85,12 @@ ArmyIterator *AirUnit::createIterator()
 {
     return new AirUnitIterator(unit);
 }
+
+/**
+ * @brief Deletes from list of soldiers
+ * 
+ */
+void AirUnit::remove(){ 
+    if(unit.size()>0) 
+       unit.pop_front();
+}

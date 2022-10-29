@@ -80,4 +80,15 @@ int GroundUnit:: getPower()
 ArmyIterator *GroundUnit::createIterator()
 {
     return new GroundUnitIterator(unit);
+} 
+
+/**
+ * @brief Deletes from list of soldiers
+ * 
+ */
+void GroundUnit::remove(){ 
+    if(unit.size()>0)
+       unit.pop_front();
 }
+
+
