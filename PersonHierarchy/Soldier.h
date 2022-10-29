@@ -13,7 +13,7 @@ class Soldier : public Person
     Weapon* weapon;
     
     public:
-    Soldier(int, string);
+    Soldier(int, int, string);
     ~Soldier();
     Person* clone();
     void addWeapon(Weapon*) = 0;
