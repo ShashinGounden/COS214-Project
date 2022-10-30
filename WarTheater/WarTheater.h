@@ -2,7 +2,6 @@
 #define WARTHEATER_H
 #include "../Country/Country.h"
 #include <vector>
-#include<bits/stdc++.h>
 using namespace std;
 
 class WarTheater

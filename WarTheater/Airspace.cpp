@@ -5,6 +5,14 @@
 #include <string>
 using namespace std;
 
+#ifdef WINDOWS
+#include <direct.h>
+#define GetCurrentDir _getcwd
+#else
+#include <unistd.h>
+#define GetCurrentDir getcwd
+#endif
+
 Airspace::Airspace()
 {
 }
@@ -72,12 +80,15 @@ void Airspace::printBattleSummary()
 
 void Airspace::loadBattleArt()
 {
-    // Need to change to the correct path according to folder structure
-    string fileName = "/mnt/c/Users/jorda/OneDrive/1.UniversityOfPRETORIA/Second Year - 2022/1.COS214/Practicals/Prac5_and_Project/COS214-Project/WarTheater/Normandy.txt";
-    // ${Workspace}/
+    char buff[FILENAME_MAX]; //create string buffer to hold path
+    GetCurrentDir( buff, FILENAME_MAX );
+    string current_working_dir(buff);
+
+    string filepath = current_working_dir + "/WarTheater/Normandy.txt";
+
     string line = "";
     ifstream inFile;
-    inFile.open(fileName);
+    inFile.open(filepath);
     cout << endl;
     if (inFile.is_open())
     {

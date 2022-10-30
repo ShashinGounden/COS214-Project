@@ -1,5 +1,16 @@
 #include "Army.h"
 #include <string>
+#include <fstream>
+#include <thread>
+#include <chrono>
+
+#ifdef WINDOWS
+#include <direct.h>
+#define GetCurrentDir _getcwd
+#else
+#include <unistd.h>
+#define GetCurrentDir getcwd
+#endif
 
 /**
  * @brief Construct a new Army:: Army object
@@ -15,10 +26,55 @@ Army::Army(std::string name, int numOfSoldiers, int numOfMedics, int numOfPilots
     groundUnit = gUnit;
     AirUnit *aUnit = new AirUnit();
     airUnit = aUnit;
-    std::cout << "Summary of troops:\n";
-    std::cout << "Ground Units: " << numOfSoldiers << "\n";
-    std::cout << "Medic Units: " << numOfMedics << "\n";
-    std::cout << "Air Units: " << numOfPilots << "\n";
+    //battle art for army summary
+    char buff[FILENAME_MAX]; //create string buffer to hold path
+    GetCurrentDir( buff, FILENAME_MAX );
+    std::string current_working_dir(buff);
+
+    std::string filepath = current_working_dir + "/ArmyHierarchy/Soldier.txt";
+
+    std::string line = "";
+    std::ifstream inFile;
+    inFile.open(filepath);
+    std::cout << std::endl;
+
+    int iCount = 0;
+
+    if (inFile.is_open())
+    {
+        while (getline(inFile, line))
+        {
+            iCount++;
+
+            if (iCount==6)
+            {
+                std::cout << line +  "\t•Breakdown of the troops from "<<countryName<<":\n";;
+            }
+            else if (iCount == 7)
+            {
+                std::cout <<line +  "\t\t-Ground Units: " << numOfSoldiers << "\n";
+            }
+            else if (iCount == 8)
+            {
+                std::cout <<line +  "\t\t-Medic Units: " << numOfMedics << "\n";
+            }
+            else if (iCount == 9)
+            {
+                std::cout <<line +  "\t\t-Air Units: " << numOfPilots << "\n";
+            }
+            else
+            {
+                std::cout << line << std::endl;
+            }
+        }
+    }
+    else
+    {
+        std::cout << "Failed to load Soldier.txt" << std::endl;
+    }
+
+    inFile.close();
+    std::this_thread::sleep_for(std::chrono::milliseconds(2000));
     populateUnit(numOfSoldiers, numOfMedics, numOfPilots);
 }
 
@@ -156,7 +212,44 @@ void Army::Retreat()
  */
 void Army::Surrender()
 {
-    std::cout << " Wave the white flag\n";
+    //battle art for army summary
+    std::cout<< " waves the white flag and surrenders!\n";
+
+    char buff[FILENAME_MAX]; //create string buffer to hold path
+    GetCurrentDir( buff, FILENAME_MAX );
+    std::string current_working_dir(buff);
+
+    std::string filepath = current_working_dir + "/ArmyHierarchy/WhiteFlag.txt";
+
+    std::string line = "";
+    std::ifstream inFile;
+    inFile.open(filepath);
+    std::cout << std::endl;
+
+    int iCount = 0;
+
+    if (inFile.is_open())
+    {
+        while (getline(inFile, line))
+        {
+            iCount++;
+
+
+                std::cout << line << std::endl;
+
+        }
+    }
+    else
+    {
+        std::cout << "Failed to load Soldier.txt" << std::endl;
+    }
+
+    inFile.close();
+
+    //how to get france's name? can only get Germany by using countries name var
+    std::cout << " has won the battle!"<<"\n";
+
+
     /*ArmyIterator *itGround = groundUnit->createIterator();
     ArmyIterator *itAir = airUnit->createIterator();
     ArmyIterator *itMedic = medicUnit->createIterator();

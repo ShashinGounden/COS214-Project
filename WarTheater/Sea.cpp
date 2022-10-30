@@ -4,6 +4,15 @@
 #include <fstream>
 #include <string>
 #include <iostream>
+
+#ifdef WINDOWS
+#include <direct.h>
+#define GetCurrentDir _getcwd
+#else
+#include <unistd.h>
+#define GetCurrentDir getcwd
+#endif
+
 using namespace std;
 
 Sea::Sea()
@@ -36,42 +45,84 @@ void Sea::printBattleSummary()
 
     string battleNickName = "Nickname: Operation Dynamo";
 
-    string Objective = "Objective: Rescue of over 300,000 Allied soldiers";
+    string Objective = "Objective: Defend against attack of German soldiers";
+
+    string Place = "Location: ";
 
     // displays battle nickname with type writer effect
     for (const auto c : battleNickName)
     {
         cout << c << flush;
-        //    this_thread::sleep_for(chrono::milliseconds(200));
+        this_thread::sleep_for(chrono::milliseconds(200));
     }
     cout << endl;
 
     for (const auto c : battleDate)
     {
         cout << c << flush;
-        //  this_thread::sleep_for(chrono::milliseconds(200));
+        this_thread::sleep_for(chrono::milliseconds(200));
     }
     cout << endl;
 
     for (const auto c : Objective)
     {
         cout << c << flush;
-        //  this_thread::sleep_for(chrono::milliseconds(200));
+        this_thread::sleep_for(chrono::milliseconds(200));
     }
     cout << endl;
+
+    for (const auto c : Place)
+    {
+        cout << c << flush;
+        this_thread::sleep_for(chrono::milliseconds(200));
+    }
     cout << endl;
+    char buff[FILENAME_MAX]; //create string buffer to hold path
+    GetCurrentDir( buff, FILENAME_MAX );
+    string current_working_dir(buff);
 
-    cout << summary << endl;
-}
+    string filepath = current_working_dir + "/WarTheater/DunkirkMap.txt";
 
-void Sea::loadBattleArt()
-{
-
-    string filepath = "/mnt/c/Users/jorda/OneDrive/1.UniversityOfPRETORIA/Second Year - 2022/1.COS214/Practicals/Prac5_and_Project/COS214-Project/WarTheater/Dunkirk.txt";
     string line = "";
     ifstream inFile;
     inFile.open(filepath);
     cout << endl;
+
+    if (inFile.is_open())
+    {
+        while (getline(inFile, line))
+        {
+            cout << line << endl;
+        }
+    }
+    else
+    {
+        cout << "Failed to load DunkirkMap.txt" << endl;
+    }
+
+    inFile.close();
+
+    this_thread::sleep_for(chrono::milliseconds(3000));
+
+    cout << endl;
+
+    cout << summary << endl;
+    this_thread::sleep_for(chrono::milliseconds(3000));
+}
+
+void Sea::loadBattleArt()
+{
+    char buff[FILENAME_MAX]; //create string buffer to hold path
+    GetCurrentDir( buff, FILENAME_MAX );
+    string current_working_dir(buff);
+
+    string filepath = current_working_dir + "/WarTheater/Dunkirk.txt";
+
+    string line = "";
+    ifstream inFile;
+    inFile.open(filepath);
+    cout << endl;
+
     if (inFile.is_open())
     {
         while (getline(inFile, line))
@@ -90,10 +141,11 @@ void Sea::loadBattleArt()
 void Sea::warLoop()
 {
     cout << endl;
-    int ModeChoice;
+    int ModeChoice = -1;
     while (ModeChoice != 1 && ModeChoice != 2)
     {
-        cout << "Would you like to play:\n1. Real Mode\n2. Design Mode\n";
+        cout << "Would you like to play:\n\t1. Real Mode\n\t2. Design Mode\n";
+        cout<<endl;
         cout << "Enter your choice: ";
         cin >> ModeChoice;
 
@@ -102,6 +154,8 @@ void Sea::warLoop()
             cout << "Please enter a valid choice (1) or (2) to proceed!" << endl;
         }
     }
+
+    cout<<endl;
 
     if (ModeChoice == 1)
     {
@@ -113,10 +167,8 @@ void Sea::warLoop()
         {
             France->Attack(Germany);
             cout << endl;
-            //// this_thread::sleep_for(chrono::milliseconds(300));
             Germany->Attack(France);
             cout << endl;
-            // this_thread::sleep_for(chrono::milliseconds(300));
         }
 
         delete Germany;
@@ -132,11 +184,8 @@ void Sea::warLoop()
         {
             France->Attack(Germany);
             cout << endl;
-            //// this_thread::sleep_for(chrono::milliseconds(300));
             Germany->Attack(France);
             cout << endl;
-            // this_thread::sleep_for(chrono::milliseconds(300));
-
         }
 
         delete Germany;

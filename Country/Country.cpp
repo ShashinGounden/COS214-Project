@@ -62,7 +62,9 @@ void Country::createArmy()
         ARMY = new Army(getName(), funds / 10, funds / 100, funds / 250);
     }
     int totalSoldiers = (funds / 10) + (funds / 100) + (funds / 250);
-    std::cout << "Total Soldiers created: " << totalSoldiers << "\n";
+
+    std::cout << "Total Soldiers from " <<name<<": " << totalSoldiers << "\n";
+    std::cout<<"\n";
 }
 
 /**
