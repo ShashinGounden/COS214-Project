@@ -2,7 +2,6 @@
 #define WMD_H
 
 #include "Country.h"
-class Country;
 
 class WMD : public Country
 {

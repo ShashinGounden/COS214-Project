@@ -7,7 +7,6 @@
  *
  * @param i
  */
-
 Person::Person(int id, int i, std::string s)
 {
     ID = id;
@@ -15,6 +14,11 @@ Person::Person(int id, int i, std::string s)
     hp = 100;
 }
 
+/**
+ * @brief Destroy the Person:: Person object
+ * if the weapon object was instantiated too then it gets deleted too
+ * 
+ */
 Person::~Person()
 {
     if (weapon != NULL)

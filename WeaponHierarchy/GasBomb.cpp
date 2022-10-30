@@ -1,6 +1,10 @@
 #include "ExplosiveProduct.h"
 #include "GasBomb.h"
 
-GasBomb:: GasBomb(int damage):ExplosiveProduct(damage){}
+/**
+ * @brief creation of a gasbomb object
+ * 
+ */
+GasBomb::GasBomb(int damage) : ExplosiveProduct(damage) {}
 
-GasBomb:: ~GasBomb(){}
+GasBomb::~GasBomb() {}

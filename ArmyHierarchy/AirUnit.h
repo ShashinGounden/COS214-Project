@@ -16,9 +16,6 @@ class AirUnit : public Unit
 {
     private:
     std::list<Person *> unit;
-    // RifleFactory* rifleFac;
-    // PistolFactory* pistolFac;
-    // ExplosiveFactory* boomFac;
     WeaponFactory* weaponFactory;
     AircraftMaker* jetBuilder;
     Aircraft* jet;
@@ -28,6 +25,7 @@ class AirUnit : public Unit
     ~AirUnit();
     void populateUnit(int);
     ArmyIterator *createIterator();
+    int getSize();
     int getPower(); 
     void remove();
 };

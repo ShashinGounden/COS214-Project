@@ -158,8 +158,8 @@ void Army::Retreat()
  */
 void Army::Surrender()
 {
-    std::cout << "'Wave the white flag'\n";
-    ArmyIterator *itGround = groundUnit->createIterator();
+    std::cout << " Wave the white flag\n";
+    /*ArmyIterator *itGround = groundUnit->createIterator();
     ArmyIterator *itAir = airUnit->createIterator();
     ArmyIterator *itMedic = medicUnit->createIterator();
 
@@ -179,7 +179,7 @@ void Army::Surrender()
     {
         // itMedic->current()->Attack(); // Add surrender to Person Classes
         itMedic->increment();
-    }
+    }*/
 }
 /**
  * @brief Removes soldiers either from air unit or ground unit
@@ -191,7 +191,7 @@ void Army::RemoveSoldiers(int damage)
     int num = std::rand() % 2;
     if (num == 0)
     {
-        for (int i = 0; i < damage; i++)
+        for (int i = 0; i < damage/1000; i++)
             airUnit->remove();
     }
     else
@@ -199,7 +199,10 @@ void Army::RemoveSoldiers(int damage)
         for (int i = 0; i < damage; i++)
             groundUnit->remove();
     }
-    std::cout << damage << " soldiers were killed\n";
+    if(damage>=0)
+        std::cout << damage << " soldiers were killed\n";
+    std::cout << "AirUnit size: " << airUnit->getSize() << "\n";
+    std::cout << "GroundUnit size: " << groundUnit->getSize() << "\n";
 }
 
 /**

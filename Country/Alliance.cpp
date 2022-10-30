@@ -1,6 +1,10 @@
 #include "Alliance.h"
 #include <random>
 
+/**
+ * @brief Construct a new Alliance:: Alliance object
+ * 
+ */
 Alliance::Alliance()
 {
     //@Todo: Add responses and Test
@@ -13,21 +17,39 @@ Alliance::Alliance()
     responses.push_back("five");
 }
 
+/**
+ * @brief Destroy the Alliance:: Alliance object
+ * 
+ */
 Alliance::~Alliance()
 {
     allianceList.clear();
 }
 
+/**
+ * @brief function to add a country object to the alliance list
+ * 
+ * @param c 
+ */
 void Alliance::addAlliance(Country *c)
 {
     allianceList.push_back(c);
 }
 
+/**
+ * @brief function to remove a country object from the alliance list
+ * 
+ * @param c 
+ */
 void Alliance::removeAlliance(Country *c)
 {
     allianceList.remove(c);
 }
 
+/**
+ * @brief 
+ * 
+ */
 void Alliance::update()
 {
     // Get the length of the list for responses list and the alliance list

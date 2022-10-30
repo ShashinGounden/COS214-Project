@@ -27,6 +27,7 @@ MedicUnit::~MedicUnit()
     if(truck != NULL)
     {
         delete truck;
+        truck = NULL;
     }
 }
 

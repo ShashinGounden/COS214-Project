@@ -31,11 +31,12 @@ AirUnit::~AirUnit()
     // delete pistolFac;
     // delete boomFac;
     delete jetBuilder;
+    delete weaponFactory;
 
     if (jet != NULL)
     {
-        delete weaponFactory;
         delete jet;
+        jet = NULL;
     }
 }
 
@@ -87,6 +88,10 @@ void AirUnit::populateUnit(int numOfPilots)
     jet = jetBuilder->getProduct();
 }
 
+int AirUnit::getSize(){
+    return unit.size();
+}
+
 int AirUnit::getPower()
 {
     int total = 0;
@@ -115,6 +120,11 @@ void AirUnit::remove()
 {
     if (unit.size() > 0)
     {
-        unit.pop_front();
+        if (unit.front() != nullptr)
+        {
+            Person* p = unit.front();
+            unit.pop_front();
+            delete p;
+        }
     }
 }

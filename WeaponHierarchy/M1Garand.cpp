@@ -1,6 +1,11 @@
 #include "RifleProduct.h"
 #include "M1Garand.h"
 
-M1Garand:: M1Garand(int damage):RifleProduct(damage){}
+/**
+ * @brief Construct a new M1Garand::M1Garand object
+ * 
+ * @param damage 
+ */
+M1Garand::M1Garand(int damage) : RifleProduct(damage) {}
 
-M1Garand:: ~M1Garand(){}
+M1Garand::~M1Garand() {}

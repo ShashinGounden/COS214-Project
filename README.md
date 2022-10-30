@@ -1,9 +1,5 @@
 # COS214-Project
 
-## INFO
-
-Please don't use namespace std. Rather just use 'std::' - Remove before submission @ShashinGounden, @JordanTimberlake
-
 ## TO DO:
 
 - Each need at least 10 commits

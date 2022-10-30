@@ -4,9 +4,10 @@
 #include <iostream>
 #include "../ArmyHierarchy/Army.h"
 #include "../Phase/Dominate.h"
-#include "../Phase/Deter.h" 
+#include "../Phase/Deter.h"
 #include "../Phase/Seize.h"
-#include "Alliance.h"
+
+class Alliance;
 
 class Country
 {
@@ -28,7 +29,7 @@ public:
     double getFunds();
     void addFunds(double); 
   
-    void joinAlliance(Alliance*); 
+    void joinAlliance(Alliance*);
     void notify();
 
 protected:
