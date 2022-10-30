@@ -7,14 +7,14 @@
  */
 Alliance::Alliance()
 {
-    //@Todo: Add responses and Test
+    
 
     // Initialise list of responses
     responses.push_back(" joins one of the biggest alliances formed during the war.");
-    responses.push_back(" joins new allies as tensions rises in thew West");
-    responses.push_back("three");
-    responses.push_back("four");
-    responses.push_back("five");
+    responses.push_back(" joins new allies as tensions rise");
+    responses.push_back(" has entered an agreement to join new alliance");
+    responses.push_back(" has a new ally");
+    responses.push_back(" strikes deal to join alliance");
 }
 
 /**

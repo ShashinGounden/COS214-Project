@@ -1,9 +1,16 @@
 #include "WMD.h"
 
-WMD::WMD(double funds) : Country(funds){
-    owner = this;
+WMD::WMD() : Country("test", 20.0)
+{
+    owner = NULL;
 }
 
-WMD::~WMD(){}
+WMD::WMD(Country *c) : Country(c->getName(), c->getFunds())
+{
+    owner = c;
+}
 
-void WMD::wmd(){}
+WMD::~WMD()
+{}
+
+void WMD::wmd() {}

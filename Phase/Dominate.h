@@ -12,8 +12,6 @@ public:
     ~Dominate(){}; 
     Phase* handleChange(double);
     int attackMethod(); 
-
-
 };
 
 #endif

@@ -1,20 +1,24 @@
 #include "Army.h"
+#include <string>
 
 /**
  * @brief Construct a new Army:: Army object
  *  Instantiate all units
  *  Using populateUnit() to populate all Units
  */
-Army::Army(int numOfSoldiers, int numOfMedics, int numOfPilots)
+Army::Army(std::string name, int numOfSoldiers, int numOfMedics, int numOfPilots)
 {
-    std::cout << "Creating Army\n";
+    countryName = name;
     MedicUnit *mUnit = new MedicUnit();
     medicUnit = mUnit;
     GroundUnit *gUnit = new GroundUnit();
     groundUnit = gUnit;
     AirUnit *aUnit = new AirUnit();
     airUnit = aUnit;
-
+    std::cout << "Summary of troops:\n";
+    std::cout << "Ground Units: " << numOfSoldiers << "\n";
+    std::cout << "Medic Units: " << numOfMedics << "\n";
+    std::cout << "Air Units: " << numOfPilots << "\n";
     populateUnit(numOfSoldiers, numOfMedics, numOfPilots);
 }
 
@@ -51,38 +55,26 @@ void Army::populateUnit(int numOfSoldiers, int numOfMedics, int numOfPilots)
  */
 int Army::Attack()
 {
-    // std::cout << "All soldiers ATTACK!\n";
     ArmyIterator *itGround = groundUnit->createIterator();
     ArmyIterator *itAir = airUnit->createIterator();
-    // ArmyIterator *itMedic = medicUnit->createIterator();
 
-    int power = airUnit->getPower() + groundUnit->getPower();
-    return power;
-
-    /*while (itGround->hasNext())
+    // int power = airUnit->getPower() + groundUnit->getPower();
+    int power = 0;
+    int counter = 0;
+    while (itGround->hasNext())
     {
-        itGround->current()->Attack();
+        power += itGround->current()->getWeapon()->fire();
         itGround->increment();
     }
-
+    counter = 0;
     while (itAir->hasNext())
     {
-        itAir->current()->Attack();
-        // itAir->current()->takeDamage(20);
+        power += itAir->current()->getWeapon()->fire();
         itAir->increment();
     }
-    std::cout << "MEDICS prepare the morphine!\n";
-    while (itMedic->hasNext())
-    {
-        itMedic->current()->Attack();
-        // itMedic->current()->heal(Person*, int);
-        itMedic->increment();
-    }
-
-    /**
-     * @brief Add Functionality to decrease country's funds
-     *
-     */
+    delete itGround;
+    delete itAir;
+    return power;
 }
 
 int Army::Defend()
@@ -119,6 +111,9 @@ void Army::Advance()
         // itMedic->current()->Advance(); // add Advance to Person classes
         itMedic->increment();
     }
+    delete itGround;
+    delete itAir;
+    delete itMedic;
 }
 
 /**
@@ -150,6 +145,9 @@ void Army::Retreat()
         itMedic->current()->Retreat();
         itMedic->increment();
     }*/
+    delete itGround;
+    delete itAir;
+    delete itMedic;
 }
 
 /**
@@ -191,16 +189,18 @@ void Army::RemoveSoldiers(int damage)
     int num = std::rand() % 2;
     if (num == 0)
     {
-        for (int i = 0; i < damage/1000; i++)
+        for (int i = 0; i < damage / 100; i++)
             airUnit->remove();
     }
     else
     {
-        for (int i = 0; i < damage; i++)
+        for (int i = 0; i < damage / 100; i++)
             groundUnit->remove();
     }
-    if(damage>=0)
-        std::cout << damage << " soldiers were killed\n";
+    if (damage >= 0)
+    {
+        std::cout << damage / 100 << " soldiers from " << countryName << " were killed in battle.\n";
+    }
     std::cout << "AirUnit size: " << airUnit->getSize() << "\n";
     std::cout << "GroundUnit size: " << groundUnit->getSize() << "\n";
 }
@@ -212,4 +212,9 @@ void Army::RemoveSoldiers(int damage)
 void Army::update()
 {
     // Observer code here
+}
+
+std::string Army::getName()
+{
+    return countryName;
 }

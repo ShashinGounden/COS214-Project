@@ -5,11 +5,15 @@
 
 class WMD : public Country
 {
-public:
-    WMD(double);
+public: 
+  
+    WMD(Country*); 
+    WMD();
     virtual ~WMD();
 
-    virtual void wmd() = 0;
+    virtual void wmd() = 0; 
+    virtual void Attack(Country*){}; 
+    virtual void takeDamage(int){};
 
 protected:
     Country* owner;

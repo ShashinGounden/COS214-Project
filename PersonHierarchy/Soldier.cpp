@@ -7,10 +7,11 @@
  */
 Soldier::Soldier(int id, int i, std::string s) : Person(id, i, s) {}
 
-Soldier::~Soldier(){}
+Soldier::~Soldier()
+{}
 
 /**
- * @brief for the prototype desgin pattern
+ * @brief
  * 
  * @return Person* 
  */

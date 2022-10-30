@@ -27,9 +27,6 @@ GroundUnit::~GroundUnit()
     }
 
     delete factory;
-    // delete rifleFac;
-    // delete pistolFac;
-    // delete boomFac;
     delete tankBuilder;
     delete weaponFactory;
 

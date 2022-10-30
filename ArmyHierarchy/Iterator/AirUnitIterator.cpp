@@ -35,7 +35,7 @@ Person *AirUnitIterator::next()
 {
     for (auto it = unit.begin(); it != unit.end(); it++)
     {
-        if ((*it)->getID() == curr->getID())
+        if ((*it) == curr)
         {
             it++;
             return (*it);
@@ -52,7 +52,7 @@ Person *AirUnitIterator::next()
  */
 bool AirUnitIterator::hasNext()
 {
-    if (curr->getID() == unit.back()->getID())
+    if (curr == unit.back())
     {
         return false;
     }
@@ -78,8 +78,5 @@ void AirUnitIterator::increment()
 {
     if (hasNext()){
         curr = next();
-    }
-    else{
-        curr = first();
     }
 }

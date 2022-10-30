@@ -27,9 +27,6 @@ AirUnit::~AirUnit()
     }
 
     delete factory;
-    // delete rifleFac;
-    // delete pistolFac;
-    // delete boomFac;
     delete jetBuilder;
     delete weaponFactory;
 

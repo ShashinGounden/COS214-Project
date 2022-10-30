@@ -1,6 +1,6 @@
 #include "Artillery.h"
 
-Artillery::Artillery(double funds) : WMD(funds)
+Artillery::Artillery(Country *c) : WMD(c)
 {
 }
 
@@ -8,10 +8,30 @@ Artillery::~Artillery()
 {
 }
 
-void Artillery::wmd(){
+void Artillery::wmd()
+{
     ArtilleryStrike();
 }
 
+/**
+ * @brief
+ *
+ */
+void Artillery::Attack(Country* c)
+{
+    if (owner != NULL)
+    {
+        std::cout << owner->getName() << " ";
+        ArtilleryStrike();
+        owner->Attack(c);
+    }
+}
+
+void Artillery::takeDamage(int g)
+{
+    if(owner!=NULL)
+       owner->takeDamage(g);
+}
 /**
  * @brief Artillery strike for the country
  *
@@ -20,4 +40,6 @@ void Artillery::wmd(){
 void Artillery::ArtilleryStrike()
 {
     std::cout << "Artillery strike!\n";
+
+    // Add text art here - @ShashinGounden
 }

@@ -9,6 +9,7 @@
  */
 Person::Person(int id, int i, std::string s)
 {
+    weapon = NULL;
     ID = id;
     skill = s;
     hp = 100;
@@ -21,7 +22,7 @@ Person::Person(int id, int i, std::string s)
  */
 Person::~Person()
 {
-    if (weapon != NULL)
+    if(weapon != NULL)
     {
         delete weapon;
         weapon = NULL;

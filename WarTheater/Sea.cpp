@@ -3,6 +3,7 @@
 #include <chrono>
 #include <fstream>
 #include <string>
+#include <iostream>
 using namespace std;
 
 Sea::Sea()
@@ -65,12 +66,11 @@ void Sea::printBattleSummary()
 
 void Sea::loadBattleArt()
 {
-    // Need to change to the correct path according to folder structure
 
-    string fileName = "/mnt/c/Users/jorda/OneDrive/1.UniversityOfPRETORIA/Second Year - 2022/1.COS214/Practicals/Prac5_and_Project/COS214-Project/WarTheater/Dunkirk.txt";
+    string filepath = "/mnt/c/Users/jorda/OneDrive/1.UniversityOfPRETORIA/Second Year - 2022/1.COS214/Practicals/Prac5_and_Project/COS214-Project/WarTheater/Dunkirk.txt";
     string line = "";
     ifstream inFile;
-    inFile.open(fileName);
+    inFile.open(filepath);
     cout << endl;
     if (inFile.is_open())
     {
@@ -96,7 +96,11 @@ void Sea::warLoop()
         cout << "Would you like to play:\n1. Real Mode\n2. Design Mode\n";
         cout << "Enter your choice: ";
         cin >> ModeChoice;
-        cout << "Please enter a valid choice (1) or (2) to proceed!" << endl;
+
+        if (ModeChoice != 1 && ModeChoice != 2)
+        {
+            cout << "Please enter a valid choice (1) or (2) to proceed!" << endl;
+        }
     }
 
     if (ModeChoice == 1)
@@ -108,31 +112,60 @@ void Sea::warLoop()
         while (!Germany->surrender() && !France->surrender())
         {
             France->Attack(Germany);
+            cout << endl;
+            //// this_thread::sleep_for(chrono::milliseconds(300));
             Germany->Attack(France);
-            this_thread::sleep_for(chrono::milliseconds(600));
+            cout << endl;
+            // this_thread::sleep_for(chrono::milliseconds(300));
         }
-
-        // France more funds than Germany
-
-        // Add UK to alliance array
-
-        // while
-
-        // Attack each other in while loop until one surrenders
-
-        // while(country1 and country2 surrender==false )
-        //      counrty1.attack(country2)
-        //      country2.attack(country1)
-        // sleep for some time
-        // end while
-
-        //
 
         delete Germany;
         delete France;
     }
     else if (ModeChoice == 2)
     {
+        // Countries: Germany, France
+        Country *Germany = new Country("Germany", 100000);
+        Country *France = new Country("France", 200000);
+
+        while (!Germany->surrender() && !France->surrender())
+        {
+            France->Attack(Germany);
+            cout << endl;
+            //// this_thread::sleep_for(chrono::milliseconds(300));
+            Germany->Attack(France);
+            cout << endl;
+            // this_thread::sleep_for(chrono::milliseconds(300));
+
+        }
+
+        delete Germany;
+        delete France;
+
+
+
+
+
+
         // Design Mode
+
+        //What are we going to change
+
+        //begin loop
+        //pick countries names (2)
+        //pick countries funds (2)
+
+       //display units from funds entered
+
+        //want to form alliance when funds reach half, the first time
+
+        //want to add more soldiers?
+
+       //if other countries about to die, give  a choice to finish them with a WMD
+
+
+       //end of loop, give user a choice
+
+
     }
 }

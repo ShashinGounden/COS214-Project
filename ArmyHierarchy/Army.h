@@ -4,11 +4,12 @@
 #include "MedicUnit.h"
 #include "GroundUnit.h"
 #include "AirUnit.h"
+#include <string>
 
 class Army
 {
 public:
-    Army(int, int, int);
+    Army(std::string, int, int, int);
     ~Army();
 
     // For iterator
@@ -24,10 +25,13 @@ public:
     // For Observer
     void update();
 
+    std::string getName();
+
 private:
     MedicUnit *medicUnit;
     GroundUnit *groundUnit;
     AirUnit *airUnit;
+    std::string countryName;
 };
 
 #endif

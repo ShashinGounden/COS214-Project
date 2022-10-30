@@ -3,20 +3,6 @@
 
 /**
  * @brief Construct a new Country:: Country object
- * Create army and initialize countries funds
- * We can have a input value for the funds that a country will have
- * But for now its going to be all the same
- */
-Country::Country(double fund)
-{
-    alliance = NULL;
-    funds = fund;
-    createArmy();
-    observedState = new Seize();
-}
-
-/**
- * @brief Construct a new Country:: Country object
  *
  * @param n
  * @param f
@@ -26,6 +12,7 @@ Country::Country(std::string n, double f)
     alliance = NULL;
     name = n;
     funds = f;
+    std::cout << this->name + " has prepared their Army for battle!\n";
     createArmy();
     observedState = new Seize();
 }
@@ -41,16 +28,6 @@ Country::~Country()
     {
         delete observedState;
     }
-}
-
-/**
- * @brief used to set the name of this country object to the input param n
- *
- * @param n
- */
-void Country::setName(std::string n)
-{
-    name = n;
 }
 
 /**
@@ -74,18 +51,18 @@ void Country::createArmy()
 {
     if (funds > 1000 && funds <= 10000)
     {
-        ARMY = new Army(funds / 1, funds / 10, funds / 500);
+        ARMY = new Army(getName(), funds / 10, funds / 100, funds / 250);
     }
     else if (funds <= 50000 && funds > 10000)
     {
-        ARMY = new Army(funds / 1, funds / 10, funds / 500);
+        ARMY = new Army(getName(), funds / 10, funds / 100, funds / 250);
     }
     else if (funds > 50000)
     {
-        ARMY = new Army(funds / 1, funds / 10, funds / 500);
+        ARMY = new Army(getName(), funds / 10, funds / 100, funds / 250);
     }
-    int totalSoldiers = funds + (funds/10) + (funds/500);
-    std::cout<< "Total Soldiers created: "<<totalSoldiers<<"\n";
+    int totalSoldiers = (funds / 10) + (funds / 100) + (funds / 250);
+    std::cout << "Total Soldiers created: " << totalSoldiers << "\n";
 }
 
 /**
@@ -105,11 +82,15 @@ void Country::Attack(Country *c)
     funds -= ((std::rand() % 10000) + 5000);
 
     // Check for state change
-    // std::cout<<;
+    std::cout<<name<<" ";
     Phase *temp = observedState->handleChange(funds);
-    delete observedState;
-    observedState = temp;
 
+    if (observedState != temp)
+    {
+        delete observedState;
+    }
+
+    observedState = temp;
     // Contact allies
     notify();
 }
@@ -124,6 +105,7 @@ void Country::takeDamage(int attack)
 {
     int defense = ARMY->Defend();
     int damage = attack - defense;
+    // std::cout << "Heal: " << defense << " <-> Damage: " << attack << " ------------ Calc = " << damage << "\n";
     ARMY->RemoveSoldiers(damage);
 }
 
