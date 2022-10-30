@@ -27,15 +27,13 @@ GroundUnit::~GroundUnit()
     }
 
     delete factory;
-    // delete rifleFac;
-    // delete pistolFac;
-    // delete boomFac;
     delete tankBuilder;
+    delete weaponFactory;
 
     if (tank != NULL)
     {
-        delete weaponFactory;
         delete tank;
+        tank = NULL;
     }
 }
 
@@ -87,6 +85,10 @@ void GroundUnit::populateUnit(int numOfSoldiers)
     tank = tankBuilder->getProduct();
 }
 
+int GroundUnit::getSize(){
+    return unit.size();
+}
+
 int GroundUnit::getPower()
 {
     int total = 0;
@@ -108,9 +110,14 @@ ArmyIterator *GroundUnit::createIterator()
  */
 void GroundUnit::remove()
 {
+    // std::cout<<unit.size()<<"\n";
     if (unit.size() > 0)
     {
-        delete unit.front();
-        unit.pop_front();
+        if (unit.front() != nullptr)
+        {
+            Person* p = unit.front();
+            unit.pop_front();
+            delete p;
+        }
     }
 }

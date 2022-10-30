@@ -10,6 +10,11 @@ Weapon::Weapon(int damage) // creates weapon with power factor
     power = damage;
 }
 
+/**
+ * @brief returns the amount of damage the weapon gives
+ * 
+ * @return int 
+ */
 int Weapon::fire()
 {
     return power;

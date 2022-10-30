@@ -20,7 +20,7 @@ Person *MedicUnitIterator::next()
 {
     for (auto it = unit.begin(); it != unit.end(); it++)
     {
-        if ((*it)->getID() == curr->getID())
+        if ((*it) == curr)
         {
             it++;
             return (*it);
@@ -31,7 +31,7 @@ Person *MedicUnitIterator::next()
 
 bool MedicUnitIterator::hasNext()
 {
-    if (curr->getID() == unit.back()->getID())
+    if (curr == unit.back())
     {
         return false;
     }
@@ -48,8 +48,5 @@ void MedicUnitIterator::increment()
 {
     if (hasNext()){
         curr = next(); // current will be pointed to next person in unit
-    }
-    else{
-        curr = first(); // current can point back to the front of the list
     }
 }

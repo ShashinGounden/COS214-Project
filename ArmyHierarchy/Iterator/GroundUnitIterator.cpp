@@ -20,7 +20,7 @@ Person *GroundUnitIterator::next()
 {
     for (auto it = unit.begin(); it != unit.end(); it++)
     {
-        if ((*it)->getID() == curr->getID())
+        if ((*it) == curr)
         {
             it++;
             return (*it);
@@ -31,7 +31,7 @@ Person *GroundUnitIterator::next()
 
 bool GroundUnitIterator::hasNext()
 {
-    if (curr->getID() == unit.back()->getID())
+    if (curr == unit.back())
     {
         return false;
     }
@@ -48,7 +48,5 @@ void GroundUnitIterator::increment()
 {
     if (hasNext()){
         curr = next(); // current will be pointed to next person in unit
-    }else{
-        curr = first();
     }
 }

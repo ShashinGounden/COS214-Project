@@ -1,33 +1,55 @@
 #include "Alliance.h"
 #include <random>
 
+/**
+ * @brief Construct a new Alliance:: Alliance object
+ * 
+ */
 Alliance::Alliance()
 {
-    //@Todo: Add responses and Test
+    
 
     // Initialise list of responses
     responses.push_back(" joins one of the biggest alliances formed during the war.");
-    responses.push_back(" joins new allies as tensions rises in thew West");
-    responses.push_back("three");
-    responses.push_back("four");
-    responses.push_back("five");
+    responses.push_back(" joins new allies as tensions rise");
+    responses.push_back(" has entered an agreement to join new alliance");
+    responses.push_back(" has a new ally");
+    responses.push_back(" strikes deal to join alliance");
 }
 
+/**
+ * @brief Destroy the Alliance:: Alliance object
+ * 
+ */
 Alliance::~Alliance()
 {
     allianceList.clear();
 }
 
+/**
+ * @brief function to add a country object to the alliance list
+ * 
+ * @param c 
+ */
 void Alliance::addAlliance(Country *c)
 {
     allianceList.push_back(c);
 }
 
+/**
+ * @brief function to remove a country object from the alliance list
+ * 
+ * @param c 
+ */
 void Alliance::removeAlliance(Country *c)
 {
     allianceList.remove(c);
 }
 
+/**
+ * @brief 
+ * 
+ */
 void Alliance::update()
 {
     // Get the length of the list for responses list and the alliance list

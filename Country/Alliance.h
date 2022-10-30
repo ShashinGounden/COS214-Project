@@ -11,7 +11,8 @@ public:
 
     void addAlliance(Country *);
     void removeAlliance(Country *);
-    void update() ;
+    void update();
+
 private:
     std::list<Country *> allianceList;
     std::list<std::string> responses;

@@ -6,11 +6,14 @@
 class Artillery : public WMD
 {
 public:
-    Artillery(double);
+    Artillery(Country*);
     ~Artillery();
 
     void wmd();
     void ArtilleryStrike();
+
+    void Attack(Country*);
+    void takeDamage(int);
 };
 
 #endif

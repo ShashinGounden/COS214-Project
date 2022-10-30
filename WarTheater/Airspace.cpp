@@ -7,12 +7,10 @@ using namespace std;
 
 Airspace::Airspace()
 {
-
 }
 
 Airspace::~Airspace()
 {
-
 }
 
 void Airspace::add(Country *force)
@@ -27,7 +25,8 @@ void Airspace::remove(Country *force)
 
 void Airspace::warLoop()
 {
-    cout<<"BEGIN Sea War Loop"<<endl;
+    cout << "BEGIN Sea battle War Loop" << endl;
+    
 }
 
 void Airspace::printBattleSummary()
@@ -45,51 +44,51 @@ void Airspace::printBattleSummary()
 
     string Objective = "Objective: Successfully invade German territories";
 
-    //displays battle nickname with type writer effect
+    // displays battle nickname with type writer effect
     for (const auto c : battleNickName)
     {
         cout << c << flush;
-        this_thread::sleep_for(chrono::milliseconds(200));
+     //   this_thread::sleep_for(chrono::milliseconds(200));
     }
-    cout<<endl;
+    cout << endl;
 
     for (const auto c : battleDate)
     {
         cout << c << flush;
-        this_thread::sleep_for(chrono::milliseconds(200));
+     //   this_thread::sleep_for(chrono::milliseconds(200));
     }
-    cout<<endl;
+    cout << endl;
 
     for (const auto c : Objective)
     {
         cout << c << flush;
-        this_thread::sleep_for(chrono::milliseconds(200));
+    //    this_thread::sleep_for(chrono::milliseconds(200));
     }
-    cout<<endl;
-    cout<<endl;
+    cout << endl;
+    cout << endl;
 
-    cout<<summary<<endl;
+    cout << summary << endl;
 }
 
 void Airspace::loadBattleArt()
 {
-    //Need to change to the correct path according to folder structure
-    string fileName = "/Users/shashingounden/Desktop/External Test/WarTheater/Normandy.txt";
+    // Need to change to the correct path according to folder structure
+    string fileName = "/mnt/c/Users/jorda/OneDrive/1.UniversityOfPRETORIA/Second Year - 2022/1.COS214/Practicals/Prac5_and_Project/COS214-Project/WarTheater/Normandy.txt";
     // ${Workspace}/
     string line = "";
     ifstream inFile;
     inFile.open(fileName);
-    cout<<endl;
+    cout << endl;
     if (inFile.is_open())
     {
-        while (getline(inFile,line))
+        while (getline(inFile, line))
         {
-            cout<<line<<endl;
+            cout << line << endl;
         }
     }
     else
     {
-        cout<<"Failed to load Normandy.txt"<<endl;
+        cout << "Failed to load Normandy.txt" << endl;
     }
 
     inFile.close();

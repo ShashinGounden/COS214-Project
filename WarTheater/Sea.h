@@ -10,13 +10,13 @@ public:
     ~Sea();
 
 private:
-     void add(Country* force)=0;
-     void remove(Country* force) = 0;
+    void add(Country *force);
+    void remove(Country *force);
 
-     //template method functions
-     void warLoop() = 0;
-     virtual void printBattleSummary();
-     virtual void loadBattleArt();
+    // template method functions
+    void warLoop();
+    virtual void printBattleSummary();
+    virtual void loadBattleArt();
 };
 
 #endif

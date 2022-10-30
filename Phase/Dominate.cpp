@@ -1,6 +1,8 @@
 #include "Dominate.h" 
 
-Dominate::Dominate() :Phase("Dominate"){}
+Dominate::Dominate() :Phase("Dominate"){ 
+    std::cout<<" is looking to finish off the enemy\n";
+}
 
 /**
  * @brief A multipier for attack damage
@@ -23,6 +25,7 @@ Phase* Dominate::handleChange(double funds){
     if(funds<20000.00) 
        return new Deter(); 
     else if(funds<5000.00) 
-       return new Seize(); 
+       return new Seize();  
+    std::cout<<" makes no changes to war plans\n";   
     return this;      
 }

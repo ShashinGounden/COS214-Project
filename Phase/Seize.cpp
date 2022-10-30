@@ -1,6 +1,8 @@
 #include "Seize.h" 
 
-Seize::Seize() : Phase("Seize"){} 
+Seize::Seize() : Phase("Seize"){ 
+    std::cout<< " plans to take the initiative\n";
+} 
 
 /**
  * @brief A multipier for attack damage
@@ -22,6 +24,7 @@ Phase* Seize::handleChange(double funds){
     if(funds>5000) 
         return new Deter(); 
     else if(funds>20000) 
-        return new Dominate(); 
+        return new Dominate();  
+    std::cout<<" makes no changes to war plans\n";    
     return this;    
 }

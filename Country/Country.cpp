@@ -1,32 +1,20 @@
 #include "Country.h"
+#include "Alliance.h"
 
 /**
  * @brief Construct a new Country:: Country object
- * Create army and initialize countries funds
- * We can have a input value for the funds that a country will have
- * But for now its going to be all the same
+ *
+ * @param n
+ * @param f
  */
-Country::Country(double fund)
+Country::Country(std::string n, double f)
 {
-    alliance=NULL;
-    funds = fund;
+    alliance = NULL;
+    name = n;
+    funds = f;
+    std::cout << this->name + " has prepared their Army for battle!\n";
     createArmy();
     observedState = new Seize();
-} 
-
-/**
- * @brief Construct a new Country:: Country object
- * 
- * @param n 
- * @param f 
- */
-Country::Country(std::string n,double f)
-{ 
-    alliance=NULL;
-    name=n; 
-    funds=f;
-    createArmy(); 
-    observedState=new Seize();
 }
 
 /**
@@ -36,25 +24,16 @@ Country::Country(std::string n,double f)
 Country::~Country()
 {
     delete ARMY;
-    if(observedState != nullptr){
+    if (observedState != nullptr)
+    {
         delete observedState;
     }
 }
 
 /**
- * @brief used to set the name of this country object to the input param n
- * 
- * @param n 
- */
-void Country::setName(std::string n)
-{
-    name = n;
-}
-
-/**
  * @brief returns the country's name
- * 
- * @return std::string 
+ *
+ * @return std::string
  */
 std::string Country::getName()
 {
@@ -70,58 +49,69 @@ std::string Country::getName()
  */
 void Country::createArmy()
 {
-    if(funds > 1000 && funds <= 10000){
-        ARMY = new Army(funds/10,funds/100,funds/500);
-    }else if(funds <= 50000 && funds > 10000){
-        ARMY = new Army(funds/10,funds/100,funds/500);
-    }else if(funds > 50000){
-        ARMY = new Army(funds/10,funds/100,funds/500);
+    if (funds > 1000 && funds <= 10000)
+    {
+        ARMY = new Army(getName(), funds / 10, funds / 100, funds / 250);
     }
+    else if (funds <= 50000 && funds > 10000)
+    {
+        ARMY = new Army(getName(), funds / 10, funds / 100, funds / 250);
+    }
+    else if (funds > 50000)
+    {
+        ARMY = new Army(getName(), funds / 10, funds / 100, funds / 250);
+    }
+    int totalSoldiers = (funds / 10) + (funds / 100) + (funds / 250);
+    std::cout << "Total Soldiers created: " << totalSoldiers << "\n";
 }
 
 /**
  * @brief Attack function, calculates total power then calls takeDamage on enemy Country
- * 
+ *
  * @param c Enemy country being attacked
- *  
+ *
  */
-void Country::Attack(Country* c)
+void Country::Attack(Country *c)
 {
-    std::cout << name << " is attacking "<<c->getName()<<"\n";
-    int power=ARMY->Attack();
-    power*=observedState->attackMethod();
+    std::cout << name << " is attacking " << c->getName() << "\n";
+    int power = ARMY->Attack();
+    power *= observedState->attackMethod();
     c->takeDamage(power);
 
     // Decrease countries funds
-    funds-= ( (std::rand() % 10000)+5000) ;
+    funds -= ((std::rand() % 10000) + 5000);
 
-    //Check for state change   
-    Phase* temp=observedState->handleChange(funds); 
-    delete observedState; 
-    observedState=temp;
+    // Check for state change
+    std::cout<<name<<" ";
+    Phase *temp = observedState->handleChange(funds);
 
-    //Contact allies
+    if (observedState != temp)
+    {
+        delete observedState;
+    }
+
+    observedState = temp;
+    // Contact allies
     notify();
-    
 }
 
 /**
- * @brief Function called by an attacking Country.Function subtracts defense from enemy's attack to 
+ * @brief Function called by an attacking Country.Function subtracts defense from enemy's attack to
  * get overall damage done to army and removes soldiers
- * 
- * @param attack 
+ *
+ * @param attack
  */
 void Country::takeDamage(int attack)
-{ 
-    int defense=ARMY->Defend(); 
-    int damage=attack-defense;  
-    ARMY->RemoveSoldiers(damage); 
-
+{
+    int defense = ARMY->Defend();
+    int damage = attack - defense;
+    // std::cout << "Heal: " << defense << " <-> Damage: " << attack << " ------------ Calc = " << damage << "\n";
+    ARMY->RemoveSoldiers(damage);
 }
 
 /**
  * @brief Retreat function to tell the user that this country is retreating
- * 
+ *
  */
 void Country::Retreat()
 {
@@ -131,8 +121,8 @@ void Country::Retreat()
 
 /**
  * @brief Returns the countries funds
- * 
- * @return double 
+ *
+ * @return double
  */
 double Country::getFunds()
 {
@@ -141,8 +131,8 @@ double Country::getFunds()
 
 /**
  * @brief This function will be used to add funds to the country's arsenal
- * 
- * @param fund 
+ *
+ * @param fund
  */
 void Country::addFunds(double fund)
 {
@@ -151,42 +141,43 @@ void Country::addFunds(double fund)
 
 /**
  * @brief Function that indicates country has surrendered.Country surrenders when power reaches 0
- * 
- * @return true 
- * @return false 
+ *
+ * @return true
+ * @return false
  */
 
 bool Country::surrender()
 {
-    if(ARMY->Attack()==0){
-       std::cout<<name; 
-       ARMY->Surrender();
-       return true;  
+    if (ARMY->Attack() <= 0)
+    {
+        std::cout << name;
+        ARMY->Surrender();
+        return true;
     }
-    return false;   
+    return false;
 }
 
 /**
  * @brief Joins an alliance
- * 
- * @param all an alliance 
+ *
+ * @param all an alliance
  */
-void Country::joinAlliance(Alliance* all)
-{ 
-  alliance=all;
-  alliance->addAlliance(this); 
-} 
+void Country::joinAlliance(Alliance *all)
+{
+    alliance = all;
+    alliance->addAlliance(this);
+}
 
 /**
  * @brief Contacts allied forces
- * 
+ *
  */
 void Country::notify()
-{ 
-    if(alliance!=NULL)
+{
+    if (alliance != NULL)
     {
-      alliance->removeAlliance(this);
-      alliance->update(); 
-      alliance->addAlliance(this); 
+        alliance->removeAlliance(this);
+        alliance->update();
+        alliance->addAlliance(this);
     }
 }

@@ -4,31 +4,30 @@
 #include <iostream>
 #include "../ArmyHierarchy/Army.h"
 #include "../Phase/Dominate.h"
-#include "../Phase/Deter.h" 
+#include "../Phase/Deter.h"
 #include "../Phase/Seize.h"
-#include "Alliance.h"
+
+class Alliance;
 
 class Country
 {
-public:
-    Country(double); 
+public: 
     Country(std::string,double);
     ~Country();
 
-    void setName(std::string);
     std::string getName();
 
     void createArmy();
 
-    void Attack(Country* c); 
-    void takeDamage(int);
+    virtual void Attack(Country* c); 
+    virtual void takeDamage(int);
     void Retreat(); 
     bool surrender();
 
     double getFunds();
     void addFunds(double); 
   
-    void joinAlliance(Alliance*); 
+    void joinAlliance(Alliance*);
     void notify();
 
 protected:

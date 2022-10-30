@@ -6,11 +6,14 @@
 class Nuke : public WMD
 {
 public:
-    Nuke(double);
+    Nuke(Country*);
     ~Nuke();
 
     void wmd();
-    void deployNuke();
+    void deployNuke(); 
+
+    void Attack(Country*); 
+    void takeDamage(int);
 };
 
 #endif
