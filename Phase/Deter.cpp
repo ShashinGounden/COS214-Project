@@ -1,6 +1,8 @@
 #include "Deter.h" 
 
-Deter::Deter() :Phase("Deter"){} 
+Deter::Deter() :Phase("Deter"){
+    std::cout<< "will continue to press the attack\n";
+} 
 
 /**
  * @brief A multipier for attack damage
@@ -23,7 +25,8 @@ Phase* Deter::handleChange(double funds){
     if(funds>20000.00) 
        return new Dominate(); 
     else if(funds<5000.00) 
-       return new Seize(); 
+       return new Seize();  
+    std::cout<<" makes no changes to war plans\n";   
     return this;   
 }
 

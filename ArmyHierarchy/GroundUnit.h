@@ -15,9 +15,6 @@ class GroundUnit : public Unit
 {
     private:
     std::list<Person*> unit;
-    // RifleFactory* rifleFac;
-    // PistolFactory* pistolFac;
-    // ExplosiveFactory* boomFac;
     WeaponFactory* weaponFactory;
     TankMaker* tankBuilder;
     Tank* tank;
@@ -27,6 +24,7 @@ class GroundUnit : public Unit
     ~GroundUnit();
     void populateUnit(int);
     ArmyIterator *createIterator();
+    int getSize();
     int getPower(); 
     void remove();
 };

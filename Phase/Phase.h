@@ -1,6 +1,7 @@
 #ifndef PHASE_H
 #define PHASE_H
 #include <string>
+#include <iostream>
 
 class Phase
 {
