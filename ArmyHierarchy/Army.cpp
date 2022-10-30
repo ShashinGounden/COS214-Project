@@ -32,12 +32,13 @@ Army::~Army()
 /**
  * @brief using each units populateUnit function to populate each unit
  * with the input parameters amount
- * 
- * @param numOfSoldiers 
- * @param numOfMedics 
- * @param numOfPilots 
+ *
+ * @param numOfSoldiers
+ * @param numOfMedics
+ * @param numOfPilots
  */
-void Army::populateUnit(int numOfSoldiers, int numOfMedics, int numOfPilots){
+void Army::populateUnit(int numOfSoldiers, int numOfMedics, int numOfPilots)
+{
     groundUnit->populateUnit(numOfSoldiers);
     medicUnit->populateUnit(numOfMedics);
     airUnit->populateUnit(numOfPilots);
@@ -50,14 +51,14 @@ void Army::populateUnit(int numOfSoldiers, int numOfMedics, int numOfPilots){
  */
 int Army::Attack()
 {
-    //std::cout << "All soldiers ATTACK!\n";
+    // std::cout << "All soldiers ATTACK!\n";
     ArmyIterator *itGround = groundUnit->createIterator();
     ArmyIterator *itAir = airUnit->createIterator();
-    //ArmyIterator *itMedic = medicUnit->createIterator();
-    
-    int power=airUnit->getPower()+groundUnit->getPower();
+    // ArmyIterator *itMedic = medicUnit->createIterator();
+
+    int power = airUnit->getPower() + groundUnit->getPower();
     return power;
-    
+
     /*while (itGround->hasNext())
     {
         itGround->current()->Attack();
@@ -82,10 +83,11 @@ int Army::Attack()
      * @brief Add Functionality to decrease country's funds
      *
      */
-} 
+}
 
-int Army::Defend(){ 
-    int defense=medicUnit->getHealPower();
+int Army::Defend()
+{
+    int defense = medicUnit->getHealPower();
     return defense;
 }
 
@@ -93,8 +95,9 @@ int Army::Defend(){
  * @brief Army advances position
  * Function to call each person's Advance function
  */
-void Army::Advance(){
-    std::cout<<"ADVANCE Troops!/n";
+void Army::Advance()
+{
+    std::cout << "ADVANCE Troops!/n";
     ArmyIterator *itGround = groundUnit->createIterator();
     ArmyIterator *itAir = airUnit->createIterator();
     ArmyIterator *itMedic = medicUnit->createIterator();
@@ -153,8 +156,9 @@ void Army::Retreat()
  * @brief Country signs a treaty and Army surrenders
  * Calls each person's Surrender function
  */
-void Army::Surrender(){
-    std::cout<<"'Wave the white flag'\n";
+void Army::Surrender()
+{
+    std::cout << "'Wave the white flag'\n";
     ArmyIterator *itGround = groundUnit->createIterator();
     ArmyIterator *itAir = airUnit->createIterator();
     ArmyIterator *itMedic = medicUnit->createIterator();
@@ -179,20 +183,23 @@ void Army::Surrender(){
 }
 /**
  * @brief Removes soldiers either from air unit or ground unit
- * 
+ *
  * @param damage Number of soldiers to be removed
  */
-void Army::RemoveSoldiers(int damage){ 
-    int num=std::rand()%2; 
-    if(num==0){ 
-        for(int i=0;i<damage;i++) 
-           airUnit->remove();
-    }  
-    else{ 
-        for(int i=0;i<damage;i++) 
+void Army::RemoveSoldiers(int damage)
+{
+    int num = std::rand() % 2;
+    if (num == 0)
+    {
+        for (int i = 0; i < damage; i++)
+            airUnit->remove();
+    }
+    else
+    {
+        for (int i = 0; i < damage; i++)
             groundUnit->remove();
-    } 
-    std::cout<<damage<<"soldiers were killed\n";    
+    }
+    std::cout << damage << " soldiers were killed\n";
 }
 
 /**

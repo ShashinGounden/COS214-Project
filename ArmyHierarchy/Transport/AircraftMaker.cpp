@@ -2,13 +2,10 @@
 #include"AircraftMaker.h"
 #include"Aircraft.h"
 #include"Transport.h"
-#include<string>
-
-using namespace std;
 
 AircraftMaker:: AircraftMaker(){}
 
-void AircraftMaker:: addDefence(string s)
+void AircraftMaker:: addDefence(std::string s)
 {
     jet->setDefence(s);
 }

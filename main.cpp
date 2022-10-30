@@ -9,11 +9,11 @@
 
 int main()
 {
-    Country *United_States = new Country(2000);
+    Country *United_States = new Country(10000);
     United_States->setName("United States Of America");
-    Country *Germany = new Country(2000);
+    Country *Germany = new Country(10000);
     Germany->setName("NAZI Scum");
-    United_States->Attack();
+    United_States->Attack(Germany);
     Germany->Retreat();
 
     WMD* nuke = new Nuke(United_States->getFunds());
@@ -21,5 +21,6 @@ int main()
 
     delete United_States;
     delete Germany;
+    delete nuke;
     return 0;
 }

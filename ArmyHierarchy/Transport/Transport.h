@@ -1,22 +1,20 @@
 #ifndef TRANSPORT_H
 #define TRANSPORT_H
 
-#include<string>
-
-using namespace std;
+#include <string>
 
 class Transport
 {
 	protected:
 	int health;
-    string defence;
+    std::string defence;
 
 	public:
 	Transport();
 	void setHealth(int);
-    void setDefence(string);
+    void setDefence(std::string);
     int getHealth();
-    string getDefence();
+    std::string getDefence();
 	virtual ~Transport();
 };
 

@@ -2,7 +2,7 @@
 #define SOLDIERFACTORY_H
 
 #include "PersonFactory.h"
-#include<string>
+#include "../Soldier.h"
 
 class SoldierFactory : public PersonFactory
 {
@@ -10,7 +10,7 @@ public:
     SoldierFactory();
     ~SoldierFactory();
 
-    Person* createPerson(int, int, string);
+    Person* createPerson(int, int, std::string);
 };
 
 #endif

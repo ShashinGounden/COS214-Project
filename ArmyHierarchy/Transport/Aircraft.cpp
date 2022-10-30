@@ -1,12 +1,11 @@
 #include "Transport.h"
 #include "Aircraft.h"
 
+Aircraft::Aircraft() {}
 
-Aircraft:: Aircraft(){}
-
-void Aircraft:: setPower(int d)
+void Aircraft::setPower(int d)
 {
     damage = d;
 }
 
-Aircraft:: ~Aircraft(){}
+Aircraft::~Aircraft() {}

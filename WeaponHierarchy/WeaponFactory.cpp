@@ -7,6 +7,6 @@
  * that type of weapon, i.e long or short range
  */
 
-WeaponFactory:: WeaponFactory(){}
+WeaponFactory::WeaponFactory() {}
 
-WeaponFactory:: ~WeaponFactory(){}
+WeaponFactory::~WeaponFactory() {}

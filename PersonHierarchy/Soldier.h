@@ -9,14 +9,10 @@
 
 class Soldier : public Person
 {
-    protected:
-    Weapon* weapon;
-    
-    public:
-    Soldier(int, int, string);
+public:
+    Soldier(int, int, std::string);
     ~Soldier();
-    Person* clone();
-    void addWeapon(Weapon*) = 0;
+    Person *clone();
 };
 
 #endif

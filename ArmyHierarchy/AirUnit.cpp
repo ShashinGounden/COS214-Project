@@ -8,30 +8,33 @@
 AirUnit::AirUnit() : Unit()
 {
     factory = new SoldierFactory();
-    rifleFac = new RifleFactory();
-    pistolFac = new PistolFactory();
-    boomFac = new ExplosiveFactory();
+    // rifleFac = new RifleFactory();
+    // pistolFac = new PistolFactory();
+    // boomFac = new ExplosiveFactory();
+    weaponFactory = nullptr;
     jetBuilder = new AircraftMaker();
 }
 
-AirUnit::~AirUnit(){
+AirUnit::~AirUnit()
+{
     /**
      * @brief - Delete all person objects in unit list object
      *
      */
-    for(auto it = unit.begin(); it != unit.end(); it++)
+    for (auto it = unit.begin(); it != unit.end(); it++)
     {
         delete (*it);
     }
 
     delete factory;
-    delete rifleFac;
-    delete pistolFac;
-    delete boomFac;
+    // delete rifleFac;
+    // delete pistolFac;
+    // delete boomFac;
     delete jetBuilder;
 
-    if(jet != NULL)
+    if (jet != NULL)
     {
+        delete weaponFactory;
         delete jet;
     }
 }
@@ -40,34 +43,42 @@ void AirUnit::populateUnit(int numOfPilots)
 {
     int ran = std::rand() % 10;
 
-    for(int i = 0; i < numOfPilots; i++)
+    for (int i = 0; i < numOfPilots; i++)
     {
-        Weapon* tempW;
+        Weapon *tempW;
 
-        if(ran == 0){
-            tempW = boomFac->CreateLongRange();
-        }
-        else if(ran == 5){
-            tempW = boomFac->CreateShortRange();
-        }
-        else if(ran == 1 || ran == 2)
+        if (ran == 0)
         {
-            tempW = rifleFac->CreateLongRange();
+            weaponFactory = new ExplosiveFactory();
+            tempW = weaponFactory->CreateLongRange();
         }
-        else if(ran == 3 || ran == 4)
+        else if (ran == 5)
         {
-            tempW = rifleFac->CreateShortRange();
+            weaponFactory = new ExplosiveFactory();
+            tempW = weaponFactory->CreateShortRange();
         }
-        else if(ran == 6 || ran == 7)
+        else if (ran == 1 || ran == 2)
         {
-            tempW = PistolFac->CreateLongRange();
+            weaponFactory = new RifleFactory();
+            tempW = weaponFactory->CreateLongRange();
+        }
+        else if (ran == 3 || ran == 4)
+        {
+            weaponFactory = new RifleFactory();
+            tempW = weaponFactory->CreateShortRange();
+        }
+        else if (ran == 6 || ran == 7)
+        {
+            weaponFactory = new PistolFactory();
+            tempW = weaponFactory->CreateLongRange();
         }
         else
         {
-            tempW = PistolFac->CreateShortRange();
+            weaponFactory = new PistolFactory();
+            tempW = weaponFactory->CreateShortRange();
         }
-            
-        Soldier* temp = factory->createPerson(rand(), 100, "fight");
+
+        Person *temp = factory->createPerson(rand(), 100, "fight");
         temp->addWeapon(tempW);
 
         unit.push_back(temp);
@@ -76,20 +87,20 @@ void AirUnit::populateUnit(int numOfPilots)
     jet = jetBuilder->getProduct();
 }
 
-int AirUnit:: getPower()
-{ 
-    int total = 0; 
-    for(auto it = unit.begin(); it != unit.end(); it++)
+int AirUnit::getPower()
+{
+    int total = 0;
+    for (auto it = unit.begin(); it != unit.end(); it++)
     {
-        total += it->weapon.fire();
+        total += (*it)->getWeapon()->fire();
     }
     return total;
 }
 
 /**
  * @brief returns iterator object
- * 
- * @return ArmyIterator* 
+ *
+ * @return ArmyIterator*
  */
 ArmyIterator *AirUnit::createIterator()
 {
@@ -98,12 +109,12 @@ ArmyIterator *AirUnit::createIterator()
 
 /**
  * @brief Deletes from list of soldiers
- * 
+ *
  */
 void AirUnit::remove()
-{ 
-    if(unit.size() > 0) 
+{
+    if (unit.size() > 0)
     {
-       unit.pop_front();
+        unit.pop_front();
     }
 }
