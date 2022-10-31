@@ -4,6 +4,10 @@
 #include <fstream>
 #include <string>
 #include <iostream>
+#include <bits/stdc++.h>
+#include "../Country/Alliance.h"
+#include "../Country/Artillery.h"
+#include "../Country/Nuke.h"
 
 #ifdef WINDOWS
 #include <direct.h>
@@ -81,32 +85,32 @@ void Sea::printBattleSummary()
     for (const auto c : battleNickName)
     {
         cout << c << flush;
-        this_thread::sleep_for(chrono::milliseconds(200));
+        //    this_thread::sleep_for(chrono::milliseconds(200));
     }
     cout << endl;
 
     for (const auto c : battleDate)
     {
         cout << c << flush;
-        this_thread::sleep_for(chrono::milliseconds(200));
+        //   this_thread::sleep_for(chrono::milliseconds(200));
     }
     cout << endl;
 
     for (const auto c : Objective)
     {
         cout << c << flush;
-        this_thread::sleep_for(chrono::milliseconds(200));
+        //   this_thread::sleep_for(chrono::milliseconds(200));
     }
     cout << endl;
 
     for (const auto c : Place)
     {
         cout << c << flush;
-        this_thread::sleep_for(chrono::milliseconds(200));
+        //   this_thread::sleep_for(chrono::milliseconds(200));
     }
     cout << endl;
-    char buff[FILENAME_MAX]; //create string buffer to hold path
-    GetCurrentDir( buff, FILENAME_MAX );
+    char buff[FILENAME_MAX]; // create string buffer to hold path
+    GetCurrentDir(buff, FILENAME_MAX);
     string current_working_dir(buff);
 
     string filepath = current_working_dir + "/WarTheater/DunkirkMap.txt";
@@ -130,12 +134,12 @@ void Sea::printBattleSummary()
 
     inFile.close();
 
-    this_thread::sleep_for(chrono::milliseconds(3000));
+    //  this_thread::sleep_for(chrono::milliseconds(3000));
 
     cout << endl;
 
     cout << summary << endl;
-    this_thread::sleep_for(chrono::milliseconds(3000));
+    // this_thread::sleep_for(chrono::milliseconds(3000));
 }
 
 /**
@@ -146,8 +150,8 @@ void Sea::printBattleSummary()
 
 void Sea::loadBattleArt()
 {
-    char buff[FILENAME_MAX]; //create string buffer to hold path
-    GetCurrentDir( buff, FILENAME_MAX );
+    char buff[FILENAME_MAX]; // create string buffer to hold path
+    GetCurrentDir(buff, FILENAME_MAX);
     string current_working_dir(buff);
 
     string filepath = current_working_dir + "/WarTheater/Dunkirk.txt";
@@ -176,7 +180,6 @@ void Sea::loadBattleArt()
  * @author Shashin Gounden
  * @brief The war loop for the battle of dunkirk which gives the user a choice between real and design mode
  */
-
 void Sea::warLoop()
 {
     cout << endl;
@@ -184,7 +187,7 @@ void Sea::warLoop()
     while (ModeChoice != 1 && ModeChoice != 2)
     {
         cout << "Would you like to play:\n\t1. Real Mode\n\t2. Design Mode\n";
-        cout<<endl;
+        cout << endl;
         cout << "Enter your choice: ";
         cin >> ModeChoice;
 
@@ -194,7 +197,7 @@ void Sea::warLoop()
         }
     }
 
-    cout<<endl;
+    cout << endl;
 
     if (ModeChoice == 1)
     {
@@ -202,7 +205,7 @@ void Sea::warLoop()
         Country *Germany = new Country("Germany", 100000);
         Country *France = new Country("France", 200000);
 
-        while (!Germany->surrender() && !France->surrender())
+        while (!Germany->surrender(France) && !France->surrender(Germany))
         {
             France->Attack(Germany);
             cout << endl;
@@ -215,45 +218,189 @@ void Sea::warLoop()
     }
     else if (ModeChoice == 2)
     {
-        // Countries: Germany, France
-        Country *Germany = new Country("Germany", 100000);
-        Country *France = new Country("France", 200000);
+        // array of ally countries
+        string allies[7] = {"Germany", "Italy", "Japan", "France", "Great Britain", "The United States", "The Soviet Union"};
 
-        while (!Germany->surrender() && !France->surrender())
+        double allyFunds[7] = {
+            66000, // Germany - Nazi Scum
+            30000, // Italy
+            35000, // Japan
+            40000, // France
+            50000, // Great Britain
+            65000, // United States
+            62000  // Soviet Union
+        };
+
+        int iCount1 = 0;
+        int iCount2 = 0;
+        string c1 = "W", c2 = "L";
+        double f1 = 200000, f2 = 180000;
+
+        // cout << "Enter the name of country 1: ";
+        // cin >> c1;
+        // cout << "Enter the amount of funds for country 1: ";
+        // cin >> f1;
+
+        // cout << "Enter the name of country 2: ";
+        // cin >> c2;
+        // cout << "Enter the amount of funds for country 2: ";
+        // cin >> f2;
+
+        Country *country1 = new Country(c1, f1);
+        Country *country2 = new Country(c2, f2);
+
+        Country *ally1 = nullptr;
+        Country *ally2 = nullptr;
+
+        int a = 0; // input variable for if they want to form an alliance
+
+        // main function loop
+        while (!country1->surrender(country2) && !country2->surrender(country1))
         {
-            France->Attack(Germany);
+            // function to ask the user if they want to add an alliance
+            if (country1->getFunds() < f1 / 2 && iCount1 == 0)
+            {
+                cout << "Would you like " << c1 << " to form an alliance with one of these countries: \n";
+                std::cout << "0. None, ";
+                for (int i = 1; i < 7; i++)
+                {
+                    cout << i << ". " << allies[i - 1] << ", ";
+                }
+                cout << 7 << ". " << allies[6] << "\n";
+
+                cout << "Enter the number referring to the country you want to add in: ";
+                cin >> a;
+                if (a != 0)
+                {
+                    ally1 = new Country(allies[a - 1], allyFunds[a - 1]);
+                    Alliance *ally = new Alliance();
+                    ally->addAlliance(ally1);
+                    country1->joinAlliance(ally);
+                    country1->addFunds(allyFunds[a - 1]);
+                }
+                iCount1++;
+            }
+            else if (country2->getFunds() < f2 / 2 && iCount2 == 0)
+            {
+                cout << "Would you like " << c2 << " to form an alliance with one of these countries: \n";
+                std::cout << "0. None, ";
+                for (int i = 1; i < 7; i++)
+                {
+                    cout << i << ". " << allies[i - 1] << ", ";
+                }
+                cout << 7 << ". " << allies[6] << "\n";
+
+                cout << "Enter the number referring to the country you want to add in: ";
+                cin >> a;
+                if (a != 0)
+                {
+                    ally2 = new Country(allies[a - 1], allyFunds[a - 1]);
+                    Alliance *ally = new Alliance();
+                    ally->addAlliance(ally1);
+                    country2->joinAlliance(new Alliance());
+                    std::cout << country2->getName() << "ADDED funds and soldiers from allies army\n";
+                    country2->addFunds(allyFunds[a - 1]);
+                }
+                iCount2++;
+            }
+
+            country2->Attack(country1);
             cout << endl;
-            Germany->Attack(France);
+            country1->Attack(country2);
             cout << endl;
+
+            // WMD, only asks if Ally option has been asked already
+            if (country1->getFunds() < f1 / 3 && iCount1 == 1)
+            {
+                cout << "Would you like " << country1->getName() << " to deploy a weapon of mass destruction? [Y/N]: ";
+                char ans = 'n';
+                int iWMD = -1;
+
+                cin >> ans;
+
+                if (ans == 'Y' || ans == 'y')
+                {
+                    cout << "Please select a weapon of mass destruction:\n";
+                    cout << "1. Nuke\n"
+                         << "2. Artillery strike\n";
+                    cout << "Enter your choice: ";
+
+                    cin >> iWMD;
+
+                    if (iWMD == 1)
+                    {
+                        // country1 = new Nuke(country1); 
+
+                        //Country* n=country1
+                        //country1=country->returnOwner();
+                        //wmd->returnOwner();
+                         
+                    }
+                    else if (iWMD == 2)
+                    {
+                        std::cout << country1->getName() << " has prepared heavy artillery!\n";
+                        
+                    }
+                }
+                iCount1++;
+            }
+            else if (country2->getFunds() < f2 / 3 && iCount2 == 1)
+            {
+                cout << "Would you like " << country2->getName() << " to deploy a weapon of mass destruction? [Y/N]: ";
+                char ans = 'n';
+                int iWMD = -1;
+
+                cin >> ans;
+
+                if (ans == 'Y' || ans == 'y')
+                {
+                    cout << "Please select a weapon of mass destruction:\n";
+                    cout << "1. Nuke\n"
+                         << "2. Artillery strike\n";
+                    cout << "Enter your choice: ";
+
+                    cin >> iWMD;
+
+                    if (iWMD == 1)
+                    {
+                        // NUKE
+                    }
+                    else if (iWMD == 2)
+                    {
+                        // ARTILLERY STRIKE
+                    }
+                }
+                iCount2++;
+            }
         }
 
-        delete Germany;
-        delete France;
-
-
-
-
-
+        delete country1;
+        delete country2;
+        if (ally1 != nullptr)
+        {
+            delete ally1;
+        }
+        if (ally2 != nullptr)
+        {
+            delete ally2;
+        }
 
         // Design Mode
 
-        //What are we going to change
+        // What are we going to change
 
-        //begin loop
-        //pick countries names (2)
-        //pick countries funds (2)
+        // begin loop
+        // pick countries names (2)
+        // pick countries funds (2)
 
-       //display units from funds entered
+        // display units from funds entered
 
-        //want to form alliance when funds reach half, the first time
+        // want to form alliance when funds reach half, the first time
 
-        //want to add more soldiers?
+        // want to add more soldiers?*
 
-       //if other countries about to die, give  a choice to finish them with a WMD
+        // if other countries about to die, give  a choice to finish them with a WMD
 
-
-       //end of loop, give user a choice
-
-
+        // end of loop, give user a choice
     }
 }

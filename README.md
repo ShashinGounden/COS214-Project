@@ -39,6 +39,8 @@ What to document?
 
 ## Implementation
 
+Soldiers - Medics - Pilots conversion (funds/10, funds/250, funds/500)
+
 - for Attack() function
 
 State will have a damage multiplier

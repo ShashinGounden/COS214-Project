@@ -15,20 +15,20 @@ public:
     Country(std::string,double);
     virtual ~Country();
 
-    std::string getName();
+    virtual std::string getName();
 
     void createArmy();
 
     virtual void Attack(Country* c); 
     virtual void takeDamage(int);
-    void Retreat(); 
-    bool surrender();
+    virtual void Retreat(); 
+    virtual bool surrender(Country*);
 
-    double getFunds();
-    void addFunds(double); 
+    virtual double getFunds();
+    virtual void addFunds(double); 
   
-    void joinAlliance(Alliance*);
-    void notify();
+    virtual void joinAlliance(Alliance*);
+    virtual void notify();
 
 protected: 
     Country(){};

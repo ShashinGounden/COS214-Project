@@ -26,7 +26,7 @@ Phase* Deter::handleChange(double funds){
        return new Dominate(); 
     else if(funds<5000.00) 
        return new Seize();  
-    std::cout<<" makes no changes to war plans\n";   
+    std::cout<<"makes no changes to war plans\n";   
     return this;   
 }
 

@@ -7,12 +7,11 @@
  */
 GroundUnit::GroundUnit() : Unit()
 {
-    // rifleFac = new RifleFactory();
-    // pistolFac = new PistolFactory();
-    // boomFac = new ExplosiveFactory();
     weaponFactory = nullptr;
     factory = new SoldierFactory();
     tankBuilder = new TankMaker();
+
+    tank = tankBuilder->getProduct();
 }
 
 GroundUnit::~GroundUnit()
@@ -40,7 +39,6 @@ GroundUnit::~GroundUnit()
 void GroundUnit::populateUnit(int numOfSoldiers)
 {
     int ran = std::rand() % 10;
-
     for (int i = 0; i < numOfSoldiers; i++)
     {
         Weapon *tempW;
@@ -81,11 +79,10 @@ void GroundUnit::populateUnit(int numOfSoldiers)
 
         unit.push_back(temp);
     }
-
-    tank = tankBuilder->getProduct();
 }
 
-int GroundUnit::getSize(){
+int GroundUnit::getSize()
+{
     return unit.size();
 }
 
@@ -110,12 +107,11 @@ ArmyIterator *GroundUnit::createIterator()
  */
 void GroundUnit::remove()
 {
-    // std::cout<<unit.size()<<"\n";
-    if (unit.size() > 0)
+    if(unit.size() > 0)
     {
         if (unit.front() != nullptr)
         {
-            Person* p = unit.front();
+            Person *p = unit.front();
             unit.pop_front();
             delete p;
         }
