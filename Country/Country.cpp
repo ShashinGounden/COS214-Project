@@ -137,8 +137,18 @@ double Country::getFunds()
  * @param fund
  */
 void Country::addFunds(double fund)
-{
-    funds += fund;
+{ 
+    funds += fund; 
+    // Check for state change
+    std::cout<<name<<" ";
+    Phase *temp = observedState->handleChange(funds);
+
+    if (observedState != temp)
+    {
+        delete observedState;
+    }
+
+    observedState = temp;
 }
 
 /**

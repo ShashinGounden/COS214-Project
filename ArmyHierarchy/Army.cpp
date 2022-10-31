@@ -178,7 +178,7 @@ void Army::Advance()
  */
 void Army::Retreat()
 {
-    std::cout << "Retreating all troops\n";
+    std::cout << countryName<<" pulls back all troops\n";
     // Code here
     ArmyIterator *itGround = groundUnit->createIterator();
     ArmyIterator *itAir = airUnit->createIterator();
@@ -247,7 +247,7 @@ void Army::Surrender()
     inFile.close();
 
     //how to get france's name? can only get Germany by using countries name var
-    std::cout << " has won the battle!"<<"\n";
+    //std::cout << " has won the battle!"<<"\n";
 
 
     /*ArmyIterator *itGround = groundUnit->createIterator();
@@ -293,6 +293,10 @@ void Army::RemoveSoldiers(int damage)
     if (damage >= 0)
     {
         std::cout << damage / 100 << " soldiers from " << countryName << " were killed in battle.\n";
+    }
+    else 
+    { 
+        Retreat();
     }
     std::cout << "AirUnit size: " << airUnit->getSize() << "\n";
     std::cout << "GroundUnit size: " << groundUnit->getSize() << "\n";

@@ -13,7 +13,7 @@ class Country
 {
 public: 
     Country(std::string,double);
-    ~Country();
+    virtual ~Country();
 
     std::string getName();
 
@@ -30,7 +30,8 @@ public:
     void joinAlliance(Alliance*);
     void notify();
 
-protected:
+protected: 
+    Country(){};
     Army *ARMY;
     std::string name;
     double funds;

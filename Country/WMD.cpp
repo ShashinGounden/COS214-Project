@@ -1,16 +1,16 @@
 #include "WMD.h"
 
-WMD::WMD() : Country("test", 20.0)
-{
-    owner = NULL;
-}
 
-WMD::WMD(Country *c) : Country(c->getName(), c->getFunds())
+WMD::WMD(Country *c) 
 {
     owner = c;
 }
 
 WMD::~WMD()
-{}
+{ 
+    if(owner!=NULL) 
+       delete owner; 
+
+}
 
 void WMD::wmd() {}
