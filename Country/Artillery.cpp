@@ -2,6 +2,7 @@
 
 Artillery::Artillery(Country *c) : WMD(c)
 {
+    std::cout<<owner->getName()<<" has prepared heavy artillery!\n";
 }
 
 Artillery::~Artillery()
@@ -20,9 +21,14 @@ void Artillery::wmd()
 void Artillery::Attack(Country* c)
 {
     if (owner != NULL)
-    {
-        std::cout << owner->getName() << " ";
-        ArtilleryStrike();
+    { 
+        if(owner->getFunds()>20000) 
+        {
+           std::cout << owner->getName() << " ";
+           wmd();  
+           c->takeDamage(1300000); 
+           owner->addFunds(-24000); 
+        }
         owner->Attack(c);
     }
 }
@@ -39,7 +45,7 @@ void Artillery::takeDamage(int g)
  */
 void Artillery::ArtilleryStrike()
 {
-    std::cout << "Artillery strike!\n";
+    std::cout <<owner->getName() << "has launched artillery strike!\n";
 
     // Add text art here - @ShashinGounden
 }

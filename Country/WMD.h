@@ -8,7 +8,6 @@ class WMD : public Country
 public: 
   
     WMD(Country*); 
-    WMD();
     virtual ~WMD();
 
     virtual void wmd() = 0; 

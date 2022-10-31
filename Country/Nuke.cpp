@@ -17,8 +17,13 @@ void Nuke::Attack(Country* c)
 {
     if (owner != NULL)
     {
-        std::cout << owner->getName() << " ";
-        deployNuke();
+       if(owner->getFunds()>20000) 
+        {
+           std::cout << owner->getName() << " ";
+           wmd();  
+           c->takeDamage(1500000); 
+           owner->addFunds(-25000); 
+        } 
         owner->Attack(c);
     }
 }
@@ -37,5 +42,5 @@ void Nuke::takeDamage(int d)
  */
 void Nuke::deployNuke()
 {
-    std::cout << "Deploy Nuke!\n";
+    std::cout<< owner->getName() << "deploys nuke!\n";
 }
