@@ -3,12 +3,10 @@
 
 /**
  * @brief Construct a new Alliance:: Alliance object
- * 
+ *
  */
 Alliance::Alliance()
 {
-    
-
     // Initialise list of responses
     responses.push_back(" joins one of the biggest alliances formed during the war.");
     responses.push_back(" joins new allies as tensions rise");
@@ -19,7 +17,7 @@ Alliance::Alliance()
 
 /**
  * @brief Destroy the Alliance:: Alliance object
- * 
+ *
  */
 Alliance::~Alliance()
 {
@@ -28,8 +26,8 @@ Alliance::~Alliance()
 
 /**
  * @brief function to add a country object to the alliance list
- * 
- * @param c 
+ *
+ * @param c
  */
 void Alliance::addAlliance(Country *c)
 {
@@ -38,8 +36,8 @@ void Alliance::addAlliance(Country *c)
 
 /**
  * @brief function to remove a country object from the alliance list
- * 
- * @param c 
+ *
+ * @param c
  */
 void Alliance::removeAlliance(Country *c)
 {
@@ -47,8 +45,8 @@ void Alliance::removeAlliance(Country *c)
 }
 
 /**
- * @brief 
- * 
+ * @brief
+ *
  */
 void Alliance::update()
 {

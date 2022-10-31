@@ -1,7 +1,7 @@
 #include "Dominate.h" 
 
 Dominate::Dominate() :Phase("Dominate"){ 
-    std::cout<<" is looking to finish off the enemy\n";
+    std::cout<<"is looking to finish off the enemy\n";
 }
 
 /**
@@ -26,6 +26,6 @@ Phase* Dominate::handleChange(double funds){
        return new Deter(); 
     else if(funds<5000.00) 
        return new Seize();  
-    std::cout<<" makes no changes to war plans\n";   
+    std::cout<<"makes no changes to war plans\n";   
     return this;      
 }

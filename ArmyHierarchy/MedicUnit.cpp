@@ -8,6 +8,8 @@
 MedicUnit::MedicUnit()
 {
     trans = new ArmouredTruckMaker();
+
+    truck = trans->getProduct();
 }
 
 /**
@@ -39,8 +41,6 @@ void MedicUnit::populateUnit(int numOfMedics)
     {
         unit.push_back(factory->createPerson(rand(), 100, "heal people"));
     }
-
-    truck = trans->getProduct();
 }
 
 ArmyIterator *MedicUnit::createIterator()

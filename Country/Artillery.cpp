@@ -1,8 +1,19 @@
 #include "Artillery.h"
+#include <string>
+#include <fstream>
+using namespace std;
+
+#ifdef WINDOWS
+#include <direct.h>
+#define GetCurrentDir _getcwd
+#else
+#include <unistd.h>
+#define GetCurrentDir getcwd
+#endif
 
 Artillery::Artillery(Country *c) : WMD(c)
 {
-    std::cout<<owner->getName()<<" has prepared heavy artillery!\n";
+    std::cout << owner->getName() << " has prepared heavy artillery!\n";
 }
 
 Artillery::~Artillery()
@@ -18,16 +29,15 @@ void Artillery::wmd()
  * @brief
  *
  */
-void Artillery::Attack(Country* c)
+void Artillery::Attack(Country *c)
 {
     if (owner != NULL)
-    { 
-        if(owner->getFunds()>20000) 
+    {
+        if (owner->getFunds() > 20000)
         {
-           std::cout << owner->getName() << " ";
-           wmd();  
-           c->takeDamage(1300000); 
-           owner->addFunds(-24000); 
+            wmd();
+            c->takeDamage(1300000);
+            owner->addFunds(-24000);
         }
         owner->Attack(c);
     }
@@ -35,8 +45,8 @@ void Artillery::Attack(Country* c)
 
 void Artillery::takeDamage(int g)
 {
-    if(owner!=NULL)
-       owner->takeDamage(g);
+    if (owner != NULL)
+        owner->takeDamage(g);
 }
 /**
  * @brief Artillery strike for the country
@@ -45,7 +55,29 @@ void Artillery::takeDamage(int g)
  */
 void Artillery::ArtilleryStrike()
 {
-    std::cout <<owner->getName() << "has launched artillery strike!\n";
+    std::cout << owner->getName() << " has launched artillery strike!\n";
 
     // Add text art here - @ShashinGounden
+    char buff[FILENAME_MAX]; // create string buffer to hold path
+    GetCurrentDir(buff, FILENAME_MAX);
+    string current_working_dir(buff);
+    string filepath = current_working_dir + "/Country/Artillery.txt";
+    string line = "";
+    ifstream inFile;
+    inFile.open(filepath);
+    cout << endl;
+
+    if (inFile.is_open())
+    {
+        while (getline(inFile, line))
+        {
+            cout << line << endl;
+        }
+    }
+    else
+    {
+        cout << "Failed to load Artil.txt" << endl;
+    }
+
+    inFile.close();
 }

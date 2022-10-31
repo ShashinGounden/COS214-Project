@@ -14,6 +14,7 @@ Country::Country(std::string n, double f)
     funds = f;
     std::cout << this->name + " has prepared their Army for battle!\n";
     createArmy();
+    std::cout << name << " ";
     observedState = new Seize();
 }
 
@@ -23,10 +24,17 @@ Country::Country(std::string n, double f)
  */
 Country::~Country()
 {
-    delete ARMY;
+    if (ARMY != nullptr)
+    {
+        delete ARMY;
+    }
     if (observedState != nullptr)
     {
         delete observedState;
+    }
+    if (alliance != nullptr)
+    {
+        delete alliance;
     }
 }
 
@@ -62,9 +70,9 @@ void Country::createArmy()
         ARMY = new Army(getName(), funds / 10, funds / 100, funds / 250);
     }
     int totalSoldiers = (funds / 10) + (funds / 100) + (funds / 250);
-
-    std::cout << "Total Soldiers from " <<name<<": " << totalSoldiers << "\n";
-    std::cout<<"\n";
+    funds -= totalSoldiers * 3;
+    std::cout << "Total Soldiers from " << name << ": " << totalSoldiers << "\n";
+    std::cout << "\n";
 }
 
 /**
@@ -81,10 +89,10 @@ void Country::Attack(Country *c)
     c->takeDamage(power);
 
     // Decrease countries funds
-    funds -= ((std::rand() % 10000) + 5000);
+    funds -= ((std::rand() % 20000) + 10000);
 
     // Check for state change
-    std::cout<<name<<" ";
+    std::cout << name << " ";
     Phase *temp = observedState->handleChange(funds);
 
     if (observedState != temp)
@@ -93,8 +101,8 @@ void Country::Attack(Country *c)
     }
 
     observedState = temp;
-    // Contact allies
-    notify();
+
+    notify(); // Contact allies
 }
 
 /**
@@ -107,7 +115,6 @@ void Country::takeDamage(int attack)
 {
     int defense = ARMY->Defend();
     int damage = attack - defense;
-    // std::cout << "Heal: " << defense << " <-> Damage: " << attack << " ------------ Calc = " << damage << "\n";
     ARMY->RemoveSoldiers(damage);
 }
 
@@ -134,14 +141,24 @@ double Country::getFunds()
 /**
  * @brief This function will be used to add funds to the country's arsenal
  *
+ * Will increase the number of soldiers in the units according to the funds being added
+ * funds gets decreased by the number of soldiers created multiplied by 3
+ *
  * @param fund
  */
 void Country::addFunds(double fund)
-{ 
-    funds += fund; 
+{
+    funds += fund;
     // Check for state change
-    std::cout<<name<<" ";
+    std::cout << name << " ";
     Phase *temp = observedState->handleChange(funds);
+
+    // Add Soldiers accoring to funds value
+    if (fund >= 1000)
+    {
+        ARMY->populateUnit(fund / 10, fund / 100, fund / 250);
+        // funds-= (fund/10 + fund/100 + fund/250)*2;
+    }
 
     if (observedState != temp)
     {
@@ -158,12 +175,12 @@ void Country::addFunds(double fund)
  * @return false
  */
 
-bool Country::surrender()
+bool Country::surrender(Country *c)
 {
     if (ARMY->Attack() <= 0)
     {
         std::cout << name;
-        ARMY->Surrender();
+        ARMY->Surrender(c);
         return true;
     }
     return false;

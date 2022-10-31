@@ -3,6 +3,7 @@
 #include <chrono>
 #include <fstream>
 #include <string>
+#include <bits/stdc++.h>
 using namespace std;
 
 #ifdef WINDOWS
@@ -34,7 +35,6 @@ void Airspace::remove(Country *force)
 void Airspace::warLoop()
 {
     cout << "BEGIN Sea battle War Loop" << endl;
-    
 }
 
 void Airspace::printBattleSummary()
@@ -56,21 +56,21 @@ void Airspace::printBattleSummary()
     for (const auto c : battleNickName)
     {
         cout << c << flush;
-     //   this_thread::sleep_for(chrono::milliseconds(200));
+        //   this_thread::sleep_for(chrono::milliseconds(200));
     }
     cout << endl;
 
     for (const auto c : battleDate)
     {
         cout << c << flush;
-     //   this_thread::sleep_for(chrono::milliseconds(200));
+        //   this_thread::sleep_for(chrono::milliseconds(200));
     }
     cout << endl;
 
     for (const auto c : Objective)
     {
         cout << c << flush;
-    //    this_thread::sleep_for(chrono::milliseconds(200));
+        //    this_thread::sleep_for(chrono::milliseconds(200));
     }
     cout << endl;
     cout << endl;
@@ -80,8 +80,8 @@ void Airspace::printBattleSummary()
 
 void Airspace::loadBattleArt()
 {
-    char buff[FILENAME_MAX]; //create string buffer to hold path
-    GetCurrentDir( buff, FILENAME_MAX );
+    char buff[FILENAME_MAX]; // create string buffer to hold path
+    GetCurrentDir(buff, FILENAME_MAX);
     string current_working_dir(buff);
 
     string filepath = current_working_dir + "/WarTheater/Normandy.txt";

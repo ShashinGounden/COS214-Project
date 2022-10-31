@@ -1,4 +1,15 @@
 #include "Nuke.h"
+#include <string>
+#include <fstream>
+using namespace std;
+
+#ifdef WINDOWS
+#include <direct.h>
+#define GetCurrentDir _getcwd
+#else
+#include <unistd.h>
+#define GetCurrentDir getcwd
+#endif
 
 Nuke::Nuke(Country *c) : WMD(c)
 {
@@ -13,17 +24,16 @@ void Nuke::wmd()
     deployNuke();
 }
 
-void Nuke::Attack(Country* c)
+void Nuke::Attack(Country *c)
 {
     if (owner != NULL)
     {
-       if(owner->getFunds()>20000) 
+        if (owner->getFunds() > 20000)
         {
-           std::cout << owner->getName() << " ";
-           wmd();  
-           c->takeDamage(1500000); 
-           owner->addFunds(-25000); 
-        } 
+            wmd();
+            c->takeDamage(1500000);
+            owner->addFunds(-25000);
+        }
         owner->Attack(c);
     }
 }
@@ -42,5 +52,29 @@ void Nuke::takeDamage(int d)
  */
 void Nuke::deployNuke()
 {
-    std::cout<< owner->getName() << "deploys nuke!\n";
+    std::cout << owner->getName() << " deploys nuke!\n";
+
+    char buff[FILENAME_MAX]; // create string buffer to hold path
+    GetCurrentDir(buff, FILENAME_MAX);
+    string current_working_dir(buff);
+    string filepath = current_working_dir + "/Country/Nuke.txt";
+    string line = "";
+    ifstream inFile;
+    inFile.open(filepath);
+    cout << endl;
+
+    if (inFile.is_open())
+    {
+        while (getline(inFile, line))
+        {
+            cout << line << endl;
+        }
+    }
+    else
+    {
+        cout << "Failed to load Nuke.txt" << endl;
+    }
+
+    inFile.close();
+
 }

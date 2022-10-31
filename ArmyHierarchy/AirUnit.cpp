@@ -13,6 +13,8 @@ AirUnit::AirUnit() : Unit()
     // boomFac = new ExplosiveFactory();
     weaponFactory = nullptr;
     jetBuilder = new AircraftMaker();
+
+    jet = jetBuilder->getProduct();
 }
 
 AirUnit::~AirUnit()
@@ -81,8 +83,6 @@ void AirUnit::populateUnit(int numOfPilots)
 
         unit.push_back(temp);
     }
-
-    jet = jetBuilder->getProduct();
 }
 
 int AirUnit::getSize(){

@@ -3,6 +3,7 @@
 #include <fstream>
 #include <thread>
 #include <chrono>
+#include "../Country/Country.h"
 
 #ifdef WINDOWS
 #include <direct.h>
@@ -26,9 +27,9 @@ Army::Army(std::string name, int numOfSoldiers, int numOfMedics, int numOfPilots
     groundUnit = gUnit;
     AirUnit *aUnit = new AirUnit();
     airUnit = aUnit;
-    //battle art for army summary
-    char buff[FILENAME_MAX]; //create string buffer to hold path
-    GetCurrentDir( buff, FILENAME_MAX );
+    // battle art for army summary
+    char buff[FILENAME_MAX]; // create string buffer to hold path
+    GetCurrentDir(buff, FILENAME_MAX);
     std::string current_working_dir(buff);
 
     std::string filepath = current_working_dir + "/ArmyHierarchy/Soldier.txt";
@@ -46,21 +47,22 @@ Army::Army(std::string name, int numOfSoldiers, int numOfMedics, int numOfPilots
         {
             iCount++;
 
-            if (iCount==6)
+            if (iCount == 6)
             {
-                std::cout << line +  "\t•Breakdown of the troops from "<<countryName<<":\n";;
+                std::cout << line + "\t•Breakdown of the troops from " << countryName << ":\n";
+                ;
             }
             else if (iCount == 7)
             {
-                std::cout <<line +  "\t\t-Ground Units: " << numOfSoldiers << "\n";
+                std::cout << line + "\t\t-Ground Units: " << numOfSoldiers << "\n";
             }
             else if (iCount == 8)
             {
-                std::cout <<line +  "\t\t-Medic Units: " << numOfMedics << "\n";
+                std::cout << line + "\t\t-Medic Units: " << numOfMedics << "\n";
             }
             else if (iCount == 9)
             {
-                std::cout <<line +  "\t\t-Air Units: " << numOfPilots << "\n";
+                std::cout << line + "\t\t-Air Units: " << numOfPilots << "\n";
             }
             else
             {
@@ -114,15 +116,12 @@ int Army::Attack()
     ArmyIterator *itGround = groundUnit->createIterator();
     ArmyIterator *itAir = airUnit->createIterator();
 
-    // int power = airUnit->getPower() + groundUnit->getPower();
     int power = 0;
-    int counter = 0;
     while (itGround->hasNext())
     {
         power += itGround->current()->getWeapon()->fire();
         itGround->increment();
     }
-    counter = 0;
     while (itAir->hasNext())
     {
         power += itAir->current()->getWeapon()->fire();
@@ -178,45 +177,21 @@ void Army::Advance()
  */
 void Army::Retreat()
 {
-    std::cout << countryName<<" pulls back all troops\n";
+    std::cout << countryName << " pulls back all troops\n";
     // Code here
-    ArmyIterator *itGround = groundUnit->createIterator();
-    ArmyIterator *itAir = airUnit->createIterator();
-    ArmyIterator *itMedic = medicUnit->createIterator();
-
-    /*while (itGround->hasNext())
-    {
-        itGround->current()->Retreat();
-        itGround->increment();
-    }
-
-    while (itAir->hasNext())
-    {
-        itAir->current()->Retreat();
-        itAir->increment();
-    }
-    std::cout << "MEDICS prepare the morphine!\n";
-    while (itMedic->hasNext())
-    {
-        itMedic->current()->Retreat();
-        itMedic->increment();
-    }*/
-    delete itGround;
-    delete itAir;
-    delete itMedic;
 }
 
 /**
  * @brief Country signs a treaty and Army surrenders
  * Calls each person's Surrender function
  */
-void Army::Surrender()
+void Army::Surrender(Country *c)
 {
-    //battle art for army summary
-    std::cout<< " waves the white flag and surrenders!\n";
+    // battle art for army summary
+    std::cout << " waves the white flag and surrenders!\n";
 
-    char buff[FILENAME_MAX]; //create string buffer to hold path
-    GetCurrentDir( buff, FILENAME_MAX );
+    char buff[FILENAME_MAX]; // create string buffer to hold path
+    GetCurrentDir(buff, FILENAME_MAX);
     std::string current_working_dir(buff);
 
     std::string filepath = current_working_dir + "/ArmyHierarchy/WhiteFlag.txt";
@@ -234,9 +209,7 @@ void Army::Surrender()
         {
             iCount++;
 
-
-                std::cout << line << std::endl;
-
+            std::cout << line << std::endl;
         }
     }
     else
@@ -246,31 +219,9 @@ void Army::Surrender()
 
     inFile.close();
 
-    //how to get france's name? can only get Germany by using countries name var
-    //std::cout << " has won the battle!"<<"\n";
-
-
-    /*ArmyIterator *itGround = groundUnit->createIterator();
-    ArmyIterator *itAir = airUnit->createIterator();
-    ArmyIterator *itMedic = medicUnit->createIterator();
-
-    while (itGround->hasNext())
-    {
-        // itGround->current()->Attack(); // Add surrender to Person Classes
-        itGround->increment();
-    }
-
-    while (itAir->hasNext())
-    {
-        // itAir->current()->Attack(); // Add surrender to Person Classes
-        itAir->increment();
-    }
-
-    while (itMedic->hasNext())
-    {
-        // itMedic->current()->Attack(); // Add surrender to Person Classes
-        itMedic->increment();
-    }*/
+    // how to get france's name? can only get Germany by using countries name var
+    std::cout << c->getName() << " has won the battle!"
+              << "\n";
 }
 /**
  * @brief Removes soldiers either from air unit or ground unit
@@ -279,10 +230,12 @@ void Army::Surrender()
  */
 void Army::RemoveSoldiers(int damage)
 {
+    int airUnitSize = airUnit->getSize();
+    int groundUnitSize = groundUnit->getSize();
     int num = std::rand() % 2;
     if (num == 0)
     {
-        for (int i = 0; i < damage / 100; i++)
+        for (int i = 0; i < damage / 1000; i++)
             airUnit->remove();
     }
     else
@@ -292,10 +245,25 @@ void Army::RemoveSoldiers(int damage)
     }
     if (damage >= 0)
     {
-        std::cout << damage / 100 << " soldiers from " << countryName << " were killed in battle.\n";
+        if (num == 0)
+        {
+            if (airUnit->getSize() < damage / 100)
+            {
+                std::cout << airUnitSize - airUnit->getSize() << " soldiers from " << countryName << " were killed in battle.\n";
+            }
+            else
+                std::cout << damage / 100 << " soldiers from " << countryName << " were killed in battle.\n";
+        }else{
+            if (groundUnit->getSize() < damage / 100)
+            {
+                std::cout << groundUnitSize - groundUnit->getSize() << " soldiers from " << countryName << " were killed in battle.\n";
+            }
+            else
+                std::cout << damage / 100 << " soldiers from " << countryName << " were killed in battle.\n";
+        }
     }
-    else 
-    { 
+    else
+    {
         Retreat();
     }
     std::cout << "AirUnit size: " << airUnit->getSize() << "\n";

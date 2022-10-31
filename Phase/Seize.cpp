@@ -1,7 +1,7 @@
 #include "Seize.h" 
 
 Seize::Seize() : Phase("Seize"){ 
-    std::cout<< " plans to take the initiative\n";
+    std::cout<< "plans to take the initiative\n";
 } 
 
 /**
@@ -25,6 +25,6 @@ Phase* Seize::handleChange(double funds){
         return new Deter(); 
     else if(funds>20000) 
         return new Dominate();  
-    std::cout<<" makes no changes to war plans\n";    
+    std::cout<<"makes no changes to war plans\n";    
     return this;    
 }

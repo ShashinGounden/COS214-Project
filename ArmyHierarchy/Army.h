@@ -6,6 +6,8 @@
 #include "AirUnit.h"
 #include <string>
 
+class Country;
+
 class Army
 {
 public:
@@ -18,7 +20,7 @@ public:
     int Attack();
     void Advance();
     void Retreat();
-    void Surrender();
+    void Surrender(Country*);
     int Defend();
     void RemoveSoldiers(int);
 
