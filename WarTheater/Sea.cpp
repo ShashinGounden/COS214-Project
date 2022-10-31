@@ -4,7 +4,7 @@
 #include <fstream>
 #include <string>
 #include <iostream>
-#include <bits/stdc++.h>
+//#include <bits/stdc++.h>
 #include "../Country/Alliance.h"
 #include "../Country/Artillery.h"
 #include "../Country/Nuke.h"

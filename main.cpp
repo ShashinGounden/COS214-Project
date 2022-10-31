@@ -42,7 +42,7 @@ int main()
    char buff[FILENAME_MAX]; // create string buffer to hold path
    GetCurrentDir(buff, FILENAME_MAX);
    string current_working_dir(buff);
-   string filepath = current_working_dir + "/Nuke.txt";
+   string filepath = current_working_dir + "/Welcome.txt";
    string line = "";
    ifstream inFile;
    inFile.open(filepath);
@@ -57,46 +57,18 @@ int main()
    }
    else
    {
-      cout << "Failed to load Nuke.txt" << endl;
+      cout << "Failed to load Welcome.txt" << endl;
    }
 
    inFile.close();
 
-   // Sea newSpace;
-   // newSpace.startGenericBattle();
+   Sea newSpace;
+   newSpace.startGenericBattle();
 
    // Testing decorator
    /*
     */
-   Country *Sweden = new Country("Sweden", 200000);
-   Country *Ireland = new Country("Ireland", 200000);
 
-   std::cout << "\n";
-
-   Sweden->Attack(Ireland);
-   Ireland->Attack(Sweden);
-
-   char ans = 'n';
-   std::cout << "Would you like to add a nuke to Sweden? [Y/N]:";
-   cin >> ans;
-
-   if (ans == 'Y' || ans == 'y')
-   {
-      // Sweden = new Nuke(Sweden);
-
-      std::cout << "Would you like to add artillery to Ireland? [Y/N]: ";
-      cin >> ans;
-   }
-
-   if (ans == 'Y' || ans == 'y'){
-      Ireland = new Artillery(Ireland);
-   }
-
-   Sweden->Attack(Ireland);
-   Ireland->Attack(Sweden);
-
-   delete Sweden;
-   delete Ireland;
 
    return 0;
 }

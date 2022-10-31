@@ -3,7 +3,7 @@
 #include <chrono>
 #include <fstream>
 #include <string>
-#include <bits/stdc++.h>
+//#include <bits/stdc++.h>
 using namespace std;
 
 #ifdef WINDOWS
