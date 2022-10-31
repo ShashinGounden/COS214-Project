@@ -74,7 +74,7 @@ Army::Army(std::string name, int numOfSoldiers, int numOfMedics, int numOfPilots
     }
 
     inFile.close();
-    std::this_thread::sleep_for(std::chrono::milliseconds(2000));
+    std::this_thread::sleep_for(std::chrono::milliseconds(4000));
     populateUnit(numOfSoldiers, numOfMedics, numOfPilots);
 }
 
