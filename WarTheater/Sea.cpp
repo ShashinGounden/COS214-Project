@@ -15,24 +15,52 @@
 
 using namespace std;
 
+/**
+ * @author Shashin Gounden
+ * @brief Constructor for Sea war theater
+ * Creates a Sea war Theater
+ */
+
 Sea::Sea()
 {
 }
 
+/**
+ * @author Shashin Gounden
+ * @brief Destructor for Sea war theater
+ * Deallocates memory after a War Theater is no longer used
+ */
+
 Sea::~Sea()
 {
 }
+
+/**
+ * @author Shashin Gounden
+ * @brief Adds a country to the war theater
+ * Adds country to a war theater by adding it to a vector using the push_back() method in the vector STL
+ */
 
 void Sea::add(Country *force)
 {
     countries.push_back(force);
 }
 
+/**
+ * @author Shashin Gounden
+ * @brief Removes a country from the war theater
+ * Removes a country from the war theater by removing it from a vector using the erase() method in the vector STL
+ */
 void Sea::remove(Country *force)
 {
     countries.erase(std::remove(countries.begin(), countries.end(), force), countries.end());
 }
 
+/**
+ * @author Shashin Gounden
+ * @brief Displays a summary of the Battle of Dunkirk using a typewriter effect and also using ASCII art as the GUI component
+ * ASCII art is loaded from the relevant text files
+ */
 void Sea::printBattleSummary()
 {
     string summary = "In 1940, nearly 300,000 Allied troops were stranded on the beach at Dunkirk, France. \n"
@@ -110,6 +138,12 @@ void Sea::printBattleSummary()
     this_thread::sleep_for(chrono::milliseconds(3000));
 }
 
+/**
+ * @author Shashin Gounden
+ * @brief Loads the ASCII art from a text file and displays it before the simulation begins
+ * ASCII art is loaded from the relevant text files
+ */
+
 void Sea::loadBattleArt()
 {
     char buff[FILENAME_MAX]; //create string buffer to hold path
@@ -137,6 +171,11 @@ void Sea::loadBattleArt()
 
     inFile.close();
 }
+
+/**
+ * @author Shashin Gounden
+ * @brief The war loop for the battle of dunkirk which gives the user a choice between real and design mode
+ */
 
 void Sea::warLoop()
 {
