@@ -39,6 +39,14 @@ AirUnit::~AirUnit()
     }
 }
 
+/**
+ * @brief create a number of soldiers and give each one a weapon.
+ * weapons are created upon a random probability. 20% explosives
+ * 40% rifles and pistols, and of those a 50% chance of the type
+ * of weapon being a long or short range variant.
+ * 
+ * @param numOfPilots 
+ */
 void AirUnit::populateUnit(int numOfPilots)
 {
     int ran = std::rand() % 10;
@@ -85,10 +93,22 @@ void AirUnit::populateUnit(int numOfPilots)
     }
 }
 
-int AirUnit::getSize(){
+/**
+ * @brief return size of unit
+ * 
+ * @return int 
+ */
+int AirUnit::getSize()
+{
     return unit.size();
 }
 
+/**
+ * @brief calculate the total firepower of unit by adding each soldiers weapons
+ * firepower.
+ * 
+ * @return int 
+ */
 int AirUnit::getPower()
 {
     int total = 0;
