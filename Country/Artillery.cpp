@@ -13,7 +13,7 @@ using namespace std;
 
 Artillery::Artillery(Country *c) : WMD(c)
 {
-    std::cout << owner->getName() << " has prepared heavy artillery!\n";
+ //   std::cout << owner->getName() << " has prepared heavy artillery!\n";
 }
 
 Artillery::~Artillery()

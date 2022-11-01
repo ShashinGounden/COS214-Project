@@ -62,6 +62,9 @@ int main()
 
    inFile.close();
 
+
+   //Add option to select battle to simulate
+
    Sea newSpace;
    newSpace.startGenericBattle();
 

@@ -85,30 +85,33 @@ void Sea::printBattleSummary()
     for (const auto c : battleNickName)
     {
         cout << c << flush;
-        //    this_thread::sleep_for(chrono::milliseconds(200));
+            this_thread::sleep_for(chrono::milliseconds(200));
     }
     cout << endl;
 
     for (const auto c : battleDate)
     {
         cout << c << flush;
-        //   this_thread::sleep_for(chrono::milliseconds(200));
+           this_thread::sleep_for(chrono::milliseconds(200));
     }
     cout << endl;
 
     for (const auto c : Objective)
     {
         cout << c << flush;
-        //   this_thread::sleep_for(chrono::milliseconds(200));
+        this_thread::sleep_for(chrono::milliseconds(200));
     }
     cout << endl;
 
     for (const auto c : Place)
     {
         cout << c << flush;
-        //   this_thread::sleep_for(chrono::milliseconds(200));
+        this_thread::sleep_for(chrono::milliseconds(200));
     }
     cout << endl;
+
+    this_thread::sleep_for(chrono::milliseconds(1000));
+
     char buff[FILENAME_MAX]; // create string buffer to hold path
     GetCurrentDir(buff, FILENAME_MAX);
     string current_working_dir(buff);
@@ -134,12 +137,12 @@ void Sea::printBattleSummary()
 
     inFile.close();
 
-    //  this_thread::sleep_for(chrono::milliseconds(3000));
+    this_thread::sleep_for(chrono::milliseconds(3000));
 
     cout << endl;
 
     cout << summary << endl;
-    // this_thread::sleep_for(chrono::milliseconds(3000));
+    this_thread::sleep_for(chrono::milliseconds(3000));
 }
 
 /**
@@ -329,8 +332,8 @@ void Sea::warLoop()
 
                     if (iWMD == 1)
                     {
-                        // country1 = new Nuke(country1); 
-
+                        // country1 = new Nuke(country1);
+                        country1 = new Nuke(country1);
                         //Country* n=country1
                         //country1=country->returnOwner();
                         //wmd->returnOwner();
@@ -338,8 +341,8 @@ void Sea::warLoop()
                     }
                     else if (iWMD == 2)
                     {
-                        std::cout << country1->getName() << " has prepared heavy artillery!\n";
-                        
+                       // std::cout << country1->getName() << " has prepared heavy artillery!\n";
+                        country1 = new Artillery(country1);
                     }
                 }
                 iCount1++;
@@ -364,10 +367,12 @@ void Sea::warLoop()
                     if (iWMD == 1)
                     {
                         // NUKE
+                        country2 = new Nuke(country2);
                     }
                     else if (iWMD == 2)
                     {
                         // ARTILLERY STRIKE
+                        country2 = new Artillery(country2);
                     }
                 }
                 iCount2++;
