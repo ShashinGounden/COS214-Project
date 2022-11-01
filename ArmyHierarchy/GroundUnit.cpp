@@ -36,6 +36,14 @@ GroundUnit::~GroundUnit()
     }
 }
 
+/**
+ * @brief create a number of soldiers and give each one a weapon.
+ * weapons are created upon a random probability. 20% explosives
+ * 40% rifles and pistols, and of those a 50% chance of the type
+ * of weapon being a long or short range variant.
+ * 
+ * @param numOfSoldiers
+ */
 void GroundUnit::populateUnit(int numOfSoldiers)
 {
     int ran = std::rand() % 10;
@@ -81,11 +89,22 @@ void GroundUnit::populateUnit(int numOfSoldiers)
     }
 }
 
+/**
+ * @brief Return size of unit
+ * 
+ * @return int 
+ */
 int GroundUnit::getSize()
 {
     return unit.size();
 }
 
+/**
+ * @brief calculate the total firepower of unit by adding each soldiers weapons
+ * firepower.
+ * 
+ * @return int 
+ */
 int GroundUnit::getPower()
 {
     int total = 0;
