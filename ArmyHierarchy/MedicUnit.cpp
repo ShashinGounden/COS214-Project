@@ -33,6 +33,14 @@ MedicUnit::~MedicUnit()
     }
 }
 
+/**
+ * @brief create a number of soldiers and give each one a weapon.
+ * weapons are created upon a random probability. 20% explosives
+ * 40% rifles and pistols, and of those a 50% chance of the type
+ * of weapon being a long or short range variant.
+ * 
+ * @param numOfMedics 
+ */
 void MedicUnit::populateUnit(int numOfMedics)
 {
     factory = new MedicFactory();
@@ -48,6 +56,12 @@ ArmyIterator *MedicUnit::createIterator()
     return new MedicUnitIterator(unit);
 }
 
+/**
+ * @brief Calculate total healing power of medics unit by adding up all available medics
+ * heal value.
+ * 
+ * @return int 
+ */
 int MedicUnit::getHealPower() // Add up total healing power of medics unit
 {
     int total = 0;
