@@ -7,8 +7,7 @@ WMD::WMD(Country *c)
 
 WMD::~WMD()
 {
-    if (owner != NULL)
-        delete owner;
+    
 }
 
 void WMD::Retreat()
@@ -60,4 +59,10 @@ void WMD::notify()
 
 void WMD::wmd()
 {
+}
+
+Country* WMD::getCountry(){ 
+    if(owner!=NULL)
+       return owner->getCountry(); 
+    return NULL;   
 }

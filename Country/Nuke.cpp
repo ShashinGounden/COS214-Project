@@ -28,12 +28,9 @@ void Nuke::Attack(Country *c)
 {
     if (owner != NULL)
     {
-        if (owner->getFunds() > 20000)
-        {
-            wmd();
-            c->takeDamage(1500000);
-            owner->addFunds(-25000);
-        }
+        wmd();
+        c->takeDamage(1500000);
+        owner->addFunds(-25000);
         owner->Attack(c);
     }
 }
@@ -76,5 +73,4 @@ void Nuke::deployNuke()
     }
 
     inFile.close();
-
 }

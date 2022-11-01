@@ -39,7 +39,7 @@ What to document?
 
 ## Implementation
 
-Soldiers - Medics - Pilots conversion (funds/10, funds/250, funds/500)
+Soldiers - Medics - Pilots conversion (funds/10, funds/100, funds/100)
 
 - for Attack() function
 

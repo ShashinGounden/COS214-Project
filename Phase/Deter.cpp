@@ -1,7 +1,7 @@
 #include "Deter.h" 
 
 Deter::Deter() :Phase("Deter"){
-    std::cout<< "will continue to press the attack\n";
+    std::cout<< "will continue to press the attack\n\n";
 } 
 
 /**
@@ -26,7 +26,7 @@ Phase* Deter::handleChange(double funds){
        return new Dominate(); 
     else if(funds<5000.00) 
        return new Seize();  
-    std::cout<<"makes no changes to war plans\n";   
+    std::cout<<"makes no changes to war plans\n\n";   
     return this;   
 }
 

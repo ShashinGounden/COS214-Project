@@ -85,38 +85,38 @@ void Sea::printBattleSummary()
     for (const auto c : battleNickName)
     {
         cout << c << flush;
-            this_thread::sleep_for(chrono::milliseconds(200));
+        //    this_thread::sleep_for(chrono::milliseconds(200));
     }
     cout << endl;
 
     for (const auto c : battleDate)
     {
         cout << c << flush;
-           this_thread::sleep_for(chrono::milliseconds(200));
+        //   this_thread::sleep_for(chrono::milliseconds(200));
     }
     cout << endl;
 
     for (const auto c : Objective)
     {
         cout << c << flush;
-        this_thread::sleep_for(chrono::milliseconds(200));
+        // this_thread::sleep_for(chrono::milliseconds(200));
     }
     cout << endl;
 
     for (const auto c : Place)
     {
         cout << c << flush;
-        this_thread::sleep_for(chrono::milliseconds(200));
+        // this_thread::sleep_for(chrono::milliseconds(200));
     }
     cout << endl;
 
-    this_thread::sleep_for(chrono::milliseconds(1000));
+    // this_thread::sleep_for(chrono::milliseconds(1000));
 
     char buff[FILENAME_MAX]; // create string buffer to hold path
     GetCurrentDir(buff, FILENAME_MAX);
     string current_working_dir(buff);
 
-    string filepath = current_working_dir + "/WarTheater/DunkirkMap.txt";
+    string filepath = current_working_dir + "WarTheater/DunkirkMap.txt";
 
     string line = "";
     ifstream inFile;
@@ -137,12 +137,12 @@ void Sea::printBattleSummary()
 
     inFile.close();
 
-    this_thread::sleep_for(chrono::milliseconds(3000));
+    // this_thread::sleep_for(chrono::milliseconds(3000));
 
     cout << endl;
 
     cout << summary << endl;
-    this_thread::sleep_for(chrono::milliseconds(3000));
+    // this_thread::sleep_for(chrono::milliseconds(3000));
 }
 
 /**
@@ -205,17 +205,23 @@ void Sea::warLoop()
     if (ModeChoice == 1)
     {
         // Countries: Germany, France
-        Country *Germany = new Country("Germany", 100000);
+        Country *Germany = new Country("Germany", 150000);
         Country *France = new Country("France", 200000);
 
         while (!Germany->surrender(France) && !France->surrender(Germany))
         {
+            if (Germany->getFunds() < 40000)
+            {
+                France = new Artillery(France);
+            }
+
             France->Attack(Germany);
             cout << endl;
             Germany->Attack(France);
             cout << endl;
         }
 
+        France = France->getCountry();
         delete Germany;
         delete France;
     }
@@ -224,15 +230,16 @@ void Sea::warLoop()
         // array of ally countries
         string allies[7] = {"Germany", "Italy", "Japan", "France", "Great Britain", "The United States", "The Soviet Union"};
 
-        double allyFunds[7] = {
-            66000, // Germany - Nazi Scum
-            30000, // Italy
-            35000, // Japan
-            40000, // France
-            50000, // Great Britain
-            65000, // United States
-            62000  // Soviet Union
-        };
+        double allyFunds[7] =
+            {
+                66000, // Germany - Nazi Scum
+                30000, // Italy
+                35000, // Japan
+                40000, // France
+                50000, // Great Britain
+                65000, // United States
+                62000  // Soviet Union
+            };
 
         int iCount1 = 0;
         int iCount2 = 0;
@@ -257,11 +264,16 @@ void Sea::warLoop()
 
         int a = 0; // input variable for if they want to form an alliance
 
+        int iAttackCount = 0;
+
         // main function loop
         while (!country1->surrender(country2) && !country2->surrender(country1))
         {
+            cout << country1->getName() << " FUNDS: " << country1->getFunds() << endl;
+            cout << country2->getName() << " FUNDS: " << country2->getFunds() << endl;
             // function to ask the user if they want to add an alliance
-            if (country1->getFunds() < f1 / 2 && iCount1 == 0)
+
+            if (iAttackCount > 1 && iCount1 == 0)
             {
                 cout << "Would you like " << c1 << " to form an alliance with one of these countries: \n";
                 std::cout << "0. None, ";
@@ -283,7 +295,7 @@ void Sea::warLoop()
                 }
                 iCount1++;
             }
-            else if (country2->getFunds() < f2 / 2 && iCount2 == 0)
+            else if (iAttackCount > 1 && iCount2 == 0)
             {
                 cout << "Would you like " << c2 << " to form an alliance with one of these countries: \n";
                 std::cout << "0. None, ";
@@ -301,19 +313,12 @@ void Sea::warLoop()
                     Alliance *ally = new Alliance();
                     ally->addAlliance(ally1);
                     country2->joinAlliance(new Alliance());
-                    std::cout << country2->getName() << "ADDED funds and soldiers from allies army\n";
                     country2->addFunds(allyFunds[a - 1]);
                 }
                 iCount2++;
             }
-
-            country2->Attack(country1);
-            cout << endl;
-            country1->Attack(country2);
-            cout << endl;
-
             // WMD, only asks if Ally option has been asked already
-            if (country1->getFunds() < f1 / 3 && iCount1 == 1)
+            if (iAttackCount > 2 && iCount1 == 1)
             {
                 cout << "Would you like " << country1->getName() << " to deploy a weapon of mass destruction? [Y/N]: ";
                 char ans = 'n';
@@ -332,22 +337,17 @@ void Sea::warLoop()
 
                     if (iWMD == 1)
                     {
-                        // country1 = new Nuke(country1);
                         country1 = new Nuke(country1);
-                        //Country* n=country1
-                        //country1=country->returnOwner();
-                        //wmd->returnOwner();
-                         
                     }
                     else if (iWMD == 2)
                     {
-                       // std::cout << country1->getName() << " has prepared heavy artillery!\n";
+                        // std::cout << country1->getName() << " has prepared heavy artillery!\n";
                         country1 = new Artillery(country1);
                     }
                 }
                 iCount1++;
             }
-            else if (country2->getFunds() < f2 / 3 && iCount2 == 1)
+            else if (iAttackCount > 2 && iCount2 == 1)
             {
                 cout << "Would you like " << country2->getName() << " to deploy a weapon of mass destruction? [Y/N]: ";
                 char ans = 'n';
@@ -377,8 +377,16 @@ void Sea::warLoop()
                 }
                 iCount2++;
             }
+            country2->Attack(country1);
+            cout << endl;
+            country1->Attack(country2);
+            cout << endl;
+
+            iAttackCount++;
         }
 
+        country1 = country1->getCountry();
+        country2 = country2->getCountry();
         delete country1;
         delete country2;
         if (ally1 != nullptr)

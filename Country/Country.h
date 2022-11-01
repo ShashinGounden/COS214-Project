@@ -28,7 +28,9 @@ public:
     virtual void addFunds(double); 
   
     virtual void joinAlliance(Alliance*);
-    virtual void notify();
+    virtual void notify(); 
+
+    virtual Country* getCountry();
 
 protected: 
     Country(){};

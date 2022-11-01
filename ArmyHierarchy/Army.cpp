@@ -3,6 +3,7 @@
 #include <fstream>
 #include <thread>
 #include <chrono>
+#include<ctime>
 #include "../Country/Country.h"
 
 #ifdef WINDOWS
@@ -135,6 +136,7 @@ int Army::Attack()
 int Army::Defend()
 {
     int defense = medicUnit->getHealPower();
+    std::cout<<"The medics of "<<this->countryName<<" healed "<<defense/100<<" soldiers on the battlefield.\n";
     return defense;
 }
 
@@ -178,7 +180,6 @@ void Army::Advance()
 void Army::Retreat()
 {
     std::cout << countryName << " pulls back all troops\n";
-    // Code here
 }
 
 /**
@@ -232,34 +233,51 @@ void Army::RemoveSoldiers(int damage)
 {
     int airUnitSize = airUnit->getSize();
     int groundUnitSize = groundUnit->getSize();
+    // srand(static_cast<unsigned>(time(0)));
     int num = std::rand() % 2;
     if (num == 0)
     {
-        for (int i = 0; i < damage / 1000; i++)
+        for (int i = 0; i < damage/10; i++)
             airUnit->remove();
     }
     else
     {
-        for (int i = 0; i < damage / 100; i++)
+        for (int i = 0; i < damage; i++)
             groundUnit->remove();
     }
     if (damage >= 0)
     {
         if (num == 0)
         {
-            if (airUnit->getSize() < damage / 100)
+            if (airUnit->getSize() < damage / 10)
             {
-                std::cout << airUnitSize - airUnit->getSize() << " soldiers from " << countryName << " were killed in battle.\n";
+                if (airUnitSize == 0)
+                {
+                    std::cout << "There were no casualties to the air unit in this attack.\n";
+                }
+                else
+                {
+                    std::cout << airUnitSize - airUnit->getSize() << " soldiers from " << countryName << " were killed in battle.\n";
+                }
+                
             }
             else
-                std::cout << damage / 100 << " soldiers from " << countryName << " were killed in battle.\n";
-        }else{
-            if (groundUnit->getSize() < damage / 100)
+                std::cout << damage / 10 << " soldiers from " << countryName << " were killed in battle.\n";
+        }else
+        {
+            if (groundUnit->getSize() < damage)
             {
-                std::cout << groundUnitSize - groundUnit->getSize() << " soldiers from " << countryName << " were killed in battle.\n";
+                if (groundUnitSize == 0)
+                {
+                    std::cout << "There were no casualties to the ground units in this attack.\n";
+                }
+                else
+                {
+                    std::cout << groundUnitSize - groundUnit->getSize() << " soldiers from " << countryName << " were killed in battle.\n";
+                } 
             }
             else
-                std::cout << damage / 100 << " soldiers from " << countryName << " were killed in battle.\n";
+                std::cout << damage << " soldiers from " << countryName << " were killed in battle.\n";
         }
     }
     else

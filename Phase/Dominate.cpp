@@ -1,7 +1,7 @@
 #include "Dominate.h" 
 
 Dominate::Dominate() :Phase("Dominate"){ 
-    std::cout<<"is looking to finish off the enemy\n";
+    std::cout<<"is looking to finish off the enemy\n\n";
 }
 
 /**

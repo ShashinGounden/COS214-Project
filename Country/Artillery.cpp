@@ -13,7 +13,7 @@ using namespace std;
 
 Artillery::Artillery(Country *c) : WMD(c)
 {
- //   std::cout << owner->getName() << " has prepared heavy artillery!\n";
+    //   std::cout << owner->getName() << " has prepared heavy artillery!\n";
 }
 
 Artillery::~Artillery()
@@ -33,12 +33,11 @@ void Artillery::Attack(Country *c)
 {
     if (owner != NULL)
     {
-        if (owner->getFunds() > 20000)
-        {
-            wmd();
-            c->takeDamage(1300000);
-            owner->addFunds(-24000);
-        }
+
+        wmd();
+        c->takeDamage(1300000);
+        owner->addFunds(-24000);
+
         owner->Attack(c);
     }
 }

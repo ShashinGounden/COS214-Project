@@ -59,17 +59,17 @@ void Country::createArmy()
 {
     if (funds > 1000 && funds <= 10000)
     {
-        ARMY = new Army(getName(), funds / 10, funds / 100, funds / 250);
+        ARMY = new Army(getName(), funds / 10, funds / 100, funds / 100);
     }
     else if (funds <= 50000 && funds > 10000)
     {
-        ARMY = new Army(getName(), funds / 10, funds / 100, funds / 250);
+        ARMY = new Army(getName(), funds / 10, funds / 100, funds / 100);
     }
     else if (funds > 50000)
     {
-        ARMY = new Army(getName(), funds / 10, funds / 100, funds / 250);
+        ARMY = new Army(getName(), funds / 10, funds / 100, funds / 100);
     }
-    int totalSoldiers = (funds / 10) + (funds / 100) + (funds / 250);
+    int totalSoldiers = (funds / 10) + (funds / 100) + (funds / 100);
     funds -= totalSoldiers * 3;
     std::cout << "Total Soldiers from " << name << ": " << totalSoldiers << "\n";
     std::cout << "\n";
@@ -114,7 +114,8 @@ void Country::Attack(Country *c)
 void Country::takeDamage(int attack)
 {
     int defense = ARMY->Defend();
-    int damage = attack - defense;
+    
+    int damage = (attack/100) - (defense/100);
     ARMY->RemoveSoldiers(damage);
 }
 
@@ -142,7 +143,7 @@ double Country::getFunds()
  * @brief This function will be used to add funds to the country's arsenal
  *
  * Will increase the number of soldiers in the units according to the funds being added
- * funds gets decreased by the number of soldiers created multiplied by 3
+ * funds gets decreased by the number of soldiers created multiplied by 2
  *
  * @param fund
  */
@@ -156,8 +157,8 @@ void Country::addFunds(double fund)
     // Add Soldiers accoring to funds value
     if (fund >= 1000)
     {
-        ARMY->populateUnit(fund / 10, fund / 100, fund / 250);
-        // funds-= (fund/10 + fund/100 + fund/250)*2;
+        ARMY->populateUnit(fund / 10, fund / 100, fund / 150);
+        funds-= (fund/10 + fund/100 + fund/150)*2;
     }
 
     if (observedState != temp)
@@ -209,4 +210,8 @@ void Country::notify()
         alliance->update();
         alliance->addAlliance(this);
     }
+}
+
+Country* Country::getCountry(){ 
+    return this;
 }
