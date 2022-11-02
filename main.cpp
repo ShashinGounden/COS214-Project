@@ -63,11 +63,70 @@ int main()
    inFile.close();
 
 
-   //Add option to select battle to simulate
+   //Press enter to continue
+   GetCurrentDir(buff, FILENAME_MAX);
+   string current_working_dir1(buff);
+    filepath = current_working_dir1 + "/BeginGame.txt";
+    line = "";
+   inFile.open(filepath);
+   cout << endl;
 
-   Sea newSpace;
-   newSpace.startGenericBattle();
+   if (inFile.is_open())
+   {
+      while (getline(inFile, line))
+      {
+         cout << line << endl;
+      }
+   }
+   else
+   {
+      cout << "Failed to load BeginGame.txt" << endl;
+   }
 
+   inFile.close();
+
+   //Waits for enter key to be pressed
+   cin.get();
+
+   //Select battle
+   GetCurrentDir(buff, FILENAME_MAX);
+   string current_working_dir2(buff);
+    filepath = current_working_dir2 + "/SelectBattle.txt";
+    line = "";
+   inFile.open(filepath);
+   cout << endl;
+
+   if (inFile.is_open())
+   {
+      while (getline(inFile, line))
+      {
+         cout << line << endl;
+      }
+   }
+   else
+   {
+      cout << "Failed to load SelectBattle.txt" << endl;
+   }
+   inFile.close();
+
+   int iChoice = -1;
+   cout<<"Enter your choice [1/2]: ";
+   cin>>iChoice;
+   cout<<endl;
+
+   if (iChoice == 1)
+   {
+      Sea DunkirkTheater;
+      DunkirkTheater.startGenericBattle();
+
+   }
+   else if (iChoice == 2)
+   {
+      Airspace PearlHarborTheater;
+      PearlHarborTheater.startGenericBattle();
+   }
+
+   
    // Testing decorator
    /*
     */

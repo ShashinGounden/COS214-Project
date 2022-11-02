@@ -5,16 +5,14 @@
  * Create a soldier factory to then create soldier objects to pushback to
  * the unit object
  */
-AirUnit::AirUnit() : Unit()
+AirUnit::AirUnit(string name) : Unit(name)
 {
     factory = new SoldierFactory();
-    // rifleFac = new RifleFactory();
-    // pistolFac = new PistolFactory();
-    // boomFac = new ExplosiveFactory();
     weaponFactory = nullptr;
     jetBuilder = new AircraftMaker();
 
     jet = jetBuilder->getProduct();
+    cout << this->cName << "'s Air unit has prepared its fleet of jets." << endl;
 }
 
 AirUnit::~AirUnit()
@@ -44,8 +42,8 @@ AirUnit::~AirUnit()
  * weapons are created upon a random probability. 20% explosives
  * 40% rifles and pistols, and of those a 50% chance of the type
  * of weapon being a long or short range variant.
- * 
- * @param numOfPilots 
+ *
+ * @param numOfPilots
  */
 void AirUnit::populateUnit(int numOfPilots)
 {
@@ -95,8 +93,8 @@ void AirUnit::populateUnit(int numOfPilots)
 
 /**
  * @brief return size of unit
- * 
- * @return int 
+ *
+ * @return int
  */
 int AirUnit::getSize()
 {
@@ -106,8 +104,8 @@ int AirUnit::getSize()
 /**
  * @brief calculate the total firepower of unit by adding each soldiers weapons
  * firepower.
- * 
- * @return int 
+ *
+ * @return int
  */
 int AirUnit::getPower()
 {
@@ -139,7 +137,7 @@ void AirUnit::remove()
     {
         if (unit.front() != nullptr)
         {
-            Person* p = unit.front();
+            Person *p = unit.front();
             unit.pop_front();
             delete p;
         }

@@ -21,7 +21,7 @@ class AirUnit : public Unit
     Aircraft* jet;
 
     public:
-    AirUnit();
+    AirUnit(string);
     ~AirUnit();
     void populateUnit(int);
     ArmyIterator *createIterator();

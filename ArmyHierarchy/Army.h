@@ -35,6 +35,7 @@ private:
     GroundUnit *groundUnit;
     AirUnit *airUnit;
     std::string countryName;
+    bool fAttack;
 };
 
 #endif

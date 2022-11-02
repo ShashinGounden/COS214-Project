@@ -5,11 +5,12 @@
  * Create a medic factory to then create medic objects to pushback to
  * the unit object
  */
-MedicUnit::MedicUnit()
+MedicUnit::MedicUnit(string name): Unit(name)
 {
     trans = new ArmouredTruckMaker();
 
     truck = trans->getProduct();
+    cout << this->cName << "'s Medic unit has ordered armoured trucks for protection." << endl;
 }
 
 /**

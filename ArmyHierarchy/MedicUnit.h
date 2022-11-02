@@ -16,7 +16,7 @@ class MedicUnit : public Unit
     ArmouredTruck* truck;
 
     public:
-    MedicUnit();
+    MedicUnit(string);
     ~MedicUnit();
     void populateUnit(int);
     ArmyIterator *createIterator();

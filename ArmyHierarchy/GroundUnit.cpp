@@ -5,13 +5,15 @@
  * Create a soldier factory to then create soldier objects to pushback to
  * the unit object
  */
-GroundUnit::GroundUnit() : Unit()
+GroundUnit::GroundUnit(string name) : Unit(name)
 {
     weaponFactory = nullptr;
     factory = new SoldierFactory();
     tankBuilder = new TankMaker();
 
     tank = tankBuilder->getProduct();
+
+    cout <<this->cName<< "'s Ground unit keep their tanks on standby." << endl;
 }
 
 GroundUnit::~GroundUnit()
@@ -41,7 +43,7 @@ GroundUnit::~GroundUnit()
  * weapons are created upon a random probability. 20% explosives
  * 40% rifles and pistols, and of those a 50% chance of the type
  * of weapon being a long or short range variant.
- * 
+ *
  * @param numOfSoldiers
  */
 void GroundUnit::populateUnit(int numOfSoldiers)
@@ -91,8 +93,8 @@ void GroundUnit::populateUnit(int numOfSoldiers)
 
 /**
  * @brief Return size of unit
- * 
- * @return int 
+ *
+ * @return int
  */
 int GroundUnit::getSize()
 {
@@ -102,8 +104,8 @@ int GroundUnit::getSize()
 /**
  * @brief calculate the total firepower of unit by adding each soldiers weapons
  * firepower.
- * 
- * @return int 
+ *
+ * @return int
  */
 int GroundUnit::getPower()
 {
@@ -126,7 +128,7 @@ ArmyIterator *GroundUnit::createIterator()
  */
 void GroundUnit::remove()
 {
-    if(unit.size() > 0)
+    if (unit.size() > 0)
     {
         if (unit.front() != nullptr)
         {

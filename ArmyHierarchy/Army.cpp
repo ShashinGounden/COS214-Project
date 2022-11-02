@@ -22,12 +22,13 @@
 Army::Army(std::string name, int numOfSoldiers, int numOfMedics, int numOfPilots)
 {
     countryName = name;
-    MedicUnit *mUnit = new MedicUnit();
+    MedicUnit *mUnit = new MedicUnit(name);
     medicUnit = mUnit;
-    GroundUnit *gUnit = new GroundUnit();
+    GroundUnit *gUnit = new GroundUnit(name);
     groundUnit = gUnit;
-    AirUnit *aUnit = new AirUnit();
+    AirUnit *aUnit = new AirUnit(name);
     airUnit = aUnit;
+    fAttack = false;
     // battle art for army summary
     char buff[FILENAME_MAX]; // create string buffer to hold path
     GetCurrentDir(buff, FILENAME_MAX);
@@ -116,6 +117,12 @@ int Army::Attack()
 {
     ArmyIterator *itGround = groundUnit->createIterator();
     ArmyIterator *itAir = airUnit->createIterator();
+
+    if(!fAttack){
+        std::cout << countryName << "'s soldiers and medics have been transported to the frontlines for battle.\n";
+        std::cout << countryName << "'s Air Units are incoming.\n";
+        fAttack = true;
+    }
 
     int power = 0;
     while (itGround->hasNext())
@@ -215,7 +222,7 @@ void Army::Surrender(Country *c)
             }
             else if (iCount == 6)
             {
-                std::cout << line << "\t\t" << c->getName() << " has won the battle!";
+                std::cout << line << "\t\t" << c->getName() << " has won the battle!\n";
             }
             else
             {

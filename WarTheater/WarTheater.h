@@ -21,8 +21,8 @@ public:
     virtual void loadBattleArt() = 0;
     void startGenericBattle()
     {
-        printBattleSummary();
         loadBattleArt();
+        printBattleSummary();
         warLoop();
     }
 

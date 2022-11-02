@@ -221,9 +221,9 @@ void Sea::warLoop()
             }
 
             France->Attack(Germany);
-            France=France->getCountry();
-            cout << endl; 
-            //Check for surrender 
+            France = France->getCountry();
+            cout << endl;
+            // Check for surrender
             if (Germany->surrender(France))
             {
                 break;
@@ -235,9 +235,8 @@ void Sea::warLoop()
                 break;
             }
 
-            cout << endl;  
-            //Checl 
-            
+            cout << endl;
+            // Checl
         }
 
         France = France->getCountry();
@@ -404,12 +403,11 @@ void Sea::warLoop()
             iAttackCount++;
         }
 
-        std::cout<<"Total number of fallen soldiers for "<< country1->getName();
-        std::cout<< ": " << (f1/10 + f1/50) - country1->getNumOfSoldiers() << "\n\n";
+        std::cout << "Total number of fallen soldiers for " << country1->getName();
+        std::cout << ": " << (f1 / 10 + f1 / 50) - country1->getNumOfSoldiers() << "\n\n";
 
-        std::cout<<"Total number of fallen soldiers for "<< country2->getName();
-        std::cout<< ": " << (f2/10 + f2/50) - country2->getNumOfSoldiers() << "\n\n";
-
+        std::cout << "Total number of fallen soldiers for " << country2->getName();
+        std::cout << ": " << (f2 / 10 + f2 / 50) - country2->getNumOfSoldiers() << "\n\n";
 
         country1 = country1->getCountry();
         country2 = country2->getCountry();

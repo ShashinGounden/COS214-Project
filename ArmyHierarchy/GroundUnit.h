@@ -20,7 +20,7 @@ class GroundUnit : public Unit
     Tank* tank;
     
     public:
-    GroundUnit();
+    GroundUnit(string);
     ~GroundUnit();
     void populateUnit(int);
     ArmyIterator *createIterator();
