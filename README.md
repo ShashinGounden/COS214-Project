@@ -1,62 +1,28 @@
 # COS214-Project
 
-## TO DO:
+## Group Members
 
-- Each need at least 10 commits
-- Due dates and responsibilities, 4 October and 1 Nov
-- Add Doxygen comments to code
+| Name | Email |
+| Shashin Gounden | u21458686@tuks.co.za |
+| Jordan Timberlake | u21565882@tuks.co.za |
+| Tyrone Sutherland-MacLeod | u21578878@tuks.co.za | 
+| Andile Ngwenya | u20612894@tuks.co.za |
+| Jonel Albuquerque | u21598267@tuks.co.za |
 
-DESIGN PATTERNS USED:
+## How to compile and run the program
 
-1. State
-2. Observer
-3. Builder
-4. Prototype
-5. Decorator
-6. Strategy
-7. Template Method
-8. Factory Method
-9. Abstract Factory Method
-10. Iterator
+1. Open Terminal in the COS214-Project folder
+2. make
+3. make run
+4. make clean - to remove all object files
 
-MAIN REQUIREMENTS:
+## Data files
 
-1. Components of war:
+- All coded files have been placed according to the UML diagram.
+- Everything underneath the Person class is in the person hieararchy, etc.
 
-- War theatres
-- Transportation
-- Phases of war
-- Changes to war engine
-- More
+![UMLDIAGRAM](https://github.com/JordanTimberlake/COS214-Project/blob/main/Diagrams/Class%20diagrams/Class%20diagram%20V2.png) // Update to latest UML
 
-2. Should have design mode (interactive) and real mode (simulation).
+## Documentation
 
-## DOXYGEN
-
-What to document?
-
-- Everything!
-
-## Implementation
-
-Soldiers - Medics - Pilots conversion (funds/10, funds/100, funds/100)
-
-- for Attack() function
-
-State will have a damage multiplier
-
-Attack function can determine which unit attacks (ground or air) and returns that damage
-
-returned damage will be minused from medics heal total to get netDamage
-then delete an amount of soldiers from unit according to the netDamage
-
-Fight returns an damage from weapon - int
-Heal returns an int
-
-can get rid of getHealth and takeDamage
-
-For airUnit damage total amount - calculated from aircraft damage not attack
-- Add Aircraft list - use Builder to make each Aircraft
-
-funds can be used to add more troops after a attack has been made
-can increase funds with an alliance getFunds or rand() function
+- [Google Drive](https://docs.google.com/document/d/1fIBljEvgrzkKuuCGGKqeGtKyDWfG38LYcaSMP7wZ9kw/edit)

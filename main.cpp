@@ -3,11 +3,7 @@
  * @author @JordanTimberlake @ShashinGounden @Tymac15 @u20612894 @u21598267
  * @brief MAIN DOCUMENT TO RUN with makefile 
  * 
- * make
- * make run
- * make clean
- * 
- * @version 0.1
+ * @version 3.0
  * @date 2022-10-31
  * 
  * @copyright Copyright (c) 2022

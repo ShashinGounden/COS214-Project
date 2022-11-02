@@ -1,3 +1,12 @@
+/**
+ * @file Sea.cpp
+ * @brief Simulates the battle of Normandy - Dunkirk
+ * @version 1.0
+ * @date 2022-11-02
+ * 
+ * @copyright Copyright (c) 2022
+ * 
+ */
 #include "Sea.h"
 #include <thread>
 #include <chrono>
@@ -5,7 +14,6 @@
 #include <string>
 #include <iostream>
 #include <vector>
-//#include <bits/stdc++.h>
 #include "../Country/Alliance.h"
 #include "../Country/Artillery.h"
 #include "../Country/Nuke.h"
@@ -58,7 +66,7 @@ void Sea::add(Country *force)
  */
 void Sea::remove(Country *force)
 {
-    countries.erase(std::remove(countries.begin(), countries.end(), force), countries.end());
+    countries.pop_back();
 }
 
 /**
@@ -86,32 +94,32 @@ void Sea::printBattleSummary()
     for (const auto c : battleNickName)
     {
         cout << c << flush;
-        //    this_thread::sleep_for(chrono::milliseconds(200));
+        this_thread::sleep_for(chrono::milliseconds(200));
     }
     cout << endl;
 
     for (const auto c : battleDate)
     {
         cout << c << flush;
-        //   this_thread::sleep_for(chrono::milliseconds(200));
+        this_thread::sleep_for(chrono::milliseconds(200));
     }
     cout << endl;
 
     for (const auto c : Objective)
     {
         cout << c << flush;
-        // this_thread::sleep_for(chrono::milliseconds(200));
+        this_thread::sleep_for(chrono::milliseconds(200));
     }
     cout << endl;
 
     for (const auto c : Place)
     {
         cout << c << flush;
-        // this_thread::sleep_for(chrono::milliseconds(200));
+        this_thread::sleep_for(chrono::milliseconds(200));
     }
     cout << endl;
 
-    // this_thread::sleep_for(chrono::milliseconds(1000));
+    this_thread::sleep_for(chrono::milliseconds(1000));
 
     char buff[FILENAME_MAX]; // create string buffer to hold path
     GetCurrentDir(buff, FILENAME_MAX);
@@ -138,12 +146,12 @@ void Sea::printBattleSummary()
 
     inFile.close();
 
-    // this_thread::sleep_for(chrono::milliseconds(3000));
+    this_thread::sleep_for(chrono::milliseconds(3000));
 
     cout << endl;
 
     cout << summary << endl;
-    // this_thread::sleep_for(chrono::milliseconds(3000));
+    this_thread::sleep_for(chrono::milliseconds(3000));
 }
 
 /**
@@ -181,21 +189,20 @@ void Sea::loadBattleArt()
 }
 
 /**
- * @author Shashin Gounden
  * @brief The war loop for the battle of dunkirk which gives the user a choice between real and design mode
  */
 void Sea::warLoop()
 {
     cout << endl;
     int ModeChoice = -1;
-    while (ModeChoice != 1 && ModeChoice != 2)
+    while(ModeChoice != 1 && ModeChoice != 2)
     {
         cout << "Would you like to play:\n\t1. Real Mode\n\t2. Design Mode\n";
         cout << endl;
         cout << "Enter your choice: ";
         cin >> ModeChoice;
 
-        if (ModeChoice != 1 && ModeChoice != 2)
+        if(ModeChoice != 1 && ModeChoice != 2)
         {
             cout << "Please enter a valid choice (1) or (2) to proceed!" << endl;
         }
@@ -203,7 +210,7 @@ void Sea::warLoop()
 
     cout << endl;
 
-    if (ModeChoice == 1)
+    if(ModeChoice == 1)
     {
         // Countries: Germany, France
         Country *Germany = new Country("Germany", 150000);
@@ -212,7 +219,7 @@ void Sea::warLoop()
 
         bool LaunchedArtillery = false;
 
-        while (true)
+        while(true)
         {
             // FranceCopy = nullptr;
             if (Germany->getNumOfSoldiers() <= 3000 && !LaunchedArtillery)
@@ -225,33 +232,31 @@ void Sea::warLoop()
             France = France->getCountry();
             cout << endl;
             // Check for surrender
-            if (Germany->surrender(France))
+            if(Germany->surrender(France))
             {
                 break;
             }
             Germany->Attack(France);
 
-            if (France->surrender(Germany))
+            if(France->surrender(Germany))
             {
                 break;
             }
-
             cout << endl;
-            // Checl
         }
 
         France = France->getCountry();
         delete Germany;
         delete France;
     }
-    else if (ModeChoice == 2)
+    else if(ModeChoice == 2)
     {
         // array of ally countries
         vector<string> allies = {"Germany", "Italy", "Japan", "France", "Great Britain", "The United States", "The Soviet Union"};
 
         vector<double> allyFunds =
             {
-                66000, // Germany -
+                66000, // Germany 
                 30000, // Italy
                 35000, // Japan
                 40000, // France
@@ -268,17 +273,14 @@ void Sea::warLoop()
         //f2 = 180000
         double f1, f2;
 
-        
-        
-        
         std::cout << "Enter the name of country 1: ";
         cin >> c1;
         std::cout<<endl;
-        std::cout << "Enter the amount of funds for country 1(Between 100000 and 300000): ";
+        std::cout << "Enter the amount of funds for " << c1 << " [Range from 100000 to 300000]: ";
         cin >> f1;
         while(f1 < 100000 || f1 > 300000)
         {
-            cout << "Please enter a valid amount of funds for "<<c1<<": ";
+            cout << "Please enter a valid amount of funds for " << c1 <<". [Range from 100000 to 300000]: ";
             cin >> f1;
             cout << endl;
         }
@@ -286,14 +288,16 @@ void Sea::warLoop()
         std::cout << "Enter the name of country 2: ";
         cin >> c2;
         std::cout<<endl;
-        std::cout << "Enter the amount of funds for country 2(Between 100000 and 300000): ";
+        std::cout << "Enter the amount of funds for " << c2 << ". [Range from 100000 to 300000]: ";
         cin >> f2;
+
         while(f2 < 100000 || f2 > 300000)
         {
-            cout << "Please enter a valid amount of funds for "<<c2<<": ";
+            cout << "Please enter a valid amount of funds for " << c2 << " [Range from 100000 to 300000]: ";
             cin >> f2;
             cout << endl;
         }
+        
         std::cout<<endl;
         
         
@@ -310,32 +314,33 @@ void Sea::warLoop()
         int country2Soldiers = country2->getNumOfSoldiers();
 
         // main function loop
-        while (!country1->surrender(country2) && !country2->surrender(country1))
+        while(!country1->surrender(country2) && !country2->surrender(country1))
         {
 
-            if (country1->getNumOfSoldiers() < country1Soldiers/2 && iCount1 == 0)
+            if(country1->getNumOfSoldiers() < country1Soldiers/2 && iCount1 == 0)
             {
                 do
                 {
-                        
                     cout << "Would you like " << c1 << " to form an alliance with one of these countries: \n";
                     std::cout << "\t0. None"<<endl;
                     int iNumber = 1;
-                 
-                    for (string x : allies)
+                    for(string x : allies)
                     {
                       cout<<"\t"<<iNumber<< ". "<<x<<endl;
                       iNumber++;
                     }
 
-                   cout << "Enter the number referring to the country you want to add in: ";
-
+                   cout << "\nEnter a number to form your alliance: ";
                    cin >> a;
-                   if(a<0 || a>allies.size())  
+                   if(a < 0 || a > allies.size())  
                     { 
-                       cout<<"Please pick a valid option!\n";
+                       cout << "Please enter a valid option!\n";
+                    }
+                    else if(a == 0)
+                    {
+                        cout << c1 << " has chosen not to form any alliances." << endl;
+                        break;
                     } 
-
                     else 
                     { 
                       break; 
@@ -343,11 +348,9 @@ void Sea::warLoop()
                     
                 }while(true);
                 
-                if (a != 0)
+                if(a != 0)
                 {
                     ally1 = new Country(allies[a-1], allyFunds[a - 1]);
-
-
                     Alliance *ally = new Alliance();
                     ally->addAlliance(ally1);
                     country1->joinAlliance(ally);
@@ -356,8 +359,6 @@ void Sea::warLoop()
                     allies.erase(allies.begin() + (a-1));
                     allyFunds.erase(allyFunds.begin() + (a-1));
                 }
-                
-
                 iCount1++;
             }
             else if (country2->getNumOfSoldiers() < country2Soldiers/2 && iCount2 == 0)
@@ -365,23 +366,27 @@ void Sea::warLoop()
                 do 
                 {
                     cout << "Would you like " << c2 << " to form an alliance with one of these countries: \n";
-                    std::cout << "\t0. None"<<endl;
+                    std::cout << "\t0. None" << endl;
                     int iNumber = 1;
                  
                     for (string x : allies)
                     {
-                      cout<<"\t"<<iNumber<< ". "<<x<<endl;
-                      iNumber++;
+                        cout<<"\t"<<iNumber<< ". "<<x<<endl;
+                        iNumber++;
                     }
 
-                   cout << "Enter the number referring to the country you want to add in: ";
+                   cout << "\nEnter a number to form your alliance: ";
                    cin >> a;  
                    
-                   if(a<0 || a>allies.size())  
+                   if(a < 0 || a > allies.size())  
                     { 
-                        cout<<"Please pick a valid option!\n";
-                    } 
-
+                        cout << "Please enter a valid option!\n";
+                    }
+                    else if(a == 0)
+                    {
+                        cout << c2 << " has chosen not to form any alliances." << endl;
+                        break;
+                    }
                     else 
                     { 
                        break; 
@@ -389,7 +394,7 @@ void Sea::warLoop()
                    
                 }while(true);
                 
-                if (a != 0)
+                if(a != 0)
                 {                    
                     ally2 = new Country(allies[a - 1], allyFunds[a - 1]);
                     Alliance *ally = new Alliance();
@@ -397,74 +402,74 @@ void Sea::warLoop()
                     country2->joinAlliance(new Alliance());
                     country2->addFunds(allyFunds[a - 1]);
 
-                     allies.erase(allies.begin() + (a-1));
+                    allies.erase(allies.begin() + (a-1));
                     allyFunds.erase(allyFunds.begin() + (a-1));
                 }
                 iCount2++;
             }
             // WMD, only asks if Ally option has been asked already
-            if (country1->getNumOfSoldiers() < country1Soldiers/3 && iCount1 == 1)
+            if(country1->getNumOfSoldiers() < country1Soldiers/3 && iCount1 == 1)
             {
                 char ans = 'n';
                 int iWMD = -1;
                 do 
                 {
-                    cout << "Would you like " << country1->getName() << " to deploy a weapon of mass destruction? [Y/N]: ";
+                    cout << "\nWould you like " << country2->getName() << " to deploy a weapon of mass destruction on " <<c2<< "? [Y/N]: ";
                     cin >> ans; 
                     if(ans!='Y' && ans!='y' && ans!='n' && ans!='N') 
                     { 
-                      cout<<"Please enter a valid option!\n";
+                        cout<<"Please enter a valid option!\n";
                     }  
                    else
                    { 
-                     break;
+                        break;
                    }
 
                 }while(true);
                 
-                if (ans == 'Y' || ans == 'y')
+                if(ans == 'Y' || ans == 'y')
                 {
                     do 
                     {
                        cout << "Please select a weapon of mass destruction:\n";
-                       cout << "1. Nuke\n";
-                       cout << "2. Artillery strike\n";
-                       cout << "Enter your choice: ";
+                       cout << "\t1. Nuke\n";
+                       cout << "\t2. Artillery strike\n";
+                       cout << "\nEnter your choice: ";
 
                        cin >> iWMD; 
-                       if(iWMD!=1 && iWMD!=2) 
+                       if(iWMD != 1 && iWMD != 2) 
                        { 
-                          cout<<"Please enter a valid option!\n";
+                          cout << "Please enter a valid option!\n";
                        }
-                        
                        else 
                        { 
                           break;
                        }
 
                     }while(true);
-                    if (iWMD == 1)
+                    if(iWMD == 1)
                     {
                         country1 = new Nuke(country1);
                     }
-                    else if (iWMD == 2)
+                    else if(iWMD == 2)
                     {
-                        // std::cout << country1->getName() << " has prepared heavy artillery!\n";
                         country1 = new Artillery(country1);
                     }
                 }
+                else
+                {
+                    cout << c1 << " has chosen not to deploy a weapon of mass destruction" << endl;
+                }
                 iCount1++;
             }
-            else if (country2->getNumOfSoldiers() < country2Soldiers/3 && iCount2 == 1)
+            else if(country2->getNumOfSoldiers() < country2Soldiers/3 && iCount2 == 1)
             {
                 char ans = 'n';
                 int iWMD = -1;
                     
                 do 
                 {
-                    cout << "Would you like " << country2->getName() << " to deploy a weapon of mass destruction? [Y/N]: ";
-
-
+                    cout << "\nWould you like " << country2->getName() << " to deploy a weapon of mass destruction on " <<c1<< "? [Y/N]: ";
                     cin >> ans; 
                     if(ans!='Y' && ans!='y' && ans!='n' && ans!='N') 
                     { 
@@ -476,35 +481,42 @@ void Sea::warLoop()
                    }
                    
                 }while(true);
-                if (ans == 'Y' || ans == 'y')
+                if(ans == 'Y' || ans == 'y')
                 {
                     do 
                     {
                         cout << "Please select a weapon of mass destruction:\n";
-                        cout << "1. Nuke\n";
-                        cout << "2. Artillery strike\n";
-                        cout << "Enter your choice: ";
+                        cout << "\t1. Nuke\n";
+                        cout << "\t2. Artillery strike\n";
+                        cout << "\nEnter your choice: ";
                         
                         cin >> iWMD; 
                         if(iWMD!=1 && iWMD!=2) 
                         { 
-                            cout<<"Please enter a valid option\n!";
+                            cout<<"Please enter a valid option!\n";
                         } 
                         else 
                         { 
                             break;
                         }
-                    }while(true);
-                    if (iWMD == 1)
-                    {
-                        // NUKE
-                        country2 = new Nuke(country2);
                     }
-                    else if (iWMD == 2)
+                    while(true);
                     {
-                        // ARTILLERY STRIKE
-                        country2 = new Artillery(country2);
+                        if (iWMD == 1)
+                        {
+                            // NUKE
+                            country2 = new Nuke(country2);
+                        }
+                        else if (iWMD == 2)
+                        {
+                            // ARTILLERY STRIKE
+                            country2 = new Artillery(country2);
+                        }
                     }
+                }
+                else
+                {
+                    cout<<c2<<" has chosen not to deploy a weapon of mass destruction."<<endl;
                 }
                 iCount2++;
             }
@@ -513,33 +525,36 @@ void Sea::warLoop()
             cout << endl;
             country1->Attack(country2);
             cout << endl;
-            if(iCount1 == 2){
+            if(iCount1 == 2)
+            {
                 country1 = country1->getCountry();
                 iCount1++;
-            }else if(iCount2 == 2){
+            }
+            else if(iCount2 == 2)
+            {
                 country2 = country2->getCountry();
                 iCount2++;
             }
             
         }
 
-        std::cout<<"BATTLE SUMMARY: "<<endl;
-        std::cout << "Total number of fallen soldiers for " << country1->getName();
+        cout << "BATTLE SUMMARY: " << endl;
+        cout << "Total number of fallen soldiers for " << country1->getName();
 
-        std::cout << ": " << int(f1 / 10 + f1 / 50) - country1->getNumOfSoldiers() << "\n\n";
+        cout << ": " << int(f1 / 10 + f1 / 50) - country1->getNumOfSoldiers() << "\n\n";
 
-        std::cout << "Total number of fallen soldiers for " << country2->getName();
-        std::cout << ": " << int(f2 / 10 + f2 / 50) - country2->getNumOfSoldiers() << "\n\n";
+        cout << "Total number of fallen soldiers for " << country2->getName();
+        cout << ": " << int(f2 / 10 + f2 / 50) - country2->getNumOfSoldiers() << "\n\n";
 
         country1 = country1->getCountry();
         country2 = country2->getCountry();
         delete country1;
         delete country2;
-        if (ally1 != nullptr)
+        if(ally1 != nullptr)
         {
             delete ally1;
         }
-        if (ally2 != nullptr)
+        if(ally2 != nullptr)
         {
             delete ally2;
         }

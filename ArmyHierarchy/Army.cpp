@@ -1,3 +1,13 @@
+/**
+ * @file Army.cpp
+ * @brief 
+ * @version 4.2
+ * @date 2022-11-02
+ * 
+ * @copyright Copyright (c) 2022
+ * 
+ */
+
 #include "Army.h"
 #include <string>
 #include <fstream>

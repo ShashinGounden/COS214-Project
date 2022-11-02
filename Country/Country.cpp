@@ -1,3 +1,14 @@
+/**
+ * @file Country.cpp
+ * @brief Main Country object
+ * In place for the country in the battles
+ * @version 5.11
+ * @date 2022-11-02
+ * 
+ * @copyright Copyright (c) 2022
+ * 
+ */
+
 #include "Country.h"
 #include "Alliance.h"
 
