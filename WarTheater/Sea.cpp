@@ -251,7 +251,7 @@ void Sea::warLoop()
 
         vector<double> allyFunds =
             {
-                66000, // Germany - Nazi Scum
+                66000, // Germany -
                 30000, // Italy
                 35000, // Japan
                 40000, // France
@@ -543,23 +543,5 @@ void Sea::warLoop()
         {
             delete ally2;
         }
-
-        // Design Mode
-
-        // What are we going to change
-
-        // begin loop
-        // pick countries names (2)
-        // pick countries funds (2)
-
-        // display units from funds entered
-
-        // want to form alliance when funds reach half, the first time
-
-        // want to add more soldiers?*
-
-        // if other countries about to die, give  a choice to finish them with a WMD
-
-        // end of loop, give user a choice
     }
 }
