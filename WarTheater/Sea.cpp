@@ -414,7 +414,7 @@ void Sea::warLoop()
                 int iWMD = -1;
                 do 
                 {
-                    cout << "\nWould you like " << country2->getName() << " to deploy a weapon of mass destruction on " <<c2<< "? [Y/N]: ";
+                    cout << "\nWould you like " << country1->getName() << " to deploy a weapon of mass destruction on " <<c2<< "? [Y/N]: ";
                     cin >> ans; 
                     if(ans!='Y' && ans!='y' && ans!='n' && ans!='N') 
                     { 
