@@ -59,17 +59,17 @@ void Country::createArmy()
 {
     if (funds > 1000 && funds <= 10000)
     {
-        ARMY = new Army(getName(), funds / 10, funds / 100, funds / 100);
+        ARMY = new Army(getName(), funds / 10, funds / 100, funds / 50);
     }
     else if (funds <= 50000 && funds > 10000)
     {
-        ARMY = new Army(getName(), funds / 10, funds / 100, funds / 100);
+        ARMY = new Army(getName(), funds / 10, funds / 100, funds / 50);
     }
     else if (funds > 50000)
     {
-        ARMY = new Army(getName(), funds / 10, funds / 100, funds / 100);
+        ARMY = new Army(getName(), funds / 10, funds / 100, funds / 50);
     }
-    int totalSoldiers = (funds / 10) + (funds / 100) + (funds / 100);
+    int totalSoldiers = (funds / 10) + (funds / 100) + (funds / 50);
     funds -= totalSoldiers * 3;
     std::cout << "Total Soldiers from " << name << ": " << totalSoldiers << "\n";
     std::cout << "\n";
@@ -82,7 +82,9 @@ void Country::createArmy()
  *
  */
 void Country::Attack(Country *c)
-{
+{   
+    if(c->getNumOfSoldiers()==0)
+       return;
     std::cout << name << " is attacking " << c->getName() << "\n";
     int power = ARMY->Attack();
     power *= observedState->attackMethod();
@@ -157,8 +159,8 @@ void Country::addFunds(double fund)
     // Add Soldiers accoring to funds value
     if (fund >= 1000)
     {
-        ARMY->populateUnit(fund / 10, fund / 100, fund / 150);
-        funds-= (fund/10 + fund/100 + fund/150)*2;
+        ARMY->populateUnit(fund / 10, fund / 100, fund / 50);
+        funds-= (fund/10 + fund/100 + fund/50)*2;
     }
 
     if (observedState != temp)
@@ -180,7 +182,6 @@ bool Country::surrender(Country *c)
 {
     if (ARMY->Attack() <= 0)
     {
-        std::cout << name;
         ARMY->Surrender(c);
         return true;
     }
@@ -212,6 +213,18 @@ void Country::notify()
     }
 }
 
-Country* Country::getCountry(){ 
+Country* Country::getCountry(){
     return this;
+}
+
+/**
+ * @brief used to calculate the number of soldiers left after the 
+ * battle has ended
+ * mainly for design mode to give an output of the 
+ * number of soldiers that have died in battle
+ * 
+ * @return int 
+ */
+int Country::getNumOfSoldiers(){
+    return ARMY->getNumOfSoldiers();
 }

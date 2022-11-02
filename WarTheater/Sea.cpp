@@ -116,7 +116,7 @@ void Sea::printBattleSummary()
     GetCurrentDir(buff, FILENAME_MAX);
     string current_working_dir(buff);
 
-    string filepath = current_working_dir + "WarTheater/DunkirkMap.txt";
+    string filepath = current_working_dir + "/WarTheater/DunkirkMap.txt";
 
     string line = "";
     ifstream inFile;
@@ -207,18 +207,37 @@ void Sea::warLoop()
         // Countries: Germany, France
         Country *Germany = new Country("Germany", 150000);
         Country *France = new Country("France", 200000);
+        // Country* FranceCopy = France->clone();
 
-        while (!Germany->surrender(France) && !France->surrender(Germany))
+        bool LaunchedArtillery = false;
+
+        while (true)
         {
-            if (Germany->getFunds() < 40000)
+            // FranceCopy = nullptr;
+            if (Germany->getNumOfSoldiers() <= 3000 && !LaunchedArtillery)
             {
                 France = new Artillery(France);
+                LaunchedArtillery = true;
             }
 
             France->Attack(Germany);
-            cout << endl;
+            France=France->getCountry();
+            cout << endl; 
+            //Check for surrender 
+            if (Germany->surrender(France))
+            {
+                break;
+            }
             Germany->Attack(France);
-            cout << endl;
+
+            if (France->surrender(Germany))
+            {
+                break;
+            }
+
+            cout << endl;  
+            //Checl 
+            
         }
 
         France = France->getCountry();
@@ -384,6 +403,13 @@ void Sea::warLoop()
 
             iAttackCount++;
         }
+
+        std::cout<<"Total number of fallen soldiers for "<< country1->getName();
+        std::cout<< ": " << (f1/10 + f1/50) - country1->getNumOfSoldiers() << "\n\n";
+
+        std::cout<<"Total number of fallen soldiers for "<< country2->getName();
+        std::cout<< ": " << (f2/10 + f2/50) - country2->getNumOfSoldiers() << "\n\n";
+
 
         country1 = country1->getCountry();
         country2 = country2->getCountry();

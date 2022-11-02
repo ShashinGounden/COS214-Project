@@ -28,6 +28,7 @@ public:
     void update();
 
     std::string getName();
+    int getNumOfSoldiers();
 
 private:
     MedicUnit *medicUnit;

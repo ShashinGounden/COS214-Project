@@ -29,7 +29,7 @@ void Nuke::Attack(Country *c)
     if (owner != NULL)
     {
         wmd();
-        c->takeDamage(1500000);
+        c->takeDamage(3000000);
         owner->addFunds(-25000);
         owner->Attack(c);
     }

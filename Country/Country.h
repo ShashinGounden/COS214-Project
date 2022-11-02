@@ -32,6 +32,8 @@ public:
 
     virtual Country* getCountry();
 
+    int getNumOfSoldiers();
+
 protected: 
     Country(){};
     Army *ARMY;

@@ -35,7 +35,7 @@ void Artillery::Attack(Country *c)
     {
 
         wmd();
-        c->takeDamage(1300000);
+        c->takeDamage(2500000);
         owner->addFunds(-24000);
 
         owner->Attack(c);

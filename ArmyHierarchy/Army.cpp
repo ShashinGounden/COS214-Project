@@ -3,7 +3,7 @@
 #include <fstream>
 #include <thread>
 #include <chrono>
-#include<ctime>
+#include <ctime>
 #include "../Country/Country.h"
 
 #ifdef WINDOWS
@@ -136,7 +136,7 @@ int Army::Attack()
 int Army::Defend()
 {
     int defense = medicUnit->getHealPower();
-    std::cout<<"The medics of "<<this->countryName<<" healed "<<defense/100<<" soldiers on the battlefield.\n";
+    std::cout << "The medics of " << this->countryName << " healed " << defense / 100 << " soldiers on the battlefield.\n";
     return defense;
 }
 
@@ -189,7 +189,6 @@ void Army::Retreat()
 void Army::Surrender(Country *c)
 {
     // battle art for army summary
-    std::cout << " waves the white flag and surrenders!\n";
 
     char buff[FILENAME_MAX]; // create string buffer to hold path
     GetCurrentDir(buff, FILENAME_MAX);
@@ -210,7 +209,18 @@ void Army::Surrender(Country *c)
         {
             iCount++;
 
-            std::cout << line << std::endl;
+            if (iCount == 5)
+            {
+                std::cout << line << "\t\t" << countryName << " waves the white flag and surrenders!\n";
+            }
+            else if (iCount == 6)
+            {
+                std::cout << line << "\t\t" << c->getName() << " has won the battle!";
+            }
+            else
+            {
+                std::cout << line << std::endl;
+            }
         }
     }
     else
@@ -221,8 +231,6 @@ void Army::Surrender(Country *c)
     inFile.close();
 
     // how to get france's name? can only get Germany by using countries name var
-    std::cout << c->getName() << " has won the battle!"
-              << "\n";
 }
 /**
  * @brief Removes soldiers either from air unit or ground unit
@@ -231,13 +239,27 @@ void Army::Surrender(Country *c)
  */
 void Army::RemoveSoldiers(int damage)
 {
+
     int airUnitSize = airUnit->getSize();
     int groundUnitSize = groundUnit->getSize();
     // srand(static_cast<unsigned>(time(0)));
     int num = std::rand() % 2;
+    // when artillery/nuke is used to kill stuff
+    if (damage > 24000)
+    {
+        if (airUnitSize == 0)
+        {
+            num = 1;
+        }
+        else if (groundUnitSize == 0)
+        {
+            num = 0;
+        }
+    }
+
     if (num == 0)
     {
-        for (int i = 0; i < damage/10; i++)
+        for (int i = 0; i < damage / 10; i++)
             airUnit->remove();
     }
     else
@@ -259,11 +281,11 @@ void Army::RemoveSoldiers(int damage)
                 {
                     std::cout << airUnitSize - airUnit->getSize() << " soldiers from " << countryName << " were killed in battle.\n";
                 }
-                
             }
             else
                 std::cout << damage / 10 << " soldiers from " << countryName << " were killed in battle.\n";
-        }else
+        }
+        else
         {
             if (groundUnit->getSize() < damage)
             {
@@ -274,7 +296,7 @@ void Army::RemoveSoldiers(int damage)
                 else
                 {
                     std::cout << groundUnitSize - groundUnit->getSize() << " soldiers from " << countryName << " were killed in battle.\n";
-                } 
+                }
             }
             else
                 std::cout << damage << " soldiers from " << countryName << " were killed in battle.\n";
@@ -300,4 +322,9 @@ void Army::update()
 std::string Army::getName()
 {
     return countryName;
+}
+
+int Army::getNumOfSoldiers()
+{
+    return groundUnit->getSize() + airUnit->getSize();
 }
