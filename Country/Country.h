@@ -32,7 +32,7 @@ public:
 
     virtual Country* getCountry();
 
-    int getNumOfSoldiers();
+    virtual int getNumOfSoldiers();
 
 protected: 
     Country(){};

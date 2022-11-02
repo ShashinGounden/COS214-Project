@@ -4,6 +4,7 @@
 #include <fstream>
 #include <string>
 #include <iostream>
+#include <vector>
 //#include <bits/stdc++.h>
 #include "../Country/Alliance.h"
 #include "../Country/Artillery.h"
@@ -246,9 +247,9 @@ void Sea::warLoop()
     else if (ModeChoice == 2)
     {
         // array of ally countries
-        string allies[7] = {"Germany", "Italy", "Japan", "France", "Great Britain", "The United States", "The Soviet Union"};
+        vector<string> allies = {"Germany", "Italy", "Japan", "France", "Great Britain", "The United States", "The Soviet Union"};
 
-        double allyFunds[7] =
+        vector<double> allyFunds =
             {
                 66000, // Germany - Nazi Scum
                 30000, // Italy
@@ -261,19 +262,41 @@ void Sea::warLoop()
 
         int iCount1 = 0;
         int iCount2 = 0;
-        string c1 = "W", c2 = "L";
-        double f1 = 200000, f2 = 180000;
+        string c1, c2;
 
-        // cout << "Enter the name of country 1: ";
-        // cin >> c1;
-        // cout << "Enter the amount of funds for country 1: ";
-        // cin >> f1;
+        //f1 = 200000
+        //f2 = 180000
+        double f1, f2;
 
-        // cout << "Enter the name of country 2: ";
-        // cin >> c2;
-        // cout << "Enter the amount of funds for country 2: ";
-        // cin >> f2;
+        
+        
+        
+        std::cout << "Enter the name of country 1: ";
+        cin >> c1;
+        std::cout<<endl;
+        std::cout << "Enter the amount of funds for country 1(Between 100000 and 300000): ";
+        cin >> f1;
+        while(f1 < 100000 || f1 > 300000)
+        {
+            cout << "Please enter a valid amount of funds for "<<c1<<": ";
+            cin >> f1;
+            cout << endl;
+        }
 
+        std::cout << "Enter the name of country 2: ";
+        cin >> c2;
+        std::cout<<endl;
+        std::cout << "Enter the amount of funds for country 2(Between 100000 and 300000): ";
+        cin >> f2;
+        while(f2 < 100000 || f2 > 300000)
+        {
+            cout << "Please enter a valid amount of funds for "<<c2<<": ";
+            cin >> f2;
+            cout << endl;
+        }
+        std::cout<<endl;
+        
+        
         Country *country1 = new Country(c1, f1);
         Country *country2 = new Country(c2, f2);
 
@@ -282,77 +305,144 @@ void Sea::warLoop()
 
         int a = 0; // input variable for if they want to form an alliance
 
-        int iAttackCount = 0;
+        //number of soldiers per country
+        int country1Soldiers = country1->getNumOfSoldiers();
+        int country2Soldiers = country2->getNumOfSoldiers();
 
         // main function loop
         while (!country1->surrender(country2) && !country2->surrender(country1))
         {
-            cout << country1->getName() << " FUNDS: " << country1->getFunds() << endl;
-            cout << country2->getName() << " FUNDS: " << country2->getFunds() << endl;
-            // function to ask the user if they want to add an alliance
 
-            if (iAttackCount > 1 && iCount1 == 0)
+            if (country1->getNumOfSoldiers() < country1Soldiers/2 && iCount1 == 0)
             {
-                cout << "Would you like " << c1 << " to form an alliance with one of these countries: \n";
-                std::cout << "0. None, ";
-                for (int i = 1; i < 7; i++)
+                do
                 {
-                    cout << i << ". " << allies[i - 1] << ", ";
-                }
-                cout << 7 << ". " << allies[6] << "\n";
+                        
+                    cout << "Would you like " << c1 << " to form an alliance with one of these countries: \n";
+                    std::cout << "\t0. None"<<endl;
+                    int iNumber = 1;
+                 
+                    for (string x : allies)
+                    {
+                      cout<<"\t"<<iNumber<< ". "<<x<<endl;
+                      iNumber++;
+                    }
 
-                cout << "Enter the number referring to the country you want to add in: ";
-                cin >> a;
+                   cout << "Enter the number referring to the country you want to add in: ";
+
+                   cin >> a;
+                   if(a<0 || a>allies.size())  
+                    { 
+                       cout<<"Please pick a valid option!\n";
+                    } 
+
+                    else 
+                    { 
+                      break; 
+                    }
+                    
+                }while(true);
+                
                 if (a != 0)
                 {
-                    ally1 = new Country(allies[a - 1], allyFunds[a - 1]);
+                    ally1 = new Country(allies[a-1], allyFunds[a - 1]);
+
+
                     Alliance *ally = new Alliance();
                     ally->addAlliance(ally1);
                     country1->joinAlliance(ally);
                     country1->addFunds(allyFunds[a - 1]);
+
+                    allies.erase(allies.begin() + (a-1));
+                    allyFunds.erase(allyFunds.begin() + (a-1));
                 }
+                
+
                 iCount1++;
             }
-            else if (iAttackCount > 1 && iCount2 == 0)
-            {
-                cout << "Would you like " << c2 << " to form an alliance with one of these countries: \n";
-                std::cout << "0. None, ";
-                for (int i = 1; i < 7; i++)
+            else if (country2->getNumOfSoldiers() < country2Soldiers/2 && iCount2 == 0)
+            { 
+                do 
                 {
-                    cout << i << ". " << allies[i - 1] << ", ";
-                }
-                cout << 7 << ". " << allies[6] << "\n";
+                    cout << "Would you like " << c2 << " to form an alliance with one of these countries: \n";
+                    std::cout << "\t0. None"<<endl;
+                    int iNumber = 1;
+                 
+                    for (string x : allies)
+                    {
+                      cout<<"\t"<<iNumber<< ". "<<x<<endl;
+                      iNumber++;
+                    }
 
-                cout << "Enter the number referring to the country you want to add in: ";
-                cin >> a;
+                   cout << "Enter the number referring to the country you want to add in: ";
+                   cin >> a;  
+                   
+                   if(a<0 || a>allies.size())  
+                    { 
+                        cout<<"Please pick a valid option!\n";
+                    } 
+
+                    else 
+                    { 
+                       break; 
+                    } 
+                   
+                }while(true);
+                
                 if (a != 0)
-                {
+                {                    
                     ally2 = new Country(allies[a - 1], allyFunds[a - 1]);
                     Alliance *ally = new Alliance();
                     ally->addAlliance(ally1);
                     country2->joinAlliance(new Alliance());
                     country2->addFunds(allyFunds[a - 1]);
+
+                     allies.erase(allies.begin() + (a-1));
+                    allyFunds.erase(allyFunds.begin() + (a-1));
                 }
                 iCount2++;
             }
             // WMD, only asks if Ally option has been asked already
-            if (iAttackCount > 2 && iCount1 == 1)
+            if (country1->getNumOfSoldiers() < country1Soldiers/3 && iCount1 == 1)
             {
-                cout << "Would you like " << country1->getName() << " to deploy a weapon of mass destruction? [Y/N]: ";
                 char ans = 'n';
                 int iWMD = -1;
+                do 
+                {
+                    cout << "Would you like " << country1->getName() << " to deploy a weapon of mass destruction? [Y/N]: ";
+                    cin >> ans; 
+                    if(ans!='Y' && ans!='y' && ans!='n' && ans!='N') 
+                    { 
+                      cout<<"Please enter a valid option!\n";
+                    }  
+                   else
+                   { 
+                     break;
+                   }
 
-                cin >> ans;
-
+                }while(true);
+                
                 if (ans == 'Y' || ans == 'y')
                 {
-                    cout << "Please select a weapon of mass destruction:\n";
-                    cout << "1. Nuke\n"
-                         << "2. Artillery strike\n";
-                    cout << "Enter your choice: ";
+                    do 
+                    {
+                       cout << "Please select a weapon of mass destruction:\n";
+                       cout << "1. Nuke\n";
+                       cout << "2. Artillery strike\n";
+                       cout << "Enter your choice: ";
 
-                    cin >> iWMD;
+                       cin >> iWMD; 
+                       if(iWMD!=1 && iWMD!=2) 
+                       { 
+                          cout<<"Please enter a valid option!\n";
+                       }
+                        
+                       else 
+                       { 
+                          break;
+                       }
 
+                    }while(true);
                     if (iWMD == 1)
                     {
                         country1 = new Nuke(country1);
@@ -365,23 +455,46 @@ void Sea::warLoop()
                 }
                 iCount1++;
             }
-            else if (iAttackCount > 2 && iCount2 == 1)
+            else if (country2->getNumOfSoldiers() < country2Soldiers/3 && iCount2 == 1)
             {
-                cout << "Would you like " << country2->getName() << " to deploy a weapon of mass destruction? [Y/N]: ";
                 char ans = 'n';
                 int iWMD = -1;
+                    
+                do 
+                {
+                    cout << "Would you like " << country2->getName() << " to deploy a weapon of mass destruction? [Y/N]: ";
 
-                cin >> ans;
 
+                    cin >> ans; 
+                    if(ans!='Y' && ans!='y' && ans!='n' && ans!='N') 
+                    { 
+                       cout<<"Please enter a valid option!\n";
+                    }  
+                   else
+                   { 
+                       break;
+                   }
+                   
+                }while(true);
                 if (ans == 'Y' || ans == 'y')
                 {
-                    cout << "Please select a weapon of mass destruction:\n";
-                    cout << "1. Nuke\n"
-                         << "2. Artillery strike\n";
-                    cout << "Enter your choice: ";
-
-                    cin >> iWMD;
-
+                    do 
+                    {
+                        cout << "Please select a weapon of mass destruction:\n";
+                        cout << "1. Nuke\n";
+                        cout << "2. Artillery strike\n";
+                        cout << "Enter your choice: ";
+                        
+                        cin >> iWMD; 
+                        if(iWMD!=1 && iWMD!=2) 
+                        { 
+                            cout<<"Please enter a valid option\n!";
+                        } 
+                        else 
+                        { 
+                            break;
+                        }
+                    }while(true);
                     if (iWMD == 1)
                     {
                         // NUKE
@@ -395,19 +508,28 @@ void Sea::warLoop()
                 }
                 iCount2++;
             }
+            
             country2->Attack(country1);
             cout << endl;
             country1->Attack(country2);
             cout << endl;
-
-            iAttackCount++;
+            if(iCount1 == 2){
+                country1 = country1->getCountry();
+                iCount1++;
+            }else if(iCount2 == 2){
+                country2 = country2->getCountry();
+                iCount2++;
+            }
+            
         }
 
+        std::cout<<"BATTLE SUMMARY: "<<endl;
         std::cout << "Total number of fallen soldiers for " << country1->getName();
-        std::cout << ": " << (f1 / 10 + f1 / 50) - country1->getNumOfSoldiers() << "\n\n";
+
+        std::cout << ": " << int(f1 / 10 + f1 / 50) - country1->getNumOfSoldiers() << "\n\n";
 
         std::cout << "Total number of fallen soldiers for " << country2->getName();
-        std::cout << ": " << (f2 / 10 + f2 / 50) - country2->getNumOfSoldiers() << "\n\n";
+        std::cout << ": " << int(f2 / 10 + f2 / 50) - country2->getNumOfSoldiers() << "\n\n";
 
         country1 = country1->getCountry();
         country2 = country2->getCountry();

@@ -65,4 +65,10 @@ Country* WMD::getCountry(){
     if(owner!=NULL)
        return owner->getCountry(); 
     return NULL;   
+} 
+
+int WMD::getNumOfSoldiers(){
+    if(owner!=NULL) 
+       return owner->getNumOfSoldiers(); 
+    return 0;   
 }

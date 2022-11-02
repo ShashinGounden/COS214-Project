@@ -19,7 +19,8 @@ public:
     void addFunds(double); 
     double getFunds(); 
     void joinAlliance(Alliance*); 
-    void notify(); 
+    void notify();  
+    int getNumOfSoldiers();
     Country* getCountry();
 
 protected:
