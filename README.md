@@ -22,7 +22,7 @@
 - All coded files have been placed according to the UML diagram.
 - Everything underneath the Person class is in the person hieararchy, etc.
 
-![UMLDIAGRAM](https://github.com/JordanTimberlake/COS214-Project/blob/main/Diagrams/Class%20diagrams/Class%20diagram%20V2.png) // Update to latest UML
+![UMLDIAGRAM](https://github.com/ShashinGounden/COS214-Project/blob/main/Diagrams/Class%20Diagram/Final%20war%20sim%20class%20diagram.png)
 
 ## Documentation
 
