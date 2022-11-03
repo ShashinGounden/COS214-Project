@@ -47,4 +47,8 @@ std::string Transport::getDefence()
     return defence;
 }
 
+/**
+ * @brief Destroy the Transport:: Transport object
+ * 
+ */
 Transport::~Transport() {}

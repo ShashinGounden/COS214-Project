@@ -27,7 +27,7 @@ Alliance::~Alliance()
 /**
  * @brief function to add a country object to the alliance list
  *
- * @param c
+ * @param c country that is joining
  */
 void Alliance::addAlliance(Country *c)
 {
@@ -37,7 +37,7 @@ void Alliance::addAlliance(Country *c)
 /**
  * @brief function to remove a country object from the alliance list
  *
- * @param c
+ * @param c country to be removed
  */
 void Alliance::removeAlliance(Country *c)
 {

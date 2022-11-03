@@ -11,19 +11,37 @@ using namespace std;
 #define GetCurrentDir getcwd
 #endif
 
+/**
+ * @brief Construct a new Nuke:: Nuke object
+ * 
+ * @param c 
+ */
 Nuke::Nuke(Country *c) : WMD(c)
 {
 }
 
+/**
+ * @brief Destroy the Nuke:: Nuke object
+ * 
+ */
 Nuke::~Nuke()
 {
 }
 
+/**
+ * @brief deploys nuke
+ * 
+ */
 void Nuke::wmd()
 {
     deployNuke();
 }
 
+/**
+ * @brief fires a weapon of mass destruction and then an attack with troops
+ * 
+ * @param c enemy country
+ */
 void Nuke::Attack(Country *c)
 {
     if (owner != NULL)
@@ -35,6 +53,11 @@ void Nuke::Attack(Country *c)
     }
 }
 
+/**
+ * @brief receives damage from an enemy country
+ * 
+ * @param d damage value
+ */
 void Nuke::takeDamage(int d)
 {
     if (owner != NULL)

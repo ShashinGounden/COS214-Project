@@ -1,5 +1,9 @@
 #include "ArmouredTruckMaker.h"
 
+/**
+ * @brief Construct a new Armoured Truck Maker:: Armoured Truck Maker object
+ * 
+ */
 ArmouredTruckMaker::ArmouredTruckMaker() {}
 
 /**
