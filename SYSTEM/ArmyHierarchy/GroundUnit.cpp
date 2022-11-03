@@ -29,7 +29,6 @@ GroundUnit::~GroundUnit()
 
     delete factory;
     delete tankBuilder;
-    delete weaponFactory;
 
     if (tank != NULL)
     {
@@ -57,31 +56,49 @@ void GroundUnit::populateUnit(int numOfSoldiers)
         {
             weaponFactory = new ExplosiveFactory();
             tempW = weaponFactory->CreateLongRange();
+
+            delete weaponFactory;
+            weaponFactory = NULL;
         }
         else if (ran == 5)
         {
             weaponFactory = new ExplosiveFactory();
             tempW = weaponFactory->CreateShortRange();
+
+            delete weaponFactory;
+            weaponFactory = NULL;
         }
         else if (ran == 1 || ran == 2)
         {
             weaponFactory = new RifleFactory();
             tempW = weaponFactory->CreateLongRange();
+
+            delete weaponFactory;
+            weaponFactory = NULL;
         }
         else if (ran == 3 || ran == 4)
         {
             weaponFactory = new RifleFactory();
             tempW = weaponFactory->CreateShortRange();
+
+            delete weaponFactory;
+            weaponFactory = NULL;
         }
         else if (ran == 6 || ran == 7)
         {
             weaponFactory = new PistolFactory();
             tempW = weaponFactory->CreateLongRange();
+
+            delete weaponFactory;
+            weaponFactory = NULL;
         }
         else
         {
             weaponFactory = new PistolFactory();
             tempW = weaponFactory->CreateShortRange();
+
+            delete weaponFactory;
+            weaponFactory = NULL;
         }
 
         Person *temp = factory->createPerson(rand(), 100, "fight");
