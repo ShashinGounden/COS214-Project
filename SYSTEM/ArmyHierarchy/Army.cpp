@@ -1,7 +1,7 @@
 /**
  * @file Army.cpp
- * @brief 
- * @version 4.2
+ * @brief Army object which the Country aggregates from to create and utilise Army's functions
+ * @version 4.21
  * @date 2022-11-02
  * 
  * @copyright Copyright (c) 2022
@@ -152,8 +152,17 @@ int Army::Attack()
 
 int Army::Defend()
 {
-    int defense = medicUnit->getHealPower();
+    // int defense = medicUnit->getHealPower();
+    int defense = 0;
+    ArmyIterator* itMedicUnit = medicUnit->createIterator();
+
+    while(itMedicUnit->hasNext()){
+        defense += itMedicUnit->current()->heal();
+        itMedicUnit->increment();
+    }
+
     std::cout << "The medics of " << this->countryName << " healed " << defense / 100 << " soldiers on the battlefield.\n";
+    delete itMedicUnit;
     return defense;
 }
 
@@ -164,30 +173,6 @@ int Army::Defend()
 void Army::Advance()
 {
     std::cout << "ADVANCE Troops!/n";
-    ArmyIterator *itGround = groundUnit->createIterator();
-    ArmyIterator *itAir = airUnit->createIterator();
-    ArmyIterator *itMedic = medicUnit->createIterator();
-
-    while (itGround->hasNext())
-    {
-        // itGround->current()->Advance(); // add Advance to Person classes
-        itGround->increment();
-    }
-
-    while (itAir->hasNext())
-    {
-        // itAir->current()->Advance(); // add Advance to Person classes
-        itAir->increment();
-    }
-    std::cout << "MEDICS move forward!\n";
-    while (itMedic->hasNext())
-    {
-        // itMedic->current()->Advance(); // add Advance to Person classes
-        itMedic->increment();
-    }
-    delete itGround;
-    delete itAir;
-    delete itMedic;
 }
 
 /**

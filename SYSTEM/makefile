@@ -12,5 +12,8 @@ all: $(OBJS)
 run:
 	./main
 
+runVal:
+	valgrind ./main
+
 clean:
 	rm -f $(TARGET) $(OBJS)

@@ -6,7 +6,7 @@
 | ----------- | ----------- |
 | Shashin Gounden | u21458686@tuks.co.za |
 | Jordan Timberlake | u21565882@tuks.co.za |
-| Tyrone Sutherland-MacLeod | u21578878@tuks.co.za | 
+| Tyrone Sutherland-MacLeod | u21578878@tuks.co.za |
 | Andile Ngwenya | u20612894@tuks.co.za |
 | Jonel Albuquerque | u21598267@tuks.co.za |
 
