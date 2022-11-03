@@ -11,7 +11,7 @@
 
 ## How to compile and run the program
 
-1. Open Terminal in the COS214-Project folder
+1. Open Terminal in the SYSTEM folder
 2. make
 3. make run
 4. make clean - to remove all object files
