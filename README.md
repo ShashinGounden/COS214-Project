@@ -3,6 +3,7 @@
 ## Group Members
 
 | Name | Email |
+| ----------- | ----------- |
 | Shashin Gounden | u21458686@tuks.co.za |
 | Jordan Timberlake | u21565882@tuks.co.za |
 | Tyrone Sutherland-MacLeod | u21578878@tuks.co.za | 
