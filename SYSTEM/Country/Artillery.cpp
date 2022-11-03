@@ -11,11 +11,20 @@ using namespace std;
 #define GetCurrentDir getcwd
 #endif
 
+/**
+ * @brief Construct a new Artillery:: Artillery object
+ * 
+ * @param c 
+ */
 Artillery::Artillery(Country *c) : WMD(c)
 {
-    //   std::cout << owner->getName() << " has prepared heavy artillery!\n";
+    
 }
 
+/**
+ * @brief Destroy the Artillery:: Artillery object
+ * 
+ */
 Artillery::~Artillery()
 {
 }
@@ -26,8 +35,9 @@ void Artillery::wmd()
 }
 
 /**
- * @brief
- *
+ * @brief firesa weapon of mass destruction then attacks with troops
+ * 
+ * @param c opposing country
  */
 void Artillery::Attack(Country *c)
 {
@@ -42,6 +52,11 @@ void Artillery::Attack(Country *c)
     }
 }
 
+/**
+ * @brief takes damage form
+ * 
+ * @param g damage from enemy country
+ */
 void Artillery::takeDamage(int g)
 {
     if (owner != NULL)

@@ -52,6 +52,11 @@ void MedicUnit::populateUnit(int numOfMedics)
     }
 }
 
+/**
+ * @brief creates iterator for MedicUnit object
+ * 
+ * @return ArmyIterator* 
+ */
 ArmyIterator *MedicUnit::createIterator()
 {
     return new MedicUnitIterator(unit);

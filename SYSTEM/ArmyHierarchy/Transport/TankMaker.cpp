@@ -1,9 +1,13 @@
 #include "TankMaker.h"
 
+/**
+ * @brief Construct a new Tank Maker:: Tank Maker object
+ * 
+ */
 TankMaker::TankMaker() {}
 
 /**
- * @brief SEts tanks defence
+ * @brief Sets tanks defence
  * 
  * @param s 
  */

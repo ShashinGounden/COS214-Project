@@ -17,7 +17,7 @@ AirUnitIterator::AirUnitIterator(std::list<Person *> list) : ArmyIterator()
 AirUnitIterator::~AirUnitIterator() {}
 
 /**
- * @brief
+ * @brief returns fisrt Person* in Unit
  *
  * @return Person*
  */
@@ -27,7 +27,7 @@ Person *AirUnitIterator::first()
 }
 
 /**
- * @brief
+ * @brief returns pointer to next Person
  *
  * @return Person*
  */
@@ -45,7 +45,7 @@ Person *AirUnitIterator::next()
 }
 
 /**
- * @brief
+ * @brief checks if Iterator has reached end of Unit
  *
  * @return true
  * @return false
@@ -61,7 +61,7 @@ bool AirUnitIterator::hasNext()
 }
 
 /**
- * @brief
+ * @brief returns current Person*
  *
  * @return Person*
  */

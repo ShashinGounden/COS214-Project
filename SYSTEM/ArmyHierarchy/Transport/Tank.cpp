@@ -1,5 +1,9 @@
 #include "Tank.h"
 
+/**
+ * @brief Construct a new Tank:: Tank object
+ * 
+ */
 Tank::Tank() {}
 
 /**
@@ -12,4 +16,8 @@ void Tank::setSecondary(std::string d)
     secondaryWeapon = d;
 }
 
+/**
+ * @brief Destroy the Tank:: Tank object
+ * 
+ */
 Tank::~Tank() {}

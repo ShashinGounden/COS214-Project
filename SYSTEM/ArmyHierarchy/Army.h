@@ -24,9 +24,6 @@ public:
     int Defend();
     void RemoveSoldiers(int);
 
-    // For Observer
-    void update();
-
     std::string getName();
     int getNumOfSoldiers();
 

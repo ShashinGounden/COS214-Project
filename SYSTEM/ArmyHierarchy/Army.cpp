@@ -150,9 +150,14 @@ int Army::Attack()
     return power;
 }
 
+/**
+ * @brief calculate total healing power of medics
+ * 
+ * @return int total healing power of medics
+ */
 int Army::Defend()
 {
-    // int defense = medicUnit->getHealPower();
+    
     int defense = 0;
     ArmyIterator* itMedicUnit = medicUnit->createIterator();
 
@@ -232,8 +237,9 @@ void Army::Surrender(Country *c)
 
     inFile.close();
 
-    // how to get france's name? can only get Germany by using countries name var
+    
 }
+
 /**
  * @brief Removes soldiers either from air unit or ground unit
  *
@@ -244,9 +250,11 @@ void Army::RemoveSoldiers(int damage)
 
     int airUnitSize = airUnit->getSize();
     int groundUnitSize = groundUnit->getSize();
-    // srand(static_cast<unsigned>(time(0)));
+    
     int num = std::rand() % 2;
+    
     // when artillery/nuke is used to kill stuff
+    
     if (damage > 24000)
     {
         if (airUnitSize == 0)
@@ -311,21 +319,22 @@ void Army::RemoveSoldiers(int damage)
     std::cout << "AirUnit size: " << airUnit->getSize() << "\n";
     std::cout << "GroundUnit size: " << groundUnit->getSize() << "\n";
 }
-
+ 
 /**
- * @brief
- *
+ * @brief returns name of Country this army belongs to
+ * 
+ * @return std::string countryName
  */
-void Army::update()
-{
-    // Observer code here
-}
-
 std::string Army::getName()
 {
     return countryName;
 }
 
+/**
+ * @brief get thenumber of soldiers in the army
+ * 
+ * @return int number of soldiers
+ */
 int Army::getNumOfSoldiers()
 {
     return groundUnit->getSize() + airUnit->getSize();

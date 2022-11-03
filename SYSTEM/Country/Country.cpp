@@ -115,14 +115,15 @@ void Country::Attack(Country *c)
 
     observedState = temp;
 
-    notify(); // Contact allies
+    // Contact allies
+    notify(); 
 }
 
 /**
  * @brief Function called by an attacking Country.Function subtracts defense from enemy's attack to
  * get overall damage done to army and removes soldiers
  *
- * @param attack
+ * @param attack damage value for enemy
  */
 void Country::takeDamage(int attack)
 {
@@ -223,7 +224,11 @@ void Country::notify()
         alliance->addAlliance(this);
     }
 }
-
+/**
+ * @brief returns country object
+ * 
+ * @return Country* 
+ */
 Country* Country::getCountry(){
     return this;
 }

@@ -134,6 +134,11 @@ int GroundUnit::getPower()
     return total;
 }
 
+/**
+ * @brief creates Iterator for groundUnit object
+ * 
+ * @return ArmyIterator* 
+ */
 ArmyIterator *GroundUnit::createIterator()
 {
     return new GroundUnitIterator(unit);

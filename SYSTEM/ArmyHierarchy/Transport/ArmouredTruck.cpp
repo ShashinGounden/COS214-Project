@@ -8,4 +8,9 @@
  */
 ArmouredTruck:: ArmouredTruck(){}
 
+/**
+ * @brief Destruct ArmouredTruck
+ * 
+ * @return ArmouredTruck:: 
+ */
 ArmouredTruck:: ~ArmouredTruck(){}

@@ -1,6 +1,10 @@
 #include "Transport.h"
 #include "Aircraft.h"
 
+/**
+ * @brief Construct a new Aircraft:: Aircraft object
+ * 
+ */
 Aircraft::Aircraft() {}
 
 /**
@@ -13,4 +17,8 @@ void Aircraft::setPower(int d)
     damage = d;
 }
 
+/**
+ * @brief Destroy the Aircraft:: Aircraft object
+ * 
+ */
 Aircraft::~Aircraft() {}
