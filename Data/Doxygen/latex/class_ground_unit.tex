@@ -1,0 +1,120 @@
+\hypertarget{class_ground_unit}{}\doxysection{Ground\+Unit Class Reference}
+\label{class_ground_unit}\index{GroundUnit@{GroundUnit}}
+Inheritance diagram for Ground\+Unit\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_ground_unit}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_ground_unit_a08010875575475f78c551fa13e02cc78}\label{class_ground_unit_a08010875575475f78c551fa13e02cc78}} 
+{\bfseries Ground\+Unit} (string)
+\begin{DoxyCompactList}\small\item\em Construct a new Ground \mbox{\hyperlink{class_unit}{Unit}}\+:\+: Ground \mbox{\hyperlink{class_unit}{Unit}} object Create a soldier factory to then create soldier objects to pushback to the unit object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_ground_unit_a5e6d6ea71e1c2f7073ebeb5c85a8fa98}{$\sim$\+Ground\+Unit}} ()
+\item 
+void \mbox{\hyperlink{class_ground_unit_aabefd31da7e11bab0a5f96338caad685}{populate\+Unit}} (int)
+\begin{DoxyCompactList}\small\item\em create a number of soldiers and give each one a weapon. weapons are created upon a random probability. 20\% explosives 40\% rifles and pistols, and of those a 50\% chance of the type of weapon being a long or short range variant. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_army_iterator}{Army\+Iterator}} $\ast$ \mbox{\hyperlink{class_ground_unit_a9fb9838b23d54e5b8c2aedc32b6375b7}{create\+Iterator}} ()
+\begin{DoxyCompactList}\small\item\em creates Iterator for ground\+Unit object \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_ground_unit_a2cb60e8d08903edf77c1d4dd834dee95}{get\+Size}} ()
+\begin{DoxyCompactList}\small\item\em Return size of unit. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_ground_unit_ac983843a23eba696c97ab9953a1ad46e}{get\+Power}} ()
+\begin{DoxyCompactList}\small\item\em calculate the total firepower of unit by adding each soldiers weapons firepower. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ground_unit_a809c4b3574514777f74e594bde7ebb06}{remove}} ()
+\begin{DoxyCompactList}\small\item\em Deletes from list of soldiers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_ground_unit_a5e6d6ea71e1c2f7073ebeb5c85a8fa98}\label{class_ground_unit_a5e6d6ea71e1c2f7073ebeb5c85a8fa98}} 
+\index{GroundUnit@{GroundUnit}!````~GroundUnit@{$\sim$GroundUnit}}
+\index{````~GroundUnit@{$\sim$GroundUnit}!GroundUnit@{GroundUnit}}
+\doxysubsubsection{\texorpdfstring{$\sim$GroundUnit()}{~GroundUnit()}}
+{\footnotesize\ttfamily Ground\+Unit\+::$\sim$\+Ground\+Unit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyItemize}
+\item Delete all person objects in unit list object
+\end{DoxyItemize}
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ground_unit_a9fb9838b23d54e5b8c2aedc32b6375b7}\label{class_ground_unit_a9fb9838b23d54e5b8c2aedc32b6375b7}} 
+\index{GroundUnit@{GroundUnit}!createIterator@{createIterator}}
+\index{createIterator@{createIterator}!GroundUnit@{GroundUnit}}
+\doxysubsubsection{\texorpdfstring{createIterator()}{createIterator()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_army_iterator}{Army\+Iterator}} $\ast$ Ground\+Unit\+::create\+Iterator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+creates Iterator for ground\+Unit object 
+
+\begin{DoxyReturn}{Returns}
+Army\+Iterator$\ast$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_unit}{Unit}}.
+
+\mbox{\Hypertarget{class_ground_unit_ac983843a23eba696c97ab9953a1ad46e}\label{class_ground_unit_ac983843a23eba696c97ab9953a1ad46e}} 
+\index{GroundUnit@{GroundUnit}!getPower@{getPower}}
+\index{getPower@{getPower}!GroundUnit@{GroundUnit}}
+\doxysubsubsection{\texorpdfstring{getPower()}{getPower()}}
+{\footnotesize\ttfamily int Ground\+Unit\+::get\+Power (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+calculate the total firepower of unit by adding each soldiers weapons firepower. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_ground_unit_a2cb60e8d08903edf77c1d4dd834dee95}\label{class_ground_unit_a2cb60e8d08903edf77c1d4dd834dee95}} 
+\index{GroundUnit@{GroundUnit}!getSize@{getSize}}
+\index{getSize@{getSize}!GroundUnit@{GroundUnit}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily int Ground\+Unit\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Return size of unit. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_ground_unit_aabefd31da7e11bab0a5f96338caad685}\label{class_ground_unit_aabefd31da7e11bab0a5f96338caad685}} 
+\index{GroundUnit@{GroundUnit}!populateUnit@{populateUnit}}
+\index{populateUnit@{populateUnit}!GroundUnit@{GroundUnit}}
+\doxysubsubsection{\texorpdfstring{populateUnit()}{populateUnit()}}
+{\footnotesize\ttfamily void Ground\+Unit\+::populate\+Unit (\begin{DoxyParamCaption}\item[{int}]{num\+Of\+Soldiers }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+create a number of soldiers and give each one a weapon. weapons are created upon a random probability. 20\% explosives 40\% rifles and pistols, and of those a 50\% chance of the type of weapon being a long or short range variant. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+Of\+Soldiers} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_unit}{Unit}}.
+
+\mbox{\Hypertarget{class_ground_unit_a809c4b3574514777f74e594bde7ebb06}\label{class_ground_unit_a809c4b3574514777f74e594bde7ebb06}} 
+\index{GroundUnit@{GroundUnit}!remove@{remove}}
+\index{remove@{remove}!GroundUnit@{GroundUnit}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily void Ground\+Unit\+::remove (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Deletes from list of soldiers. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Doxygen/\+Single Folder Program/Ground\+Unit.\+h\item 
+Doxygen/\+Single Folder Program/Ground\+Unit.\+cpp\end{DoxyCompactItemize}

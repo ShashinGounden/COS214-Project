@@ -1,0 +1,52 @@
+\hypertarget{_country_8h_source}{}\doxysection{Country.\+h}
+\label{_country_8h_source}\index{Doxygen/Single Folder Program/Country.h@{Doxygen/Single Folder Program/Country.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef COUNTRY\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define COUNTRY\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}../ArmyHierarchy/Army.h"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}../Phase/Dominate.h"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}../Phase/Deter.h"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}../Phase/Seize.h"{}}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{keyword}{class }\mbox{\hyperlink{class_alliance}{Alliance}};}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{keyword}{class }\mbox{\hyperlink{class_country}{Country}}}
+\DoxyCodeLine{13 \{}
+\DoxyCodeLine{14 \textcolor{keyword}{public}: }
+\DoxyCodeLine{15     \mbox{\hyperlink{class_country}{Country}}(std::string,\textcolor{keywordtype}{double});}
+\DoxyCodeLine{16     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_country_a5013557e0d93fabc976bfa0d7f0564a3}{\string~Country}}();}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18     \textcolor{keyword}{virtual} std::string \mbox{\hyperlink{class_country_aa584ff75674728736d4952b32693501a}{getName}}();}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_country_afa827cfd136a3346fb9e85418707a5df}{createArmy}}();}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_country_aba7c511427fb5809140f54287f075d9a}{Attack}}(\mbox{\hyperlink{class_country}{Country}}* c); }
+\DoxyCodeLine{23     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_country_a037a4fb8af28f6b7ebfd258862c5eef8}{takeDamage}}(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{24     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_country_aed4fe4cf12a656723c2a721e769751c0}{Retreat}}(); }
+\DoxyCodeLine{25     \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_country_af77c1426c9c27bb745bbd61181fbc9cd}{surrender}}(\mbox{\hyperlink{class_country}{Country}}*);}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27     \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \mbox{\hyperlink{class_country_a342e5deb7c9a7623ee685bd6c5cfac9e}{getFunds}}();}
+\DoxyCodeLine{28     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_country_a6837e126684ad79970fa0925b96b0ad1}{addFunds}}(\textcolor{keywordtype}{double}); }
+\DoxyCodeLine{29   }
+\DoxyCodeLine{30     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_country_a67a20bfea9b86f3fbcbf05b0c80e49c9}{joinAlliance}}(\mbox{\hyperlink{class_alliance}{Alliance}}*);}
+\DoxyCodeLine{31     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_country_a074d972ba76a1096cb017205dc3f2fe3}{notify}}(); }
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_country}{Country}}* \mbox{\hyperlink{class_country_a01f342f8640eb6152f40450f946053c3}{getCountry}}();}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35     \textcolor{keyword}{virtual} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_country_a549ee1d7100e800d2907e3a54e489430}{getNumOfSoldiers}}();}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37 \textcolor{keyword}{protected}: }
+\DoxyCodeLine{38     \mbox{\hyperlink{class_country}{Country}}()\{\};}
+\DoxyCodeLine{39     \mbox{\hyperlink{class_army}{Army}} *ARMY;}
+\DoxyCodeLine{40     std::string name;}
+\DoxyCodeLine{41     \textcolor{keywordtype}{double} funds;}
+\DoxyCodeLine{42     \mbox{\hyperlink{class_phase}{Phase}}* observedState; }
+\DoxyCodeLine{43     \mbox{\hyperlink{class_alliance}{Alliance}}* alliance;}
+\DoxyCodeLine{44 \};}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

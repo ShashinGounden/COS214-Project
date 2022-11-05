@@ -1,0 +1,281 @@
+\hypertarget{class_country}{}\doxysection{Country Class Reference}
+\label{class_country}\index{Country@{Country}}
+Inheritance diagram for Country\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_country}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_country_ab42b79553d2e8ebe145ab7c5207f113b}{Country}} (std\+::string, double)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_country}{Country}}\+:\+: \mbox{\hyperlink{class_country}{Country}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_country_a5013557e0d93fabc976bfa0d7f0564a3}\label{class_country_a5013557e0d93fabc976bfa0d7f0564a3}} 
+virtual {\bfseries $\sim$\+Country} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_country}{Country}}\+:\+: \mbox{\hyperlink{class_country}{Country}} object deletes army and observed state if there is an observed state currently in that variable. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_country_aa584ff75674728736d4952b32693501a}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em returns the country\textquotesingle{}s name \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_country_afa827cfd136a3346fb9e85418707a5df}\label{class_country_afa827cfd136a3346fb9e85418707a5df}} 
+void {\bfseries create\+Army} ()
+\begin{DoxyCompactList}\small\item\em Creating army object Using the funds variable we create\+Army with a specific amount of soldiers first num = soldiers second num = medics third num = pilots. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_country_aba7c511427fb5809140f54287f075d9a}{Attack}} (\mbox{\hyperlink{class_country}{Country}} $\ast$c)
+\begin{DoxyCompactList}\small\item\em Attack function, calculates total power then calls take\+Damage on enemy \mbox{\hyperlink{class_country}{Country}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_country_a037a4fb8af28f6b7ebfd258862c5eef8}{take\+Damage}} (int)
+\begin{DoxyCompactList}\small\item\em Function called by an attacking Country.\+Function subtracts defense from enemy\textquotesingle{}s attack to get overall damage done to army and removes soldiers. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_country_aed4fe4cf12a656723c2a721e769751c0}{Retreat}} ()
+\begin{DoxyCompactList}\small\item\em Retreat function to tell the user that this country is retreating. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_country_af77c1426c9c27bb745bbd61181fbc9cd}{surrender}} (\mbox{\hyperlink{class_country}{Country}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Function that indicates country has surrendered.\+Country surrenders when power reaches 0. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_country_a342e5deb7c9a7623ee685bd6c5cfac9e}{get\+Funds}} ()
+\begin{DoxyCompactList}\small\item\em Returns the countries funds. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_country_a6837e126684ad79970fa0925b96b0ad1}{add\+Funds}} (double)
+\begin{DoxyCompactList}\small\item\em This function will be used to add funds to the country\textquotesingle{}s arsenal. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_country_a67a20bfea9b86f3fbcbf05b0c80e49c9}{join\+Alliance}} (\mbox{\hyperlink{class_alliance}{Alliance}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Joins an alliance. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_country_a074d972ba76a1096cb017205dc3f2fe3}{notify}} ()
+\begin{DoxyCompactList}\small\item\em Contacts allied forces. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_country}{Country}} $\ast$ \mbox{\hyperlink{class_country_a01f342f8640eb6152f40450f946053c3}{get\+Country}} ()
+\begin{DoxyCompactList}\small\item\em returns country object \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_country_a549ee1d7100e800d2907e3a54e489430}{get\+Num\+Of\+Soldiers}} ()
+\begin{DoxyCompactList}\small\item\em used to calculate the number of soldiers left after the battle has ended mainly for design mode to give an output of the number of soldiers that have died in battle \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_country_af2b6be1505031c5a752f03c29ca12497}\label{class_country_af2b6be1505031c5a752f03c29ca12497}} 
+\mbox{\hyperlink{class_army}{Army}} $\ast$ {\bfseries ARMY}
+\item 
+\mbox{\Hypertarget{class_country_a568716bc32b2112a62312ae4986e7d83}\label{class_country_a568716bc32b2112a62312ae4986e7d83}} 
+std\+::string {\bfseries name}
+\item 
+\mbox{\Hypertarget{class_country_ab1750174879ab6a63b2150eed18acaee}\label{class_country_ab1750174879ab6a63b2150eed18acaee}} 
+double {\bfseries funds}
+\item 
+\mbox{\Hypertarget{class_country_a35887c46422352c2f098fb90f6df8f46}\label{class_country_a35887c46422352c2f098fb90f6df8f46}} 
+\mbox{\hyperlink{class_phase}{Phase}} $\ast$ {\bfseries observed\+State}
+\item 
+\mbox{\Hypertarget{class_country_a824d288d05726d975f4774c3b6e1122d}\label{class_country_a824d288d05726d975f4774c3b6e1122d}} 
+\mbox{\hyperlink{class_alliance}{Alliance}} $\ast$ {\bfseries alliance}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_country_ab42b79553d2e8ebe145ab7c5207f113b}\label{class_country_ab42b79553d2e8ebe145ab7c5207f113b}} 
+\index{Country@{Country}!Country@{Country}}
+\index{Country@{Country}!Country@{Country}}
+\doxysubsubsection{\texorpdfstring{Country()}{Country()}}
+{\footnotesize\ttfamily Country\+::\+Country (\begin{DoxyParamCaption}\item[{std\+::string}]{n,  }\item[{double}]{f }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_country}{Country}}\+:\+: \mbox{\hyperlink{class_country}{Country}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & \\
+\hline
+{\em f} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_country_a6837e126684ad79970fa0925b96b0ad1}\label{class_country_a6837e126684ad79970fa0925b96b0ad1}} 
+\index{Country@{Country}!addFunds@{addFunds}}
+\index{addFunds@{addFunds}!Country@{Country}}
+\doxysubsubsection{\texorpdfstring{addFunds()}{addFunds()}}
+{\footnotesize\ttfamily void Country\+::add\+Funds (\begin{DoxyParamCaption}\item[{double}]{fund }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This function will be used to add funds to the country\textquotesingle{}s arsenal. 
+
+Will increase the number of soldiers in the units according to the funds being added funds gets decreased by the number of soldiers created multiplied by 2
+
+
+\begin{DoxyParams}{Parameters}
+{\em fund} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_w_m_d_a6723079610f9c9597a7248a5126f1e31}{WMD}}.
+
+\mbox{\Hypertarget{class_country_aba7c511427fb5809140f54287f075d9a}\label{class_country_aba7c511427fb5809140f54287f075d9a}} 
+\index{Country@{Country}!Attack@{Attack}}
+\index{Attack@{Attack}!Country@{Country}}
+\doxysubsubsection{\texorpdfstring{Attack()}{Attack()}}
+{\footnotesize\ttfamily void Country\+::\+Attack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_country}{Country}} $\ast$}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Attack function, calculates total power then calls take\+Damage on enemy \mbox{\hyperlink{class_country}{Country}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & Enemy country being attacked \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_artillery_ac511848d6eb635dad5296d6415d48c78}{Artillery}}, \mbox{\hyperlink{class_nuke_a7c85416ce5b8793f29888a63c756e7cb}{Nuke}}, and \mbox{\hyperlink{class_w_m_d_ad6eefe18d1c0673bd3294daa3ee7a4dd}{WMD}}.
+
+\mbox{\Hypertarget{class_country_a01f342f8640eb6152f40450f946053c3}\label{class_country_a01f342f8640eb6152f40450f946053c3}} 
+\index{Country@{Country}!getCountry@{getCountry}}
+\index{getCountry@{getCountry}!Country@{Country}}
+\doxysubsubsection{\texorpdfstring{getCountry()}{getCountry()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_country}{Country}} $\ast$ Country\+::get\+Country (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+returns country object 
+
+\begin{DoxyReturn}{Returns}
+Country$\ast$ 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_w_m_d_a22d27f249ac32dd0a4074e3c6e86d83a}{WMD}}.
+
+\mbox{\Hypertarget{class_country_a342e5deb7c9a7623ee685bd6c5cfac9e}\label{class_country_a342e5deb7c9a7623ee685bd6c5cfac9e}} 
+\index{Country@{Country}!getFunds@{getFunds}}
+\index{getFunds@{getFunds}!Country@{Country}}
+\doxysubsubsection{\texorpdfstring{getFunds()}{getFunds()}}
+{\footnotesize\ttfamily double Country\+::get\+Funds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns the countries funds. 
+
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_w_m_d_acfc90384447251231a698961da95f6b4}{WMD}}.
+
+\mbox{\Hypertarget{class_country_aa584ff75674728736d4952b32693501a}\label{class_country_aa584ff75674728736d4952b32693501a}} 
+\index{Country@{Country}!getName@{getName}}
+\index{getName@{getName}!Country@{Country}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string Country\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+returns the country\textquotesingle{}s name 
+
+\begin{DoxyReturn}{Returns}
+std\+::string 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_w_m_d_a0df4de31a02c45a9e8b3db8671c2db73}{WMD}}.
+
+\mbox{\Hypertarget{class_country_a549ee1d7100e800d2907e3a54e489430}\label{class_country_a549ee1d7100e800d2907e3a54e489430}} 
+\index{Country@{Country}!getNumOfSoldiers@{getNumOfSoldiers}}
+\index{getNumOfSoldiers@{getNumOfSoldiers}!Country@{Country}}
+\doxysubsubsection{\texorpdfstring{getNumOfSoldiers()}{getNumOfSoldiers()}}
+{\footnotesize\ttfamily int Country\+::get\+Num\+Of\+Soldiers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+used to calculate the number of soldiers left after the battle has ended mainly for design mode to give an output of the number of soldiers that have died in battle 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_w_m_d_a042edf3366d731c24dfb65eca52604b6}{WMD}}.
+
+\mbox{\Hypertarget{class_country_a67a20bfea9b86f3fbcbf05b0c80e49c9}\label{class_country_a67a20bfea9b86f3fbcbf05b0c80e49c9}} 
+\index{Country@{Country}!joinAlliance@{joinAlliance}}
+\index{joinAlliance@{joinAlliance}!Country@{Country}}
+\doxysubsubsection{\texorpdfstring{joinAlliance()}{joinAlliance()}}
+{\footnotesize\ttfamily void Country\+::join\+Alliance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_alliance}{Alliance}} $\ast$}]{all }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Joins an alliance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em all} & an alliance \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_w_m_d_a0e58e8671fe069f81339db20db521190}{WMD}}.
+
+\mbox{\Hypertarget{class_country_a074d972ba76a1096cb017205dc3f2fe3}\label{class_country_a074d972ba76a1096cb017205dc3f2fe3}} 
+\index{Country@{Country}!notify@{notify}}
+\index{notify@{notify}!Country@{Country}}
+\doxysubsubsection{\texorpdfstring{notify()}{notify()}}
+{\footnotesize\ttfamily void Country\+::notify (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Contacts allied forces. 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_w_m_d_a6e7c08ee7fd6ed6e481cf382e09f659b}{WMD}}.
+
+\mbox{\Hypertarget{class_country_aed4fe4cf12a656723c2a721e769751c0}\label{class_country_aed4fe4cf12a656723c2a721e769751c0}} 
+\index{Country@{Country}!Retreat@{Retreat}}
+\index{Retreat@{Retreat}!Country@{Country}}
+\doxysubsubsection{\texorpdfstring{Retreat()}{Retreat()}}
+{\footnotesize\ttfamily void Country\+::\+Retreat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Retreat function to tell the user that this country is retreating. 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_w_m_d_ad8a48763c33b29904a40026caa119056}{WMD}}.
+
+\mbox{\Hypertarget{class_country_af77c1426c9c27bb745bbd61181fbc9cd}\label{class_country_af77c1426c9c27bb745bbd61181fbc9cd}} 
+\index{Country@{Country}!surrender@{surrender}}
+\index{surrender@{surrender}!Country@{Country}}
+\doxysubsubsection{\texorpdfstring{surrender()}{surrender()}}
+{\footnotesize\ttfamily bool Country\+::surrender (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_country}{Country}} $\ast$}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Function that indicates country has surrendered.\+Country surrenders when power reaches 0. 
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_w_m_d_a161330802ca7a9d729f836c6e4047e21}{WMD}}.
+
+\mbox{\Hypertarget{class_country_a037a4fb8af28f6b7ebfd258862c5eef8}\label{class_country_a037a4fb8af28f6b7ebfd258862c5eef8}} 
+\index{Country@{Country}!takeDamage@{takeDamage}}
+\index{takeDamage@{takeDamage}!Country@{Country}}
+\doxysubsubsection{\texorpdfstring{takeDamage()}{takeDamage()}}
+{\footnotesize\ttfamily void Country\+::take\+Damage (\begin{DoxyParamCaption}\item[{int}]{attack }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Function called by an attacking Country.\+Function subtracts defense from enemy\textquotesingle{}s attack to get overall damage done to army and removes soldiers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em attack} & damage value for enemy \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_artillery_ab1507f9889a1961a8ffa03adb53be702}{Artillery}}, \mbox{\hyperlink{class_nuke_a039575a1c2c47c1343e48c05c1a8866a}{Nuke}}, and \mbox{\hyperlink{class_w_m_d_aa72dca17b424677eb9180883a51e2fd6}{WMD}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Doxygen/\+Single Folder Program/Country.\+h\item 
+Doxygen/\+Single Folder Program/\mbox{\hyperlink{_country_8cpp}{Country.\+cpp}}\end{DoxyCompactItemize}

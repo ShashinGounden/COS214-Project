@@ -1,0 +1,28 @@
+\hypertarget{_ground_unit_iterator_8h_source}{}\doxysection{Ground\+Unit\+Iterator.\+h}
+\label{_ground_unit_iterator_8h_source}\index{Doxygen/Single Folder Program/GroundUnitIterator.h@{Doxygen/Single Folder Program/GroundUnitIterator.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef GROUNDUNITITERATOR\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define GROUNDUNITITERATOR\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}ArmyIterator.h"{}}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{keyword}{class }\mbox{\hyperlink{class_ground_unit_iterator}{GroundUnitIterator}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_army_iterator}{ArmyIterator}}}
+\DoxyCodeLine{7 \{}
+\DoxyCodeLine{8 \textcolor{keyword}{public}:}
+\DoxyCodeLine{9     \mbox{\hyperlink{class_ground_unit_iterator}{GroundUnitIterator}}(std::list<Person*>);}
+\DoxyCodeLine{10     \mbox{\hyperlink{class_ground_unit_iterator_af130daa4357e3f111a041bc2ef956a63}{\string~GroundUnitIterator}}();}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12     \mbox{\hyperlink{class_person}{Person}}* \mbox{\hyperlink{class_ground_unit_iterator_ac8309e279ab54d33af15e20f29129bce}{first}}();}
+\DoxyCodeLine{13     \mbox{\hyperlink{class_person}{Person}}* \mbox{\hyperlink{class_ground_unit_iterator_aa273764ac7b2c0e9c601a6d7571908b8}{next}}();}
+\DoxyCodeLine{14     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_ground_unit_iterator_aa807d46c5235832cbeee65fe54f6b47e}{hasNext}}();}
+\DoxyCodeLine{15     \mbox{\hyperlink{class_person}{Person}}* \mbox{\hyperlink{class_ground_unit_iterator_adec29ab970f5f225abaeb5b08abb6725}{current}}();}
+\DoxyCodeLine{16     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_ground_unit_iterator_a3f663070c7e10e55d18fa3c56dc6a0cd}{increment}}();}
+\DoxyCodeLine{17 \textcolor{keyword}{private}:}
+\DoxyCodeLine{18     \mbox{\hyperlink{class_person}{Person}}* curr;}
+\DoxyCodeLine{19     std::list<Person*> unit;}
+\DoxyCodeLine{20 \};}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

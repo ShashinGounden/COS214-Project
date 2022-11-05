@@ -1,0 +1,34 @@
+\hypertarget{_person_8h_source}{}\doxysection{Person.\+h}
+\label{_person_8h_source}\index{Doxygen/Single Folder Program/Person.h@{Doxygen/Single Folder Program/Person.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef PERSON\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define PERSON\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}../WeaponHierarchy/Weapon.h"{}}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{keyword}{class }\mbox{\hyperlink{class_person}{Person}}}
+\DoxyCodeLine{9 \{}
+\DoxyCodeLine{10     \textcolor{keyword}{protected}:}
+\DoxyCodeLine{11     \textcolor{keywordtype}{int} hp;}
+\DoxyCodeLine{12     std::string skill; }
+\DoxyCodeLine{13     \textcolor{keywordtype}{int} ID;}
+\DoxyCodeLine{14     \mbox{\hyperlink{class_weapon}{Weapon}} *weapon;}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16     \textcolor{keyword}{public}:}
+\DoxyCodeLine{17     \mbox{\hyperlink{class_person}{Person}}(\textcolor{keywordtype}{int}, \textcolor{keywordtype}{int}, std::string);}
+\DoxyCodeLine{18     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_person_a700ffd693321c5fe6880262acf43d4da}{\string~Person}}();}
+\DoxyCodeLine{19     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_person}{Person}}* clone() = 0;}
+\DoxyCodeLine{20     \textcolor{keywordtype}{int} getHealth();}
+\DoxyCodeLine{21     std::string getSkill();}
+\DoxyCodeLine{22     \textcolor{keywordtype}{void} addWeapon(\mbox{\hyperlink{class_weapon}{Weapon}}*);}
+\DoxyCodeLine{23     \mbox{\hyperlink{class_weapon}{Weapon}}* getWeapon();}
+\DoxyCodeLine{24     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_person_a2b612db7c4347fba5eea98d96b294a0f}{heal}}();}
+\DoxyCodeLine{25     \textcolor{keywordtype}{int} getID();}
+\DoxyCodeLine{26 \};}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

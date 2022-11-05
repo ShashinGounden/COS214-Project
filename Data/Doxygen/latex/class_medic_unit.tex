@@ -1,0 +1,100 @@
+\hypertarget{class_medic_unit}{}\doxysection{Medic\+Unit Class Reference}
+\label{class_medic_unit}\index{MedicUnit@{MedicUnit}}
+Inheritance diagram for Medic\+Unit\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_medic_unit}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_medic_unit_a077aa215e726382d28fac8e84983feec}\label{class_medic_unit_a077aa215e726382d28fac8e84983feec}} 
+{\bfseries Medic\+Unit} (string)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_medic}{Medic}} \mbox{\hyperlink{class_unit}{Unit}}\+:\+: \mbox{\hyperlink{class_medic}{Medic}} \mbox{\hyperlink{class_unit}{Unit}} object Create a medic factory to then create medic objects to pushback to the unit object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_medic_unit_acc3f713023d3122f7f7c9d46f4652389}{$\sim$\+Medic\+Unit}} ()
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Delete all person objects in unit object 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_medic_unit_a4cf23b01481c4dcfe39aec47b5150f77}{populate\+Unit}} (int)
+\begin{DoxyCompactList}\small\item\em create a number of soldiers and give each one a weapon. weapons are created upon a random probability. 20\% explosives 40\% rifles and pistols, and of those a 50\% chance of the type of weapon being a long or short range variant. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_army_iterator}{Army\+Iterator}} $\ast$ \mbox{\hyperlink{class_medic_unit_ad522153144611ef9bd5a3c7d26dfae53}{create\+Iterator}} ()
+\begin{DoxyCompactList}\small\item\em creates iterator for \mbox{\hyperlink{class_medic_unit}{Medic\+Unit}} object \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_medic_unit_a21ca000978bb51dbb4e5012f2927079d}{get\+Heal\+Power}} ()
+\begin{DoxyCompactList}\small\item\em Calculate total healing power of medics unit by adding up all available medics heal value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_medic_unit_acc3f713023d3122f7f7c9d46f4652389}\label{class_medic_unit_acc3f713023d3122f7f7c9d46f4652389}} 
+\index{MedicUnit@{MedicUnit}!````~MedicUnit@{$\sim$MedicUnit}}
+\index{````~MedicUnit@{$\sim$MedicUnit}!MedicUnit@{MedicUnit}}
+\doxysubsubsection{\texorpdfstring{$\sim$MedicUnit()}{~MedicUnit()}}
+{\footnotesize\ttfamily Medic\+Unit\+::$\sim$\+Medic\+Unit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Delete all person objects in unit object 
+\end{DoxyItemize}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_medic_unit_ad522153144611ef9bd5a3c7d26dfae53}\label{class_medic_unit_ad522153144611ef9bd5a3c7d26dfae53}} 
+\index{MedicUnit@{MedicUnit}!createIterator@{createIterator}}
+\index{createIterator@{createIterator}!MedicUnit@{MedicUnit}}
+\doxysubsubsection{\texorpdfstring{createIterator()}{createIterator()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_army_iterator}{Army\+Iterator}} $\ast$ Medic\+Unit\+::create\+Iterator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+creates iterator for \mbox{\hyperlink{class_medic_unit}{Medic\+Unit}} object 
+
+\begin{DoxyReturn}{Returns}
+Army\+Iterator$\ast$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_unit}{Unit}}.
+
+\mbox{\Hypertarget{class_medic_unit_a21ca000978bb51dbb4e5012f2927079d}\label{class_medic_unit_a21ca000978bb51dbb4e5012f2927079d}} 
+\index{MedicUnit@{MedicUnit}!getHealPower@{getHealPower}}
+\index{getHealPower@{getHealPower}!MedicUnit@{MedicUnit}}
+\doxysubsubsection{\texorpdfstring{getHealPower()}{getHealPower()}}
+{\footnotesize\ttfamily int Medic\+Unit\+::get\+Heal\+Power (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Calculate total healing power of medics unit by adding up all available medics heal value. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_medic_unit_a4cf23b01481c4dcfe39aec47b5150f77}\label{class_medic_unit_a4cf23b01481c4dcfe39aec47b5150f77}} 
+\index{MedicUnit@{MedicUnit}!populateUnit@{populateUnit}}
+\index{populateUnit@{populateUnit}!MedicUnit@{MedicUnit}}
+\doxysubsubsection{\texorpdfstring{populateUnit()}{populateUnit()}}
+{\footnotesize\ttfamily void Medic\+Unit\+::populate\+Unit (\begin{DoxyParamCaption}\item[{int}]{num\+Of\+Medics }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+create a number of soldiers and give each one a weapon. weapons are created upon a random probability. 20\% explosives 40\% rifles and pistols, and of those a 50\% chance of the type of weapon being a long or short range variant. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+Of\+Medics} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_unit}{Unit}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Doxygen/\+Single Folder Program/Medic\+Unit.\+h\item 
+Doxygen/\+Single Folder Program/Medic\+Unit.\+cpp\end{DoxyCompactItemize}

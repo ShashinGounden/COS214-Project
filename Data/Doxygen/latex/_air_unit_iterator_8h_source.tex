@@ -1,0 +1,29 @@
+\hypertarget{_air_unit_iterator_8h_source}{}\doxysection{Air\+Unit\+Iterator.\+h}
+\label{_air_unit_iterator_8h_source}\index{Doxygen/Single Folder Program/AirUnitIterator.h@{Doxygen/Single Folder Program/AirUnitIterator.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef AIRUNITITERATOR\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define AIRUNITITERATOR\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}ArmyIterator.h"{}}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{keyword}{class }\mbox{\hyperlink{class_air_unit_iterator}{AirUnitIterator}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_army_iterator}{ArmyIterator}}}
+\DoxyCodeLine{7 \{}
+\DoxyCodeLine{8 \textcolor{keyword}{public}:}
+\DoxyCodeLine{9     \mbox{\hyperlink{class_air_unit_iterator}{AirUnitIterator}}(std::list<Person*>);}
+\DoxyCodeLine{10     \mbox{\hyperlink{class_air_unit_iterator_a35e4a810c559b9a51552a1c51482d9a8}{\string~AirUnitIterator}}();}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12     \mbox{\hyperlink{class_person}{Person}}* \mbox{\hyperlink{class_air_unit_iterator_a8670e61d6906360615a95c4b50f5c850}{first}}();}
+\DoxyCodeLine{13     \mbox{\hyperlink{class_person}{Person}}* \mbox{\hyperlink{class_air_unit_iterator_abb4933185f5ff5458bf9f0dd4151f000}{next}}();}
+\DoxyCodeLine{14     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_air_unit_iterator_ab34a2a170d0bd6ae73527e362bc824b6}{hasNext}}();}
+\DoxyCodeLine{15     \mbox{\hyperlink{class_person}{Person}}* \mbox{\hyperlink{class_air_unit_iterator_a05307ad8c2cb8640e9b33260ae959c9a}{current}}();}
+\DoxyCodeLine{16     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_air_unit_iterator_a00d021dbdcb726392dd4e0590aa61052}{increment}}();}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 \textcolor{keyword}{private}:}
+\DoxyCodeLine{19     \mbox{\hyperlink{class_person}{Person}}* curr;}
+\DoxyCodeLine{20     std::list<Person*> unit;}
+\DoxyCodeLine{21 \};}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

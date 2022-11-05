@@ -1,0 +1,27 @@
+\hypertarget{_alliance_8h_source}{}\doxysection{Alliance.\+h}
+\label{_alliance_8h_source}\index{Doxygen/Single Folder Program/Alliance.h@{Doxygen/Single Folder Program/Alliance.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef ALLIANCE\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define ALLIANCE\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}Country.h"{}}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{keyword}{class }\mbox{\hyperlink{class_alliance}{Alliance}}}
+\DoxyCodeLine{7 \{}
+\DoxyCodeLine{8 \textcolor{keyword}{public}:}
+\DoxyCodeLine{9     \mbox{\hyperlink{class_alliance_a262a2819e969b465eb9548e419bad521}{Alliance}}();}
+\DoxyCodeLine{10     \mbox{\hyperlink{class_alliance_a6a5357e96f284da2f00d72d14605b6fe}{\string~Alliance}}();}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_alliance_a7eb98a764e1c8dfceb23495d6c6b72a7}{addAlliance}}(\mbox{\hyperlink{class_country}{Country}} *);}
+\DoxyCodeLine{13     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_alliance_a8533b0c6afa4ffc5d90718ed336b0791}{removeAlliance}}(\mbox{\hyperlink{class_country}{Country}} *);}
+\DoxyCodeLine{14     \textcolor{keywordtype}{void} update();}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{keyword}{private}:}
+\DoxyCodeLine{17     std::list<Country *> allianceList;}
+\DoxyCodeLine{18     std::list<std::string> responses;}
+\DoxyCodeLine{19 \};}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

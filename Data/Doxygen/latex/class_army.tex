@@ -1,0 +1,139 @@
+\hypertarget{class_army}{}\doxysection{Army Class Reference}
+\label{class_army}\index{Army@{Army}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_army_ab4c108683635332baf4008e25fb33ecd}\label{class_army_ab4c108683635332baf4008e25fb33ecd}} 
+{\bfseries Army} (std\+::string, int, int, int)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_army}{Army}}\+:\+: \mbox{\hyperlink{class_army}{Army}} object Instantiate all units Using \mbox{\hyperlink{class_army_a28295a6fc3f0f622abbd1575e5670cff}{populate\+Unit()}} to populate all Units. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_army_a01db7886e46e79ece1726d46f918848d}{$\sim$\+Army}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_army}{Army}}\+:\+: \mbox{\hyperlink{class_army}{Army}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_army_a28295a6fc3f0f622abbd1575e5670cff}{populate\+Unit}} (int, int, int)
+\begin{DoxyCompactList}\small\item\em using each units populate\+Unit function to populate each unit with the input parameters amount \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_army_aa5e1ea7138cc8942b1a8dbb2c6b06988}{Attack}} ()
+\begin{DoxyCompactList}\small\item\em All units and Soldiers attack. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_army_adc25c1daf9c3d8a82d073b6d0d12cc90}\label{class_army_adc25c1daf9c3d8a82d073b6d0d12cc90}} 
+void {\bfseries Advance} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_army}{Army}} advances position Function to call each person\textquotesingle{}s Advance function. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_army_aa1274930708b86dc3fda927ea4cdb97c}\label{class_army_aa1274930708b86dc3fda927ea4cdb97c}} 
+void {\bfseries Retreat} ()
+\begin{DoxyCompactList}\small\item\em All units retreat Calling all person\textquotesingle{}s retreat function. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_army_a50840ea950db6e202e813121d7b0d9fb}\label{class_army_a50840ea950db6e202e813121d7b0d9fb}} 
+void {\bfseries Surrender} (\mbox{\hyperlink{class_country}{Country}} $\ast$)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_country}{Country}} signs a treaty and \mbox{\hyperlink{class_army}{Army}} surrenders Calls each person\textquotesingle{}s Surrender function. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_army_a5c3f76211c4b02451d553d9c41feedfc}{Defend}} ()
+\begin{DoxyCompactList}\small\item\em calculate total healing power of medics \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_army_a2c93745c9e6f79a2f8460557ea8850f1}{Remove\+Soldiers}} (int)
+\begin{DoxyCompactList}\small\item\em Removes soldiers either from air unit or ground unit. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_army_a23b0ec0aa78d6b30a9d18b73ebd38d28}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em returns name of \mbox{\hyperlink{class_country}{Country}} this army belongs to \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_army_ae5e8be96701dbb7b08a33f503079c731}{get\+Num\+Of\+Soldiers}} ()
+\begin{DoxyCompactList}\small\item\em get thenumber of soldiers in the army \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_army_a01db7886e46e79ece1726d46f918848d}\label{class_army_a01db7886e46e79ece1726d46f918848d}} 
+\index{Army@{Army}!````~Army@{$\sim$Army}}
+\index{````~Army@{$\sim$Army}!Army@{Army}}
+\doxysubsubsection{\texorpdfstring{$\sim$Army()}{~Army()}}
+{\footnotesize\ttfamily Army\+::$\sim$\+Army (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the \mbox{\hyperlink{class_army}{Army}}\+:\+: \mbox{\hyperlink{class_army}{Army}} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_army_aa5e1ea7138cc8942b1a8dbb2c6b06988}\label{class_army_aa5e1ea7138cc8942b1a8dbb2c6b06988}} 
+\index{Army@{Army}!Attack@{Attack}}
+\index{Attack@{Attack}!Army@{Army}}
+\doxysubsubsection{\texorpdfstring{Attack()}{Attack()}}
+{\footnotesize\ttfamily int Army\+::\+Attack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+All units and Soldiers attack. 
+
+\begin{DoxyReturn}{Returns}
+cout statement from units attack method 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_army_a5c3f76211c4b02451d553d9c41feedfc}\label{class_army_a5c3f76211c4b02451d553d9c41feedfc}} 
+\index{Army@{Army}!Defend@{Defend}}
+\index{Defend@{Defend}!Army@{Army}}
+\doxysubsubsection{\texorpdfstring{Defend()}{Defend()}}
+{\footnotesize\ttfamily int Army\+::\+Defend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+calculate total healing power of medics 
+
+\begin{DoxyReturn}{Returns}
+int total healing power of medics 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_army_a23b0ec0aa78d6b30a9d18b73ebd38d28}\label{class_army_a23b0ec0aa78d6b30a9d18b73ebd38d28}} 
+\index{Army@{Army}!getName@{getName}}
+\index{getName@{getName}!Army@{Army}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string Army\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+returns name of \mbox{\hyperlink{class_country}{Country}} this army belongs to 
+
+\begin{DoxyReturn}{Returns}
+std\+::string country\+Name 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_army_ae5e8be96701dbb7b08a33f503079c731}\label{class_army_ae5e8be96701dbb7b08a33f503079c731}} 
+\index{Army@{Army}!getNumOfSoldiers@{getNumOfSoldiers}}
+\index{getNumOfSoldiers@{getNumOfSoldiers}!Army@{Army}}
+\doxysubsubsection{\texorpdfstring{getNumOfSoldiers()}{getNumOfSoldiers()}}
+{\footnotesize\ttfamily int Army\+::get\+Num\+Of\+Soldiers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get thenumber of soldiers in the army 
+
+\begin{DoxyReturn}{Returns}
+int number of soldiers 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_army_a28295a6fc3f0f622abbd1575e5670cff}\label{class_army_a28295a6fc3f0f622abbd1575e5670cff}} 
+\index{Army@{Army}!populateUnit@{populateUnit}}
+\index{populateUnit@{populateUnit}!Army@{Army}}
+\doxysubsubsection{\texorpdfstring{populateUnit()}{populateUnit()}}
+{\footnotesize\ttfamily void Army\+::populate\+Unit (\begin{DoxyParamCaption}\item[{int}]{num\+Of\+Soldiers,  }\item[{int}]{num\+Of\+Medics,  }\item[{int}]{num\+Of\+Pilots }\end{DoxyParamCaption})}
+
+
+
+using each units populate\+Unit function to populate each unit with the input parameters amount 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+Of\+Soldiers} & \\
+\hline
+{\em num\+Of\+Medics} & \\
+\hline
+{\em num\+Of\+Pilots} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_army_a2c93745c9e6f79a2f8460557ea8850f1}\label{class_army_a2c93745c9e6f79a2f8460557ea8850f1}} 
+\index{Army@{Army}!RemoveSoldiers@{RemoveSoldiers}}
+\index{RemoveSoldiers@{RemoveSoldiers}!Army@{Army}}
+\doxysubsubsection{\texorpdfstring{RemoveSoldiers()}{RemoveSoldiers()}}
+{\footnotesize\ttfamily void Army\+::\+Remove\+Soldiers (\begin{DoxyParamCaption}\item[{int}]{damage }\end{DoxyParamCaption})}
+
+
+
+Removes soldiers either from air unit or ground unit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em damage} & Number of soldiers to be removed \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Doxygen/\+Single Folder Program/Army.\+h\item 
+Doxygen/\+Single Folder Program/\mbox{\hyperlink{_army_8cpp}{Army.\+cpp}}\end{DoxyCompactItemize}

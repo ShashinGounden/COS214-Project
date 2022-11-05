@@ -1,0 +1,145 @@
+\hypertarget{class_aircraft_maker}{}\doxysection{Aircraft\+Maker Class Reference}
+\label{class_aircraft_maker}\index{AircraftMaker@{AircraftMaker}}
+Inheritance diagram for Aircraft\+Maker\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_aircraft_maker}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_aircraft_maker_a921e361f5d629da2fbafb3f053015004}{Aircraft\+Maker}} ()
+\begin{DoxyCompactList}\small\item\em Construct Air\+Craft object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_aircraft_maker_a00a0b82ad06228ef4359c6837e4c2125}{add\+Defence}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em sets the jet objects defence attribute \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_aircraft_maker_a65d34a9062f182eaaf235da96af4a4c3}{set\+Health}} (int)
+\begin{DoxyCompactList}\small\item\em Set the jet objects health. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_aircraft_maker_a927ad8e14905435682e7c65f968bc3e8}{add\+Damage}} (int)
+\begin{DoxyCompactList}\small\item\em sets the damage that a jet can execute \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_aircraft_maker_a253c7da9733d6bc068586852d559c742}{build\+Product}} ()
+\begin{DoxyCompactList}\small\item\em assembles the aircraft \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_aircraft}{Aircraft}} $\ast$ \mbox{\hyperlink{class_aircraft_maker_af770567bbab208c8f2f749b7f994d0d4}{get\+Product}} ()
+\begin{DoxyCompactList}\small\item\em Calls build to assemble aircraft and returns the created object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_aircraft_maker_ac52e97f9a42b06668abdd5554de29baf}{$\sim$\+Aircraft\+Maker}} ()
+\begin{DoxyCompactList}\small\item\em destroy vehicles allocated memory \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_aircraft_maker_a794012e25325bf8d1df20d9facf4c84a}\label{class_aircraft_maker_a794012e25325bf8d1df20d9facf4c84a}} 
+\mbox{\hyperlink{class_aircraft}{Aircraft}} $\ast$ {\bfseries jet}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_aircraft_maker_a921e361f5d629da2fbafb3f053015004}\label{class_aircraft_maker_a921e361f5d629da2fbafb3f053015004}} 
+\index{AircraftMaker@{AircraftMaker}!AircraftMaker@{AircraftMaker}}
+\index{AircraftMaker@{AircraftMaker}!AircraftMaker@{AircraftMaker}}
+\doxysubsubsection{\texorpdfstring{AircraftMaker()}{AircraftMaker()}}
+{\footnotesize\ttfamily Aircraft\+Maker\+::\+Aircraft\+Maker (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct Air\+Craft object. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_aircraft_maker}{Aircraft\+Maker}}\+:\+: 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_aircraft_maker_ac52e97f9a42b06668abdd5554de29baf}\label{class_aircraft_maker_ac52e97f9a42b06668abdd5554de29baf}} 
+\index{AircraftMaker@{AircraftMaker}!````~AircraftMaker@{$\sim$AircraftMaker}}
+\index{````~AircraftMaker@{$\sim$AircraftMaker}!AircraftMaker@{AircraftMaker}}
+\doxysubsubsection{\texorpdfstring{$\sim$AircraftMaker()}{~AircraftMaker()}}
+{\footnotesize\ttfamily Aircraft\+Maker\+::$\sim$\+Aircraft\+Maker (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+destroy vehicles allocated memory 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_aircraft_maker}{Aircraft\+Maker}}\+:\+: 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_aircraft_maker_a927ad8e14905435682e7c65f968bc3e8}\label{class_aircraft_maker_a927ad8e14905435682e7c65f968bc3e8}} 
+\index{AircraftMaker@{AircraftMaker}!addDamage@{addDamage}}
+\index{addDamage@{addDamage}!AircraftMaker@{AircraftMaker}}
+\doxysubsubsection{\texorpdfstring{addDamage()}{addDamage()}}
+{\footnotesize\ttfamily void Aircraft\+Maker\+::add\+Damage (\begin{DoxyParamCaption}\item[{int}]{j }\end{DoxyParamCaption})}
+
+
+
+sets the damage that a jet can execute 
+
+
+\begin{DoxyParams}{Parameters}
+{\em j} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_aircraft_maker_a00a0b82ad06228ef4359c6837e4c2125}\label{class_aircraft_maker_a00a0b82ad06228ef4359c6837e4c2125}} 
+\index{AircraftMaker@{AircraftMaker}!addDefence@{addDefence}}
+\index{addDefence@{addDefence}!AircraftMaker@{AircraftMaker}}
+\doxysubsubsection{\texorpdfstring{addDefence()}{addDefence()}}
+{\footnotesize\ttfamily void Aircraft\+Maker\+::add\+Defence (\begin{DoxyParamCaption}\item[{std\+::string}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+sets the jet objects defence attribute 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_transport_builder}{Transport\+Builder}}.
+
+\mbox{\Hypertarget{class_aircraft_maker_a253c7da9733d6bc068586852d559c742}\label{class_aircraft_maker_a253c7da9733d6bc068586852d559c742}} 
+\index{AircraftMaker@{AircraftMaker}!buildProduct@{buildProduct}}
+\index{buildProduct@{buildProduct}!AircraftMaker@{AircraftMaker}}
+\doxysubsubsection{\texorpdfstring{buildProduct()}{buildProduct()}}
+{\footnotesize\ttfamily void Aircraft\+Maker\+::build\+Product (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+assembles the aircraft 
+
+\mbox{\Hypertarget{class_aircraft_maker_af770567bbab208c8f2f749b7f994d0d4}\label{class_aircraft_maker_af770567bbab208c8f2f749b7f994d0d4}} 
+\index{AircraftMaker@{AircraftMaker}!getProduct@{getProduct}}
+\index{getProduct@{getProduct}!AircraftMaker@{AircraftMaker}}
+\doxysubsubsection{\texorpdfstring{getProduct()}{getProduct()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_aircraft}{Aircraft}} $\ast$ Aircraft\+Maker\+::get\+Product (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Calls build to assemble aircraft and returns the created object. 
+
+\begin{DoxyReturn}{Returns}
+Aircraft$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_aircraft_maker_a65d34a9062f182eaaf235da96af4a4c3}\label{class_aircraft_maker_a65d34a9062f182eaaf235da96af4a4c3}} 
+\index{AircraftMaker@{AircraftMaker}!setHealth@{setHealth}}
+\index{setHealth@{setHealth}!AircraftMaker@{AircraftMaker}}
+\doxysubsubsection{\texorpdfstring{setHealth()}{setHealth()}}
+{\footnotesize\ttfamily void Aircraft\+Maker\+::set\+Health (\begin{DoxyParamCaption}\item[{int}]{h }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Set the jet objects health. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_transport_builder}{Transport\+Builder}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Doxygen/\+Single Folder Program/Aircraft\+Maker.\+h\item 
+Doxygen/\+Single Folder Program/Aircraft\+Maker.\+cpp\end{DoxyCompactItemize}

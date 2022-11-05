@@ -1,0 +1,137 @@
+\hypertarget{class_medic_unit_iterator}{}\doxysection{Medic\+Unit\+Iterator Class Reference}
+\label{class_medic_unit_iterator}\index{MedicUnitIterator@{MedicUnitIterator}}
+Inheritance diagram for Medic\+Unit\+Iterator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_medic_unit_iterator}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_medic_unit_iterator_aefd7bff2b25bc173033041be06fc9639}{Medic\+Unit\+Iterator}} (std\+::list$<$ \mbox{\hyperlink{class_person}{Person}} $\ast$ $>$)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_medic}{Medic}} \mbox{\hyperlink{class_unit}{Unit}} Iterator\+:\+: \mbox{\hyperlink{class_medic}{Medic}} \mbox{\hyperlink{class_unit}{Unit}} Iterator object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_medic_unit_iterator_a7e9240a044ac5dc69ccd3f5488bee223}\label{class_medic_unit_iterator_a7e9240a044ac5dc69ccd3f5488bee223}} 
+{\bfseries $\sim$\+Medic\+Unit\+Iterator} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_medic}{Medic}} \mbox{\hyperlink{class_unit}{Unit}} Iterator\+:\+: \mbox{\hyperlink{class_medic}{Medic}} \mbox{\hyperlink{class_unit}{Unit}} Iterator object Will delete the \mbox{\hyperlink{class_person}{Person}} objects in the \mbox{\hyperlink{class_unit}{Unit}} file destructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_person}{Person}} $\ast$ \mbox{\hyperlink{class_medic_unit_iterator_ab92dc0066372575baeb04e96611458f0}{first}} ()
+\begin{DoxyCompactList}\small\item\em returns first Person$\ast$ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_person}{Person}} $\ast$ \mbox{\hyperlink{class_medic_unit_iterator_a9251480fc1554b92ae2b848948c7afd9}{next}} ()
+\begin{DoxyCompactList}\small\item\em returns pointer to next Person$\ast$ \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_medic_unit_iterator_a912ee80cb05cd2eb784f018aa5abc9e9}{has\+Next}} ()
+\begin{DoxyCompactList}\small\item\em checks if Iterator has reached end of \mbox{\hyperlink{class_unit}{Unit}} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_person}{Person}} $\ast$ \mbox{\hyperlink{class_medic_unit_iterator_ac8e4c6427a215a89707a692197657f18}{current}} ()
+\begin{DoxyCompactList}\small\item\em returns Person$\ast$ iterator is pointing to \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_medic_unit_iterator_a2107fd2fee9d1b16732e954ec77fcfc9}{increment}} ()
+\begin{DoxyCompactList}\small\item\em moves Iterator one place forward \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_medic_unit_iterator_aefd7bff2b25bc173033041be06fc9639}\label{class_medic_unit_iterator_aefd7bff2b25bc173033041be06fc9639}} 
+\index{MedicUnitIterator@{MedicUnitIterator}!MedicUnitIterator@{MedicUnitIterator}}
+\index{MedicUnitIterator@{MedicUnitIterator}!MedicUnitIterator@{MedicUnitIterator}}
+\doxysubsubsection{\texorpdfstring{MedicUnitIterator()}{MedicUnitIterator()}}
+{\footnotesize\ttfamily Medic\+Unit\+Iterator\+::\+Medic\+Unit\+Iterator (\begin{DoxyParamCaption}\item[{std\+::list$<$ \mbox{\hyperlink{class_person}{Person}} $\ast$ $>$}]{list }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_medic}{Medic}} \mbox{\hyperlink{class_unit}{Unit}} Iterator\+:\+: \mbox{\hyperlink{class_medic}{Medic}} \mbox{\hyperlink{class_unit}{Unit}} Iterator object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_medic_unit_iterator_ac8e4c6427a215a89707a692197657f18}\label{class_medic_unit_iterator_ac8e4c6427a215a89707a692197657f18}} 
+\index{MedicUnitIterator@{MedicUnitIterator}!current@{current}}
+\index{current@{current}!MedicUnitIterator@{MedicUnitIterator}}
+\doxysubsubsection{\texorpdfstring{current()}{current()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_person}{Person}} $\ast$ Medic\+Unit\+Iterator\+::current (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+returns Person$\ast$ iterator is pointing to 
+
+\begin{DoxyReturn}{Returns}
+Person$\ast$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_army_iterator}{Army\+Iterator}}.
+
+\mbox{\Hypertarget{class_medic_unit_iterator_ab92dc0066372575baeb04e96611458f0}\label{class_medic_unit_iterator_ab92dc0066372575baeb04e96611458f0}} 
+\index{MedicUnitIterator@{MedicUnitIterator}!first@{first}}
+\index{first@{first}!MedicUnitIterator@{MedicUnitIterator}}
+\doxysubsubsection{\texorpdfstring{first()}{first()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_person}{Person}} $\ast$ Medic\+Unit\+Iterator\+::first (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+returns first Person$\ast$ 
+
+\begin{DoxyReturn}{Returns}
+Person$\ast$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_army_iterator}{Army\+Iterator}}.
+
+\mbox{\Hypertarget{class_medic_unit_iterator_a912ee80cb05cd2eb784f018aa5abc9e9}\label{class_medic_unit_iterator_a912ee80cb05cd2eb784f018aa5abc9e9}} 
+\index{MedicUnitIterator@{MedicUnitIterator}!hasNext@{hasNext}}
+\index{hasNext@{hasNext}!MedicUnitIterator@{MedicUnitIterator}}
+\doxysubsubsection{\texorpdfstring{hasNext()}{hasNext()}}
+{\footnotesize\ttfamily bool Medic\+Unit\+Iterator\+::has\+Next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+checks if Iterator has reached end of \mbox{\hyperlink{class_unit}{Unit}} 
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_army_iterator}{Army\+Iterator}}.
+
+\mbox{\Hypertarget{class_medic_unit_iterator_a2107fd2fee9d1b16732e954ec77fcfc9}\label{class_medic_unit_iterator_a2107fd2fee9d1b16732e954ec77fcfc9}} 
+\index{MedicUnitIterator@{MedicUnitIterator}!increment@{increment}}
+\index{increment@{increment}!MedicUnitIterator@{MedicUnitIterator}}
+\doxysubsubsection{\texorpdfstring{increment()}{increment()}}
+{\footnotesize\ttfamily void Medic\+Unit\+Iterator\+::increment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+moves Iterator one place forward 
+
+
+
+Implements \mbox{\hyperlink{class_army_iterator}{Army\+Iterator}}.
+
+\mbox{\Hypertarget{class_medic_unit_iterator_a9251480fc1554b92ae2b848948c7afd9}\label{class_medic_unit_iterator_a9251480fc1554b92ae2b848948c7afd9}} 
+\index{MedicUnitIterator@{MedicUnitIterator}!next@{next}}
+\index{next@{next}!MedicUnitIterator@{MedicUnitIterator}}
+\doxysubsubsection{\texorpdfstring{next()}{next()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_person}{Person}} $\ast$ Medic\+Unit\+Iterator\+::next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+returns pointer to next Person$\ast$ 
+
+\begin{DoxyReturn}{Returns}
+Person$\ast$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_army_iterator}{Army\+Iterator}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Doxygen/\+Single Folder Program/Medic\+Unit\+Iterator.\+h\item 
+Doxygen/\+Single Folder Program/Medic\+Unit\+Iterator.\+cpp\end{DoxyCompactItemize}

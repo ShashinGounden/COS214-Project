@@ -1,0 +1,32 @@
+\hypertarget{_unit_8h_source}{}\doxysection{Unit.\+h}
+\label{_unit_8h_source}\index{Doxygen/Single Folder Program/Unit.h@{Doxygen/Single Folder Program/Unit.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef UNIT\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define UNIT\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}Iterator/ArmyIterator.h"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}Iterator/AirUnitIterator.h"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}Iterator/GroundUnitIterator.h"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}Iterator/MedicUnitIterator.h"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}../PersonHierarchy/PersonFactory/PersonFactory.h"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <cstdlib>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{11 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{keyword}{class }\mbox{\hyperlink{class_unit}{Unit}}}
+\DoxyCodeLine{14 \{}
+\DoxyCodeLine{15 \textcolor{keyword}{public}:}
+\DoxyCodeLine{16     \mbox{\hyperlink{class_unit}{Unit}}(\textcolor{keywordtype}{string});}
+\DoxyCodeLine{17     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_unit_a6353fc4c0a329997ad4abcf0dcb4eb27}{\string~Unit}}();}
+\DoxyCodeLine{18     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} populateUnit(\textcolor{keywordtype}{int}) = 0;}
+\DoxyCodeLine{19     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_army_iterator}{ArmyIterator}} *createIterator() = 0;}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{22     \mbox{\hyperlink{class_person_factory}{PersonFactory}} *factory;}
+\DoxyCodeLine{23     \textcolor{keywordtype}{string} cName;}
+\DoxyCodeLine{24 \};}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

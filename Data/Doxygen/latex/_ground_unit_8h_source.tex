@@ -1,0 +1,37 @@
+\hypertarget{_ground_unit_8h_source}{}\doxysection{Ground\+Unit.\+h}
+\label{_ground_unit_8h_source}\index{Doxygen/Single Folder Program/GroundUnit.h@{Doxygen/Single Folder Program/GroundUnit.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef GROUNDUNIT\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define GROUNDUNIT\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}Unit.h"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}../PersonHierarchy/Soldier.h"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}../PersonHierarchy/PersonFactory/SoldierFactory.h"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}../WeaponHierarchy/ExplosiveFactory.h"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}../WeaponHierarchy/RifleFactory.h"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}../WeaponHierarchy/PistolFactory.h"{}}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}Iterator/GroundUnitIterator.h"{}}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include "{}Transport/TankMaker.h"{}}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include "{}Transport/Tank.h"{}}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{keyword}{class }\mbox{\hyperlink{class_ground_unit}{GroundUnit}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_unit}{Unit}}}
+\DoxyCodeLine{15 \{}
+\DoxyCodeLine{16     \textcolor{keyword}{private}:}
+\DoxyCodeLine{17     std::list<Person*> unit;}
+\DoxyCodeLine{18     \mbox{\hyperlink{class_weapon_factory}{WeaponFactory}}* weaponFactory;}
+\DoxyCodeLine{19     \mbox{\hyperlink{class_tank_maker}{TankMaker}}* tankBuilder;}
+\DoxyCodeLine{20     \mbox{\hyperlink{class_tank}{Tank}}* tank;}
+\DoxyCodeLine{21     }
+\DoxyCodeLine{22     \textcolor{keyword}{public}:}
+\DoxyCodeLine{23     \mbox{\hyperlink{class_ground_unit}{GroundUnit}}(\textcolor{keywordtype}{string});}
+\DoxyCodeLine{24     \mbox{\hyperlink{class_ground_unit_a5e6d6ea71e1c2f7073ebeb5c85a8fa98}{\string~GroundUnit}}();}
+\DoxyCodeLine{25     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_ground_unit_aabefd31da7e11bab0a5f96338caad685}{populateUnit}}(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{26     \mbox{\hyperlink{class_army_iterator}{ArmyIterator}} *\mbox{\hyperlink{class_ground_unit_a9fb9838b23d54e5b8c2aedc32b6375b7}{createIterator}}();}
+\DoxyCodeLine{27     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_ground_unit_a2cb60e8d08903edf77c1d4dd834dee95}{getSize}}();}
+\DoxyCodeLine{28     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_ground_unit_ac983843a23eba696c97ab9953a1ad46e}{getPower}}(); }
+\DoxyCodeLine{29     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_ground_unit_a809c4b3574514777f74e594bde7ebb06}{remove}}();}
+\DoxyCodeLine{30 \};}
+\DoxyCodeLine{31 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

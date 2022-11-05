@@ -1,0 +1,137 @@
+\hypertarget{class_ground_unit_iterator}{}\doxysection{Ground\+Unit\+Iterator Class Reference}
+\label{class_ground_unit_iterator}\index{GroundUnitIterator@{GroundUnitIterator}}
+Inheritance diagram for Ground\+Unit\+Iterator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_ground_unit_iterator}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ground_unit_iterator_a4ea720043a2981cc408b1bec38b82bec}{Ground\+Unit\+Iterator}} (std\+::list$<$ \mbox{\hyperlink{class_person}{Person}} $\ast$ $>$)
+\begin{DoxyCompactList}\small\item\em Construct a new Ground \mbox{\hyperlink{class_unit}{Unit}} Iterator\+:\+: Ground \mbox{\hyperlink{class_unit}{Unit}} Iterator object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_ground_unit_iterator_af130daa4357e3f111a041bc2ef956a63}\label{class_ground_unit_iterator_af130daa4357e3f111a041bc2ef956a63}} 
+{\bfseries $\sim$\+Ground\+Unit\+Iterator} ()
+\begin{DoxyCompactList}\small\item\em Destroy the Ground \mbox{\hyperlink{class_unit}{Unit}} Iterator\+:\+: Ground \mbox{\hyperlink{class_unit}{Unit}} Iterator object Going to delete all the person objects in the unit class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_person}{Person}} $\ast$ \mbox{\hyperlink{class_ground_unit_iterator_ac8309e279ab54d33af15e20f29129bce}{first}} ()
+\begin{DoxyCompactList}\small\item\em returns pointer to first \mbox{\hyperlink{class_person}{Person}} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_person}{Person}} $\ast$ \mbox{\hyperlink{class_ground_unit_iterator_aa273764ac7b2c0e9c601a6d7571908b8}{next}} ()
+\begin{DoxyCompactList}\small\item\em returns pointer to the next \mbox{\hyperlink{class_person}{Person}} \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_ground_unit_iterator_aa807d46c5235832cbeee65fe54f6b47e}{has\+Next}} ()
+\begin{DoxyCompactList}\small\item\em checks if Iterator is at the end of the unit \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_person}{Person}} $\ast$ \mbox{\hyperlink{class_ground_unit_iterator_adec29ab970f5f225abaeb5b08abb6725}{current}} ()
+\begin{DoxyCompactList}\small\item\em returns \mbox{\hyperlink{class_person}{Person}} iterator is pointing \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ground_unit_iterator_a3f663070c7e10e55d18fa3c56dc6a0cd}{increment}} ()
+\begin{DoxyCompactList}\small\item\em moves iterator one place forward \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_ground_unit_iterator_a4ea720043a2981cc408b1bec38b82bec}\label{class_ground_unit_iterator_a4ea720043a2981cc408b1bec38b82bec}} 
+\index{GroundUnitIterator@{GroundUnitIterator}!GroundUnitIterator@{GroundUnitIterator}}
+\index{GroundUnitIterator@{GroundUnitIterator}!GroundUnitIterator@{GroundUnitIterator}}
+\doxysubsubsection{\texorpdfstring{GroundUnitIterator()}{GroundUnitIterator()}}
+{\footnotesize\ttfamily Ground\+Unit\+Iterator\+::\+Ground\+Unit\+Iterator (\begin{DoxyParamCaption}\item[{std\+::list$<$ \mbox{\hyperlink{class_person}{Person}} $\ast$ $>$}]{list }\end{DoxyParamCaption})}
+
+
+
+Construct a new Ground \mbox{\hyperlink{class_unit}{Unit}} Iterator\+:\+: Ground \mbox{\hyperlink{class_unit}{Unit}} Iterator object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ground_unit_iterator_adec29ab970f5f225abaeb5b08abb6725}\label{class_ground_unit_iterator_adec29ab970f5f225abaeb5b08abb6725}} 
+\index{GroundUnitIterator@{GroundUnitIterator}!current@{current}}
+\index{current@{current}!GroundUnitIterator@{GroundUnitIterator}}
+\doxysubsubsection{\texorpdfstring{current()}{current()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_person}{Person}} $\ast$ Ground\+Unit\+Iterator\+::current (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+returns \mbox{\hyperlink{class_person}{Person}} iterator is pointing 
+
+\begin{DoxyReturn}{Returns}
+Person$\ast$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_army_iterator}{Army\+Iterator}}.
+
+\mbox{\Hypertarget{class_ground_unit_iterator_ac8309e279ab54d33af15e20f29129bce}\label{class_ground_unit_iterator_ac8309e279ab54d33af15e20f29129bce}} 
+\index{GroundUnitIterator@{GroundUnitIterator}!first@{first}}
+\index{first@{first}!GroundUnitIterator@{GroundUnitIterator}}
+\doxysubsubsection{\texorpdfstring{first()}{first()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_person}{Person}} $\ast$ Ground\+Unit\+Iterator\+::first (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+returns pointer to first \mbox{\hyperlink{class_person}{Person}} 
+
+\begin{DoxyReturn}{Returns}
+Person$\ast$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_army_iterator}{Army\+Iterator}}.
+
+\mbox{\Hypertarget{class_ground_unit_iterator_aa807d46c5235832cbeee65fe54f6b47e}\label{class_ground_unit_iterator_aa807d46c5235832cbeee65fe54f6b47e}} 
+\index{GroundUnitIterator@{GroundUnitIterator}!hasNext@{hasNext}}
+\index{hasNext@{hasNext}!GroundUnitIterator@{GroundUnitIterator}}
+\doxysubsubsection{\texorpdfstring{hasNext()}{hasNext()}}
+{\footnotesize\ttfamily bool Ground\+Unit\+Iterator\+::has\+Next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+checks if Iterator is at the end of the unit 
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_army_iterator}{Army\+Iterator}}.
+
+\mbox{\Hypertarget{class_ground_unit_iterator_a3f663070c7e10e55d18fa3c56dc6a0cd}\label{class_ground_unit_iterator_a3f663070c7e10e55d18fa3c56dc6a0cd}} 
+\index{GroundUnitIterator@{GroundUnitIterator}!increment@{increment}}
+\index{increment@{increment}!GroundUnitIterator@{GroundUnitIterator}}
+\doxysubsubsection{\texorpdfstring{increment()}{increment()}}
+{\footnotesize\ttfamily void Ground\+Unit\+Iterator\+::increment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+moves iterator one place forward 
+
+
+
+Implements \mbox{\hyperlink{class_army_iterator}{Army\+Iterator}}.
+
+\mbox{\Hypertarget{class_ground_unit_iterator_aa273764ac7b2c0e9c601a6d7571908b8}\label{class_ground_unit_iterator_aa273764ac7b2c0e9c601a6d7571908b8}} 
+\index{GroundUnitIterator@{GroundUnitIterator}!next@{next}}
+\index{next@{next}!GroundUnitIterator@{GroundUnitIterator}}
+\doxysubsubsection{\texorpdfstring{next()}{next()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_person}{Person}} $\ast$ Ground\+Unit\+Iterator\+::next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+returns pointer to the next \mbox{\hyperlink{class_person}{Person}} 
+
+\begin{DoxyReturn}{Returns}
+Person$\ast$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_army_iterator}{Army\+Iterator}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Doxygen/\+Single Folder Program/Ground\+Unit\+Iterator.\+h\item 
+Doxygen/\+Single Folder Program/Ground\+Unit\+Iterator.\+cpp\end{DoxyCompactItemize}

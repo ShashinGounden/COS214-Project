@@ -1,0 +1,109 @@
+\hypertarget{class_person}{}\doxysection{Person Class Reference}
+\label{class_person}\index{Person@{Person}}
+Inheritance diagram for Person\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_person}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_person_a35e3af40b0e592b79897464a64b6d7e7}{Person}} (int, int, std\+::string)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_person}{Person}}\+:\+: \mbox{\hyperlink{class_person}{Person}} object. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_person_a700ffd693321c5fe6880262acf43d4da}{$\sim$\+Person}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_person}{Person}}\+:\+: \mbox{\hyperlink{class_person}{Person}} object if the weapon object was instantiated too then it gets deleted too. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_person}{Person}} $\ast$ \mbox{\hyperlink{class_person_ac75bdb388bcda17596b13d44e3cfa162}{clone}} ()=0
+\item 
+\mbox{\Hypertarget{class_person_a5b21018464a92363d02637fd7be666cd}\label{class_person_a5b21018464a92363d02637fd7be666cd}} 
+int {\bfseries get\+Health} ()
+\item 
+\mbox{\Hypertarget{class_person_a83a00c31658799bb9865afe0fa99e4e3}\label{class_person_a83a00c31658799bb9865afe0fa99e4e3}} 
+std\+::string {\bfseries get\+Skill} ()
+\item 
+\mbox{\Hypertarget{class_person_ac93d893998a57f384bae764503a19043}\label{class_person_ac93d893998a57f384bae764503a19043}} 
+void {\bfseries add\+Weapon} (\mbox{\hyperlink{class_weapon}{Weapon}} $\ast$)
+\item 
+\mbox{\Hypertarget{class_person_a2700efdb09c3ab44a21cbab4354d47d8}\label{class_person_a2700efdb09c3ab44a21cbab4354d47d8}} 
+\mbox{\hyperlink{class_weapon}{Weapon}} $\ast$ {\bfseries get\+Weapon} ()
+\item 
+int \mbox{\hyperlink{class_person_a2b612db7c4347fba5eea98d96b294a0f}{heal}} ()
+\begin{DoxyCompactList}\small\item\em Returns value of medics healing. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_person_ae3a41c2e9419111822905800e5061f0c}\label{class_person_ae3a41c2e9419111822905800e5061f0c}} 
+int {\bfseries get\+ID} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_person_af35901e543c6ae884487eae0bd4bf67e}\label{class_person_af35901e543c6ae884487eae0bd4bf67e}} 
+int {\bfseries hp}
+\item 
+\mbox{\Hypertarget{class_person_adba924f4a9a9fa8e1d6fb80437db6b09}\label{class_person_adba924f4a9a9fa8e1d6fb80437db6b09}} 
+std\+::string {\bfseries skill}
+\item 
+\mbox{\Hypertarget{class_person_a91d7f43604d06d2805f8960f67e2831e}\label{class_person_a91d7f43604d06d2805f8960f67e2831e}} 
+int {\bfseries ID}
+\item 
+\mbox{\Hypertarget{class_person_a28f024114ca9c3c4252f8aba954ac711}\label{class_person_a28f024114ca9c3c4252f8aba954ac711}} 
+\mbox{\hyperlink{class_weapon}{Weapon}} $\ast$ {\bfseries weapon}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_person_a35e3af40b0e592b79897464a64b6d7e7}\label{class_person_a35e3af40b0e592b79897464a64b6d7e7}} 
+\index{Person@{Person}!Person@{Person}}
+\index{Person@{Person}!Person@{Person}}
+\doxysubsubsection{\texorpdfstring{Person()}{Person()}}
+{\footnotesize\ttfamily Person\+::\+Person (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{int}]{i,  }\item[{std\+::string}]{s }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_person}{Person}}\+:\+: \mbox{\hyperlink{class_person}{Person}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_person_a700ffd693321c5fe6880262acf43d4da}\label{class_person_a700ffd693321c5fe6880262acf43d4da}} 
+\index{Person@{Person}!````~Person@{$\sim$Person}}
+\index{````~Person@{$\sim$Person}!Person@{Person}}
+\doxysubsubsection{\texorpdfstring{$\sim$Person()}{~Person()}}
+{\footnotesize\ttfamily Person\+::$\sim$\+Person (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destroy the \mbox{\hyperlink{class_person}{Person}}\+:\+: \mbox{\hyperlink{class_person}{Person}} object if the weapon object was instantiated too then it gets deleted too. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_person_ac75bdb388bcda17596b13d44e3cfa162}\label{class_person_ac75bdb388bcda17596b13d44e3cfa162}} 
+\index{Person@{Person}!clone@{clone}}
+\index{clone@{clone}!Person@{Person}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_person}{Person}} $\ast$ Person\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_medic_a7346ba984ecae6d96118bd29d3ef0ee0}{Medic}}, and \mbox{\hyperlink{class_soldier_ab26802d44c4615b22897d13a2ef8235f}{Soldier}}.
+
+\mbox{\Hypertarget{class_person_a2b612db7c4347fba5eea98d96b294a0f}\label{class_person_a2b612db7c4347fba5eea98d96b294a0f}} 
+\index{Person@{Person}!heal@{heal}}
+\index{heal@{heal}!Person@{Person}}
+\doxysubsubsection{\texorpdfstring{heal()}{heal()}}
+{\footnotesize\ttfamily int Person\+::heal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns value of medics healing. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Doxygen/\+Single Folder Program/Person.\+h\item 
+Doxygen/\+Single Folder Program/Person.\+cpp\end{DoxyCompactItemize}

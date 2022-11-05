@@ -1,0 +1,28 @@
+\hypertarget{_army_iterator_8h_source}{}\doxysection{Army\+Iterator.\+h}
+\label{_army_iterator_8h_source}\index{Doxygen/Single Folder Program/ArmyIterator.h@{Doxygen/Single Folder Program/ArmyIterator.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef ARMYITERATOR\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define ARMYITERATOR\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <list>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}../../PersonHierarchy/Person.h"{}}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{keyword}{class }\mbox{\hyperlink{class_person}{Person}};}
+\DoxyCodeLine{9 \textcolor{keyword}{class }\mbox{\hyperlink{class_army_iterator}{ArmyIterator}}}
+\DoxyCodeLine{10 \{}
+\DoxyCodeLine{11 \textcolor{keyword}{public}:}
+\DoxyCodeLine{12     \mbox{\hyperlink{class_army_iterator_ac7d37bcf121472f4cbc7b4d7b9c0ea6b}{ArmyIterator}}();}
+\DoxyCodeLine{13     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_army_iterator_aa9ac4c313fe73ac06855fda2f11ad5ef}{\string~ArmyIterator}}();}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_person}{Person}} *first() = 0;}
+\DoxyCodeLine{16     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_person}{Person}} *next() = 0;}
+\DoxyCodeLine{17     \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} hasNext() = 0;}
+\DoxyCodeLine{18     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_person}{Person}} *current() = 0;}
+\DoxyCodeLine{19     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} increment() = 0;}
+\DoxyCodeLine{20 \};}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

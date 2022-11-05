@@ -1,0 +1,300 @@
+\hypertarget{class_w_m_d}{}\doxysection{WMD Class Reference}
+\label{class_w_m_d}\index{WMD@{WMD}}
+Inheritance diagram for WMD\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_w_m_d}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_w_m_d_abae05f807b8c79522762ab2cee46f740}{WMD}} (\mbox{\hyperlink{class_country}{Country}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_w_m_d_abae05f807b8c79522762ab2cee46f740}{WMD\+::\+WMD}} object. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_w_m_d_a063dc87050c3e50dddb26df8e881bbdc}{$\sim$\+WMD}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_w_m_d_abae05f807b8c79522762ab2cee46f740}{WMD\+::\+WMD}} object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_w_m_d_a4b28f2806f5f9a7db6855f2648639ca4}{wmd}} ()=0
+\begin{DoxyCompactList}\small\item\em will call appropraite wmd \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_w_m_d_ad6eefe18d1c0673bd3294daa3ee7a4dd}{Attack}} (\mbox{\hyperlink{class_country}{Country}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Attack function, calculates total power then calls take\+Damage on enemy \mbox{\hyperlink{class_country}{Country}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_w_m_d_aa72dca17b424677eb9180883a51e2fd6}{take\+Damage}} (int)
+\begin{DoxyCompactList}\small\item\em Function called by an attacking Country.\+Function subtracts defense from enemy\textquotesingle{}s attack to get overall damage done to army and removes soldiers. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_w_m_d_a161330802ca7a9d729f836c6e4047e21}{surrender}} (\mbox{\hyperlink{class_country}{Country}} $\ast$)
+\begin{DoxyCompactList}\small\item\em checks if \mbox{\hyperlink{class_country}{Country}} holding this weapon surrenders \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_w_m_d_ad8a48763c33b29904a40026caa119056}{Retreat}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_country}{Country}}\textquotesingle{}s troops retreat. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_w_m_d_a0df4de31a02c45a9e8b3db8671c2db73}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em return the name of \mbox{\hyperlink{class_country}{Country}} holding this weapon \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_w_m_d_a6723079610f9c9597a7248a5126f1e31}{add\+Funds}} (double)
+\begin{DoxyCompactList}\small\item\em Adds funds to the holder of this weapon. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_w_m_d_acfc90384447251231a698961da95f6b4}{get\+Funds}} ()
+\begin{DoxyCompactList}\small\item\em get \mbox{\hyperlink{class_country}{Country}}\textquotesingle{}s funds \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_w_m_d_a0e58e8671fe069f81339db20db521190}{join\+Alliance}} (\mbox{\hyperlink{class_alliance}{Alliance}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Joins an alliance for support. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_w_m_d_a6e7c08ee7fd6ed6e481cf382e09f659b}{notify}} ()
+\begin{DoxyCompactList}\small\item\em Contacts allies. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_w_m_d_a042edf3366d731c24dfb65eca52604b6}{get\+Num\+Of\+Soldiers}} ()
+\begin{DoxyCompactList}\small\item\em returns the number of soldiers of \mbox{\hyperlink{class_country}{Country}} holding this weapon \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_country}{Country}} $\ast$ \mbox{\hyperlink{class_w_m_d_a22d27f249ac32dd0a4074e3c6e86d83a}{get\+Country}} ()
+\begin{DoxyCompactList}\small\item\em returns the owner of this weapon \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_w_m_d_a8cbfc0e1c87efbf5f33e66d61d66a877}\label{class_w_m_d_a8cbfc0e1c87efbf5f33e66d61d66a877}} 
+\mbox{\hyperlink{class_country}{Country}} $\ast$ {\bfseries owner}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_w_m_d_abae05f807b8c79522762ab2cee46f740}\label{class_w_m_d_abae05f807b8c79522762ab2cee46f740}} 
+\index{WMD@{WMD}!WMD@{WMD}}
+\index{WMD@{WMD}!WMD@{WMD}}
+\doxysubsubsection{\texorpdfstring{WMD()}{WMD()}}
+{\footnotesize\ttfamily WMD\+::\+WMD (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_country}{Country}} $\ast$}]{c }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_w_m_d_abae05f807b8c79522762ab2cee46f740}{WMD\+::\+WMD}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_w_m_d_a063dc87050c3e50dddb26df8e881bbdc}\label{class_w_m_d_a063dc87050c3e50dddb26df8e881bbdc}} 
+\index{WMD@{WMD}!````~WMD@{$\sim$WMD}}
+\index{````~WMD@{$\sim$WMD}!WMD@{WMD}}
+\doxysubsubsection{\texorpdfstring{$\sim$WMD()}{~WMD()}}
+{\footnotesize\ttfamily WMD\+::$\sim$\+WMD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destroy the \mbox{\hyperlink{class_w_m_d_abae05f807b8c79522762ab2cee46f740}{WMD\+::\+WMD}} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_w_m_d_a6723079610f9c9597a7248a5126f1e31}\label{class_w_m_d_a6723079610f9c9597a7248a5126f1e31}} 
+\index{WMD@{WMD}!addFunds@{addFunds}}
+\index{addFunds@{addFunds}!WMD@{WMD}}
+\doxysubsubsection{\texorpdfstring{addFunds()}{addFunds()}}
+{\footnotesize\ttfamily void WMD\+::add\+Funds (\begin{DoxyParamCaption}\item[{double}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Adds funds to the holder of this weapon. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & funds to be added \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_country_a6837e126684ad79970fa0925b96b0ad1}{Country}}.
+
+\mbox{\Hypertarget{class_w_m_d_ad6eefe18d1c0673bd3294daa3ee7a4dd}\label{class_w_m_d_ad6eefe18d1c0673bd3294daa3ee7a4dd}} 
+\index{WMD@{WMD}!Attack@{Attack}}
+\index{Attack@{Attack}!WMD@{WMD}}
+\doxysubsubsection{\texorpdfstring{Attack()}{Attack()}}
+{\footnotesize\ttfamily virtual void WMD\+::\+Attack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_country}{Country}} $\ast$}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Attack function, calculates total power then calls take\+Damage on enemy \mbox{\hyperlink{class_country}{Country}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & Enemy country being attacked \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_country_aba7c511427fb5809140f54287f075d9a}{Country}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_artillery_ac511848d6eb635dad5296d6415d48c78}{Artillery}}, and \mbox{\hyperlink{class_nuke_a7c85416ce5b8793f29888a63c756e7cb}{Nuke}}.
+
+\mbox{\Hypertarget{class_w_m_d_a22d27f249ac32dd0a4074e3c6e86d83a}\label{class_w_m_d_a22d27f249ac32dd0a4074e3c6e86d83a}} 
+\index{WMD@{WMD}!getCountry@{getCountry}}
+\index{getCountry@{getCountry}!WMD@{WMD}}
+\doxysubsubsection{\texorpdfstring{getCountry()}{getCountry()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_country}{Country}} $\ast$ WMD\+::get\+Country (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+returns the owner of this weapon 
+
+\begin{DoxyReturn}{Returns}
+Country$\ast$ 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_country_a01f342f8640eb6152f40450f946053c3}{Country}}.
+
+\mbox{\Hypertarget{class_w_m_d_acfc90384447251231a698961da95f6b4}\label{class_w_m_d_acfc90384447251231a698961da95f6b4}} 
+\index{WMD@{WMD}!getFunds@{getFunds}}
+\index{getFunds@{getFunds}!WMD@{WMD}}
+\doxysubsubsection{\texorpdfstring{getFunds()}{getFunds()}}
+{\footnotesize\ttfamily double WMD\+::get\+Funds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+get \mbox{\hyperlink{class_country}{Country}}\textquotesingle{}s funds 
+
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_country_a342e5deb7c9a7623ee685bd6c5cfac9e}{Country}}.
+
+\mbox{\Hypertarget{class_w_m_d_a0df4de31a02c45a9e8b3db8671c2db73}\label{class_w_m_d_a0df4de31a02c45a9e8b3db8671c2db73}} 
+\index{WMD@{WMD}!getName@{getName}}
+\index{getName@{getName}!WMD@{WMD}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string WMD\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+return the name of \mbox{\hyperlink{class_country}{Country}} holding this weapon 
+
+\begin{DoxyReturn}{Returns}
+std\+::string 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_country_aa584ff75674728736d4952b32693501a}{Country}}.
+
+\mbox{\Hypertarget{class_w_m_d_a042edf3366d731c24dfb65eca52604b6}\label{class_w_m_d_a042edf3366d731c24dfb65eca52604b6}} 
+\index{WMD@{WMD}!getNumOfSoldiers@{getNumOfSoldiers}}
+\index{getNumOfSoldiers@{getNumOfSoldiers}!WMD@{WMD}}
+\doxysubsubsection{\texorpdfstring{getNumOfSoldiers()}{getNumOfSoldiers()}}
+{\footnotesize\ttfamily int WMD\+::get\+Num\+Of\+Soldiers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+returns the number of soldiers of \mbox{\hyperlink{class_country}{Country}} holding this weapon 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_country_a549ee1d7100e800d2907e3a54e489430}{Country}}.
+
+\mbox{\Hypertarget{class_w_m_d_a0e58e8671fe069f81339db20db521190}\label{class_w_m_d_a0e58e8671fe069f81339db20db521190}} 
+\index{WMD@{WMD}!joinAlliance@{joinAlliance}}
+\index{joinAlliance@{joinAlliance}!WMD@{WMD}}
+\doxysubsubsection{\texorpdfstring{joinAlliance()}{joinAlliance()}}
+{\footnotesize\ttfamily void WMD\+::join\+Alliance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_alliance}{Alliance}} $\ast$}]{all }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Joins an alliance for support. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em all} & alliance to join \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_country_a67a20bfea9b86f3fbcbf05b0c80e49c9}{Country}}.
+
+\mbox{\Hypertarget{class_w_m_d_a6e7c08ee7fd6ed6e481cf382e09f659b}\label{class_w_m_d_a6e7c08ee7fd6ed6e481cf382e09f659b}} 
+\index{WMD@{WMD}!notify@{notify}}
+\index{notify@{notify}!WMD@{WMD}}
+\doxysubsubsection{\texorpdfstring{notify()}{notify()}}
+{\footnotesize\ttfamily void WMD\+::notify (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Contacts allies. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_country_a074d972ba76a1096cb017205dc3f2fe3}{Country}}.
+
+\mbox{\Hypertarget{class_w_m_d_ad8a48763c33b29904a40026caa119056}\label{class_w_m_d_ad8a48763c33b29904a40026caa119056}} 
+\index{WMD@{WMD}!Retreat@{Retreat}}
+\index{Retreat@{Retreat}!WMD@{WMD}}
+\doxysubsubsection{\texorpdfstring{Retreat()}{Retreat()}}
+{\footnotesize\ttfamily void WMD\+::\+Retreat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_country}{Country}}\textquotesingle{}s troops retreat. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_country_aed4fe4cf12a656723c2a721e769751c0}{Country}}.
+
+\mbox{\Hypertarget{class_w_m_d_a161330802ca7a9d729f836c6e4047e21}\label{class_w_m_d_a161330802ca7a9d729f836c6e4047e21}} 
+\index{WMD@{WMD}!surrender@{surrender}}
+\index{surrender@{surrender}!WMD@{WMD}}
+\doxysubsubsection{\texorpdfstring{surrender()}{surrender()}}
+{\footnotesize\ttfamily bool WMD\+::surrender (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_country}{Country}} $\ast$}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+checks if \mbox{\hyperlink{class_country}{Country}} holding this weapon surrenders 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & opposing \mbox{\hyperlink{class_country}{Country}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_country_af77c1426c9c27bb745bbd61181fbc9cd}{Country}}.
+
+\mbox{\Hypertarget{class_w_m_d_aa72dca17b424677eb9180883a51e2fd6}\label{class_w_m_d_aa72dca17b424677eb9180883a51e2fd6}} 
+\index{WMD@{WMD}!takeDamage@{takeDamage}}
+\index{takeDamage@{takeDamage}!WMD@{WMD}}
+\doxysubsubsection{\texorpdfstring{takeDamage()}{takeDamage()}}
+{\footnotesize\ttfamily virtual void WMD\+::take\+Damage (\begin{DoxyParamCaption}\item[{int}]{attack }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Function called by an attacking Country.\+Function subtracts defense from enemy\textquotesingle{}s attack to get overall damage done to army and removes soldiers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em attack} & damage value for enemy \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_country_a037a4fb8af28f6b7ebfd258862c5eef8}{Country}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_artillery_ab1507f9889a1961a8ffa03adb53be702}{Artillery}}, and \mbox{\hyperlink{class_nuke_a039575a1c2c47c1343e48c05c1a8866a}{Nuke}}.
+
+\mbox{\Hypertarget{class_w_m_d_a4b28f2806f5f9a7db6855f2648639ca4}\label{class_w_m_d_a4b28f2806f5f9a7db6855f2648639ca4}} 
+\index{WMD@{WMD}!wmd@{wmd}}
+\index{wmd@{wmd}!WMD@{WMD}}
+\doxysubsubsection{\texorpdfstring{wmd()}{wmd()}}
+{\footnotesize\ttfamily void WMD\+::wmd (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+will call appropraite wmd 
+
+
+
+Implemented in \mbox{\hyperlink{class_artillery_a53003a15b24b3fc8b06ee5232513a154}{Artillery}}, and \mbox{\hyperlink{class_nuke_ab85554e98ac5610742319faca9f71aeb}{Nuke}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Doxygen/\+Single Folder Program/WMD.\+h\item 
+Doxygen/\+Single Folder Program/WMD.\+cpp\end{DoxyCompactItemize}

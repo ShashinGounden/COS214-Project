@@ -1,0 +1,36 @@
+\hypertarget{_w_m_d_8h_source}{}\doxysection{WMD.\+h}
+\label{_w_m_d_8h_source}\index{Doxygen/Single Folder Program/WMD.h@{Doxygen/Single Folder Program/WMD.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef WMD\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define WMD\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}Country.h"{}}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{keyword}{class }\mbox{\hyperlink{class_w_m_d}{WMD}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_country}{Country}}}
+\DoxyCodeLine{7 \{}
+\DoxyCodeLine{8 \textcolor{keyword}{public}: }
+\DoxyCodeLine{9   }
+\DoxyCodeLine{10     \mbox{\hyperlink{class_w_m_d}{WMD}}(\mbox{\hyperlink{class_country}{Country}}*); }
+\DoxyCodeLine{11     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_w_m_d_a063dc87050c3e50dddb26df8e881bbdc}{\string~WMD}}();}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_w_m_d_a4b28f2806f5f9a7db6855f2648639ca4}{wmd}}() = 0; }
+\DoxyCodeLine{14     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_w_m_d_ad6eefe18d1c0673bd3294daa3ee7a4dd}{Attack}}(\mbox{\hyperlink{class_country}{Country}}*)\{\}; }
+\DoxyCodeLine{15     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_w_m_d_aa72dca17b424677eb9180883a51e2fd6}{takeDamage}}(\textcolor{keywordtype}{int})\{\}; }
+\DoxyCodeLine{16     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_w_m_d_a161330802ca7a9d729f836c6e4047e21}{surrender}}(\mbox{\hyperlink{class_country}{Country}}*); }
+\DoxyCodeLine{17     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_w_m_d_ad8a48763c33b29904a40026caa119056}{Retreat}}();}
+\DoxyCodeLine{18     std::string \mbox{\hyperlink{class_w_m_d_a0df4de31a02c45a9e8b3db8671c2db73}{getName}}();}
+\DoxyCodeLine{19     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_w_m_d_a6723079610f9c9597a7248a5126f1e31}{addFunds}}(\textcolor{keywordtype}{double}); }
+\DoxyCodeLine{20     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_w_m_d_acfc90384447251231a698961da95f6b4}{getFunds}}(); }
+\DoxyCodeLine{21     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_w_m_d_a0e58e8671fe069f81339db20db521190}{joinAlliance}}(\mbox{\hyperlink{class_alliance}{Alliance}}*); }
+\DoxyCodeLine{22     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_w_m_d_a6e7c08ee7fd6ed6e481cf382e09f659b}{notify}}();  }
+\DoxyCodeLine{23     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_w_m_d_a042edf3366d731c24dfb65eca52604b6}{getNumOfSoldiers}}();}
+\DoxyCodeLine{24     \mbox{\hyperlink{class_country}{Country}}* \mbox{\hyperlink{class_w_m_d_a22d27f249ac32dd0a4074e3c6e86d83a}{getCountry}}();}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{27     \mbox{\hyperlink{class_country}{Country}}* owner;}
+\DoxyCodeLine{28 \};}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

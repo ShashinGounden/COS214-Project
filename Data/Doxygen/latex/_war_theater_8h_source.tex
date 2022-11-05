@@ -1,0 +1,40 @@
+\hypertarget{_war_theater_8h_source}{}\doxysection{War\+Theater.\+h}
+\label{_war_theater_8h_source}\index{Doxygen/Single Folder Program/WarTheater.h@{Doxygen/Single Folder Program/WarTheater.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef WARTHEATER\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define WARTHEATER\_H}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}../Country/Country.h"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{5 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{keyword}{class }\mbox{\hyperlink{class_war_theater}{WarTheater}}}
+\DoxyCodeLine{8 \{}
+\DoxyCodeLine{9 \textcolor{keyword}{public}:}
+\DoxyCodeLine{10     \mbox{\hyperlink{class_war_theater}{WarTheater}}();}
+\DoxyCodeLine{11     \textcolor{comment}{// making the base class destructor virtual to avoid segmentation faults when deleting children class objects}}
+\DoxyCodeLine{12     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_war_theater}{\string~WarTheater}}();}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14     \textcolor{comment}{// Pure virtual functions to be implemented in the children classes (Airspace and Sea)}}
+\DoxyCodeLine{15     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} add(\mbox{\hyperlink{class_country}{Country}} *force) = 0;}
+\DoxyCodeLine{16     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} remove(\mbox{\hyperlink{class_country}{Country}} *force) = 0;}
+\DoxyCodeLine{17     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} warLoop() = 0;}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19     \textcolor{comment}{// Template Method functions}}
+\DoxyCodeLine{20     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} printBattleSummary() = 0;}
+\DoxyCodeLine{21     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} loadBattleArt() = 0;}
+\DoxyCodeLine{22     \textcolor{keywordtype}{void} startGenericBattle()}
+\DoxyCodeLine{23     \{}
+\DoxyCodeLine{24         loadBattleArt();}
+\DoxyCodeLine{25         printBattleSummary();}
+\DoxyCodeLine{26         warLoop();}
+\DoxyCodeLine{27     \}}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{30     \textcolor{comment}{// list of countries in the war theatre stored in vector}}
+\DoxyCodeLine{31     vector<Country *> countries;}
+\DoxyCodeLine{32 \};}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

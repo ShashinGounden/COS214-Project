@@ -1,0 +1,44 @@
+\hypertarget{_army_8h_source}{}\doxysection{Army.\+h}
+\label{_army_8h_source}\index{Doxygen/Single Folder Program/Army.h@{Doxygen/Single Folder Program/Army.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef ARMY\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define ARMY\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}MedicUnit.h"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}GroundUnit.h"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}AirUnit.h"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{keyword}{class }\mbox{\hyperlink{class_country}{Country}};}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{keyword}{class }\mbox{\hyperlink{class_army}{Army}}}
+\DoxyCodeLine{12 \{}
+\DoxyCodeLine{13 \textcolor{keyword}{public}:}
+\DoxyCodeLine{14     \mbox{\hyperlink{class_army}{Army}}(std::string, \textcolor{keywordtype}{int}, \textcolor{keywordtype}{int}, \textcolor{keywordtype}{int});}
+\DoxyCodeLine{15     \mbox{\hyperlink{class_army_a01db7886e46e79ece1726d46f918848d}{\string~Army}}();}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17     \textcolor{comment}{// For iterator}}
+\DoxyCodeLine{18     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_army_a28295a6fc3f0f622abbd1575e5670cff}{populateUnit}}(\textcolor{keywordtype}{int}, \textcolor{keywordtype}{int}, \textcolor{keywordtype}{int});}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_army_aa5e1ea7138cc8942b1a8dbb2c6b06988}{Attack}}();}
+\DoxyCodeLine{21     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_army_adc25c1daf9c3d8a82d073b6d0d12cc90}{Advance}}();}
+\DoxyCodeLine{22     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_army_aa1274930708b86dc3fda927ea4cdb97c}{Retreat}}();}
+\DoxyCodeLine{23     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_army_a50840ea950db6e202e813121d7b0d9fb}{Surrender}}(\mbox{\hyperlink{class_country}{Country}}*);}
+\DoxyCodeLine{24     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_army_a5c3f76211c4b02451d553d9c41feedfc}{Defend}}();}
+\DoxyCodeLine{25     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_army_a2c93745c9e6f79a2f8460557ea8850f1}{RemoveSoldiers}}(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27     std::string \mbox{\hyperlink{class_army_a23b0ec0aa78d6b30a9d18b73ebd38d28}{getName}}();}
+\DoxyCodeLine{28     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_army_ae5e8be96701dbb7b08a33f503079c731}{getNumOfSoldiers}}();}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30 \textcolor{keyword}{private}:}
+\DoxyCodeLine{31     \mbox{\hyperlink{class_medic_unit}{MedicUnit}} *medicUnit;}
+\DoxyCodeLine{32     \mbox{\hyperlink{class_ground_unit}{GroundUnit}} *groundUnit;}
+\DoxyCodeLine{33     \mbox{\hyperlink{class_air_unit}{AirUnit}} *airUnit;}
+\DoxyCodeLine{34     std::string countryName;}
+\DoxyCodeLine{35     \textcolor{keywordtype}{bool} fAttack;}
+\DoxyCodeLine{36 \};}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

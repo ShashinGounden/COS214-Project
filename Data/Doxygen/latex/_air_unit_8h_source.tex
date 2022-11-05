@@ -1,0 +1,39 @@
+\hypertarget{_air_unit_8h_source}{}\doxysection{Air\+Unit.\+h}
+\label{_air_unit_8h_source}\index{Doxygen/Single Folder Program/AirUnit.h@{Doxygen/Single Folder Program/AirUnit.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef AIRUNIT\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define AIRUNIT\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}Unit.h"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}../PersonHierarchy/Soldier.h"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}../PersonHierarchy/PersonFactory/SoldierFactory.h"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}Iterator/AirUnitIterator.h"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}../WeaponHierarchy/ExplosiveFactory.h"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}../WeaponHierarchy/RifleFactory.h"{}}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}../WeaponHierarchy/PistolFactory.h"{}}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include "{}Transport/AircraftMaker.h"{}}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include "{}Transport/Aircraft.h"{}}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{keyword}{class }\mbox{\hyperlink{class_air_unit}{AirUnit}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_unit}{Unit}}}
+\DoxyCodeLine{16 \{}
+\DoxyCodeLine{17     \textcolor{keyword}{private}:}
+\DoxyCodeLine{18     std::list<Person *> unit;}
+\DoxyCodeLine{19     \mbox{\hyperlink{class_weapon_factory}{WeaponFactory}}* weaponFactory;}
+\DoxyCodeLine{20     \mbox{\hyperlink{class_aircraft_maker}{AircraftMaker}}* jetBuilder;}
+\DoxyCodeLine{21     \mbox{\hyperlink{class_aircraft}{Aircraft}}* jet;}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23     \textcolor{keyword}{public}:}
+\DoxyCodeLine{24     \mbox{\hyperlink{class_air_unit}{AirUnit}}(\textcolor{keywordtype}{string});}
+\DoxyCodeLine{25     \mbox{\hyperlink{class_air_unit_ae51a0d8eb80a6dd8fb0af8536423e4fa}{\string~AirUnit}}();}
+\DoxyCodeLine{26     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_air_unit_ae2709b5748cbfc29c142ca0a016d94a7}{populateUnit}}(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{27     \mbox{\hyperlink{class_army_iterator}{ArmyIterator}} *\mbox{\hyperlink{class_air_unit_a665c4e3c16305508711175197278c7de}{createIterator}}();}
+\DoxyCodeLine{28     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_air_unit_a55a7d1f37e4a74741aa047c4aca304b4}{getSize}}();}
+\DoxyCodeLine{29     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_air_unit_a6d22e2c4e8af5a1cb0563064b3b8f063}{getPower}}(); }
+\DoxyCodeLine{30     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_air_unit_a5619300dc82861bc8aea9cbfdc6ef10a}{remove}}();}
+\DoxyCodeLine{31 \};}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

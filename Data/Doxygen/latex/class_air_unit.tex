@@ -1,0 +1,120 @@
+\hypertarget{class_air_unit}{}\doxysection{Air\+Unit Class Reference}
+\label{class_air_unit}\index{AirUnit@{AirUnit}}
+Inheritance diagram for Air\+Unit\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_air_unit}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_air_unit_a262ce799f72631aad31441a44bb3548c}\label{class_air_unit_a262ce799f72631aad31441a44bb3548c}} 
+{\bfseries Air\+Unit} (string)
+\begin{DoxyCompactList}\small\item\em Construct a new Ground \mbox{\hyperlink{class_unit}{Unit}}\+:\+: Ground \mbox{\hyperlink{class_unit}{Unit}} object Create a soldier factory to then create soldier objects to pushback to the unit object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_air_unit_ae51a0d8eb80a6dd8fb0af8536423e4fa}{$\sim$\+Air\+Unit}} ()
+\item 
+void \mbox{\hyperlink{class_air_unit_ae2709b5748cbfc29c142ca0a016d94a7}{populate\+Unit}} (int)
+\begin{DoxyCompactList}\small\item\em create a number of soldiers and give each one a weapon. weapons are created upon a random probability. 20\% explosives 40\% rifles and pistols, and of those a 50\% chance of the type of weapon being a long or short range variant. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_army_iterator}{Army\+Iterator}} $\ast$ \mbox{\hyperlink{class_air_unit_a665c4e3c16305508711175197278c7de}{create\+Iterator}} ()
+\begin{DoxyCompactList}\small\item\em returns iterator object \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_air_unit_a55a7d1f37e4a74741aa047c4aca304b4}{get\+Size}} ()
+\begin{DoxyCompactList}\small\item\em return size of unit \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_air_unit_a6d22e2c4e8af5a1cb0563064b3b8f063}{get\+Power}} ()
+\begin{DoxyCompactList}\small\item\em calculate the total firepower of unit by adding each soldiers weapons firepower. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_air_unit_a5619300dc82861bc8aea9cbfdc6ef10a}{remove}} ()
+\begin{DoxyCompactList}\small\item\em Deletes from list of soldiers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_air_unit_ae51a0d8eb80a6dd8fb0af8536423e4fa}\label{class_air_unit_ae51a0d8eb80a6dd8fb0af8536423e4fa}} 
+\index{AirUnit@{AirUnit}!````~AirUnit@{$\sim$AirUnit}}
+\index{````~AirUnit@{$\sim$AirUnit}!AirUnit@{AirUnit}}
+\doxysubsubsection{\texorpdfstring{$\sim$AirUnit()}{~AirUnit()}}
+{\footnotesize\ttfamily Air\+Unit\+::$\sim$\+Air\+Unit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyItemize}
+\item Delete all person objects in unit list object
+\end{DoxyItemize}
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_air_unit_a665c4e3c16305508711175197278c7de}\label{class_air_unit_a665c4e3c16305508711175197278c7de}} 
+\index{AirUnit@{AirUnit}!createIterator@{createIterator}}
+\index{createIterator@{createIterator}!AirUnit@{AirUnit}}
+\doxysubsubsection{\texorpdfstring{createIterator()}{createIterator()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_army_iterator}{Army\+Iterator}} $\ast$ Air\+Unit\+::create\+Iterator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+returns iterator object 
+
+\begin{DoxyReturn}{Returns}
+Army\+Iterator$\ast$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_unit}{Unit}}.
+
+\mbox{\Hypertarget{class_air_unit_a6d22e2c4e8af5a1cb0563064b3b8f063}\label{class_air_unit_a6d22e2c4e8af5a1cb0563064b3b8f063}} 
+\index{AirUnit@{AirUnit}!getPower@{getPower}}
+\index{getPower@{getPower}!AirUnit@{AirUnit}}
+\doxysubsubsection{\texorpdfstring{getPower()}{getPower()}}
+{\footnotesize\ttfamily int Air\+Unit\+::get\+Power (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+calculate the total firepower of unit by adding each soldiers weapons firepower. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_air_unit_a55a7d1f37e4a74741aa047c4aca304b4}\label{class_air_unit_a55a7d1f37e4a74741aa047c4aca304b4}} 
+\index{AirUnit@{AirUnit}!getSize@{getSize}}
+\index{getSize@{getSize}!AirUnit@{AirUnit}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily int Air\+Unit\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+return size of unit 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_air_unit_ae2709b5748cbfc29c142ca0a016d94a7}\label{class_air_unit_ae2709b5748cbfc29c142ca0a016d94a7}} 
+\index{AirUnit@{AirUnit}!populateUnit@{populateUnit}}
+\index{populateUnit@{populateUnit}!AirUnit@{AirUnit}}
+\doxysubsubsection{\texorpdfstring{populateUnit()}{populateUnit()}}
+{\footnotesize\ttfamily void Air\+Unit\+::populate\+Unit (\begin{DoxyParamCaption}\item[{int}]{num\+Of\+Pilots }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+create a number of soldiers and give each one a weapon. weapons are created upon a random probability. 20\% explosives 40\% rifles and pistols, and of those a 50\% chance of the type of weapon being a long or short range variant. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+Of\+Pilots} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_unit}{Unit}}.
+
+\mbox{\Hypertarget{class_air_unit_a5619300dc82861bc8aea9cbfdc6ef10a}\label{class_air_unit_a5619300dc82861bc8aea9cbfdc6ef10a}} 
+\index{AirUnit@{AirUnit}!remove@{remove}}
+\index{remove@{remove}!AirUnit@{AirUnit}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily void Air\+Unit\+::remove (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Deletes from list of soldiers. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Doxygen/\+Single Folder Program/Air\+Unit.\+h\item 
+Doxygen/\+Single Folder Program/Air\+Unit.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,32 @@
+\hypertarget{_medic_unit_8h_source}{}\doxysection{Medic\+Unit.\+h}
+\label{_medic_unit_8h_source}\index{Doxygen/Single Folder Program/MedicUnit.h@{Doxygen/Single Folder Program/MedicUnit.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef MEDICUNIT\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define MEDICUNIT\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}Unit.h"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}../PersonHierarchy/Medic.h"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}../PersonHierarchy/PersonFactory/MedicFactory.h"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}Iterator/MedicUnitIterator.h"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}Transport/ArmouredTruckMaker.h"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}Transport/ArmouredTruck.h"{}}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{keyword}{class }\mbox{\hyperlink{class_medic_unit}{MedicUnit}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_unit}{Unit}}}
+\DoxyCodeLine{12 \{}
+\DoxyCodeLine{13     \textcolor{keyword}{private}:}
+\DoxyCodeLine{14     std::list<Person *> unit;}
+\DoxyCodeLine{15     \mbox{\hyperlink{class_armoured_truck_maker}{ArmouredTruckMaker}}* trans;}
+\DoxyCodeLine{16     \mbox{\hyperlink{class_armoured_truck}{ArmouredTruck}}* truck;}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18     \textcolor{keyword}{public}:}
+\DoxyCodeLine{19     \mbox{\hyperlink{class_medic_unit}{MedicUnit}}(\textcolor{keywordtype}{string});}
+\DoxyCodeLine{20     \mbox{\hyperlink{class_medic_unit_acc3f713023d3122f7f7c9d46f4652389}{\string~MedicUnit}}();}
+\DoxyCodeLine{21     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_medic_unit_a4cf23b01481c4dcfe39aec47b5150f77}{populateUnit}}(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{22     \mbox{\hyperlink{class_army_iterator}{ArmyIterator}} *\mbox{\hyperlink{class_medic_unit_ad522153144611ef9bd5a3c7d26dfae53}{createIterator}}();}
+\DoxyCodeLine{23     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_medic_unit_a21ca000978bb51dbb4e5012f2927079d}{getHealPower}}(); }
+\DoxyCodeLine{24 \};}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,30 @@
+\hypertarget{_medic_unit_iterator_8h_source}{}\doxysection{Medic\+Unit\+Iterator.\+h}
+\label{_medic_unit_iterator_8h_source}\index{Doxygen/Single Folder Program/MedicUnitIterator.h@{Doxygen/Single Folder Program/MedicUnitIterator.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef MEDICUNITITERATOR\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define MEDICUNITITERATOR\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}ArmyIterator.h"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}../../PersonHierarchy/Medic.h"{}}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{keyword}{class }\mbox{\hyperlink{class_medic_unit_iterator}{MedicUnitIterator}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_army_iterator}{ArmyIterator}}}
+\DoxyCodeLine{8 \{}
+\DoxyCodeLine{9 \textcolor{keyword}{public}:}
+\DoxyCodeLine{10     \mbox{\hyperlink{class_medic_unit_iterator}{MedicUnitIterator}}(std::list<Person *>);}
+\DoxyCodeLine{11     \mbox{\hyperlink{class_medic_unit_iterator_a7e9240a044ac5dc69ccd3f5488bee223}{\string~MedicUnitIterator}}();}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13     \mbox{\hyperlink{class_person}{Person}} *\mbox{\hyperlink{class_medic_unit_iterator_ab92dc0066372575baeb04e96611458f0}{first}}();}
+\DoxyCodeLine{14     \mbox{\hyperlink{class_person}{Person}} *\mbox{\hyperlink{class_medic_unit_iterator_a9251480fc1554b92ae2b848948c7afd9}{next}}();}
+\DoxyCodeLine{15     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_medic_unit_iterator_a912ee80cb05cd2eb784f018aa5abc9e9}{hasNext}}();}
+\DoxyCodeLine{16     \mbox{\hyperlink{class_person}{Person}} *\mbox{\hyperlink{class_medic_unit_iterator_ac8e4c6427a215a89707a692197657f18}{current}}();}
+\DoxyCodeLine{17     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_medic_unit_iterator_a2107fd2fee9d1b16732e954ec77fcfc9}{increment}}();}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19 \textcolor{keyword}{private}:}
+\DoxyCodeLine{20     \mbox{\hyperlink{class_person}{Person}} *curr;}
+\DoxyCodeLine{21     std::list<Person *> unit;}
+\DoxyCodeLine{22 \};}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
