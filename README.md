@@ -31,3 +31,4 @@
 - [Google Document](https://docs.google.com/document/d/1fIBljEvgrzkKuuCGGKqeGtKyDWfG38LYcaSMP7wZ9kw/edit)
 - [MAIN SYSTEM FOLDER (CODE)](https://github.com/ShashinGounden/COS214-Project/tree/main/SYSTEM)
 - [Diagram Folder](https://github.com/ShashinGounden/COS214-Project/tree/main/Diagrams)
+- [Doxygen Folder](https://github.com/ShashinGounden/COS214-Project/tree/main/Data/Doxygen)
