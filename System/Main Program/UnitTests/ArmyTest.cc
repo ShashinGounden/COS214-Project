@@ -1,5 +1,7 @@
 #include <gtest/gtest.h>
 #include "../ArmyHierarchy/Army.h"
+
+//@JordanTimberlake
 //Army Test*************************************************************************
 TEST(ArmyTest, CheckArmyFunctions) {
     //Create Army object

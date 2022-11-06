@@ -1,5 +1,7 @@
 #include <gtest/gtest.h>
 #include "../PersonHierarchy/PersonFactory/MedicFactory.h"
+
+//@Tymac15
 //MedicFactory Test*************************************************************************
 TEST(MedicFactoryTest, CheckMedicFactoryFunctions) {
 

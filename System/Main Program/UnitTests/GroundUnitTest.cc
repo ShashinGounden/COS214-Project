@@ -1,7 +1,7 @@
 #include <gtest/gtest.h>
 #include "../ArmyHierarchy/GroundUnit.h"
 
-
+//@u20612894 Andile
 //GroundUnitTest *************************************************
 TEST(GUTest,CheckClassFunctions)
 {

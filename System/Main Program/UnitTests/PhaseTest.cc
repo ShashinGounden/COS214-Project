@@ -1,6 +1,7 @@
 #include <gtest/gtest.h>
 #include "../Phase/Phase.h"
 #include "../Phase/Seize.h"
+//@Jonel Albuquerque
 //Phase Test*************************************************************************
 TEST(PhaseTest, PhaseCreatesAndGets) {
 //Create new Phase pointer for Seize phase
