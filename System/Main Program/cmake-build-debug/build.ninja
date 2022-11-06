@@ -39,7 +39,558 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = C$:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/
+cmake_ninja_workdir = C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/cmake-build-debug/
+# =============================================================================
+# Object build statements for EXECUTABLE target mainTester
+
+
+#############################################
+# Order-only phony target for mainTester
+
+build cmake_object_order_depends_target_mainTester: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
+
+build CMakeFiles/mainTester.dir/UnitTests/test.cc.obj: CXX_COMPILER__mainTester_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/UnitTests/test.cc || cmake_object_order_depends_target_mainTester
+  DEP_FILE = CMakeFiles\mainTester.dir\UnitTests\test.cc.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = CMakeFiles\mainTester.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainTester.dir\UnitTests
+  TARGET_COMPILE_PDB = CMakeFiles\mainTester.dir\
+  TARGET_PDB = mainTester.pdb
+
+build CMakeFiles/mainTester.dir/UnitTests/PhaseTest.cc.obj: CXX_COMPILER__mainTester_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/UnitTests/PhaseTest.cc || cmake_object_order_depends_target_mainTester
+  DEP_FILE = CMakeFiles\mainTester.dir\UnitTests\PhaseTest.cc.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = CMakeFiles\mainTester.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainTester.dir\UnitTests
+  TARGET_COMPILE_PDB = CMakeFiles\mainTester.dir\
+  TARGET_PDB = mainTester.pdb
+
+build CMakeFiles/mainTester.dir/UnitTests/TransportTest.cc.obj: CXX_COMPILER__mainTester_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/UnitTests/TransportTest.cc || cmake_object_order_depends_target_mainTester
+  DEP_FILE = CMakeFiles\mainTester.dir\UnitTests\TransportTest.cc.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = CMakeFiles\mainTester.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainTester.dir\UnitTests
+  TARGET_COMPILE_PDB = CMakeFiles\mainTester.dir\
+  TARGET_PDB = mainTester.pdb
+
+build CMakeFiles/mainTester.dir/UnitTests/ArmyTest.cc.obj: CXX_COMPILER__mainTester_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/UnitTests/ArmyTest.cc || cmake_object_order_depends_target_mainTester
+  DEP_FILE = CMakeFiles\mainTester.dir\UnitTests\ArmyTest.cc.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = CMakeFiles\mainTester.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainTester.dir\UnitTests
+  TARGET_COMPILE_PDB = CMakeFiles\mainTester.dir\
+  TARGET_PDB = mainTester.pdb
+
+build CMakeFiles/mainTester.dir/UnitTests/GroundUnitTest.cc.obj: CXX_COMPILER__mainTester_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/UnitTests/GroundUnitTest.cc || cmake_object_order_depends_target_mainTester
+  DEP_FILE = CMakeFiles\mainTester.dir\UnitTests\GroundUnitTest.cc.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = CMakeFiles\mainTester.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainTester.dir\UnitTests
+  TARGET_COMPILE_PDB = CMakeFiles\mainTester.dir\
+  TARGET_PDB = mainTester.pdb
+
+build CMakeFiles/mainTester.dir/UnitTests/MedicTest.cc.obj: CXX_COMPILER__mainTester_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/UnitTests/MedicTest.cc || cmake_object_order_depends_target_mainTester
+  DEP_FILE = CMakeFiles\mainTester.dir\UnitTests\MedicTest.cc.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = CMakeFiles\mainTester.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainTester.dir\UnitTests
+  TARGET_COMPILE_PDB = CMakeFiles\mainTester.dir\
+  TARGET_PDB = mainTester.pdb
+
+build CMakeFiles/mainTester.dir/UnitTests/MedicFactory.cc.obj: CXX_COMPILER__mainTester_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/UnitTests/MedicFactory.cc || cmake_object_order_depends_target_mainTester
+  DEP_FILE = CMakeFiles\mainTester.dir\UnitTests\MedicFactory.cc.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = CMakeFiles\mainTester.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainTester.dir\UnitTests
+  TARGET_COMPILE_PDB = CMakeFiles\mainTester.dir\
+  TARGET_PDB = mainTester.pdb
+
+build CMakeFiles/mainTester.dir/UnitTests/MultipleFunctionTest.cc.obj: CXX_COMPILER__mainTester_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/UnitTests/MultipleFunctionTest.cc || cmake_object_order_depends_target_mainTester
+  DEP_FILE = CMakeFiles\mainTester.dir\UnitTests\MultipleFunctionTest.cc.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = CMakeFiles\mainTester.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainTester.dir\UnitTests
+  TARGET_COMPILE_PDB = CMakeFiles\mainTester.dir\
+  TARGET_PDB = mainTester.pdb
+
+build CMakeFiles/mainTester.dir/UnitTests/WeaponTest.cc.obj: CXX_COMPILER__mainTester_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/UnitTests/WeaponTest.cc || cmake_object_order_depends_target_mainTester
+  DEP_FILE = CMakeFiles\mainTester.dir\UnitTests\WeaponTest.cc.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = CMakeFiles\mainTester.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainTester.dir\UnitTests
+  TARGET_COMPILE_PDB = CMakeFiles\mainTester.dir\
+  TARGET_PDB = mainTester.pdb
+
+build CMakeFiles/mainTester.dir/ArmyHierarchy/Iterator/AirUnitIterator.cpp.obj: CXX_COMPILER__mainTester_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/ArmyHierarchy/Iterator/AirUnitIterator.cpp || cmake_object_order_depends_target_mainTester
+  DEP_FILE = CMakeFiles\mainTester.dir\ArmyHierarchy\Iterator\AirUnitIterator.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = CMakeFiles\mainTester.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainTester.dir\ArmyHierarchy\Iterator
+  TARGET_COMPILE_PDB = CMakeFiles\mainTester.dir\
+  TARGET_PDB = mainTester.pdb
+
+build CMakeFiles/mainTester.dir/ArmyHierarchy/Iterator/ArmyIterator.cpp.obj: CXX_COMPILER__mainTester_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/ArmyHierarchy/Iterator/ArmyIterator.cpp || cmake_object_order_depends_target_mainTester
+  DEP_FILE = CMakeFiles\mainTester.dir\ArmyHierarchy\Iterator\ArmyIterator.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = CMakeFiles\mainTester.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainTester.dir\ArmyHierarchy\Iterator
+  TARGET_COMPILE_PDB = CMakeFiles\mainTester.dir\
+  TARGET_PDB = mainTester.pdb
+
+build CMakeFiles/mainTester.dir/ArmyHierarchy/Iterator/GroundUnitIterator.cpp.obj: CXX_COMPILER__mainTester_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/ArmyHierarchy/Iterator/GroundUnitIterator.cpp || cmake_object_order_depends_target_mainTester
+  DEP_FILE = CMakeFiles\mainTester.dir\ArmyHierarchy\Iterator\GroundUnitIterator.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = CMakeFiles\mainTester.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainTester.dir\ArmyHierarchy\Iterator
+  TARGET_COMPILE_PDB = CMakeFiles\mainTester.dir\
+  TARGET_PDB = mainTester.pdb
+
+build CMakeFiles/mainTester.dir/ArmyHierarchy/Iterator/MedicUnitIterator.cpp.obj: CXX_COMPILER__mainTester_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/ArmyHierarchy/Iterator/MedicUnitIterator.cpp || cmake_object_order_depends_target_mainTester
+  DEP_FILE = CMakeFiles\mainTester.dir\ArmyHierarchy\Iterator\MedicUnitIterator.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = CMakeFiles\mainTester.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainTester.dir\ArmyHierarchy\Iterator
+  TARGET_COMPILE_PDB = CMakeFiles\mainTester.dir\
+  TARGET_PDB = mainTester.pdb
+
+build CMakeFiles/mainTester.dir/ArmyHierarchy/Transport/Aircraft.cpp.obj: CXX_COMPILER__mainTester_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/ArmyHierarchy/Transport/Aircraft.cpp || cmake_object_order_depends_target_mainTester
+  DEP_FILE = CMakeFiles\mainTester.dir\ArmyHierarchy\Transport\Aircraft.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = CMakeFiles\mainTester.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainTester.dir\ArmyHierarchy\Transport
+  TARGET_COMPILE_PDB = CMakeFiles\mainTester.dir\
+  TARGET_PDB = mainTester.pdb
+
+build CMakeFiles/mainTester.dir/ArmyHierarchy/Transport/AircraftMaker.cpp.obj: CXX_COMPILER__mainTester_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/ArmyHierarchy/Transport/AircraftMaker.cpp || cmake_object_order_depends_target_mainTester
+  DEP_FILE = CMakeFiles\mainTester.dir\ArmyHierarchy\Transport\AircraftMaker.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = CMakeFiles\mainTester.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainTester.dir\ArmyHierarchy\Transport
+  TARGET_COMPILE_PDB = CMakeFiles\mainTester.dir\
+  TARGET_PDB = mainTester.pdb
+
+build CMakeFiles/mainTester.dir/ArmyHierarchy/Transport/ArmouredTruck.cpp.obj: CXX_COMPILER__mainTester_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/ArmyHierarchy/Transport/ArmouredTruck.cpp || cmake_object_order_depends_target_mainTester
+  DEP_FILE = CMakeFiles\mainTester.dir\ArmyHierarchy\Transport\ArmouredTruck.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = CMakeFiles\mainTester.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainTester.dir\ArmyHierarchy\Transport
+  TARGET_COMPILE_PDB = CMakeFiles\mainTester.dir\
+  TARGET_PDB = mainTester.pdb
+
+build CMakeFiles/mainTester.dir/ArmyHierarchy/Transport/ArmouredTruckMaker.cpp.obj: CXX_COMPILER__mainTester_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/ArmyHierarchy/Transport/ArmouredTruckMaker.cpp || cmake_object_order_depends_target_mainTester
+  DEP_FILE = CMakeFiles\mainTester.dir\ArmyHierarchy\Transport\ArmouredTruckMaker.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = CMakeFiles\mainTester.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainTester.dir\ArmyHierarchy\Transport
+  TARGET_COMPILE_PDB = CMakeFiles\mainTester.dir\
+  TARGET_PDB = mainTester.pdb
+
+build CMakeFiles/mainTester.dir/ArmyHierarchy/Transport/TankMaker.cpp.obj: CXX_COMPILER__mainTester_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/ArmyHierarchy/Transport/TankMaker.cpp || cmake_object_order_depends_target_mainTester
+  DEP_FILE = CMakeFiles\mainTester.dir\ArmyHierarchy\Transport\TankMaker.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = CMakeFiles\mainTester.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainTester.dir\ArmyHierarchy\Transport
+  TARGET_COMPILE_PDB = CMakeFiles\mainTester.dir\
+  TARGET_PDB = mainTester.pdb
+
+build CMakeFiles/mainTester.dir/ArmyHierarchy/Transport/Tank.cpp.obj: CXX_COMPILER__mainTester_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/ArmyHierarchy/Transport/Tank.cpp || cmake_object_order_depends_target_mainTester
+  DEP_FILE = CMakeFiles\mainTester.dir\ArmyHierarchy\Transport\Tank.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = CMakeFiles\mainTester.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainTester.dir\ArmyHierarchy\Transport
+  TARGET_COMPILE_PDB = CMakeFiles\mainTester.dir\
+  TARGET_PDB = mainTester.pdb
+
+build CMakeFiles/mainTester.dir/ArmyHierarchy/Transport/TransportBuilder.cpp.obj: CXX_COMPILER__mainTester_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/ArmyHierarchy/Transport/TransportBuilder.cpp || cmake_object_order_depends_target_mainTester
+  DEP_FILE = CMakeFiles\mainTester.dir\ArmyHierarchy\Transport\TransportBuilder.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = CMakeFiles\mainTester.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainTester.dir\ArmyHierarchy\Transport
+  TARGET_COMPILE_PDB = CMakeFiles\mainTester.dir\
+  TARGET_PDB = mainTester.pdb
+
+build CMakeFiles/mainTester.dir/ArmyHierarchy/Transport/Transport.cpp.obj: CXX_COMPILER__mainTester_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/ArmyHierarchy/Transport/Transport.cpp || cmake_object_order_depends_target_mainTester
+  DEP_FILE = CMakeFiles\mainTester.dir\ArmyHierarchy\Transport\Transport.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = CMakeFiles\mainTester.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainTester.dir\ArmyHierarchy\Transport
+  TARGET_COMPILE_PDB = CMakeFiles\mainTester.dir\
+  TARGET_PDB = mainTester.pdb
+
+build CMakeFiles/mainTester.dir/ArmyHierarchy/AirUnit.cpp.obj: CXX_COMPILER__mainTester_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/ArmyHierarchy/AirUnit.cpp || cmake_object_order_depends_target_mainTester
+  DEP_FILE = CMakeFiles\mainTester.dir\ArmyHierarchy\AirUnit.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = CMakeFiles\mainTester.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainTester.dir\ArmyHierarchy
+  TARGET_COMPILE_PDB = CMakeFiles\mainTester.dir\
+  TARGET_PDB = mainTester.pdb
+
+build CMakeFiles/mainTester.dir/ArmyHierarchy/Army.cpp.obj: CXX_COMPILER__mainTester_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/ArmyHierarchy/Army.cpp || cmake_object_order_depends_target_mainTester
+  DEP_FILE = CMakeFiles\mainTester.dir\ArmyHierarchy\Army.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = CMakeFiles\mainTester.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainTester.dir\ArmyHierarchy
+  TARGET_COMPILE_PDB = CMakeFiles\mainTester.dir\
+  TARGET_PDB = mainTester.pdb
+
+build CMakeFiles/mainTester.dir/ArmyHierarchy/GroundUnit.cpp.obj: CXX_COMPILER__mainTester_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/ArmyHierarchy/GroundUnit.cpp || cmake_object_order_depends_target_mainTester
+  DEP_FILE = CMakeFiles\mainTester.dir\ArmyHierarchy\GroundUnit.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = CMakeFiles\mainTester.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainTester.dir\ArmyHierarchy
+  TARGET_COMPILE_PDB = CMakeFiles\mainTester.dir\
+  TARGET_PDB = mainTester.pdb
+
+build CMakeFiles/mainTester.dir/ArmyHierarchy/MedicUnit.cpp.obj: CXX_COMPILER__mainTester_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/ArmyHierarchy/MedicUnit.cpp || cmake_object_order_depends_target_mainTester
+  DEP_FILE = CMakeFiles\mainTester.dir\ArmyHierarchy\MedicUnit.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = CMakeFiles\mainTester.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainTester.dir\ArmyHierarchy
+  TARGET_COMPILE_PDB = CMakeFiles\mainTester.dir\
+  TARGET_PDB = mainTester.pdb
+
+build CMakeFiles/mainTester.dir/ArmyHierarchy/Unit.cpp.obj: CXX_COMPILER__mainTester_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/ArmyHierarchy/Unit.cpp || cmake_object_order_depends_target_mainTester
+  DEP_FILE = CMakeFiles\mainTester.dir\ArmyHierarchy\Unit.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = CMakeFiles\mainTester.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainTester.dir\ArmyHierarchy
+  TARGET_COMPILE_PDB = CMakeFiles\mainTester.dir\
+  TARGET_PDB = mainTester.pdb
+
+build CMakeFiles/mainTester.dir/Country/Alliance.cpp.obj: CXX_COMPILER__mainTester_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/Country/Alliance.cpp || cmake_object_order_depends_target_mainTester
+  DEP_FILE = CMakeFiles\mainTester.dir\Country\Alliance.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = CMakeFiles\mainTester.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainTester.dir\Country
+  TARGET_COMPILE_PDB = CMakeFiles\mainTester.dir\
+  TARGET_PDB = mainTester.pdb
+
+build CMakeFiles/mainTester.dir/Country/Artillery.cpp.obj: CXX_COMPILER__mainTester_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/Country/Artillery.cpp || cmake_object_order_depends_target_mainTester
+  DEP_FILE = CMakeFiles\mainTester.dir\Country\Artillery.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = CMakeFiles\mainTester.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainTester.dir\Country
+  TARGET_COMPILE_PDB = CMakeFiles\mainTester.dir\
+  TARGET_PDB = mainTester.pdb
+
+build CMakeFiles/mainTester.dir/Country/Country.cpp.obj: CXX_COMPILER__mainTester_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/Country/Country.cpp || cmake_object_order_depends_target_mainTester
+  DEP_FILE = CMakeFiles\mainTester.dir\Country\Country.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = CMakeFiles\mainTester.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainTester.dir\Country
+  TARGET_COMPILE_PDB = CMakeFiles\mainTester.dir\
+  TARGET_PDB = mainTester.pdb
+
+build CMakeFiles/mainTester.dir/Country/Nuke.cpp.obj: CXX_COMPILER__mainTester_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/Country/Nuke.cpp || cmake_object_order_depends_target_mainTester
+  DEP_FILE = CMakeFiles\mainTester.dir\Country\Nuke.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = CMakeFiles\mainTester.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainTester.dir\Country
+  TARGET_COMPILE_PDB = CMakeFiles\mainTester.dir\
+  TARGET_PDB = mainTester.pdb
+
+build CMakeFiles/mainTester.dir/Country/WMD.cpp.obj: CXX_COMPILER__mainTester_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/Country/WMD.cpp || cmake_object_order_depends_target_mainTester
+  DEP_FILE = CMakeFiles\mainTester.dir\Country\WMD.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = CMakeFiles\mainTester.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainTester.dir\Country
+  TARGET_COMPILE_PDB = CMakeFiles\mainTester.dir\
+  TARGET_PDB = mainTester.pdb
+
+build CMakeFiles/mainTester.dir/PersonHierarchy/PersonFactory/MedicFactory.cpp.obj: CXX_COMPILER__mainTester_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/PersonHierarchy/PersonFactory/MedicFactory.cpp || cmake_object_order_depends_target_mainTester
+  DEP_FILE = CMakeFiles\mainTester.dir\PersonHierarchy\PersonFactory\MedicFactory.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = CMakeFiles\mainTester.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainTester.dir\PersonHierarchy\PersonFactory
+  TARGET_COMPILE_PDB = CMakeFiles\mainTester.dir\
+  TARGET_PDB = mainTester.pdb
+
+build CMakeFiles/mainTester.dir/PersonHierarchy/PersonFactory/PersonFactory.cpp.obj: CXX_COMPILER__mainTester_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/PersonHierarchy/PersonFactory/PersonFactory.cpp || cmake_object_order_depends_target_mainTester
+  DEP_FILE = CMakeFiles\mainTester.dir\PersonHierarchy\PersonFactory\PersonFactory.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = CMakeFiles\mainTester.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainTester.dir\PersonHierarchy\PersonFactory
+  TARGET_COMPILE_PDB = CMakeFiles\mainTester.dir\
+  TARGET_PDB = mainTester.pdb
+
+build CMakeFiles/mainTester.dir/PersonHierarchy/PersonFactory/SoldierFactory.cpp.obj: CXX_COMPILER__mainTester_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/PersonHierarchy/PersonFactory/SoldierFactory.cpp || cmake_object_order_depends_target_mainTester
+  DEP_FILE = CMakeFiles\mainTester.dir\PersonHierarchy\PersonFactory\SoldierFactory.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = CMakeFiles\mainTester.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainTester.dir\PersonHierarchy\PersonFactory
+  TARGET_COMPILE_PDB = CMakeFiles\mainTester.dir\
+  TARGET_PDB = mainTester.pdb
+
+build CMakeFiles/mainTester.dir/PersonHierarchy/Medic.cpp.obj: CXX_COMPILER__mainTester_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/PersonHierarchy/Medic.cpp || cmake_object_order_depends_target_mainTester
+  DEP_FILE = CMakeFiles\mainTester.dir\PersonHierarchy\Medic.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = CMakeFiles\mainTester.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainTester.dir\PersonHierarchy
+  TARGET_COMPILE_PDB = CMakeFiles\mainTester.dir\
+  TARGET_PDB = mainTester.pdb
+
+build CMakeFiles/mainTester.dir/PersonHierarchy/Person.cpp.obj: CXX_COMPILER__mainTester_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/PersonHierarchy/Person.cpp || cmake_object_order_depends_target_mainTester
+  DEP_FILE = CMakeFiles\mainTester.dir\PersonHierarchy\Person.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = CMakeFiles\mainTester.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainTester.dir\PersonHierarchy
+  TARGET_COMPILE_PDB = CMakeFiles\mainTester.dir\
+  TARGET_PDB = mainTester.pdb
+
+build CMakeFiles/mainTester.dir/PersonHierarchy/Soldier.cpp.obj: CXX_COMPILER__mainTester_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/PersonHierarchy/Soldier.cpp || cmake_object_order_depends_target_mainTester
+  DEP_FILE = CMakeFiles\mainTester.dir\PersonHierarchy\Soldier.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = CMakeFiles\mainTester.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainTester.dir\PersonHierarchy
+  TARGET_COMPILE_PDB = CMakeFiles\mainTester.dir\
+  TARGET_PDB = mainTester.pdb
+
+build CMakeFiles/mainTester.dir/Phase/Phase.cpp.obj: CXX_COMPILER__mainTester_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/Phase/Phase.cpp || cmake_object_order_depends_target_mainTester
+  DEP_FILE = CMakeFiles\mainTester.dir\Phase\Phase.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = CMakeFiles\mainTester.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainTester.dir\Phase
+  TARGET_COMPILE_PDB = CMakeFiles\mainTester.dir\
+  TARGET_PDB = mainTester.pdb
+
+build CMakeFiles/mainTester.dir/Phase/Deter.cpp.obj: CXX_COMPILER__mainTester_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/Phase/Deter.cpp || cmake_object_order_depends_target_mainTester
+  DEP_FILE = CMakeFiles\mainTester.dir\Phase\Deter.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = CMakeFiles\mainTester.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainTester.dir\Phase
+  TARGET_COMPILE_PDB = CMakeFiles\mainTester.dir\
+  TARGET_PDB = mainTester.pdb
+
+build CMakeFiles/mainTester.dir/Phase/Dominate.cpp.obj: CXX_COMPILER__mainTester_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/Phase/Dominate.cpp || cmake_object_order_depends_target_mainTester
+  DEP_FILE = CMakeFiles\mainTester.dir\Phase\Dominate.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = CMakeFiles\mainTester.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainTester.dir\Phase
+  TARGET_COMPILE_PDB = CMakeFiles\mainTester.dir\
+  TARGET_PDB = mainTester.pdb
+
+build CMakeFiles/mainTester.dir/Phase/Seize.cpp.obj: CXX_COMPILER__mainTester_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/Phase/Seize.cpp || cmake_object_order_depends_target_mainTester
+  DEP_FILE = CMakeFiles\mainTester.dir\Phase\Seize.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = CMakeFiles\mainTester.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainTester.dir\Phase
+  TARGET_COMPILE_PDB = CMakeFiles\mainTester.dir\
+  TARGET_PDB = mainTester.pdb
+
+build CMakeFiles/mainTester.dir/WarTheater/Airspace.cpp.obj: CXX_COMPILER__mainTester_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/WarTheater/Airspace.cpp || cmake_object_order_depends_target_mainTester
+  DEP_FILE = CMakeFiles\mainTester.dir\WarTheater\Airspace.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = CMakeFiles\mainTester.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainTester.dir\WarTheater
+  TARGET_COMPILE_PDB = CMakeFiles\mainTester.dir\
+  TARGET_PDB = mainTester.pdb
+
+build CMakeFiles/mainTester.dir/WarTheater/Sea.cpp.obj: CXX_COMPILER__mainTester_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/WarTheater/Sea.cpp || cmake_object_order_depends_target_mainTester
+  DEP_FILE = CMakeFiles\mainTester.dir\WarTheater\Sea.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = CMakeFiles\mainTester.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainTester.dir\WarTheater
+  TARGET_COMPILE_PDB = CMakeFiles\mainTester.dir\
+  TARGET_PDB = mainTester.pdb
+
+build CMakeFiles/mainTester.dir/WarTheater/WarTheater.cpp.obj: CXX_COMPILER__mainTester_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/WarTheater/WarTheater.cpp || cmake_object_order_depends_target_mainTester
+  DEP_FILE = CMakeFiles\mainTester.dir\WarTheater\WarTheater.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = CMakeFiles\mainTester.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainTester.dir\WarTheater
+  TARGET_COMPILE_PDB = CMakeFiles\mainTester.dir\
+  TARGET_PDB = mainTester.pdb
+
+build CMakeFiles/mainTester.dir/WeaponHierarchy/Bazooka.cpp.obj: CXX_COMPILER__mainTester_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/WeaponHierarchy/Bazooka.cpp || cmake_object_order_depends_target_mainTester
+  DEP_FILE = CMakeFiles\mainTester.dir\WeaponHierarchy\Bazooka.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = CMakeFiles\mainTester.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainTester.dir\WeaponHierarchy
+  TARGET_COMPILE_PDB = CMakeFiles\mainTester.dir\
+  TARGET_PDB = mainTester.pdb
+
+build CMakeFiles/mainTester.dir/WeaponHierarchy/Cal45short.cpp.obj: CXX_COMPILER__mainTester_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/WeaponHierarchy/Cal45short.cpp || cmake_object_order_depends_target_mainTester
+  DEP_FILE = CMakeFiles\mainTester.dir\WeaponHierarchy\Cal45short.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = CMakeFiles\mainTester.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainTester.dir\WeaponHierarchy
+  TARGET_COMPILE_PDB = CMakeFiles\mainTester.dir\
+  TARGET_PDB = mainTester.pdb
+
+build CMakeFiles/mainTester.dir/WeaponHierarchy/Colt12B.cpp.obj: CXX_COMPILER__mainTester_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/WeaponHierarchy/Colt12B.cpp || cmake_object_order_depends_target_mainTester
+  DEP_FILE = CMakeFiles\mainTester.dir\WeaponHierarchy\Colt12B.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = CMakeFiles\mainTester.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainTester.dir\WeaponHierarchy
+  TARGET_COMPILE_PDB = CMakeFiles\mainTester.dir\
+  TARGET_PDB = mainTester.pdb
+
+build CMakeFiles/mainTester.dir/WeaponHierarchy/ExplosiveFactory.cpp.obj: CXX_COMPILER__mainTester_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/WeaponHierarchy/ExplosiveFactory.cpp || cmake_object_order_depends_target_mainTester
+  DEP_FILE = CMakeFiles\mainTester.dir\WeaponHierarchy\ExplosiveFactory.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = CMakeFiles\mainTester.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainTester.dir\WeaponHierarchy
+  TARGET_COMPILE_PDB = CMakeFiles\mainTester.dir\
+  TARGET_PDB = mainTester.pdb
+
+build CMakeFiles/mainTester.dir/WeaponHierarchy/ExplosiveProduct.cpp.obj: CXX_COMPILER__mainTester_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/WeaponHierarchy/ExplosiveProduct.cpp || cmake_object_order_depends_target_mainTester
+  DEP_FILE = CMakeFiles\mainTester.dir\WeaponHierarchy\ExplosiveProduct.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = CMakeFiles\mainTester.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainTester.dir\WeaponHierarchy
+  TARGET_COMPILE_PDB = CMakeFiles\mainTester.dir\
+  TARGET_PDB = mainTester.pdb
+
+build CMakeFiles/mainTester.dir/WeaponHierarchy/GasBomb.cpp.obj: CXX_COMPILER__mainTester_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/WeaponHierarchy/GasBomb.cpp || cmake_object_order_depends_target_mainTester
+  DEP_FILE = CMakeFiles\mainTester.dir\WeaponHierarchy\GasBomb.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = CMakeFiles\mainTester.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainTester.dir\WeaponHierarchy
+  TARGET_COMPILE_PDB = CMakeFiles\mainTester.dir\
+  TARGET_PDB = mainTester.pdb
+
+build CMakeFiles/mainTester.dir/WeaponHierarchy/M1Garand.cpp.obj: CXX_COMPILER__mainTester_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/WeaponHierarchy/M1Garand.cpp || cmake_object_order_depends_target_mainTester
+  DEP_FILE = CMakeFiles\mainTester.dir\WeaponHierarchy\M1Garand.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = CMakeFiles\mainTester.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainTester.dir\WeaponHierarchy
+  TARGET_COMPILE_PDB = CMakeFiles\mainTester.dir\
+  TARGET_PDB = mainTester.pdb
+
+build CMakeFiles/mainTester.dir/WeaponHierarchy/M1917Enfield.cpp.obj: CXX_COMPILER__mainTester_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/WeaponHierarchy/M1917Enfield.cpp || cmake_object_order_depends_target_mainTester
+  DEP_FILE = CMakeFiles\mainTester.dir\WeaponHierarchy\M1917Enfield.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = CMakeFiles\mainTester.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainTester.dir\WeaponHierarchy
+  TARGET_COMPILE_PDB = CMakeFiles\mainTester.dir\
+  TARGET_PDB = mainTester.pdb
+
+build CMakeFiles/mainTester.dir/WeaponHierarchy/PistolFactory.cpp.obj: CXX_COMPILER__mainTester_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/WeaponHierarchy/PistolFactory.cpp || cmake_object_order_depends_target_mainTester
+  DEP_FILE = CMakeFiles\mainTester.dir\WeaponHierarchy\PistolFactory.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = CMakeFiles\mainTester.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainTester.dir\WeaponHierarchy
+  TARGET_COMPILE_PDB = CMakeFiles\mainTester.dir\
+  TARGET_PDB = mainTester.pdb
+
+build CMakeFiles/mainTester.dir/WeaponHierarchy/PistolProduct.cpp.obj: CXX_COMPILER__mainTester_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/WeaponHierarchy/PistolProduct.cpp || cmake_object_order_depends_target_mainTester
+  DEP_FILE = CMakeFiles\mainTester.dir\WeaponHierarchy\PistolProduct.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = CMakeFiles\mainTester.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainTester.dir\WeaponHierarchy
+  TARGET_COMPILE_PDB = CMakeFiles\mainTester.dir\
+  TARGET_PDB = mainTester.pdb
+
+build CMakeFiles/mainTester.dir/WeaponHierarchy/RifleFactory.cpp.obj: CXX_COMPILER__mainTester_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/WeaponHierarchy/RifleFactory.cpp || cmake_object_order_depends_target_mainTester
+  DEP_FILE = CMakeFiles\mainTester.dir\WeaponHierarchy\RifleFactory.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = CMakeFiles\mainTester.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainTester.dir\WeaponHierarchy
+  TARGET_COMPILE_PDB = CMakeFiles\mainTester.dir\
+  TARGET_PDB = mainTester.pdb
+
+build CMakeFiles/mainTester.dir/WeaponHierarchy/RifleProduct.cpp.obj: CXX_COMPILER__mainTester_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/WeaponHierarchy/RifleProduct.cpp || cmake_object_order_depends_target_mainTester
+  DEP_FILE = CMakeFiles\mainTester.dir\WeaponHierarchy\RifleProduct.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = CMakeFiles\mainTester.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainTester.dir\WeaponHierarchy
+  TARGET_COMPILE_PDB = CMakeFiles\mainTester.dir\
+  TARGET_PDB = mainTester.pdb
+
+build CMakeFiles/mainTester.dir/WeaponHierarchy/Weapon.cpp.obj: CXX_COMPILER__mainTester_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/WeaponHierarchy/Weapon.cpp || cmake_object_order_depends_target_mainTester
+  DEP_FILE = CMakeFiles\mainTester.dir\WeaponHierarchy\Weapon.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = CMakeFiles\mainTester.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainTester.dir\WeaponHierarchy
+  TARGET_COMPILE_PDB = CMakeFiles\mainTester.dir\
+  TARGET_PDB = mainTester.pdb
+
+build CMakeFiles/mainTester.dir/WeaponHierarchy/WeaponFactory.cpp.obj: CXX_COMPILER__mainTester_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/WeaponHierarchy/WeaponFactory.cpp || cmake_object_order_depends_target_mainTester
+  DEP_FILE = CMakeFiles\mainTester.dir\WeaponHierarchy\WeaponFactory.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = CMakeFiles\mainTester.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainTester.dir\WeaponHierarchy
+  TARGET_COMPILE_PDB = CMakeFiles\mainTester.dir\
+  TARGET_PDB = mainTester.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target mainTester
+
+
+#############################################
+# Link the executable mainTester.exe
+
+build mainTester.exe mainTester[1]_tests.cmake | ${cmake_ninja_workdir}mainTester[1]_tests.cmake: CXX_EXECUTABLE_LINKER__mainTester_Debug CMakeFiles/mainTester.dir/UnitTests/test.cc.obj CMakeFiles/mainTester.dir/UnitTests/PhaseTest.cc.obj CMakeFiles/mainTester.dir/UnitTests/TransportTest.cc.obj CMakeFiles/mainTester.dir/UnitTests/ArmyTest.cc.obj CMakeFiles/mainTester.dir/UnitTests/GroundUnitTest.cc.obj CMakeFiles/mainTester.dir/UnitTests/MedicTest.cc.obj CMakeFiles/mainTester.dir/UnitTests/MedicFactory.cc.obj CMakeFiles/mainTester.dir/UnitTests/MultipleFunctionTest.cc.obj CMakeFiles/mainTester.dir/UnitTests/WeaponTest.cc.obj CMakeFiles/mainTester.dir/ArmyHierarchy/Iterator/AirUnitIterator.cpp.obj CMakeFiles/mainTester.dir/ArmyHierarchy/Iterator/ArmyIterator.cpp.obj CMakeFiles/mainTester.dir/ArmyHierarchy/Iterator/GroundUnitIterator.cpp.obj CMakeFiles/mainTester.dir/ArmyHierarchy/Iterator/MedicUnitIterator.cpp.obj CMakeFiles/mainTester.dir/ArmyHierarchy/Transport/Aircraft.cpp.obj CMakeFiles/mainTester.dir/ArmyHierarchy/Transport/AircraftMaker.cpp.obj CMakeFiles/mainTester.dir/ArmyHierarchy/Transport/ArmouredTruck.cpp.obj CMakeFiles/mainTester.dir/ArmyHierarchy/Transport/ArmouredTruckMaker.cpp.obj CMakeFiles/mainTester.dir/ArmyHierarchy/Transport/TankMaker.cpp.obj CMakeFiles/mainTester.dir/ArmyHierarchy/Transport/Tank.cpp.obj CMakeFiles/mainTester.dir/ArmyHierarchy/Transport/TransportBuilder.cpp.obj CMakeFiles/mainTester.dir/ArmyHierarchy/Transport/Transport.cpp.obj CMakeFiles/mainTester.dir/ArmyHierarchy/AirUnit.cpp.obj CMakeFiles/mainTester.dir/ArmyHierarchy/Army.cpp.obj CMakeFiles/mainTester.dir/ArmyHierarchy/GroundUnit.cpp.obj CMakeFiles/mainTester.dir/ArmyHierarchy/MedicUnit.cpp.obj CMakeFiles/mainTester.dir/ArmyHierarchy/Unit.cpp.obj CMakeFiles/mainTester.dir/Country/Alliance.cpp.obj CMakeFiles/mainTester.dir/Country/Artillery.cpp.obj CMakeFiles/mainTester.dir/Country/Country.cpp.obj CMakeFiles/mainTester.dir/Country/Nuke.cpp.obj CMakeFiles/mainTester.dir/Country/WMD.cpp.obj CMakeFiles/mainTester.dir/PersonHierarchy/PersonFactory/MedicFactory.cpp.obj CMakeFiles/mainTester.dir/PersonHierarchy/PersonFactory/PersonFactory.cpp.obj CMakeFiles/mainTester.dir/PersonHierarchy/PersonFactory/SoldierFactory.cpp.obj CMakeFiles/mainTester.dir/PersonHierarchy/Medic.cpp.obj CMakeFiles/mainTester.dir/PersonHierarchy/Person.cpp.obj CMakeFiles/mainTester.dir/PersonHierarchy/Soldier.cpp.obj CMakeFiles/mainTester.dir/Phase/Phase.cpp.obj CMakeFiles/mainTester.dir/Phase/Deter.cpp.obj CMakeFiles/mainTester.dir/Phase/Dominate.cpp.obj CMakeFiles/mainTester.dir/Phase/Seize.cpp.obj CMakeFiles/mainTester.dir/WarTheater/Airspace.cpp.obj CMakeFiles/mainTester.dir/WarTheater/Sea.cpp.obj CMakeFiles/mainTester.dir/WarTheater/WarTheater.cpp.obj CMakeFiles/mainTester.dir/WeaponHierarchy/Bazooka.cpp.obj CMakeFiles/mainTester.dir/WeaponHierarchy/Cal45short.cpp.obj CMakeFiles/mainTester.dir/WeaponHierarchy/Colt12B.cpp.obj CMakeFiles/mainTester.dir/WeaponHierarchy/ExplosiveFactory.cpp.obj CMakeFiles/mainTester.dir/WeaponHierarchy/ExplosiveProduct.cpp.obj CMakeFiles/mainTester.dir/WeaponHierarchy/GasBomb.cpp.obj CMakeFiles/mainTester.dir/WeaponHierarchy/M1Garand.cpp.obj CMakeFiles/mainTester.dir/WeaponHierarchy/M1917Enfield.cpp.obj CMakeFiles/mainTester.dir/WeaponHierarchy/PistolFactory.cpp.obj CMakeFiles/mainTester.dir/WeaponHierarchy/PistolProduct.cpp.obj CMakeFiles/mainTester.dir/WeaponHierarchy/RifleFactory.cpp.obj CMakeFiles/mainTester.dir/WeaponHierarchy/RifleProduct.cpp.obj CMakeFiles/mainTester.dir/WeaponHierarchy/Weapon.cpp.obj CMakeFiles/mainTester.dir/WeaponHierarchy/WeaponFactory.cpp.obj | lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a
+  FLAGS = -g
+  LINK_LIBRARIES = lib/libgtest_main.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\mainTester.dir
+  POST_BUILD = cmd.exe /C "cd /D "C:\Users\jonel\OneDrive\Documents\GitHub\COS214-Project\System\Main Program\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2022.1.3\bin\cmake\win\bin\cmake.exe" -D TEST_TARGET=mainTester -D "TEST_EXECUTABLE=C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/mainTester.exe" -D TEST_EXECUTOR= -D "TEST_WORKING_DIR=C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug" -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=mainTester_TESTS -D "CTEST_FILE=C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/mainTester[1]_tests.cmake" -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P "C:/Program Files/JetBrains/CLion 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/GoogleTestAddTests.cmake""
+  PRE_LINK = cd .
+  RESTAT = 1
+  TARGET_COMPILE_PDB = CMakeFiles\mainTester.dir\
+  TARGET_FILE = mainTester.exe
+  TARGET_IMPLIB = libmainTester.dll.a
+  TARGET_PDB = mainTester.pdb
+
 # =============================================================================
 # Object build statements for EXECUTABLE target COS214-Project
 
@@ -47,357 +598,407 @@ cmake_ninja_workdir = C$:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYST
 #############################################
 # Order-only phony target for COS214-Project
 
-build cmake_object_order_depends_target_COS214-Project: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
+build cmake_object_order_depends_target_COS214-Project: phony || CMakeFiles/COS214-Project.dir
 
-build CMakeFiles/COS214-Project.dir/main.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/main.cpp || cmake_object_order_depends_target_COS214-Project
+build CMakeFiles/COS214-Project.dir/main.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/main.cpp || cmake_object_order_depends_target_COS214-Project
   DEP_FILE = CMakeFiles\COS214-Project.dir\main.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles\COS214-Project.dir
   OBJECT_FILE_DIR = CMakeFiles\COS214-Project.dir
+  TARGET_COMPILE_PDB = CMakeFiles\COS214-Project.dir\
+  TARGET_PDB = COS214-Project.pdb
 
-build CMakeFiles/COS214-Project.dir/ArmyHierarchy/Iterator/AirUnitIterator.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/ArmyHierarchy/Iterator/AirUnitIterator.cpp || cmake_object_order_depends_target_COS214-Project
+build CMakeFiles/COS214-Project.dir/ArmyHierarchy/Iterator/AirUnitIterator.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/ArmyHierarchy/Iterator/AirUnitIterator.cpp || cmake_object_order_depends_target_COS214-Project
   DEP_FILE = CMakeFiles\COS214-Project.dir\ArmyHierarchy\Iterator\AirUnitIterator.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles\COS214-Project.dir
   OBJECT_FILE_DIR = CMakeFiles\COS214-Project.dir\ArmyHierarchy\Iterator
+  TARGET_COMPILE_PDB = CMakeFiles\COS214-Project.dir\
+  TARGET_PDB = COS214-Project.pdb
 
-build CMakeFiles/COS214-Project.dir/ArmyHierarchy/Iterator/ArmyIterator.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/ArmyHierarchy/Iterator/ArmyIterator.cpp || cmake_object_order_depends_target_COS214-Project
+build CMakeFiles/COS214-Project.dir/ArmyHierarchy/Iterator/ArmyIterator.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/ArmyHierarchy/Iterator/ArmyIterator.cpp || cmake_object_order_depends_target_COS214-Project
   DEP_FILE = CMakeFiles\COS214-Project.dir\ArmyHierarchy\Iterator\ArmyIterator.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles\COS214-Project.dir
   OBJECT_FILE_DIR = CMakeFiles\COS214-Project.dir\ArmyHierarchy\Iterator
+  TARGET_COMPILE_PDB = CMakeFiles\COS214-Project.dir\
+  TARGET_PDB = COS214-Project.pdb
 
-build CMakeFiles/COS214-Project.dir/ArmyHierarchy/Iterator/GroundUnitIterator.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/ArmyHierarchy/Iterator/GroundUnitIterator.cpp || cmake_object_order_depends_target_COS214-Project
+build CMakeFiles/COS214-Project.dir/ArmyHierarchy/Iterator/GroundUnitIterator.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/ArmyHierarchy/Iterator/GroundUnitIterator.cpp || cmake_object_order_depends_target_COS214-Project
   DEP_FILE = CMakeFiles\COS214-Project.dir\ArmyHierarchy\Iterator\GroundUnitIterator.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles\COS214-Project.dir
   OBJECT_FILE_DIR = CMakeFiles\COS214-Project.dir\ArmyHierarchy\Iterator
+  TARGET_COMPILE_PDB = CMakeFiles\COS214-Project.dir\
+  TARGET_PDB = COS214-Project.pdb
 
-build CMakeFiles/COS214-Project.dir/ArmyHierarchy/Iterator/MedicUnitIterator.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/ArmyHierarchy/Iterator/MedicUnitIterator.cpp || cmake_object_order_depends_target_COS214-Project
+build CMakeFiles/COS214-Project.dir/ArmyHierarchy/Iterator/MedicUnitIterator.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/ArmyHierarchy/Iterator/MedicUnitIterator.cpp || cmake_object_order_depends_target_COS214-Project
   DEP_FILE = CMakeFiles\COS214-Project.dir\ArmyHierarchy\Iterator\MedicUnitIterator.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles\COS214-Project.dir
   OBJECT_FILE_DIR = CMakeFiles\COS214-Project.dir\ArmyHierarchy\Iterator
+  TARGET_COMPILE_PDB = CMakeFiles\COS214-Project.dir\
+  TARGET_PDB = COS214-Project.pdb
 
-build CMakeFiles/COS214-Project.dir/ArmyHierarchy/Transport/Aircraft.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/ArmyHierarchy/Transport/Aircraft.cpp || cmake_object_order_depends_target_COS214-Project
+build CMakeFiles/COS214-Project.dir/ArmyHierarchy/Transport/Aircraft.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/ArmyHierarchy/Transport/Aircraft.cpp || cmake_object_order_depends_target_COS214-Project
   DEP_FILE = CMakeFiles\COS214-Project.dir\ArmyHierarchy\Transport\Aircraft.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles\COS214-Project.dir
   OBJECT_FILE_DIR = CMakeFiles\COS214-Project.dir\ArmyHierarchy\Transport
+  TARGET_COMPILE_PDB = CMakeFiles\COS214-Project.dir\
+  TARGET_PDB = COS214-Project.pdb
 
-build CMakeFiles/COS214-Project.dir/ArmyHierarchy/Transport/AircraftMaker.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/ArmyHierarchy/Transport/AircraftMaker.cpp || cmake_object_order_depends_target_COS214-Project
+build CMakeFiles/COS214-Project.dir/ArmyHierarchy/Transport/AircraftMaker.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/ArmyHierarchy/Transport/AircraftMaker.cpp || cmake_object_order_depends_target_COS214-Project
   DEP_FILE = CMakeFiles\COS214-Project.dir\ArmyHierarchy\Transport\AircraftMaker.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles\COS214-Project.dir
   OBJECT_FILE_DIR = CMakeFiles\COS214-Project.dir\ArmyHierarchy\Transport
+  TARGET_COMPILE_PDB = CMakeFiles\COS214-Project.dir\
+  TARGET_PDB = COS214-Project.pdb
 
-build CMakeFiles/COS214-Project.dir/ArmyHierarchy/Transport/ArmouredTruck.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/ArmyHierarchy/Transport/ArmouredTruck.cpp || cmake_object_order_depends_target_COS214-Project
+build CMakeFiles/COS214-Project.dir/ArmyHierarchy/Transport/ArmouredTruck.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/ArmyHierarchy/Transport/ArmouredTruck.cpp || cmake_object_order_depends_target_COS214-Project
   DEP_FILE = CMakeFiles\COS214-Project.dir\ArmyHierarchy\Transport\ArmouredTruck.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles\COS214-Project.dir
   OBJECT_FILE_DIR = CMakeFiles\COS214-Project.dir\ArmyHierarchy\Transport
+  TARGET_COMPILE_PDB = CMakeFiles\COS214-Project.dir\
+  TARGET_PDB = COS214-Project.pdb
 
-build CMakeFiles/COS214-Project.dir/ArmyHierarchy/Transport/ArmouredTruckMaker.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/ArmyHierarchy/Transport/ArmouredTruckMaker.cpp || cmake_object_order_depends_target_COS214-Project
+build CMakeFiles/COS214-Project.dir/ArmyHierarchy/Transport/ArmouredTruckMaker.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/ArmyHierarchy/Transport/ArmouredTruckMaker.cpp || cmake_object_order_depends_target_COS214-Project
   DEP_FILE = CMakeFiles\COS214-Project.dir\ArmyHierarchy\Transport\ArmouredTruckMaker.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles\COS214-Project.dir
   OBJECT_FILE_DIR = CMakeFiles\COS214-Project.dir\ArmyHierarchy\Transport
+  TARGET_COMPILE_PDB = CMakeFiles\COS214-Project.dir\
+  TARGET_PDB = COS214-Project.pdb
 
-build CMakeFiles/COS214-Project.dir/ArmyHierarchy/Transport/TankMaker.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/ArmyHierarchy/Transport/TankMaker.cpp || cmake_object_order_depends_target_COS214-Project
+build CMakeFiles/COS214-Project.dir/ArmyHierarchy/Transport/TankMaker.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/ArmyHierarchy/Transport/TankMaker.cpp || cmake_object_order_depends_target_COS214-Project
   DEP_FILE = CMakeFiles\COS214-Project.dir\ArmyHierarchy\Transport\TankMaker.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles\COS214-Project.dir
   OBJECT_FILE_DIR = CMakeFiles\COS214-Project.dir\ArmyHierarchy\Transport
+  TARGET_COMPILE_PDB = CMakeFiles\COS214-Project.dir\
+  TARGET_PDB = COS214-Project.pdb
 
-build CMakeFiles/COS214-Project.dir/ArmyHierarchy/Transport/Tank.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/ArmyHierarchy/Transport/Tank.cpp || cmake_object_order_depends_target_COS214-Project
+build CMakeFiles/COS214-Project.dir/ArmyHierarchy/Transport/Tank.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/ArmyHierarchy/Transport/Tank.cpp || cmake_object_order_depends_target_COS214-Project
   DEP_FILE = CMakeFiles\COS214-Project.dir\ArmyHierarchy\Transport\Tank.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles\COS214-Project.dir
   OBJECT_FILE_DIR = CMakeFiles\COS214-Project.dir\ArmyHierarchy\Transport
+  TARGET_COMPILE_PDB = CMakeFiles\COS214-Project.dir\
+  TARGET_PDB = COS214-Project.pdb
 
-build CMakeFiles/COS214-Project.dir/ArmyHierarchy/Transport/TransportBuilder.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/ArmyHierarchy/Transport/TransportBuilder.cpp || cmake_object_order_depends_target_COS214-Project
+build CMakeFiles/COS214-Project.dir/ArmyHierarchy/Transport/TransportBuilder.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/ArmyHierarchy/Transport/TransportBuilder.cpp || cmake_object_order_depends_target_COS214-Project
   DEP_FILE = CMakeFiles\COS214-Project.dir\ArmyHierarchy\Transport\TransportBuilder.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles\COS214-Project.dir
   OBJECT_FILE_DIR = CMakeFiles\COS214-Project.dir\ArmyHierarchy\Transport
+  TARGET_COMPILE_PDB = CMakeFiles\COS214-Project.dir\
+  TARGET_PDB = COS214-Project.pdb
 
-build CMakeFiles/COS214-Project.dir/ArmyHierarchy/Transport/Transport.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/ArmyHierarchy/Transport/Transport.cpp || cmake_object_order_depends_target_COS214-Project
+build CMakeFiles/COS214-Project.dir/ArmyHierarchy/Transport/Transport.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/ArmyHierarchy/Transport/Transport.cpp || cmake_object_order_depends_target_COS214-Project
   DEP_FILE = CMakeFiles\COS214-Project.dir\ArmyHierarchy\Transport\Transport.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles\COS214-Project.dir
   OBJECT_FILE_DIR = CMakeFiles\COS214-Project.dir\ArmyHierarchy\Transport
+  TARGET_COMPILE_PDB = CMakeFiles\COS214-Project.dir\
+  TARGET_PDB = COS214-Project.pdb
 
-build CMakeFiles/COS214-Project.dir/ArmyHierarchy/AirUnit.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/ArmyHierarchy/AirUnit.cpp || cmake_object_order_depends_target_COS214-Project
+build CMakeFiles/COS214-Project.dir/ArmyHierarchy/AirUnit.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/ArmyHierarchy/AirUnit.cpp || cmake_object_order_depends_target_COS214-Project
   DEP_FILE = CMakeFiles\COS214-Project.dir\ArmyHierarchy\AirUnit.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles\COS214-Project.dir
   OBJECT_FILE_DIR = CMakeFiles\COS214-Project.dir\ArmyHierarchy
+  TARGET_COMPILE_PDB = CMakeFiles\COS214-Project.dir\
+  TARGET_PDB = COS214-Project.pdb
 
-build CMakeFiles/COS214-Project.dir/ArmyHierarchy/Army.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/ArmyHierarchy/Army.cpp || cmake_object_order_depends_target_COS214-Project
+build CMakeFiles/COS214-Project.dir/ArmyHierarchy/Army.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/ArmyHierarchy/Army.cpp || cmake_object_order_depends_target_COS214-Project
   DEP_FILE = CMakeFiles\COS214-Project.dir\ArmyHierarchy\Army.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles\COS214-Project.dir
   OBJECT_FILE_DIR = CMakeFiles\COS214-Project.dir\ArmyHierarchy
+  TARGET_COMPILE_PDB = CMakeFiles\COS214-Project.dir\
+  TARGET_PDB = COS214-Project.pdb
 
-build CMakeFiles/COS214-Project.dir/ArmyHierarchy/GroundUnit.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/ArmyHierarchy/GroundUnit.cpp || cmake_object_order_depends_target_COS214-Project
+build CMakeFiles/COS214-Project.dir/ArmyHierarchy/GroundUnit.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/ArmyHierarchy/GroundUnit.cpp || cmake_object_order_depends_target_COS214-Project
   DEP_FILE = CMakeFiles\COS214-Project.dir\ArmyHierarchy\GroundUnit.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles\COS214-Project.dir
   OBJECT_FILE_DIR = CMakeFiles\COS214-Project.dir\ArmyHierarchy
+  TARGET_COMPILE_PDB = CMakeFiles\COS214-Project.dir\
+  TARGET_PDB = COS214-Project.pdb
 
-build CMakeFiles/COS214-Project.dir/ArmyHierarchy/MedicUnit.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/ArmyHierarchy/MedicUnit.cpp || cmake_object_order_depends_target_COS214-Project
+build CMakeFiles/COS214-Project.dir/ArmyHierarchy/MedicUnit.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/ArmyHierarchy/MedicUnit.cpp || cmake_object_order_depends_target_COS214-Project
   DEP_FILE = CMakeFiles\COS214-Project.dir\ArmyHierarchy\MedicUnit.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles\COS214-Project.dir
   OBJECT_FILE_DIR = CMakeFiles\COS214-Project.dir\ArmyHierarchy
+  TARGET_COMPILE_PDB = CMakeFiles\COS214-Project.dir\
+  TARGET_PDB = COS214-Project.pdb
 
-build CMakeFiles/COS214-Project.dir/ArmyHierarchy/Unit.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/ArmyHierarchy/Unit.cpp || cmake_object_order_depends_target_COS214-Project
+build CMakeFiles/COS214-Project.dir/ArmyHierarchy/Unit.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/ArmyHierarchy/Unit.cpp || cmake_object_order_depends_target_COS214-Project
   DEP_FILE = CMakeFiles\COS214-Project.dir\ArmyHierarchy\Unit.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles\COS214-Project.dir
   OBJECT_FILE_DIR = CMakeFiles\COS214-Project.dir\ArmyHierarchy
+  TARGET_COMPILE_PDB = CMakeFiles\COS214-Project.dir\
+  TARGET_PDB = COS214-Project.pdb
 
-build CMakeFiles/COS214-Project.dir/Country/Alliance.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/Country/Alliance.cpp || cmake_object_order_depends_target_COS214-Project
+build CMakeFiles/COS214-Project.dir/Country/Alliance.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/Country/Alliance.cpp || cmake_object_order_depends_target_COS214-Project
   DEP_FILE = CMakeFiles\COS214-Project.dir\Country\Alliance.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles\COS214-Project.dir
   OBJECT_FILE_DIR = CMakeFiles\COS214-Project.dir\Country
+  TARGET_COMPILE_PDB = CMakeFiles\COS214-Project.dir\
+  TARGET_PDB = COS214-Project.pdb
 
-build CMakeFiles/COS214-Project.dir/Country/Artillery.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/Country/Artillery.cpp || cmake_object_order_depends_target_COS214-Project
+build CMakeFiles/COS214-Project.dir/Country/Artillery.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/Country/Artillery.cpp || cmake_object_order_depends_target_COS214-Project
   DEP_FILE = CMakeFiles\COS214-Project.dir\Country\Artillery.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles\COS214-Project.dir
   OBJECT_FILE_DIR = CMakeFiles\COS214-Project.dir\Country
+  TARGET_COMPILE_PDB = CMakeFiles\COS214-Project.dir\
+  TARGET_PDB = COS214-Project.pdb
 
-build CMakeFiles/COS214-Project.dir/Country/Country.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/Country/Country.cpp || cmake_object_order_depends_target_COS214-Project
+build CMakeFiles/COS214-Project.dir/Country/Country.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/Country/Country.cpp || cmake_object_order_depends_target_COS214-Project
   DEP_FILE = CMakeFiles\COS214-Project.dir\Country\Country.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles\COS214-Project.dir
   OBJECT_FILE_DIR = CMakeFiles\COS214-Project.dir\Country
+  TARGET_COMPILE_PDB = CMakeFiles\COS214-Project.dir\
+  TARGET_PDB = COS214-Project.pdb
 
-build CMakeFiles/COS214-Project.dir/Country/Nuke.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/Country/Nuke.cpp || cmake_object_order_depends_target_COS214-Project
+build CMakeFiles/COS214-Project.dir/Country/Nuke.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/Country/Nuke.cpp || cmake_object_order_depends_target_COS214-Project
   DEP_FILE = CMakeFiles\COS214-Project.dir\Country\Nuke.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles\COS214-Project.dir
   OBJECT_FILE_DIR = CMakeFiles\COS214-Project.dir\Country
+  TARGET_COMPILE_PDB = CMakeFiles\COS214-Project.dir\
+  TARGET_PDB = COS214-Project.pdb
 
-build CMakeFiles/COS214-Project.dir/Country/WMD.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/Country/WMD.cpp || cmake_object_order_depends_target_COS214-Project
+build CMakeFiles/COS214-Project.dir/Country/WMD.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/Country/WMD.cpp || cmake_object_order_depends_target_COS214-Project
   DEP_FILE = CMakeFiles\COS214-Project.dir\Country\WMD.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles\COS214-Project.dir
   OBJECT_FILE_DIR = CMakeFiles\COS214-Project.dir\Country
+  TARGET_COMPILE_PDB = CMakeFiles\COS214-Project.dir\
+  TARGET_PDB = COS214-Project.pdb
 
-build CMakeFiles/COS214-Project.dir/PersonHierarchy/PersonFactory/MedicFactory.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/PersonHierarchy/PersonFactory/MedicFactory.cpp || cmake_object_order_depends_target_COS214-Project
+build CMakeFiles/COS214-Project.dir/PersonHierarchy/PersonFactory/MedicFactory.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/PersonHierarchy/PersonFactory/MedicFactory.cpp || cmake_object_order_depends_target_COS214-Project
   DEP_FILE = CMakeFiles\COS214-Project.dir\PersonHierarchy\PersonFactory\MedicFactory.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles\COS214-Project.dir
   OBJECT_FILE_DIR = CMakeFiles\COS214-Project.dir\PersonHierarchy\PersonFactory
+  TARGET_COMPILE_PDB = CMakeFiles\COS214-Project.dir\
+  TARGET_PDB = COS214-Project.pdb
 
-build CMakeFiles/COS214-Project.dir/PersonHierarchy/PersonFactory/PersonFactory.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/PersonHierarchy/PersonFactory/PersonFactory.cpp || cmake_object_order_depends_target_COS214-Project
+build CMakeFiles/COS214-Project.dir/PersonHierarchy/PersonFactory/PersonFactory.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/PersonHierarchy/PersonFactory/PersonFactory.cpp || cmake_object_order_depends_target_COS214-Project
   DEP_FILE = CMakeFiles\COS214-Project.dir\PersonHierarchy\PersonFactory\PersonFactory.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles\COS214-Project.dir
   OBJECT_FILE_DIR = CMakeFiles\COS214-Project.dir\PersonHierarchy\PersonFactory
+  TARGET_COMPILE_PDB = CMakeFiles\COS214-Project.dir\
+  TARGET_PDB = COS214-Project.pdb
 
-build CMakeFiles/COS214-Project.dir/PersonHierarchy/PersonFactory/SoldierFactory.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/PersonHierarchy/PersonFactory/SoldierFactory.cpp || cmake_object_order_depends_target_COS214-Project
+build CMakeFiles/COS214-Project.dir/PersonHierarchy/PersonFactory/SoldierFactory.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/PersonHierarchy/PersonFactory/SoldierFactory.cpp || cmake_object_order_depends_target_COS214-Project
   DEP_FILE = CMakeFiles\COS214-Project.dir\PersonHierarchy\PersonFactory\SoldierFactory.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles\COS214-Project.dir
   OBJECT_FILE_DIR = CMakeFiles\COS214-Project.dir\PersonHierarchy\PersonFactory
+  TARGET_COMPILE_PDB = CMakeFiles\COS214-Project.dir\
+  TARGET_PDB = COS214-Project.pdb
 
-build CMakeFiles/COS214-Project.dir/PersonHierarchy/Medic.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/PersonHierarchy/Medic.cpp || cmake_object_order_depends_target_COS214-Project
+build CMakeFiles/COS214-Project.dir/PersonHierarchy/Medic.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/PersonHierarchy/Medic.cpp || cmake_object_order_depends_target_COS214-Project
   DEP_FILE = CMakeFiles\COS214-Project.dir\PersonHierarchy\Medic.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles\COS214-Project.dir
   OBJECT_FILE_DIR = CMakeFiles\COS214-Project.dir\PersonHierarchy
+  TARGET_COMPILE_PDB = CMakeFiles\COS214-Project.dir\
+  TARGET_PDB = COS214-Project.pdb
 
-build CMakeFiles/COS214-Project.dir/PersonHierarchy/Person.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/PersonHierarchy/Person.cpp || cmake_object_order_depends_target_COS214-Project
+build CMakeFiles/COS214-Project.dir/PersonHierarchy/Person.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/PersonHierarchy/Person.cpp || cmake_object_order_depends_target_COS214-Project
   DEP_FILE = CMakeFiles\COS214-Project.dir\PersonHierarchy\Person.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles\COS214-Project.dir
   OBJECT_FILE_DIR = CMakeFiles\COS214-Project.dir\PersonHierarchy
+  TARGET_COMPILE_PDB = CMakeFiles\COS214-Project.dir\
+  TARGET_PDB = COS214-Project.pdb
 
-build CMakeFiles/COS214-Project.dir/PersonHierarchy/Soldier.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/PersonHierarchy/Soldier.cpp || cmake_object_order_depends_target_COS214-Project
+build CMakeFiles/COS214-Project.dir/PersonHierarchy/Soldier.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/PersonHierarchy/Soldier.cpp || cmake_object_order_depends_target_COS214-Project
   DEP_FILE = CMakeFiles\COS214-Project.dir\PersonHierarchy\Soldier.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles\COS214-Project.dir
   OBJECT_FILE_DIR = CMakeFiles\COS214-Project.dir\PersonHierarchy
+  TARGET_COMPILE_PDB = CMakeFiles\COS214-Project.dir\
+  TARGET_PDB = COS214-Project.pdb
 
-build CMakeFiles/COS214-Project.dir/Phase/Phase.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/Phase/Phase.cpp || cmake_object_order_depends_target_COS214-Project
+build CMakeFiles/COS214-Project.dir/Phase/Phase.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/Phase/Phase.cpp || cmake_object_order_depends_target_COS214-Project
   DEP_FILE = CMakeFiles\COS214-Project.dir\Phase\Phase.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles\COS214-Project.dir
   OBJECT_FILE_DIR = CMakeFiles\COS214-Project.dir\Phase
+  TARGET_COMPILE_PDB = CMakeFiles\COS214-Project.dir\
+  TARGET_PDB = COS214-Project.pdb
 
-build CMakeFiles/COS214-Project.dir/Phase/Deter.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/Phase/Deter.cpp || cmake_object_order_depends_target_COS214-Project
+build CMakeFiles/COS214-Project.dir/Phase/Deter.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/Phase/Deter.cpp || cmake_object_order_depends_target_COS214-Project
   DEP_FILE = CMakeFiles\COS214-Project.dir\Phase\Deter.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles\COS214-Project.dir
   OBJECT_FILE_DIR = CMakeFiles\COS214-Project.dir\Phase
+  TARGET_COMPILE_PDB = CMakeFiles\COS214-Project.dir\
+  TARGET_PDB = COS214-Project.pdb
 
-build CMakeFiles/COS214-Project.dir/Phase/Dominate.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/Phase/Dominate.cpp || cmake_object_order_depends_target_COS214-Project
+build CMakeFiles/COS214-Project.dir/Phase/Dominate.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/Phase/Dominate.cpp || cmake_object_order_depends_target_COS214-Project
   DEP_FILE = CMakeFiles\COS214-Project.dir\Phase\Dominate.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles\COS214-Project.dir
   OBJECT_FILE_DIR = CMakeFiles\COS214-Project.dir\Phase
+  TARGET_COMPILE_PDB = CMakeFiles\COS214-Project.dir\
+  TARGET_PDB = COS214-Project.pdb
 
-build CMakeFiles/COS214-Project.dir/Phase/Seize.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/Phase/Seize.cpp || cmake_object_order_depends_target_COS214-Project
+build CMakeFiles/COS214-Project.dir/Phase/Seize.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/Phase/Seize.cpp || cmake_object_order_depends_target_COS214-Project
   DEP_FILE = CMakeFiles\COS214-Project.dir\Phase\Seize.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles\COS214-Project.dir
   OBJECT_FILE_DIR = CMakeFiles\COS214-Project.dir\Phase
+  TARGET_COMPILE_PDB = CMakeFiles\COS214-Project.dir\
+  TARGET_PDB = COS214-Project.pdb
 
-build CMakeFiles/COS214-Project.dir/WarTheater/Airspace.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/WarTheater/Airspace.cpp || cmake_object_order_depends_target_COS214-Project
+build CMakeFiles/COS214-Project.dir/WarTheater/Airspace.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/WarTheater/Airspace.cpp || cmake_object_order_depends_target_COS214-Project
   DEP_FILE = CMakeFiles\COS214-Project.dir\WarTheater\Airspace.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles\COS214-Project.dir
   OBJECT_FILE_DIR = CMakeFiles\COS214-Project.dir\WarTheater
+  TARGET_COMPILE_PDB = CMakeFiles\COS214-Project.dir\
+  TARGET_PDB = COS214-Project.pdb
 
-build CMakeFiles/COS214-Project.dir/WarTheater/Sea.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/WarTheater/Sea.cpp || cmake_object_order_depends_target_COS214-Project
+build CMakeFiles/COS214-Project.dir/WarTheater/Sea.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/WarTheater/Sea.cpp || cmake_object_order_depends_target_COS214-Project
   DEP_FILE = CMakeFiles\COS214-Project.dir\WarTheater\Sea.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles\COS214-Project.dir
   OBJECT_FILE_DIR = CMakeFiles\COS214-Project.dir\WarTheater
+  TARGET_COMPILE_PDB = CMakeFiles\COS214-Project.dir\
+  TARGET_PDB = COS214-Project.pdb
 
-build CMakeFiles/COS214-Project.dir/WarTheater/WarTheater.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/WarTheater/WarTheater.cpp || cmake_object_order_depends_target_COS214-Project
+build CMakeFiles/COS214-Project.dir/WarTheater/WarTheater.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/WarTheater/WarTheater.cpp || cmake_object_order_depends_target_COS214-Project
   DEP_FILE = CMakeFiles\COS214-Project.dir\WarTheater\WarTheater.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles\COS214-Project.dir
   OBJECT_FILE_DIR = CMakeFiles\COS214-Project.dir\WarTheater
+  TARGET_COMPILE_PDB = CMakeFiles\COS214-Project.dir\
+  TARGET_PDB = COS214-Project.pdb
 
-build CMakeFiles/COS214-Project.dir/WeaponHierarchy/Bazooka.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/WeaponHierarchy/Bazooka.cpp || cmake_object_order_depends_target_COS214-Project
+build CMakeFiles/COS214-Project.dir/WeaponHierarchy/Bazooka.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/WeaponHierarchy/Bazooka.cpp || cmake_object_order_depends_target_COS214-Project
   DEP_FILE = CMakeFiles\COS214-Project.dir\WeaponHierarchy\Bazooka.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles\COS214-Project.dir
   OBJECT_FILE_DIR = CMakeFiles\COS214-Project.dir\WeaponHierarchy
+  TARGET_COMPILE_PDB = CMakeFiles\COS214-Project.dir\
+  TARGET_PDB = COS214-Project.pdb
 
-build CMakeFiles/COS214-Project.dir/WeaponHierarchy/Cal45short.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/WeaponHierarchy/Cal45short.cpp || cmake_object_order_depends_target_COS214-Project
+build CMakeFiles/COS214-Project.dir/WeaponHierarchy/Cal45short.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/WeaponHierarchy/Cal45short.cpp || cmake_object_order_depends_target_COS214-Project
   DEP_FILE = CMakeFiles\COS214-Project.dir\WeaponHierarchy\Cal45short.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles\COS214-Project.dir
   OBJECT_FILE_DIR = CMakeFiles\COS214-Project.dir\WeaponHierarchy
+  TARGET_COMPILE_PDB = CMakeFiles\COS214-Project.dir\
+  TARGET_PDB = COS214-Project.pdb
 
-build CMakeFiles/COS214-Project.dir/WeaponHierarchy/Colt12B.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/WeaponHierarchy/Colt12B.cpp || cmake_object_order_depends_target_COS214-Project
+build CMakeFiles/COS214-Project.dir/WeaponHierarchy/Colt12B.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/WeaponHierarchy/Colt12B.cpp || cmake_object_order_depends_target_COS214-Project
   DEP_FILE = CMakeFiles\COS214-Project.dir\WeaponHierarchy\Colt12B.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles\COS214-Project.dir
   OBJECT_FILE_DIR = CMakeFiles\COS214-Project.dir\WeaponHierarchy
+  TARGET_COMPILE_PDB = CMakeFiles\COS214-Project.dir\
+  TARGET_PDB = COS214-Project.pdb
 
-build CMakeFiles/COS214-Project.dir/WeaponHierarchy/ExplosiveFactory.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/WeaponHierarchy/ExplosiveFactory.cpp || cmake_object_order_depends_target_COS214-Project
+build CMakeFiles/COS214-Project.dir/WeaponHierarchy/ExplosiveFactory.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/WeaponHierarchy/ExplosiveFactory.cpp || cmake_object_order_depends_target_COS214-Project
   DEP_FILE = CMakeFiles\COS214-Project.dir\WeaponHierarchy\ExplosiveFactory.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles\COS214-Project.dir
   OBJECT_FILE_DIR = CMakeFiles\COS214-Project.dir\WeaponHierarchy
+  TARGET_COMPILE_PDB = CMakeFiles\COS214-Project.dir\
+  TARGET_PDB = COS214-Project.pdb
 
-build CMakeFiles/COS214-Project.dir/WeaponHierarchy/ExplosiveProduct.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/WeaponHierarchy/ExplosiveProduct.cpp || cmake_object_order_depends_target_COS214-Project
+build CMakeFiles/COS214-Project.dir/WeaponHierarchy/ExplosiveProduct.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/WeaponHierarchy/ExplosiveProduct.cpp || cmake_object_order_depends_target_COS214-Project
   DEP_FILE = CMakeFiles\COS214-Project.dir\WeaponHierarchy\ExplosiveProduct.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles\COS214-Project.dir
   OBJECT_FILE_DIR = CMakeFiles\COS214-Project.dir\WeaponHierarchy
+  TARGET_COMPILE_PDB = CMakeFiles\COS214-Project.dir\
+  TARGET_PDB = COS214-Project.pdb
 
-build CMakeFiles/COS214-Project.dir/WeaponHierarchy/GasBomb.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/WeaponHierarchy/GasBomb.cpp || cmake_object_order_depends_target_COS214-Project
+build CMakeFiles/COS214-Project.dir/WeaponHierarchy/GasBomb.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/WeaponHierarchy/GasBomb.cpp || cmake_object_order_depends_target_COS214-Project
   DEP_FILE = CMakeFiles\COS214-Project.dir\WeaponHierarchy\GasBomb.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles\COS214-Project.dir
   OBJECT_FILE_DIR = CMakeFiles\COS214-Project.dir\WeaponHierarchy
+  TARGET_COMPILE_PDB = CMakeFiles\COS214-Project.dir\
+  TARGET_PDB = COS214-Project.pdb
 
-build CMakeFiles/COS214-Project.dir/WeaponHierarchy/M1Garand.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/WeaponHierarchy/M1Garand.cpp || cmake_object_order_depends_target_COS214-Project
+build CMakeFiles/COS214-Project.dir/WeaponHierarchy/M1Garand.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/WeaponHierarchy/M1Garand.cpp || cmake_object_order_depends_target_COS214-Project
   DEP_FILE = CMakeFiles\COS214-Project.dir\WeaponHierarchy\M1Garand.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles\COS214-Project.dir
   OBJECT_FILE_DIR = CMakeFiles\COS214-Project.dir\WeaponHierarchy
+  TARGET_COMPILE_PDB = CMakeFiles\COS214-Project.dir\
+  TARGET_PDB = COS214-Project.pdb
 
-build CMakeFiles/COS214-Project.dir/WeaponHierarchy/M1917Enfield.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/WeaponHierarchy/M1917Enfield.cpp || cmake_object_order_depends_target_COS214-Project
+build CMakeFiles/COS214-Project.dir/WeaponHierarchy/M1917Enfield.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/WeaponHierarchy/M1917Enfield.cpp || cmake_object_order_depends_target_COS214-Project
   DEP_FILE = CMakeFiles\COS214-Project.dir\WeaponHierarchy\M1917Enfield.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles\COS214-Project.dir
   OBJECT_FILE_DIR = CMakeFiles\COS214-Project.dir\WeaponHierarchy
+  TARGET_COMPILE_PDB = CMakeFiles\COS214-Project.dir\
+  TARGET_PDB = COS214-Project.pdb
 
-build CMakeFiles/COS214-Project.dir/WeaponHierarchy/PistolFactory.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/WeaponHierarchy/PistolFactory.cpp || cmake_object_order_depends_target_COS214-Project
+build CMakeFiles/COS214-Project.dir/WeaponHierarchy/PistolFactory.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/WeaponHierarchy/PistolFactory.cpp || cmake_object_order_depends_target_COS214-Project
   DEP_FILE = CMakeFiles\COS214-Project.dir\WeaponHierarchy\PistolFactory.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles\COS214-Project.dir
   OBJECT_FILE_DIR = CMakeFiles\COS214-Project.dir\WeaponHierarchy
+  TARGET_COMPILE_PDB = CMakeFiles\COS214-Project.dir\
+  TARGET_PDB = COS214-Project.pdb
 
-build CMakeFiles/COS214-Project.dir/WeaponHierarchy/PistolProduct.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/WeaponHierarchy/PistolProduct.cpp || cmake_object_order_depends_target_COS214-Project
+build CMakeFiles/COS214-Project.dir/WeaponHierarchy/PistolProduct.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/WeaponHierarchy/PistolProduct.cpp || cmake_object_order_depends_target_COS214-Project
   DEP_FILE = CMakeFiles\COS214-Project.dir\WeaponHierarchy\PistolProduct.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles\COS214-Project.dir
   OBJECT_FILE_DIR = CMakeFiles\COS214-Project.dir\WeaponHierarchy
+  TARGET_COMPILE_PDB = CMakeFiles\COS214-Project.dir\
+  TARGET_PDB = COS214-Project.pdb
 
-build CMakeFiles/COS214-Project.dir/WeaponHierarchy/RifleFactory.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/WeaponHierarchy/RifleFactory.cpp || cmake_object_order_depends_target_COS214-Project
+build CMakeFiles/COS214-Project.dir/WeaponHierarchy/RifleFactory.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/WeaponHierarchy/RifleFactory.cpp || cmake_object_order_depends_target_COS214-Project
   DEP_FILE = CMakeFiles\COS214-Project.dir\WeaponHierarchy\RifleFactory.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles\COS214-Project.dir
   OBJECT_FILE_DIR = CMakeFiles\COS214-Project.dir\WeaponHierarchy
+  TARGET_COMPILE_PDB = CMakeFiles\COS214-Project.dir\
+  TARGET_PDB = COS214-Project.pdb
 
-build CMakeFiles/COS214-Project.dir/WeaponHierarchy/RifleProduct.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/WeaponHierarchy/RifleProduct.cpp || cmake_object_order_depends_target_COS214-Project
+build CMakeFiles/COS214-Project.dir/WeaponHierarchy/RifleProduct.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/WeaponHierarchy/RifleProduct.cpp || cmake_object_order_depends_target_COS214-Project
   DEP_FILE = CMakeFiles\COS214-Project.dir\WeaponHierarchy\RifleProduct.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles\COS214-Project.dir
   OBJECT_FILE_DIR = CMakeFiles\COS214-Project.dir\WeaponHierarchy
+  TARGET_COMPILE_PDB = CMakeFiles\COS214-Project.dir\
+  TARGET_PDB = COS214-Project.pdb
 
-build CMakeFiles/COS214-Project.dir/WeaponHierarchy/Weapon.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/WeaponHierarchy/Weapon.cpp || cmake_object_order_depends_target_COS214-Project
+build CMakeFiles/COS214-Project.dir/WeaponHierarchy/Weapon.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/WeaponHierarchy/Weapon.cpp || cmake_object_order_depends_target_COS214-Project
   DEP_FILE = CMakeFiles\COS214-Project.dir\WeaponHierarchy\Weapon.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles\COS214-Project.dir
   OBJECT_FILE_DIR = CMakeFiles\COS214-Project.dir\WeaponHierarchy
+  TARGET_COMPILE_PDB = CMakeFiles\COS214-Project.dir\
+  TARGET_PDB = COS214-Project.pdb
 
-build CMakeFiles/COS214-Project.dir/WeaponHierarchy/WeaponFactory.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/WeaponHierarchy/WeaponFactory.cpp || cmake_object_order_depends_target_COS214-Project
+build CMakeFiles/COS214-Project.dir/WeaponHierarchy/WeaponFactory.cpp.obj: CXX_COMPILER__COS214-Project_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/WeaponHierarchy/WeaponFactory.cpp || cmake_object_order_depends_target_COS214-Project
   DEP_FILE = CMakeFiles\COS214-Project.dir\WeaponHierarchy\WeaponFactory.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles\COS214-Project.dir
   OBJECT_FILE_DIR = CMakeFiles\COS214-Project.dir\WeaponHierarchy
+  TARGET_COMPILE_PDB = CMakeFiles\COS214-Project.dir\
+  TARGET_PDB = COS214-Project.pdb
 
 
 # =============================================================================
@@ -407,56 +1008,35 @@ build CMakeFiles/COS214-Project.dir/WeaponHierarchy/WeaponFactory.cpp.obj: CXX_C
 #############################################
 # Link the executable COS214-Project.exe
 
-build COS214-Project.exe: CXX_EXECUTABLE_LINKER__COS214-Project_Debug CMakeFiles/COS214-Project.dir/main.cpp.obj CMakeFiles/COS214-Project.dir/ArmyHierarchy/Iterator/AirUnitIterator.cpp.obj CMakeFiles/COS214-Project.dir/ArmyHierarchy/Iterator/ArmyIterator.cpp.obj CMakeFiles/COS214-Project.dir/ArmyHierarchy/Iterator/GroundUnitIterator.cpp.obj CMakeFiles/COS214-Project.dir/ArmyHierarchy/Iterator/MedicUnitIterator.cpp.obj CMakeFiles/COS214-Project.dir/ArmyHierarchy/Transport/Aircraft.cpp.obj CMakeFiles/COS214-Project.dir/ArmyHierarchy/Transport/AircraftMaker.cpp.obj CMakeFiles/COS214-Project.dir/ArmyHierarchy/Transport/ArmouredTruck.cpp.obj CMakeFiles/COS214-Project.dir/ArmyHierarchy/Transport/ArmouredTruckMaker.cpp.obj CMakeFiles/COS214-Project.dir/ArmyHierarchy/Transport/TankMaker.cpp.obj CMakeFiles/COS214-Project.dir/ArmyHierarchy/Transport/Tank.cpp.obj CMakeFiles/COS214-Project.dir/ArmyHierarchy/Transport/TransportBuilder.cpp.obj CMakeFiles/COS214-Project.dir/ArmyHierarchy/Transport/Transport.cpp.obj CMakeFiles/COS214-Project.dir/ArmyHierarchy/AirUnit.cpp.obj CMakeFiles/COS214-Project.dir/ArmyHierarchy/Army.cpp.obj CMakeFiles/COS214-Project.dir/ArmyHierarchy/GroundUnit.cpp.obj CMakeFiles/COS214-Project.dir/ArmyHierarchy/MedicUnit.cpp.obj CMakeFiles/COS214-Project.dir/ArmyHierarchy/Unit.cpp.obj CMakeFiles/COS214-Project.dir/Country/Alliance.cpp.obj CMakeFiles/COS214-Project.dir/Country/Artillery.cpp.obj CMakeFiles/COS214-Project.dir/Country/Country.cpp.obj CMakeFiles/COS214-Project.dir/Country/Nuke.cpp.obj CMakeFiles/COS214-Project.dir/Country/WMD.cpp.obj CMakeFiles/COS214-Project.dir/PersonHierarchy/PersonFactory/MedicFactory.cpp.obj CMakeFiles/COS214-Project.dir/PersonHierarchy/PersonFactory/PersonFactory.cpp.obj CMakeFiles/COS214-Project.dir/PersonHierarchy/PersonFactory/SoldierFactory.cpp.obj CMakeFiles/COS214-Project.dir/PersonHierarchy/Medic.cpp.obj CMakeFiles/COS214-Project.dir/PersonHierarchy/Person.cpp.obj CMakeFiles/COS214-Project.dir/PersonHierarchy/Soldier.cpp.obj CMakeFiles/COS214-Project.dir/Phase/Phase.cpp.obj CMakeFiles/COS214-Project.dir/Phase/Deter.cpp.obj CMakeFiles/COS214-Project.dir/Phase/Dominate.cpp.obj CMakeFiles/COS214-Project.dir/Phase/Seize.cpp.obj CMakeFiles/COS214-Project.dir/WarTheater/Airspace.cpp.obj CMakeFiles/COS214-Project.dir/WarTheater/Sea.cpp.obj CMakeFiles/COS214-Project.dir/WarTheater/WarTheater.cpp.obj CMakeFiles/COS214-Project.dir/WeaponHierarchy/Bazooka.cpp.obj CMakeFiles/COS214-Project.dir/WeaponHierarchy/Cal45short.cpp.obj CMakeFiles/COS214-Project.dir/WeaponHierarchy/Colt12B.cpp.obj CMakeFiles/COS214-Project.dir/WeaponHierarchy/ExplosiveFactory.cpp.obj CMakeFiles/COS214-Project.dir/WeaponHierarchy/ExplosiveProduct.cpp.obj CMakeFiles/COS214-Project.dir/WeaponHierarchy/GasBomb.cpp.obj CMakeFiles/COS214-Project.dir/WeaponHierarchy/M1Garand.cpp.obj CMakeFiles/COS214-Project.dir/WeaponHierarchy/M1917Enfield.cpp.obj CMakeFiles/COS214-Project.dir/WeaponHierarchy/PistolFactory.cpp.obj CMakeFiles/COS214-Project.dir/WeaponHierarchy/PistolProduct.cpp.obj CMakeFiles/COS214-Project.dir/WeaponHierarchy/RifleFactory.cpp.obj CMakeFiles/COS214-Project.dir/WeaponHierarchy/RifleProduct.cpp.obj CMakeFiles/COS214-Project.dir/WeaponHierarchy/Weapon.cpp.obj CMakeFiles/COS214-Project.dir/WeaponHierarchy/WeaponFactory.cpp.obj | lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a
+build COS214-Project.exe: CXX_EXECUTABLE_LINKER__COS214-Project_Debug CMakeFiles/COS214-Project.dir/main.cpp.obj CMakeFiles/COS214-Project.dir/ArmyHierarchy/Iterator/AirUnitIterator.cpp.obj CMakeFiles/COS214-Project.dir/ArmyHierarchy/Iterator/ArmyIterator.cpp.obj CMakeFiles/COS214-Project.dir/ArmyHierarchy/Iterator/GroundUnitIterator.cpp.obj CMakeFiles/COS214-Project.dir/ArmyHierarchy/Iterator/MedicUnitIterator.cpp.obj CMakeFiles/COS214-Project.dir/ArmyHierarchy/Transport/Aircraft.cpp.obj CMakeFiles/COS214-Project.dir/ArmyHierarchy/Transport/AircraftMaker.cpp.obj CMakeFiles/COS214-Project.dir/ArmyHierarchy/Transport/ArmouredTruck.cpp.obj CMakeFiles/COS214-Project.dir/ArmyHierarchy/Transport/ArmouredTruckMaker.cpp.obj CMakeFiles/COS214-Project.dir/ArmyHierarchy/Transport/TankMaker.cpp.obj CMakeFiles/COS214-Project.dir/ArmyHierarchy/Transport/Tank.cpp.obj CMakeFiles/COS214-Project.dir/ArmyHierarchy/Transport/TransportBuilder.cpp.obj CMakeFiles/COS214-Project.dir/ArmyHierarchy/Transport/Transport.cpp.obj CMakeFiles/COS214-Project.dir/ArmyHierarchy/AirUnit.cpp.obj CMakeFiles/COS214-Project.dir/ArmyHierarchy/Army.cpp.obj CMakeFiles/COS214-Project.dir/ArmyHierarchy/GroundUnit.cpp.obj CMakeFiles/COS214-Project.dir/ArmyHierarchy/MedicUnit.cpp.obj CMakeFiles/COS214-Project.dir/ArmyHierarchy/Unit.cpp.obj CMakeFiles/COS214-Project.dir/Country/Alliance.cpp.obj CMakeFiles/COS214-Project.dir/Country/Artillery.cpp.obj CMakeFiles/COS214-Project.dir/Country/Country.cpp.obj CMakeFiles/COS214-Project.dir/Country/Nuke.cpp.obj CMakeFiles/COS214-Project.dir/Country/WMD.cpp.obj CMakeFiles/COS214-Project.dir/PersonHierarchy/PersonFactory/MedicFactory.cpp.obj CMakeFiles/COS214-Project.dir/PersonHierarchy/PersonFactory/PersonFactory.cpp.obj CMakeFiles/COS214-Project.dir/PersonHierarchy/PersonFactory/SoldierFactory.cpp.obj CMakeFiles/COS214-Project.dir/PersonHierarchy/Medic.cpp.obj CMakeFiles/COS214-Project.dir/PersonHierarchy/Person.cpp.obj CMakeFiles/COS214-Project.dir/PersonHierarchy/Soldier.cpp.obj CMakeFiles/COS214-Project.dir/Phase/Phase.cpp.obj CMakeFiles/COS214-Project.dir/Phase/Deter.cpp.obj CMakeFiles/COS214-Project.dir/Phase/Dominate.cpp.obj CMakeFiles/COS214-Project.dir/Phase/Seize.cpp.obj CMakeFiles/COS214-Project.dir/WarTheater/Airspace.cpp.obj CMakeFiles/COS214-Project.dir/WarTheater/Sea.cpp.obj CMakeFiles/COS214-Project.dir/WarTheater/WarTheater.cpp.obj CMakeFiles/COS214-Project.dir/WeaponHierarchy/Bazooka.cpp.obj CMakeFiles/COS214-Project.dir/WeaponHierarchy/Cal45short.cpp.obj CMakeFiles/COS214-Project.dir/WeaponHierarchy/Colt12B.cpp.obj CMakeFiles/COS214-Project.dir/WeaponHierarchy/ExplosiveFactory.cpp.obj CMakeFiles/COS214-Project.dir/WeaponHierarchy/ExplosiveProduct.cpp.obj CMakeFiles/COS214-Project.dir/WeaponHierarchy/GasBomb.cpp.obj CMakeFiles/COS214-Project.dir/WeaponHierarchy/M1Garand.cpp.obj CMakeFiles/COS214-Project.dir/WeaponHierarchy/M1917Enfield.cpp.obj CMakeFiles/COS214-Project.dir/WeaponHierarchy/PistolFactory.cpp.obj CMakeFiles/COS214-Project.dir/WeaponHierarchy/PistolProduct.cpp.obj CMakeFiles/COS214-Project.dir/WeaponHierarchy/RifleFactory.cpp.obj CMakeFiles/COS214-Project.dir/WeaponHierarchy/RifleProduct.cpp.obj CMakeFiles/COS214-Project.dir/WeaponHierarchy/Weapon.cpp.obj CMakeFiles/COS214-Project.dir/WeaponHierarchy/WeaponFactory.cpp.obj
   FLAGS = -g
-  LINK_LIBRARIES = lib/libgtest_main.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\COS214-Project.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\COS214-Project.dir\
   TARGET_FILE = COS214-Project.exe
   TARGET_IMPLIB = libCOS214-Project.dll.a
-  TARGET_PDB = COS214-Project.exe.dbg
-
-# =============================================================================
-# Object build statements for EXECUTABLE target mainTest
+  TARGET_PDB = COS214-Project.pdb
 
 
 #############################################
-# Order-only phony target for mainTest
+# Utility command for test
 
-build cmake_object_order_depends_target_mainTest: phony || CMakeFiles/mainTest.dir
+build CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\jonel\OneDrive\Documents\GitHub\COS214-Project\System\Main Program\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2022.1.3\bin\cmake\win\bin\ctest.exe" --force-new-ctest-process "
+  DESC = Running tests...
+  pool = console
+  restat = 1
 
-build CMakeFiles/mainTest.dir/main.cpp.obj: CXX_COMPILER__mainTest_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/main.cpp || cmake_object_order_depends_target_mainTest
-  DEP_FILE = CMakeFiles\mainTest.dir\main.cpp.obj.d
-  FLAGS = -g -std=gnu++17
-  OBJECT_DIR = CMakeFiles\mainTest.dir
-  OBJECT_FILE_DIR = CMakeFiles\mainTest.dir
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target mainTest
-
-
-#############################################
-# Link the executable mainTest.exe
-
-build mainTest.exe mainTest[1]_tests.cmake | ${cmake_ninja_workdir}mainTest[1]_tests.cmake: CXX_EXECUTABLE_LINKER__mainTest_Debug CMakeFiles/mainTest.dir/main.cpp.obj
-  FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\mainTest.dir
-  POST_BUILD = cmd.exe /C "cd /D C:\Users\jonel\OneDrive\Documents\GitHub\COS214--v03\SYSTEM\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2022.1.3\bin\cmake\win\bin\cmake.exe" -D TEST_TARGET=mainTest -D TEST_EXECUTABLE=C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/mainTest.exe -D TEST_EXECUTOR= -D TEST_WORKING_DIR=C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=mainTest_TESTS -D CTEST_FILE=C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/mainTest[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P "C:/Program Files/JetBrains/CLion 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/GoogleTestAddTests.cmake""
-  PRE_LINK = cd .
-  RESTAT = 1
-  TARGET_FILE = mainTest.exe
-  TARGET_IMPLIB = libmainTest.dll.a
-  TARGET_PDB = mainTest.exe.dbg
+build test: phony CMakeFiles/test.util
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\jonel\OneDrive\Documents\GitHub\COS214--v03\SYSTEM\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2022.1.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D "C:\Users\jonel\OneDrive\Documents\GitHub\COS214-Project\System\Main Program\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2022.1.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -467,7 +1047,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\jonel\OneDrive\Documents\GitHub\COS214--v03\SYSTEM\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2022.1.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\jonel\OneDrive\Documents\GitHub\COS214--v03\SYSTEM -BC:\Users\jonel\OneDrive\Documents\GitHub\COS214--v03\SYSTEM\cmake-build-debug"
+  COMMAND = cmd.exe /C "cd /D "C:\Users\jonel\OneDrive\Documents\GitHub\COS214-Project\System\Main Program\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2022.1.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S"C:\Users\jonel\OneDrive\Documents\GitHub\COS214-Project\System\Main Program" -B"C:\Users\jonel\OneDrive\Documents\GitHub\COS214-Project\System\Main Program\cmake-build-debug""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -485,7 +1065,7 @@ build list_install_components: phony
 # Utility command for install
 
 build CMakeFiles/install.util: CUSTOM_COMMAND all
-  COMMAND = cmd.exe /C "cd /D C:\Users\jonel\OneDrive\Documents\GitHub\COS214--v03\SYSTEM\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2022.1.3\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D "C:\Users\jonel\OneDrive\Documents\GitHub\COS214-Project\System\Main Program\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2022.1.3\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -497,7 +1077,7 @@ build install: phony CMakeFiles/install.util
 # Utility command for install/local
 
 build CMakeFiles/install/local.util: CUSTOM_COMMAND all
-  COMMAND = cmd.exe /C "cd /D C:\Users\jonel\OneDrive\Documents\GitHub\COS214--v03\SYSTEM\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2022.1.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D "C:\Users\jonel\OneDrive\Documents\GitHub\COS214-Project\System\Main Program\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2022.1.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -509,7 +1089,7 @@ build install/local: phony CMakeFiles/install/local.util
 # Utility command for install/strip
 
 build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
-  COMMAND = cmd.exe /C "cd /D C:\Users\jonel\OneDrive\Documents\GitHub\COS214--v03\SYSTEM\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2022.1.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D "C:\Users\jonel\OneDrive\Documents\GitHub\COS214-Project\System\Main Program\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2022.1.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -518,15 +1098,27 @@ build install/strip: phony CMakeFiles/install/strip.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/CMakeLists.txt
+# C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/CMakeLists.txt
 # =============================================================================
+
+
+#############################################
+# Utility command for test
+
+build _deps/googletest-build/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\jonel\OneDrive\Documents\GitHub\COS214-Project\System\Main Program\cmake-build-debug\_deps\googletest-build" && "C:\Program Files\JetBrains\CLion 2022.1.3\bin\cmake\win\bin\ctest.exe" --force-new-ctest-process "
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build _deps/googletest-build/test: phony _deps/googletest-build/CMakeFiles/test.util
 
 
 #############################################
 # Utility command for edit_cache
 
 build _deps/googletest-build/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\jonel\OneDrive\Documents\GitHub\COS214--v03\SYSTEM\cmake-build-debug\_deps\googletest-build && "C:\Program Files\JetBrains\CLion 2022.1.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D "C:\Users\jonel\OneDrive\Documents\GitHub\COS214-Project\System\Main Program\cmake-build-debug\_deps\googletest-build" && "C:\Program Files\JetBrains\CLion 2022.1.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -537,7 +1129,7 @@ build _deps/googletest-build/edit_cache: phony _deps/googletest-build/CMakeFiles
 # Utility command for rebuild_cache
 
 build _deps/googletest-build/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\jonel\OneDrive\Documents\GitHub\COS214--v03\SYSTEM\cmake-build-debug\_deps\googletest-build && "C:\Program Files\JetBrains\CLion 2022.1.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\jonel\OneDrive\Documents\GitHub\COS214--v03\SYSTEM -BC:\Users\jonel\OneDrive\Documents\GitHub\COS214--v03\SYSTEM\cmake-build-debug"
+  COMMAND = cmd.exe /C "cd /D "C:\Users\jonel\OneDrive\Documents\GitHub\COS214-Project\System\Main Program\cmake-build-debug\_deps\googletest-build" && "C:\Program Files\JetBrains\CLion 2022.1.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S"C:\Users\jonel\OneDrive\Documents\GitHub\COS214-Project\System\Main Program" -B"C:\Users\jonel\OneDrive\Documents\GitHub\COS214-Project\System\Main Program\cmake-build-debug""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -555,7 +1147,7 @@ build _deps/googletest-build/list_install_components: phony
 # Utility command for install
 
 build _deps/googletest-build/CMakeFiles/install.util: CUSTOM_COMMAND _deps/googletest-build/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\jonel\OneDrive\Documents\GitHub\COS214--v03\SYSTEM\cmake-build-debug\_deps\googletest-build && "C:\Program Files\JetBrains\CLion 2022.1.3\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D "C:\Users\jonel\OneDrive\Documents\GitHub\COS214-Project\System\Main Program\cmake-build-debug\_deps\googletest-build" && "C:\Program Files\JetBrains\CLion 2022.1.3\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -567,7 +1159,7 @@ build _deps/googletest-build/install: phony _deps/googletest-build/CMakeFiles/in
 # Utility command for install/local
 
 build _deps/googletest-build/CMakeFiles/install/local.util: CUSTOM_COMMAND _deps/googletest-build/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\jonel\OneDrive\Documents\GitHub\COS214--v03\SYSTEM\cmake-build-debug\_deps\googletest-build && "C:\Program Files\JetBrains\CLion 2022.1.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D "C:\Users\jonel\OneDrive\Documents\GitHub\COS214-Project\System\Main Program\cmake-build-debug\_deps\googletest-build" && "C:\Program Files\JetBrains\CLion 2022.1.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -579,7 +1171,7 @@ build _deps/googletest-build/install/local: phony _deps/googletest-build/CMakeFi
 # Utility command for install/strip
 
 build _deps/googletest-build/CMakeFiles/install/strip.util: CUSTOM_COMMAND _deps/googletest-build/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\jonel\OneDrive\Documents\GitHub\COS214--v03\SYSTEM\cmake-build-debug\_deps\googletest-build && "C:\Program Files\JetBrains\CLion 2022.1.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D "C:\Users\jonel\OneDrive\Documents\GitHub\COS214-Project\System\Main Program\cmake-build-debug\_deps\googletest-build" && "C:\Program Files\JetBrains\CLion 2022.1.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -588,7 +1180,7 @@ build _deps/googletest-build/install/strip: phony _deps/googletest-build/CMakeFi
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/CMakeLists.txt
+# C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -600,12 +1192,14 @@ build _deps/googletest-build/install/strip: phony _deps/googletest-build/CMakeFi
 
 build cmake_object_order_depends_target_gmock: phony || cmake_object_order_depends_target_gtest
 
-build _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj: CXX_COMPILER__gmock_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googlemock/src/gmock-all.cc || cmake_object_order_depends_target_gmock
+build _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj: CXX_COMPILER__gmock_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/cmake-build-debug/_deps/googletest-src/googlemock/src/gmock-all.cc || cmake_object_order_depends_target_gmock
   DEP_FILE = _deps\googletest-build\googlemock\CMakeFiles\gmock.dir\src\gmock-all.cc.obj.d
   FLAGS = -g -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++17
-  INCLUDES = -IC:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googlemock/include -IC:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googlemock -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest
+  INCLUDES = -I"C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googlemock/include" -I"C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googlemock" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
   OBJECT_DIR = _deps\googletest-build\googlemock\CMakeFiles\gmock.dir
   OBJECT_FILE_DIR = _deps\googletest-build\googlemock\CMakeFiles\gmock.dir\src
+  TARGET_COMPILE_PDB = lib\libgmockpdb_debug_postfix-NOTFOUND.pdb
+  TARGET_PDB = bin\libgmockpdb_debug_postfix-NOTFOUND.pdb
 
 
 # =============================================================================
@@ -620,8 +1214,9 @@ build lib/libgmock.a: CXX_STATIC_LIBRARY_LINKER__gmock_Debug _deps/googletest-bu
   OBJECT_DIR = _deps\googletest-build\googlemock\CMakeFiles\gmock.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
+  TARGET_COMPILE_PDB = lib\libgmockpdb_debug_postfix-NOTFOUND.pdb
   TARGET_FILE = lib\libgmock.a
-  TARGET_PDB = gmock.a.dbg
+  TARGET_PDB = bin\libgmockpdb_debug_postfix-NOTFOUND.pdb
 
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target gmock_main
@@ -632,12 +1227,14 @@ build lib/libgmock.a: CXX_STATIC_LIBRARY_LINKER__gmock_Debug _deps/googletest-bu
 
 build cmake_object_order_depends_target_gmock_main: phony || cmake_object_order_depends_target_gmock cmake_object_order_depends_target_gtest
 
-build _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj: CXX_COMPILER__gmock_main_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googlemock/src/gmock_main.cc || cmake_object_order_depends_target_gmock_main
+build _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj: CXX_COMPILER__gmock_main_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/cmake-build-debug/_deps/googletest-src/googlemock/src/gmock_main.cc || cmake_object_order_depends_target_gmock_main
   DEP_FILE = _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir\src\gmock_main.cc.obj.d
   FLAGS = -g -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++17
-  INCLUDES = -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googlemock/include -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googlemock -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googlemock/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googlemock" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
   OBJECT_DIR = _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir
   OBJECT_FILE_DIR = _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir\src
+  TARGET_COMPILE_PDB = lib\libgmock_mainpdb_debug_postfix-NOTFOUND.pdb
+  TARGET_PDB = bin\libgmock_mainpdb_debug_postfix-NOTFOUND.pdb
 
 
 # =============================================================================
@@ -652,15 +1249,28 @@ build lib/libgmock_main.a: CXX_STATIC_LIBRARY_LINKER__gmock_main_Debug _deps/goo
   OBJECT_DIR = _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
+  TARGET_COMPILE_PDB = lib\libgmock_mainpdb_debug_postfix-NOTFOUND.pdb
   TARGET_FILE = lib\libgmock_main.a
-  TARGET_PDB = gmock_main.a.dbg
+  TARGET_PDB = bin\libgmock_mainpdb_debug_postfix-NOTFOUND.pdb
+
+
+#############################################
+# Utility command for test
+
+build _deps/googletest-build/googlemock/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\jonel\OneDrive\Documents\GitHub\COS214-Project\System\Main Program\cmake-build-debug\_deps\googletest-build\googlemock" && "C:\Program Files\JetBrains\CLion 2022.1.3\bin\cmake\win\bin\ctest.exe" --force-new-ctest-process "
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build _deps/googletest-build/googlemock/test: phony _deps/googletest-build/googlemock/CMakeFiles/test.util
 
 
 #############################################
 # Utility command for edit_cache
 
 build _deps/googletest-build/googlemock/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\jonel\OneDrive\Documents\GitHub\COS214--v03\SYSTEM\cmake-build-debug\_deps\googletest-build\googlemock && "C:\Program Files\JetBrains\CLion 2022.1.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D "C:\Users\jonel\OneDrive\Documents\GitHub\COS214-Project\System\Main Program\cmake-build-debug\_deps\googletest-build\googlemock" && "C:\Program Files\JetBrains\CLion 2022.1.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -671,7 +1281,7 @@ build _deps/googletest-build/googlemock/edit_cache: phony _deps/googletest-build
 # Utility command for rebuild_cache
 
 build _deps/googletest-build/googlemock/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\jonel\OneDrive\Documents\GitHub\COS214--v03\SYSTEM\cmake-build-debug\_deps\googletest-build\googlemock && "C:\Program Files\JetBrains\CLion 2022.1.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\jonel\OneDrive\Documents\GitHub\COS214--v03\SYSTEM -BC:\Users\jonel\OneDrive\Documents\GitHub\COS214--v03\SYSTEM\cmake-build-debug"
+  COMMAND = cmd.exe /C "cd /D "C:\Users\jonel\OneDrive\Documents\GitHub\COS214-Project\System\Main Program\cmake-build-debug\_deps\googletest-build\googlemock" && "C:\Program Files\JetBrains\CLion 2022.1.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S"C:\Users\jonel\OneDrive\Documents\GitHub\COS214-Project\System\Main Program" -B"C:\Users\jonel\OneDrive\Documents\GitHub\COS214-Project\System\Main Program\cmake-build-debug""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -689,7 +1299,7 @@ build _deps/googletest-build/googlemock/list_install_components: phony
 # Utility command for install
 
 build _deps/googletest-build/googlemock/CMakeFiles/install.util: CUSTOM_COMMAND _deps/googletest-build/googlemock/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\jonel\OneDrive\Documents\GitHub\COS214--v03\SYSTEM\cmake-build-debug\_deps\googletest-build\googlemock && "C:\Program Files\JetBrains\CLion 2022.1.3\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D "C:\Users\jonel\OneDrive\Documents\GitHub\COS214-Project\System\Main Program\cmake-build-debug\_deps\googletest-build\googlemock" && "C:\Program Files\JetBrains\CLion 2022.1.3\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -701,7 +1311,7 @@ build _deps/googletest-build/googlemock/install: phony _deps/googletest-build/go
 # Utility command for install/local
 
 build _deps/googletest-build/googlemock/CMakeFiles/install/local.util: CUSTOM_COMMAND _deps/googletest-build/googlemock/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\jonel\OneDrive\Documents\GitHub\COS214--v03\SYSTEM\cmake-build-debug\_deps\googletest-build\googlemock && "C:\Program Files\JetBrains\CLion 2022.1.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D "C:\Users\jonel\OneDrive\Documents\GitHub\COS214-Project\System\Main Program\cmake-build-debug\_deps\googletest-build\googlemock" && "C:\Program Files\JetBrains\CLion 2022.1.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -713,7 +1323,7 @@ build _deps/googletest-build/googlemock/install/local: phony _deps/googletest-bu
 # Utility command for install/strip
 
 build _deps/googletest-build/googlemock/CMakeFiles/install/strip.util: CUSTOM_COMMAND _deps/googletest-build/googlemock/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\jonel\OneDrive\Documents\GitHub\COS214--v03\SYSTEM\cmake-build-debug\_deps\googletest-build\googlemock && "C:\Program Files\JetBrains\CLion 2022.1.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D "C:\Users\jonel\OneDrive\Documents\GitHub\COS214-Project\System\Main Program\cmake-build-debug\_deps\googletest-build\googlemock" && "C:\Program Files\JetBrains\CLion 2022.1.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -722,7 +1332,7 @@ build _deps/googletest-build/googlemock/install/strip: phony _deps/googletest-bu
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googlemock/CMakeLists.txt
+# C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googlemock/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -734,12 +1344,14 @@ build _deps/googletest-build/googlemock/install/strip: phony _deps/googletest-bu
 
 build cmake_object_order_depends_target_gtest: phony || _deps/googletest-build/googletest/CMakeFiles/gtest.dir
 
-build _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj: CXX_COMPILER__gtest_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest/src/gtest-all.cc || cmake_object_order_depends_target_gtest
+build _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj: CXX_COMPILER__gtest_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/cmake-build-debug/_deps/googletest-src/googletest/src/gtest-all.cc || cmake_object_order_depends_target_gtest
   DEP_FILE = _deps\googletest-build\googletest\CMakeFiles\gtest.dir\src\gtest-all.cc.obj.d
   FLAGS = -g -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++17
-  INCLUDES = -IC:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest/include -IC:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest
+  INCLUDES = -I"C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -I"C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
   OBJECT_DIR = _deps\googletest-build\googletest\CMakeFiles\gtest.dir
   OBJECT_FILE_DIR = _deps\googletest-build\googletest\CMakeFiles\gtest.dir\src
+  TARGET_COMPILE_PDB = lib\libgtestpdb_debug_postfix-NOTFOUND.pdb
+  TARGET_PDB = bin\libgtestpdb_debug_postfix-NOTFOUND.pdb
 
 
 # =============================================================================
@@ -754,8 +1366,9 @@ build lib/libgtest.a: CXX_STATIC_LIBRARY_LINKER__gtest_Debug _deps/googletest-bu
   OBJECT_DIR = _deps\googletest-build\googletest\CMakeFiles\gtest.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
+  TARGET_COMPILE_PDB = lib\libgtestpdb_debug_postfix-NOTFOUND.pdb
   TARGET_FILE = lib\libgtest.a
-  TARGET_PDB = gtest.a.dbg
+  TARGET_PDB = bin\libgtestpdb_debug_postfix-NOTFOUND.pdb
 
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target gtest_main
@@ -766,12 +1379,14 @@ build lib/libgtest.a: CXX_STATIC_LIBRARY_LINKER__gtest_Debug _deps/googletest-bu
 
 build cmake_object_order_depends_target_gtest_main: phony || cmake_object_order_depends_target_gtest
 
-build _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj: CXX_COMPILER__gtest_main_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest/src/gtest_main.cc || cmake_object_order_depends_target_gtest_main
+build _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj: CXX_COMPILER__gtest_main_Debug C$:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main$ Program/cmake-build-debug/_deps/googletest-src/googletest/src/gtest_main.cc || cmake_object_order_depends_target_gtest_main
   DEP_FILE = _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir\src\gtest_main.cc.obj.d
   FLAGS = -g -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++17
-  INCLUDES = -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-src/googletest
+  INCLUDES = -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-src/googletest"
   OBJECT_DIR = _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir
   OBJECT_FILE_DIR = _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir\src
+  TARGET_COMPILE_PDB = lib\libgtest_mainpdb_debug_postfix-NOTFOUND.pdb
+  TARGET_PDB = bin\libgtest_mainpdb_debug_postfix-NOTFOUND.pdb
 
 
 # =============================================================================
@@ -786,15 +1401,28 @@ build lib/libgtest_main.a: CXX_STATIC_LIBRARY_LINKER__gtest_main_Debug _deps/goo
   OBJECT_DIR = _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
+  TARGET_COMPILE_PDB = lib\libgtest_mainpdb_debug_postfix-NOTFOUND.pdb
   TARGET_FILE = lib\libgtest_main.a
-  TARGET_PDB = gtest_main.a.dbg
+  TARGET_PDB = bin\libgtest_mainpdb_debug_postfix-NOTFOUND.pdb
+
+
+#############################################
+# Utility command for test
+
+build _deps/googletest-build/googletest/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\jonel\OneDrive\Documents\GitHub\COS214-Project\System\Main Program\cmake-build-debug\_deps\googletest-build\googletest" && "C:\Program Files\JetBrains\CLion 2022.1.3\bin\cmake\win\bin\ctest.exe" --force-new-ctest-process "
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build _deps/googletest-build/googletest/test: phony _deps/googletest-build/googletest/CMakeFiles/test.util
 
 
 #############################################
 # Utility command for edit_cache
 
 build _deps/googletest-build/googletest/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\jonel\OneDrive\Documents\GitHub\COS214--v03\SYSTEM\cmake-build-debug\_deps\googletest-build\googletest && "C:\Program Files\JetBrains\CLion 2022.1.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D "C:\Users\jonel\OneDrive\Documents\GitHub\COS214-Project\System\Main Program\cmake-build-debug\_deps\googletest-build\googletest" && "C:\Program Files\JetBrains\CLion 2022.1.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -805,7 +1433,7 @@ build _deps/googletest-build/googletest/edit_cache: phony _deps/googletest-build
 # Utility command for rebuild_cache
 
 build _deps/googletest-build/googletest/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\jonel\OneDrive\Documents\GitHub\COS214--v03\SYSTEM\cmake-build-debug\_deps\googletest-build\googletest && "C:\Program Files\JetBrains\CLion 2022.1.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\jonel\OneDrive\Documents\GitHub\COS214--v03\SYSTEM -BC:\Users\jonel\OneDrive\Documents\GitHub\COS214--v03\SYSTEM\cmake-build-debug"
+  COMMAND = cmd.exe /C "cd /D "C:\Users\jonel\OneDrive\Documents\GitHub\COS214-Project\System\Main Program\cmake-build-debug\_deps\googletest-build\googletest" && "C:\Program Files\JetBrains\CLion 2022.1.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S"C:\Users\jonel\OneDrive\Documents\GitHub\COS214-Project\System\Main Program" -B"C:\Users\jonel\OneDrive\Documents\GitHub\COS214-Project\System\Main Program\cmake-build-debug""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -823,7 +1451,7 @@ build _deps/googletest-build/googletest/list_install_components: phony
 # Utility command for install
 
 build _deps/googletest-build/googletest/CMakeFiles/install.util: CUSTOM_COMMAND _deps/googletest-build/googletest/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\jonel\OneDrive\Documents\GitHub\COS214--v03\SYSTEM\cmake-build-debug\_deps\googletest-build\googletest && "C:\Program Files\JetBrains\CLion 2022.1.3\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D "C:\Users\jonel\OneDrive\Documents\GitHub\COS214-Project\System\Main Program\cmake-build-debug\_deps\googletest-build\googletest" && "C:\Program Files\JetBrains\CLion 2022.1.3\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -835,7 +1463,7 @@ build _deps/googletest-build/googletest/install: phony _deps/googletest-build/go
 # Utility command for install/local
 
 build _deps/googletest-build/googletest/CMakeFiles/install/local.util: CUSTOM_COMMAND _deps/googletest-build/googletest/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\jonel\OneDrive\Documents\GitHub\COS214--v03\SYSTEM\cmake-build-debug\_deps\googletest-build\googletest && "C:\Program Files\JetBrains\CLion 2022.1.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D "C:\Users\jonel\OneDrive\Documents\GitHub\COS214-Project\System\Main Program\cmake-build-debug\_deps\googletest-build\googletest" && "C:\Program Files\JetBrains\CLion 2022.1.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -847,7 +1475,7 @@ build _deps/googletest-build/googletest/install/local: phony _deps/googletest-bu
 # Utility command for install/strip
 
 build _deps/googletest-build/googletest/CMakeFiles/install/strip.util: CUSTOM_COMMAND _deps/googletest-build/googletest/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\jonel\OneDrive\Documents\GitHub\COS214--v03\SYSTEM\cmake-build-debug\_deps\googletest-build\googletest && "C:\Program Files\JetBrains\CLion 2022.1.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D "C:\Users\jonel\OneDrive\Documents\GitHub\COS214-Project\System\Main Program\cmake-build-debug\_deps\googletest-build\googletest" && "C:\Program Files\JetBrains\CLion 2022.1.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -875,7 +1503,7 @@ build libgtest.a: phony lib/libgtest.a
 
 build libgtest_main.a: phony lib/libgtest_main.a
 
-build mainTest: phony mainTest.exe
+build mainTester: phony mainTester.exe
 
 # =============================================================================
 # Folder targets.
@@ -883,28 +1511,28 @@ build mainTest: phony mainTest.exe
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug
+# Folder: C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug
 
-build all: phony COS214-Project.exe mainTest.exe _deps/googletest-build/all
+build all: phony mainTester.exe COS214-Project.exe _deps/googletest-build/all
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-build
+# Folder: C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-build
 
 build _deps/googletest-build/all: phony _deps/googletest-build/googlemock/all
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-build/googlemock
+# Folder: C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-build/googlemock
 
 build _deps/googletest-build/googlemock/all: phony lib/libgmock.a lib/libgmock_main.a _deps/googletest-build/googletest/all
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/jonel/OneDrive/Documents/GitHub/COS214--v03/SYSTEM/cmake-build-debug/_deps/googletest-build/googletest
+# Folder: C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/_deps/googletest-build/googletest
 
 build _deps/googletest-build/googletest/all: phony lib/libgtest.a lib/libgtest_main.a
 
@@ -915,14 +1543,14 @@ build _deps/googletest-build/googletest/all: phony lib/libgtest.a lib/libgtest_m
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeDependentOption.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakePackageConfigHelpers.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/FetchContent.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/FetchContent/CMakeLists.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/FindPackageMessage.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/FindPython.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/FindPython/Support.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/GNUInstallDirs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/GoogleTest.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.22.3/CMakeCCompiler.cmake CMakeFiles/3.22.3/CMakeCXXCompiler.cmake CMakeFiles/3.22.3/CMakeRCCompiler.cmake CMakeFiles/3.22.3/CMakeSystem.cmake _deps/googletest-src/CMakeLists.txt _deps/googletest-src/googlemock/CMakeLists.txt _deps/googletest-src/googlemock/cmake/gmock.pc.in _deps/googletest-src/googlemock/cmake/gmock_main.pc.in _deps/googletest-src/googletest/CMakeLists.txt _deps/googletest-src/googletest/cmake/Config.cmake.in _deps/googletest-src/googletest/cmake/gtest.pc.in _deps/googletest-src/googletest/cmake/gtest_main.pc.in _deps/googletest-src/googletest/cmake/internal_utils.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCCompilerABI.c C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCXXCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCompilerIdDetection.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeDependentOption.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineCXXCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineCompileFeatures.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineCompilerABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineCompilerId.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineRCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeFindBinUtils.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakePackageConfigHelpers.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeParseImplicitLinkInfo.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeParseLibraryArchitecture.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeRCCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeSystem.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeTestCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeTestCXXCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeTestCompilerCommon.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeTestRCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-FindBinUtils.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/HP-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/TI-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/XL-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/FetchContent.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/FetchContent/CMakeLists.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/FindPackageMessage.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/FindPython.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/FindPython/Support.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/GNUInstallDirs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/GoogleTest.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Internal/FeatureTesting.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-Determine-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.22.3/CMakeCCompiler.cmake CMakeFiles/3.22.3/CMakeCXXCompiler.cmake CMakeFiles/3.22.3/CMakeRCCompiler.cmake CMakeFiles/3.22.3/CMakeSystem.cmake _deps/googletest-src/CMakeLists.txt _deps/googletest-src/googlemock/CMakeLists.txt _deps/googletest-src/googlemock/cmake/gmock.pc.in _deps/googletest-src/googlemock/cmake/gmock_main.pc.in _deps/googletest-src/googletest/CMakeLists.txt _deps/googletest-src/googletest/cmake/Config.cmake.in _deps/googletest-src/googletest/cmake/gtest.pc.in _deps/googletest-src/googletest/cmake/gtest_main.pc.in _deps/googletest-src/googletest/cmake/internal_utils.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeDependentOption.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakePackageConfigHelpers.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/FetchContent.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/FetchContent/CMakeLists.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/FindPackageMessage.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/FindPython.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/FindPython/Support.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/GNUInstallDirs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/GoogleTest.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.22.3/CMakeCCompiler.cmake CMakeFiles/3.22.3/CMakeCXXCompiler.cmake CMakeFiles/3.22.3/CMakeRCCompiler.cmake CMakeFiles/3.22.3/CMakeSystem.cmake _deps/googletest-src/CMakeLists.txt _deps/googletest-src/googlemock/CMakeLists.txt _deps/googletest-src/googlemock/cmake/gmock.pc.in _deps/googletest-src/googlemock/cmake/gmock_main.pc.in _deps/googletest-src/googletest/CMakeLists.txt _deps/googletest-src/googletest/cmake/Config.cmake.in _deps/googletest-src/googletest/cmake/gtest.pc.in _deps/googletest-src/googletest/cmake/gtest_main.pc.in _deps/googletest-src/googletest/cmake/internal_utils.cmake: phony
+build ../CMakeLists.txt C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCCompilerABI.c C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCXXCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCompilerIdDetection.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeDependentOption.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineCXXCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineCompileFeatures.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineCompilerABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineCompilerId.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineRCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeFindBinUtils.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakePackageConfigHelpers.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeParseImplicitLinkInfo.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeParseLibraryArchitecture.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeRCCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeSystem.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeTestCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeTestCXXCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeTestCompilerCommon.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeTestRCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-FindBinUtils.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/HP-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/TI-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/XL-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/FetchContent.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/FetchContent/CMakeLists.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/FindPackageMessage.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/FindPython.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/FindPython/Support.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/GNUInstallDirs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/GoogleTest.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Internal/FeatureTesting.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-Determine-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1.3/bin/cmake/win/share/cmake-3.22/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.22.3/CMakeCCompiler.cmake CMakeFiles/3.22.3/CMakeCXXCompiler.cmake CMakeFiles/3.22.3/CMakeRCCompiler.cmake CMakeFiles/3.22.3/CMakeSystem.cmake _deps/googletest-src/CMakeLists.txt _deps/googletest-src/googlemock/CMakeLists.txt _deps/googletest-src/googlemock/cmake/gmock.pc.in _deps/googletest-src/googlemock/cmake/gmock_main.pc.in _deps/googletest-src/googletest/CMakeLists.txt _deps/googletest-src/googletest/cmake/Config.cmake.in _deps/googletest-src/googletest/cmake/gtest.pc.in _deps/googletest-src/googletest/cmake/gtest_main.pc.in _deps/googletest-src/googletest/cmake/internal_utils.cmake: phony
 
 
 #############################################
