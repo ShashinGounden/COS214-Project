@@ -20,4 +20,7 @@ TEST(MedicFactoryTest, CheckMedicFactoryFunctions) {
     ASSERT_EQ(personTwo->getSkill(),"revive") << "Skills has not been correctly set after clone()" ;
     ASSERT_EQ(personTwo->getID(),1234) << "ID has not been correctly set after clone()" ;
 
+    delete personOne ;
+    delete personTwo;
+
 }

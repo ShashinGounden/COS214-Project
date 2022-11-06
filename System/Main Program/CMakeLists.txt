@@ -26,6 +26,8 @@ add_executable(
         UnitTests/GroundUnitTest.cc
         UnitTests/MedicTest.cc
         UnitTests/MedicFactory.cc
+        UnitTests/MultipleFunctionTest.cc
+        UnitTests/WeaponTest.cc
         ./ArmyHierarchy/Iterator/AirUnitIterator.cpp
         ./ArmyHierarchy/Iterator/ArmyIterator.cpp
         ./ArmyHierarchy/Iterator/GroundUnitIterator.cpp
