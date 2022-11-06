@@ -1,4 +1,4 @@
-# COS214-Project - Team FML
+# COS214-Project : Team FML
 
 ## Group Members
 
@@ -28,7 +28,11 @@
 
 ## Documentation
 
-- [Google Document](https://docs.google.com/document/d/1fIBljEvgrzkKuuCGGKqeGtKyDWfG38LYcaSMP7wZ9kw/edit)
-- [MAIN SYSTEM FOLDER (CODE)](https://github.com/ShashinGounden/COS214-Project/tree/main/SYSTEM)
+- [Report](https://github.com/ShashinGounden/COS214-Project/blob/main/Report/Report.pdf)
+- [System Folder (CODE)](https://github.com/ShashinGounden/COS214-Project/tree/main/System)
 - [Diagram Folder](https://github.com/ShashinGounden/COS214-Project/tree/main/Diagrams)
 - [Doxygen Folder](https://github.com/ShashinGounden/COS214-Project/tree/main/Data/Doxygen)
+
+## Video Demonstration
+
+Click [here](https://github.com/ShashinGounden/COS214-Project/blob/main/Introduction%20Video/Team%20FML%20-%20Introduction%20Video.mp4) for the video demo
