@@ -1,0 +1,5 @@
+if(EXISTS "C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/mainTester[1]_tests.cmake")
+  include("C:/Users/jonel/OneDrive/Documents/GitHub/COS214-Project/System/Main Program/cmake-build-debug/mainTester[1]_tests.cmake")
+else()
+  add_test(mainTester_NOT_BUILT mainTester_NOT_BUILT)
+endif()
