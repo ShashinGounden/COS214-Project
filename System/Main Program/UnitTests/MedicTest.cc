@@ -1,5 +1,6 @@
 #include <gtest/gtest.h>
 #include "../PersonHierarchy/Medic.h"
+//@ShashinGounden
 //Medic Test*************************************************************************
 TEST(MedicTest, CheckMedicFunctions) {
 

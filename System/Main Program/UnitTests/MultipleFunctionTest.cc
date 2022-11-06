@@ -2,7 +2,7 @@
 #include "../ArmyHierarchy/Army.h"
 #include "../Phase/Phase.h"
 #include "../Phase/Seize.h"
-
+//@authors @JordanTimberlake @ShashinGounden @Tymac15 @u20612894 @u21598267
 //MultipleFunctions Test*************************************************************************
 TEST(MultipleFunctionsTest, CheckAFewFunctions) {
     //Create Army object

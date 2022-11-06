@@ -1,7 +1,7 @@
 #include <gtest/gtest.h>
 #include "../WeaponHierarchy/Weapon.h"
-
-//Weapon Test************************************************
+//@ShashinGounden
+// Weapon Test************************************************
 TEST(WeaponTest,TestWeaponsCreated)
 {
 
@@ -12,7 +12,7 @@ TEST(WeaponTest,TestWeaponsCreated)
     delete weapon ;
 
 }
-
+//@JordanTimberlake
 TEST(WeaponTest2,TestWeaponsCreated)
 {
 
@@ -23,7 +23,7 @@ TEST(WeaponTest2,TestWeaponsCreated)
     delete weapon ;
 
 }
-
+//@JonelAlbuquerque
 TEST(WeaponTest3,TestWeaponsCreated)
 {
 
